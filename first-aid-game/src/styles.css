@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Be Vietnam Pro', Arial, sans-serif;
+  --color-navy: #123456;
+  --color-orange: #ce510b;
+  --color-orange-light: #fff3e9;
+  --color-muted: #66778c;
+  --color-line: #e0e7ef;
+  --color-pale: #eef5fa;
+  --color-surface: #f6f8fb;
+}
+
+body { margin: 0; min-width: 320px; }
+button, a, label { -webkit-tap-highlight-color: transparent; }
+button, summary, label { touch-action: manipulation; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; }
+:focus-visible { outline: 3px solid #528ab7; outline-offset: 4px; }
+.question-heading:focus { outline: none; }
+.eyebrow { @apply text-[10px] font-semibold uppercase tracking-[1.6px] text-orange; }
+.button-primary { @apply inline-flex min-h-12 items-center justify-center gap-3 rounded-lg border border-transparent bg-orange px-5 py-3 text-[13px] font-semibold text-white transition-colors duration-200 hover:bg-[#b64407] disabled:bg-[#e6eaf0] disabled:text-[#7e8a98]; }
+.button-secondary { @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-line bg-white px-4 py-3 text-[13px] font-medium text-navy transition-colors duration-200 hover:border-navy/50 hover:bg-pale disabled:opacity-45; }
+.answer-option { @apply relative flex min-h-28 cursor-pointer items-start gap-3 rounded-xl border border-line bg-white p-4 text-navy transition-colors duration-200 hover:border-navy/50 hover:bg-pale/40; }
+.answer-option:has(input:focus-visible) { outline: 3px solid #528ab7; outline-offset: 3px; }
+.answer-letter { @apply flex size-8 shrink-0 items-center justify-center rounded-lg border border-line bg-surface text-xs font-semibold transition-colors duration-200; }
+.answer-option.is-selected { @apply border-navy bg-pale ring-1 ring-navy; }
+.answer-option.is-selected .answer-letter { @apply border-navy bg-navy text-white; }
+.answer-option.is-locked { cursor: default; }
+.answer-option.is-locked:not(.is-selected) { @apply bg-surface/60 text-muted; }
+.skip-link { position: fixed; left: 16px; top: -60px; z-index: 50; background: white; color: #123456; padding: 12px; }
+.skip-link:focus { top: 12px; }
+.feedback { animation: reveal 180ms ease-out; }
+@keyframes reveal { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }

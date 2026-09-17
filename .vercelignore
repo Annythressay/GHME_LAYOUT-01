@@ -1,0 +1,9 @@
+/*.png
+!/BG Section 1.png
+!assets/images/**
+!assets/images/*.png
+!assets/images/banner_02.png
+!assets/images/danang.png
+!assets/images/cantho.png
+!assets/images/certificates-combined.png
+README.md
