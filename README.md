@@ -26,3 +26,7 @@ Local Microsoft Edge / Playwright: 1440, 1366, 1024, 768, 390, 375 widths. No ho
 ## Vercel
 
 Ready for a static deployment: framework preset Other, no build command, output directory `.`. Run `npx vercel` for preview or `npx vercel --prod` after Vercel authentication. `.vercelignore` excludes the full reference screenshots from deployment while retaining them locally. No Git repository or existing Vercel project configuration was present. Vercel CLI 59.20.0 `whoami` returned `loggedIn: false`, `reason: login_required`; the account owner must run `npx vercel login` before deployment can proceed. No deployment URL exists yet.
+
+## Integrated first-aid challenge (19 September 2026)
+
+The homepage now loads the React mini-game through `assets/first-aid/game.js` into an isolated Shadow DOM. Run `npm --prefix first-aid-game run build` after game source edits; the generated assets are included for static hosting. The launcher uses a finite CSS attention sequence and opens the invitation on activation, and the final course CTA goes to the existing `#programs` section. See `first-aid-game/README.md` for implementation and integrated browser QA.
