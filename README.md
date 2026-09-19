@@ -17,7 +17,19 @@ Serve this directory with any static server, for example `python -m http.server 
 
 All raw images were unavailable. The logo, hero illustration, city imagery, program photos, activity photos, certificates and partner logos are crops of the supplied references; replace with original high-resolution files. Hero background and decorative details are conservative CSS approximations. Contact team photo is a cropped decorative image hidden on tablet/mobile. The two sample certificate images are visual references only, not independently verified accreditation claims. Partner relationships and the contact details (0904 123 456 / lienhe@ghme.vn) are reproduced from the screenshots and require owner verification before public operation.
 
-Login, English, products, news, policies, terms and FAQ show explicit prototype dialogs pending real content. Course CTAs select the appropriate form option. No consultation data is sent or stored; the success message explicitly says so. Typeface: Be Vietnam Pro, loaded from Google Fonts with an Arial fallback.
+Login, English, products, news, policies, terms and homepage FAQ show explicit prototype dialogs pending real content. Course card CTAs open the corresponding detail page; detail-page consultation CTAs return to the homepage with the appropriate form option selected. No consultation data is sent or stored; the success message explicitly says so. Typeface: Be Vietnam Pro, loaded from Google Fonts with an Arial fallback.
+
+## Course details — Concept 02 (19 September 2026)
+
+- `courses/program-1.html` through `courses/program-7.html`: static detail pages with unique titles and descriptions. The young-family sample is `courses/program-2.html`.
+- `scripts/build_courses.py`: shared page template. It reads the existing `.program-card` content from `index.html`, generates all seven pages, and updates their entry links. Run `python scripts/build_courses.py` after changing card content or the template; do not edit the generated pages directly. Python is only needed to regenerate files, not for deployment.
+- `assets/css/course.css`: scoped desktop 68/32 layout, sticky consultation panel, tablet flow, and mobile bottom CTA. Short desktop windows allow the panel to scroll within the viewport.
+- `assets/js/course.js`: mobile navigation and current-section indicator. Core content, links, and native disclosure panels work without JavaScript.
+- Consultation links pass a known card ID as `?program=program-2#consultation`. `assets/js/main.js` checks it against actual cards before selecting the form option; unknown IDs are ignored.
+
+Content remains limited to the current cards. Session allocation, prerequisites, fees, course-specific schedules, trainers, materials, and certification are marked pending. Existing low-resolution images remain explicitly labelled as illustrations; replace with approved high-resolution course photos when available. No backend or public deployment is included.
+
+Browser QA: Edge at 1440, 1024, 768, 390, and 320px; all seven detail/consultation flows, correct form preselection, unknown program ID, native accordion keyboard activation, mobile menu/Escape, mobile CTA, sticky panel position, no horizontal overflow, no broken loaded images, no page errors, and readable static content without JavaScript.
 
 ## QA (17 September 2026)
 
