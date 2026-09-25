@@ -369,7 +369,7 @@ header { background: white; }
 .schedule {
   --schedule-gap: 24px;
   padding: 40px 0 32px;
-  background: #fff url("../../BG Section 1.png") center top / cover no-repeat;
+  background: #fff url("../images/sections/bg-section-01.png") center top / cover no-repeat;
 }
 .schedule.decorated:before, .schedule.decorated:after { display: none; }
 .schedule > .container { width: calc(100% - 64px); max-width: 1120px; }

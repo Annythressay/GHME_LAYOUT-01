@@ -12522,7 +12522,7 @@ function Qv({ index: x, total: w, remaining: O, finished: m, answered: B, imageB
   const gt = x + 1;
   return /* @__PURE__ */ r.jsx("header", { className: "border-b border-line bg-white", children: /* @__PURE__ */ r.jsxs("div", { className: "mx-auto grid min-h-22 max-w-350 grid-cols-[1fr_1fr_1fr] items-center gap-8 pl-8 pr-16 max-sm:grid-cols-[1fr_auto] max-sm:gap-4 max-sm:pl-5 max-sm:pr-14 max-sm:py-4", children: [
     /* @__PURE__ */ r.jsxs("div", { className: "flex w-fit items-center gap-4 rounded-md", "aria-label": "GHME — trang đầu mini-game", children: [
-      /* @__PURE__ */ r.jsx("img", { src: Z + "logo_GHME.svg", alt: "GHME", className: "h-auto w-32 shrink-0 object-contain object-left" }),
+      /* @__PURE__ */ r.jsx("img", { src: Z + "logo-ghme.svg", alt: "GHME", className: "h-auto w-32 shrink-0 object-contain object-left" }),
       /* @__PURE__ */ r.jsxs("span", { className: "border-l border-line pl-4 text-[11px] leading-5 text-muted max-lg:hidden", children: [
         "KIẾN THỨC SƠ CỨU",
         /* @__PURE__ */ r.jsx("br", {}),
@@ -12721,7 +12721,7 @@ function Kv({ questions: x, responses: w, remaining: O, timedOut: m, onRestart: 
 function Jv({ intro: x, imageBase: w, headingRef: O, onStart: m, onClose: B }) {
   return x ? /* @__PURE__ */ r.jsxs("div", { className: "welcome " + (x ? "welcome-intro" : ""), children: [
     /* @__PURE__ */ r.jsxs("div", { className: "welcome-visual", children: [
-      /* @__PURE__ */ r.jsx("img", { className: "welcome-logo", src: w + "logo_GHME.svg", alt: "GHME" }),
+      /* @__PURE__ */ r.jsx("img", { className: "welcome-logo", src: w + "logo-ghme.svg", alt: "GHME" }),
       /* @__PURE__ */ r.jsxs("div", { className: "welcome-photo", children: [
         /* @__PURE__ */ r.jsx("img", { src: w + "bidv.webp", alt: "Ảnh minh họa học viên thực hành sơ cứu trên mô hình" }),
         /* @__PURE__ */ r.jsx("span", { children: "Ảnh minh họa thực hành" })

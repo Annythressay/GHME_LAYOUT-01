@@ -7,7 +7,7 @@ export default function Header({ index, total, remaining, finished, answered, im
     <header className="border-b border-line bg-white">
       <div className="mx-auto grid min-h-22 max-w-350 grid-cols-[1fr_1fr_1fr] items-center gap-8 pl-8 pr-16 max-sm:grid-cols-[1fr_auto] max-sm:gap-4 max-sm:pl-5 max-sm:pr-14 max-sm:py-4">
         <div className="flex w-fit items-center gap-4 rounded-md" aria-label="GHME — trang đầu mini-game">
-          <img src={imageBase + 'logo_GHME.svg'} alt="GHME" className="h-auto w-32 shrink-0 object-contain object-left" />
+          <img src={imageBase + 'logo-ghme.svg'} alt="GHME" className="h-auto w-32 shrink-0 object-contain object-left" />
           <span className="border-l border-line pl-4 text-[11px] leading-5 text-muted max-lg:hidden">KIẾN THỨC SƠ CỨU<br /><strong id="game-title" className="font-semibold text-navy">4 phút thời gian vàng</strong></span>
         </div>
         <div className="mx-auto w-full max-w-64 max-sm:order-3 max-sm:col-span-2 max-sm:max-w-none">
