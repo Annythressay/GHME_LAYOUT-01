@@ -116,7 +116,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid #1d7ed7; outline-offs
 .site-header { border-bottom: 1px solid var(--line); box-shadow: 0 10px 30px #10365e0a; }
 .nav-wrap { position: relative; z-index: 10; min-height: 108px; width: calc(100% - 96px); max-width: 1560px; margin: auto; padding: 12px 0; display: flex; align-items: center; gap: 32px; background: white; font-size: 20px; }
 .brand { width: 220px; height: 80px; object-fit: cover; object-position: center; }
-.nav-wrap nav { display: flex; align-items: center; justify-content: center; gap: clamp(24px, 3vw, 48px); flex: 1; font-size: inherit; font-weight: 700; }
+.nav-wrap nav { display: flex; align-items: center; justify-content: center; gap: clamp(24px, 3vw, 48px); flex: 1; font-size: inherit; font-weight: 500; }
 .nav-wrap nav a, .nav-wrap nav button { padding: 20px 0; white-space: nowrap; }
 .nav-wrap nav button { border: 0; background: none; }
 .nav-wrap nav>a { position: relative; }
