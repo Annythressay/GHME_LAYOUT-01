@@ -24,13 +24,13 @@ if (programs) {
     step = cards[0].getBoundingClientRect().width + 12;
     maximum = Math.max(0, viewport.scrollWidth - viewport.clientWidth);
     pages = Math.ceil(Math.max(0, maximum - 1) / step);
+    navigation.hidden = pages === 0;
     index = Math.min(index, pages);
     viewport.scrollTo({left: Math.min(index * step, maximum), behavior: 'instant'});
     updateButtons();
   }
   previous.addEventListener('click', () => move(-1));
   next.addEventListener('click', () => move(1));
-  navigation.hidden = false;
   viewport.addEventListener('dragstart', event => event.preventDefault());
   viewport.addEventListener('pointerdown', event => {
     if (event.button > 0 || event.isPrimary === false) return;
@@ -187,4 +187,4 @@ if (requestedCard) {
 }
 document.querySelectorAll('[data-program][href="#consultation"]').forEach(a=>a.addEventListener('click',()=>{document.querySelector('[name="need"]').value=a.dataset.program;}));
 document.querySelector('#consultation-form').addEventListener('submit',e=>{e.preventDefault();const status=e.currentTarget.querySelector('.form-status');status.hidden=false;status.textContent='Thông tin đã được kiểm tra hợp lệ. Đây là bản thử nghiệm: yêu cầu chưa được gửi, dữ liệu không được lưu trên máy chủ.';status.tabIndex=-1;status.focus();});
-document.querySelector('#search-form').addEventListener('submit',e=>{e.preventDefault();const value=document.querySelector('#search').value.trim();const normalize=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').toLowerCase();if(!value)return;const matches=Array.from(document.querySelectorAll('.program-card')).filter(c=>normalize(c.textContent).includes(normalize(value)));show('Kết quả tìm kiếm',matches.length?`Tìm thấy ${matches.length} chương trình phù hợp.`:'Chưa có chương trình phù hợp. Hãy thử “cơ bản”, “trẻ nhỏ” hoặc “gia đình”.');matches.forEach(c=>{const p=document.createElement('p');const a=document.createElement('a');a.href='#'+c.id;a.textContent=c.querySelector('h3').textContent;a.addEventListener('click',()=>dialog.close());p.append(a);content.append(p);});});
+document.querySelector('#search-form').addEventListener('submit',e=>{e.preventDefault();const value=document.querySelector('#search').value.trim();const normalize=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').toLowerCase();if(!value)return;const matches=Array.from(document.querySelectorAll('.program-card')).filter(c=>normalize(c.textContent).includes(normalize(value)));show('Kết quả tìm kiếm',matches.length?`Tìm thấy ${matches.length} chương trình phù hợp.`:'Chưa có chương trình phù hợp. Hãy thử “BPEC”, “CPR” hoặc “Doctor Talk”.');matches.forEach(c=>{const p=document.createElement('p');const a=document.createElement('a');a.href='#'+c.id;a.textContent=c.querySelector('h3').textContent;a.addEventListener('click',()=>dialog.close());p.append(a);content.append(p);});});
