@@ -163,7 +163,7 @@ def page(c):
       <a href="../index.html" aria-label="GHME — Trang chủ"><img src="../assets/images/branding/logo-ghme.svg" width="166" height="49" alt="GHME"></a>
       <button class="course-menu" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="course-navigation">Menu <span aria-hidden="true">☰</span></button>
       <nav id="course-navigation" aria-label="Điều hướng chính">
-        <a href="../index.html#about">Giới thiệu</a>
+        <a href="../about.html?v=20261007">Giới thiệu</a>
         <a class="is-current" href="../index.html#programs">Chương trình đào tạo</a>
         <a href="{consult}">Liên hệ</a>
       </nav>

@@ -28,6 +28,14 @@ Login, English, products, news, policies, terms and homepage FAQ show explicit p
 - `assets/css/course.css` and `assets/js/course.js`: responsive layout, sticky consultation panel, mobile CTA/navigation and native disclosure panels.
 - Consultation links pass the card ID as `?program=program-1#consultation` or `?program=program-2#consultation`; the homepage selects the matching option. Unknown IDs are ignored.
 
+## About GHME
+
+`about.html` presents the company, its three service areas, training approach, leaders/advisor and partners using the supplied GHME company introduction. `assets/css/about.css` contains the scoped page styles; `assets/js/about.js` handles mobile navigation. Homepage and course navigation link to this page; the footer's teaching-expert link opens `about.html#team`.
+
+Original profile photographs and logos are in `assets/images/about/`; see its README for page provenance. About-page contact details follow profile page 18. Edit the page copy directly; no build step is needed.
+
+About-page browser QA (7 October 2026): 1440, 1024, 390 and 320px layouts without horizontal page overflow; source photos/logos loaded; mobile menu and Escape, section links and homepage entry verified. Local asset/anchor checks and JavaScript syntax checks passed.
+
 ## QA (17 September 2026)
 
 Local Microsoft Edge / Playwright: 1440, 1366, 1024, 768, 390, 375 widths. No horizontal overflow, broken image, or JavaScript runtime error. Verified mobile navigation, schedule dialog, course selection, search, required fields, invalid email rejection, consent requirement, and valid form success. Desktop and mobile screenshots visually reviewed. Images were fully loaded before screenshot inspection.
