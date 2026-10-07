@@ -67,186 +67,118 @@ if (programs) {
   measure();
   revealHash();
 }
-// One circular track serves arrows, previews, pagination and touch.
-const schedule = document.querySelector('#schedule');
-if (schedule) {
-  const viewport = schedule.querySelector('.schedule-carousel');
-  const track = schedule.querySelector('#schedule-results');
-  const order = ['danang', 'hanoi', 'hcm', 'cantho'];
-  const cards = order.map(city => track.querySelector('[data-schedule-city="' + city + '"]'));
-  const pagination = schedule.querySelector('.schedule-pagination');
-  const status = schedule.querySelector('#schedule-status');
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  let active = 1, count = 2, width = 0, gap = 24, offset = 0, moving = false;
-  let timer;
-  let pending = [];
-  const slides = [];
-  // Copies at each end allow seamless wrap-around; card data remains in the originals.
-  for (let copy = 0; copy < 3; copy += 1) {
-    cards.forEach((card, index) => {
-      const slide = copy === 1 ? card : card.cloneNode(true);
-      if (copy !== 1) {
-        slide.dataset.scheduleClone = 'true';
-        slide.querySelectorAll('[id]').forEach(node => node.removeAttribute('id'));
-        slide.removeAttribute('id');
-      }
-      slide.hidden = false;
-      slide.dataset.slideIndex = String(index);
-      track.append(slide);
-      slides.push(slide);
-    });
+// Product categories and kit variants share one accessible detail panel.
+const showcase = document.querySelector('.product-showcase');
+if (showcase) {
+  const categories = [...showcase.querySelectorAll('[data-product-category]')];
+  const kits = [...showcase.querySelectorAll('[data-product-kit]')];
+  const panels = [...showcase.querySelectorAll('[data-product-panel]')];
+  const kitOptions = showcase.querySelector('#product-kit-options');
+  const productDialog = showcase.querySelector('#product-dialog');
+  let selectedKit = 'personal';
+  let selectedProduct = 'aed';
+  function selectProduct(id, category) {
+    selectedProduct = id;
+    panels.forEach(panel => { panel.hidden = panel.dataset.productPanel !== id; });
+    categories.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.productCategory === category)));
+    kits.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.productKit === selectedKit)));
+    kitOptions.hidden = category !== 'kits';
+    showcase.querySelector('#product-status').textContent = 'Đang xem: ' + showcase.querySelector('#product-title-' + id).textContent;
   }
-  const wrap = index => (index % cards.length + cards.length) % cards.length;
-  const previewButtons = [-1, 1].map(step => {
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.className = 'schedule-preview-hit ' + (step < 0 ? 'is-left' : 'is-right');
-    button.setAttribute('aria-label', step < 0 ? 'Xem các lịch trước' : 'Xem các lịch tiếp theo');
-    button.setAttribute('aria-controls', 'schedule-results');
-    button.addEventListener('click', () => navigate(step));
-    viewport.append(button);
-    return button;
-  });
-  function paint(announce = false) {
-    const start = cards.length + active;
-    track.style.transform = 'translate3d(' + (offset - start * (width + gap)) + 'px, 0, 0)';
-    slides.forEach((slide, index) => {
-      const main = index >= start && index < start + count;
-      slide.classList.toggle('is-active', main);
-      slide.classList.toggle('is-prev', index === start - 1);
-      slide.classList.toggle('is-next', index === start + count);
-      slide.classList.toggle('is-offscreen', !main && index !== start - 1 && index !== start + count);
-      slide.inert = !main;
-      slide.setAttribute('aria-hidden', String(!main));
-    });
-    const page = wrap(active);
-    pagination.querySelectorAll('[data-schedule-page]').forEach(dot => {
-      if (Number(dot.dataset.schedulePage) === page) dot.setAttribute('aria-current', 'page');
-      else dot.removeAttribute('aria-current');
-    });
-    if (announce) status.textContent = 'Đang hiển thị: ' + Array.from({length: count}, (_, i) =>
-      cards[wrap(active + i)].querySelector('.city').textContent).join(' và ') + '.';
-  }
-  function finish() {
-    clearTimeout(timer);
-    track.classList.add('is-resetting');
-    active = wrap(active);
-    paint();
-    // Commit the equivalent loop position before enabling transitions again.
-    void track.offsetWidth;
-    track.classList.remove('is-resetting');
-    moving = false;
-    if (pending.length) pending.shift()();
-  }
-  function moveTo(index) {
-    if (moving) { pending.push(() => moveTo(index)); return; }
-    if (index === active) return;
-    moving = true;
-    active = index;
-    paint(true);
-    timer = setTimeout(finish, reducedMotion.matches ? 0 : 450);
-  }
-  function navigate(step) {
-    if (moving) { pending.push(() => navigate(step)); return; }
-    moveTo(active + step);
-  }
-  track.addEventListener('transitionend', event => {
-    if (event.target === track && event.propertyName === 'transform') finish();
-  });
-  function layout() {
-    pending = [];
-    finish();
-    const viewportWidth = schedule.clientWidth;
-    count = viewportWidth >= 1200 ? 2 : 1;
-    gap = viewportWidth <= 767 ? 12 : 24;
-    width = count === 2 ? Math.min(548, (viewportWidth - 4 * gap) / 3)
-      : viewportWidth <= 767 ? viewportWidth - 92 : Math.min(600, viewportWidth * .7);
-    offset = (viewportWidth - (count * width + (count - 1) * gap)) / 2;
-    viewport.style.setProperty('--carousel-width', viewportWidth + 'px');
-    viewport.style.setProperty('--card-width', width + 'px');
-    viewport.style.setProperty('--track-gap', gap + 'px');
-    viewport.style.setProperty('--active-edge', offset + 'px');
-    previewButtons.forEach(button => { button.style.width = Math.max(0, offset - gap / 2) + 'px'; });
-    pagination.querySelectorAll('[data-schedule-page]').forEach(dot => dot.remove());
-    const next = pagination.querySelector('[data-schedule-step="1"]');
-    for (let page = 0; page < cards.length; page += 1) {
-      const dot = document.createElement('button');
-      dot.type = 'button';
-      dot.className = 'schedule-dot';
-      dot.dataset.schedulePage = String(page);
-      dot.setAttribute('aria-label', 'Bắt đầu từ ' + cards[page].querySelector('.city').textContent);
-      dot.setAttribute('aria-controls', 'schedule-results');
-      dot.addEventListener('click', () => moveTo(page));
-      pagination.insertBefore(dot, next);
-    }
-    track.classList.add('is-resetting');
-    paint();
-    void track.offsetWidth;
-    track.classList.remove('is-resetting');
-  }
-  schedule.querySelectorAll('[data-schedule-step]').forEach(button => {
-    button.addEventListener('click', () => navigate(Number(button.dataset.scheduleStep)));
-    button.hidden = false;
-  });
-  pagination.hidden = false;
-  pagination.addEventListener('keydown', event => {
-    if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+  categories.forEach(button => button.addEventListener('click', () => {
+    const category = button.dataset.productCategory;
+    selectProduct(category === 'kits' ? selectedKit : category, category);
+  }));
+  kits.forEach(button => button.addEventListener('click', () => {
+    selectedKit = button.dataset.productKit;
+    selectProduct(selectedKit, 'kits');
+  }));
+  // Native buttons remain reachable with Tab; arrow keys also move within each group.
+  [categories, kits].forEach(group => group.forEach((button, index) => button.addEventListener('keydown', event => {
+    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
     event.preventDefault();
-    navigate(event.key === 'ArrowRight' ? 1 : -1);
-    pagination.querySelector('[aria-current="page"]').focus();
+    const next = event.key === 'Home' ? 0 : event.key === 'End' ? group.length - 1 : (index + (event.key === 'ArrowRight' ? 1 : -1) + group.length) % group.length;
+    group[next].focus();
+    group[next].click();
+  })));
+  showcase.querySelectorAll('[data-product-detail]').forEach(button => button.addEventListener('click', () => {
+    const panel = showcase.querySelector('#product-' + button.dataset.productDetail);
+    showcase.querySelector('#product-dialog-title').textContent = panel.querySelector('h3').textContent;
+    const body = showcase.querySelector('#product-dialog-content');
+    body.replaceChildren(panel.querySelector('.inner-desc').cloneNode(true), panel.querySelector('.inner-specs').cloneNode(true));
+    productDialog.showModal();
+  }));
+  productDialog.querySelector('.product-dialog__close').addEventListener('click', () => productDialog.close());
+  productDialog.addEventListener('click', event => {
+    const bounds = productDialog.getBoundingClientRect();
+    if (event.target === productDialog && (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom)) productDialog.close();
   });
-  let touch = null, suppressClick = false;
-  viewport.addEventListener('dragstart', event => event.preventDefault());
-  viewport.addEventListener('pointerdown', event => {
-    if (event.isPrimary === false || event.button > 0) return;
-    touch = {x: event.clientX, y: event.clientY, id: event.pointerId};
-    suppressClick = false;
-  });
-  viewport.addEventListener('pointermove', event => {
-    if (!touch || touch.id !== event.pointerId) return;
-    const dx = event.clientX - touch.x, dy = event.clientY - touch.y;
-    if (Math.abs(dx) > 8 && Math.abs(dx) > Math.abs(dy) * 1.3) {
-      viewport.setPointerCapture(event.pointerId);
-      viewport.classList.add('is-dragging');
-    }
-  });
-  viewport.addEventListener('pointerup', event => {
-    if (!touch || touch.id !== event.pointerId) return;
-    const dx = event.clientX - touch.x, dy = event.clientY - touch.y;
-    touch = null;
-    viewport.classList.remove('is-dragging');
-    if (viewport.hasPointerCapture(event.pointerId)) viewport.releasePointerCapture(event.pointerId);
-    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy) * 1.3) {
-      suppressClick = true;
-      navigate(dx < 0 ? 1 : -1);
-      setTimeout(() => { suppressClick = false; }, 0);
-    }
-  });
-  viewport.addEventListener('pointercancel', () => { touch = null; viewport.classList.remove('is-dragging'); });
-  viewport.addEventListener('click', event => {
-    if (suppressClick) { event.preventDefault(); event.stopImmediatePropagation(); }
-  }, true);
-  let previousWidth = 0;
-  new ResizeObserver(() => {
-    if (schedule.clientWidth !== previousWidth) {
-      previousWidth = schedule.clientWidth;
-      layout();
-    }
-  }).observe(schedule);
-  layout();
+  function prepareConsultation(id) {
+    const form = document.querySelector('#consultation-form');
+    const title = showcase.querySelector('#product-title-' + id).textContent;
+    const need = form.querySelector('[name="need"]');
+    if (![...need.options].some(option => option.value === 'Tư vấn sản phẩm')) need.add(new Option('Tư vấn sản phẩm', 'Tư vấn sản phẩm'));
+    need.value = 'Tư vấn sản phẩm';
+    const message = form.querySelector('[name="message"]');
+    const request = 'Tôi muốn được tư vấn về ' + title + '.';
+    if (!message.value.includes(request)) message.value += (message.value.trim() ? '\n' : '') + request;
+    if (productDialog.open) productDialog.close();
+  }
+  showcase.querySelectorAll('[data-product-consult]').forEach(link => link.addEventListener('click', () => prepareConsultation(link.dataset.productConsult)));
+  showcase.querySelector('#product-dialog-consult').addEventListener('click', () => prepareConsultation(selectedProduct));
 }
 const menu=document.querySelector('.menu-toggle');
 const nav=document.querySelector('#navigation');
-menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Đóng menu':'Mở menu');nav.classList.toggle('open',open);});
-nav.addEventListener('click',e=>{if(e.target.closest('a')){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Mở menu');}});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.focus();}});
+const dropdowns = [...nav.querySelectorAll('.nav-dropdown')];
+const mobileNavigation = window.matchMedia('(max-width: 991px)');
+function setDropdown(dropdown, open) {
+  dropdown.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', String(open));
+  dropdown.querySelector('.nav-dropdown-menu').hidden = !open;
+}
+function closeDropdowns() { dropdowns.forEach(dropdown => setDropdown(dropdown, false)); }
+function setNavigation(open) {
+  menu.setAttribute('aria-expanded', String(open));
+  menu.setAttribute('aria-label', open ? 'Đóng menu' : 'Mở menu');
+  nav.classList.toggle('open', open);
+  if (!open) closeDropdowns();
+}
+dropdowns.forEach(dropdown => {
+  const toggle = dropdown.querySelector('.nav-dropdown-toggle');
+  toggle.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') !== 'true';
+    closeDropdowns();
+    setDropdown(dropdown, open);
+  });
+  dropdown.addEventListener('focusout', event => {
+    if (!mobileNavigation.matches && !dropdown.contains(event.relatedTarget)) setDropdown(dropdown, false);
+  });
+});
+menu.addEventListener('click', () => setNavigation(menu.getAttribute('aria-expanded') !== 'true'));
+nav.addEventListener('click', event => {
+  const link = event.target.closest('a');
+  if (!link) return;
+  if (link.hasAttribute('data-nav-placeholder')) event.preventDefault();
+  setNavigation(false);
+});
+document.addEventListener('click', event => { if (!nav.contains(event.target)) closeDropdowns(); });
+document.addEventListener('keydown', event => {
+  if (event.key !== 'Escape') return;
+  const dropdown = dropdowns.find(item => item.querySelector('.nav-dropdown-toggle').getAttribute('aria-expanded') === 'true');
+  if (dropdown) {
+    setDropdown(dropdown, false);
+    dropdown.querySelector('.nav-dropdown-toggle').focus();
+  } else if (nav.classList.contains('open')) {
+    setNavigation(false);
+    menu.focus();
+  }
+});
+mobileNavigation.addEventListener('change', () => setNavigation(false));
 const dialog=document.querySelector('#info-dialog');
 const content=document.querySelector('#dialog-content');
 function show(title,text){document.querySelector('#dialog-title').textContent=title;content.replaceChildren();const p=document.createElement('p');p.textContent=text;content.append(p);dialog.showModal();}
 document.querySelectorAll('.dialog-close,.dialog-done').forEach(b=>b.addEventListener('click',()=>dialog.close()));
 const info={login:['Đăng nhập','Chức năng tài khoản chưa được kết nối trong bản frontend prototype. Bạn có thể sử dụng form tư vấn để trải nghiệm giao diện.'],products:['Sản phẩm','Danh mục sản phẩm đang chờ nội dung chính thức từ GHME.'],language:['Ngôn ngữ','Bản prototype hiện có nội dung tiếng Việt. Bản tiếng Anh đang chờ nội dung được duyệt.'],privacy:['Chính sách riêng tư','Bản prototype không gửi hoặc lưu dữ liệu form lên máy chủ. Nội dung chính sách chính thức cần được GHME cung cấp trước khi vận hành.'],terms:['Điều khoản sử dụng','Nội dung điều khoản chính thức đang chờ GHME cung cấp. Đây là bản thử nghiệm giao diện.'],news:['Tin tức & kiến thức','Nội dung tin tức đang chờ GHME cung cấp.'],faq:['Câu hỏi thường gặp','Bạn có thể xem lịch thực hành, chọn chương trình và điền form tư vấn trên trang. Nội dung hỏi đáp chính thức đang chờ GHME cung cấp.']};
 document.querySelectorAll('[data-info]').forEach(b=>b.addEventListener('click',()=>show(...info[b.dataset.info])));
-document.querySelector('#schedule-detail').addEventListener('click',()=>{show('Lịch thực hành tháng 09/2026','Lịch tham khảo theo thiết kế được cung cấp. Lịch học có thể được điều chỉnh; lớp học được tổ chức khi đủ số lượng học viên đăng ký.');document.querySelectorAll('.schedule-card:not([data-schedule-clone])').forEach(card=>{const h=document.createElement('h3');h.textContent=card.querySelector('.city').textContent;content.append(h);if(card.querySelector('.schedule-pending')){const p=document.createElement('p');p.textContent=card.querySelector('.schedule-pending p').textContent;content.append(p);}card.querySelectorAll('tbody tr').forEach(row=>{const p=document.createElement('p');p.textContent=Array.from(row.cells,c=>c.textContent).join(' · ');content.append(p);});});});
 // Course detail links return here with a known card ID, never arbitrary form text.
 const requestedProgram = new URLSearchParams(window.location.search).get('program');
 const requestedCard = [...document.querySelectorAll('.program-card')].find(card => card.id === requestedProgram);

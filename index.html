@@ -16,7 +16,7 @@
 
 <body>
   <a class="skip-link" href="#main">Đến nội dung chính</a>
-  <header>
+  <header class="site-header">
     <div class="utility">
       <div class="utility-inner"><span><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> Vì một cộng đồng an toàn hơn</span><span class="utility-links">Đào tạo
           sơ cứu &nbsp; · &nbsp; Kiến thức cứu người &nbsp; · &nbsp; Lan tỏa giá trị nhân văn</span>
@@ -29,160 +29,36 @@
     <div class="nav-wrap"><a href="#" aria-label="GHME — Trang chủ"><img class="brand" src="assets/images/branding/logo-ghme.svg"
           alt="GHME" decoding="async"></a><button class="menu-toggle" aria-label="Mở menu"
         aria-expanded="false" aria-controls="navigation"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
-      <nav id="navigation" aria-label="Điều hướng chính"><a class="active" href="#main">Trang chủ</a><a
-          href="#about">Giới thiệu</a><a href="#activities">Khóa học doanh nghiệp</a><a href="#program-1">Khóa học sơ
-          cấp cứu cơ bản</a><a href="#program-2">Khóa học sơ cấp cứu trẻ em</a><button data-info="products"
-          type="button">Sản phẩm</button></nav>
+      <nav id="navigation" aria-label="Điều hướng chính">
+        <a class="active" href="#main">Trang chủ</a><a href="#about">Giới thiệu</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="course-dropdown">Khóa học <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+          <ul class="nav-dropdown-menu" id="course-dropdown" hidden>
+            <li><a href="#activities"><span class="nav-dropdown-icon" aria-hidden="true"><i class="fa-solid fa-users"></i></span><span>Khóa Học Doanh nghiệp</span></a></li>
+            <li><a href="#program-1"><span class="nav-dropdown-icon" aria-hidden="true"><i class="fa-solid fa-plus"></i></span><span>Khóa Học sơ cấp cứu cơ bản</span></a></li>
+            <li><a href="#program-2"><span class="nav-dropdown-icon" aria-hidden="true"><i class="fa-solid fa-child-reaching"></i></span><span>Khóa học sơ cấp cứu trẻ em</span></a></li>
+          </ul>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="product-dropdown">Sản phẩm <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+          <ul class="nav-dropdown-menu" id="product-dropdown" hidden>
+            <li><a href="#" data-nav-placeholder><span class="nav-dropdown-icon" aria-hidden="true"><i class="fa-solid fa-box"></i></span><span>Sản phẩm A</span></a></li>
+            <li><a href="#" data-nav-placeholder><span class="nav-dropdown-icon" aria-hidden="true"><i class="fa-solid fa-file-lines"></i></span><span>Sản phẩm B</span></a></li>
+            <li><a href="#" data-nav-placeholder><span class="nav-dropdown-icon" aria-hidden="true"><i class="fa-solid fa-cart-shopping"></i></span><span>Sản phẩm C</span></a></li>
+          </ul>
+        </div>
+      </nav>
       <div class="nav-actions"><a class="button " href="#consultation">Đăng ký tư vấn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a><button class="button outline" data-info="login"><i class="fa-solid fa-user" aria-hidden="true"></i> Đăng nhập</button>
       </div>
     </div>
   </header>
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-image" src="assets/images/hero-emergency.webp" alt="Xe cấp cứu, trực thăng và trang thiết bị cấp cứu ngoại viện GHME" width="746" height="422" fetchpriority="high" decoding="async">
+      <img class="hero-image" src="assets/images/hero-cpr-banner-hd.png" alt="Bốn học viên thực hành hồi sinh tim phổi trên mô hình với máy AED và túi sơ cứu" width="1919" height="820" fetchpriority="high" decoding="async">
       <div class="inner-content">
         <img class="ghme-logo" src="assets/images/hero-ghme.svg" alt="GHME — Saving lives starts with proper education" width="1257" height="660" decoding="async">
-        <h1 id="hero-title">TƯ VẤN – ĐÀO TẠO<br>THIẾT BỊ CẤP CỨU NGOẠI VIỆN CHUYÊN NGHIỆP</h1>
+        <h1 id="hero-title">TƯ VẤN – ĐÀO TẠO – CUNG CẤP<br>THIẾT BỊ CẤP CỨU NGOẠI VIỆN CHUYÊN NGHIỆP</h1>
         <a class="hero-button" href="#consultation">LIÊN HỆ NGAY</a>
-      </div>
-    </section>
-    <section class="schedule decorated" id="schedule" aria-labelledby="schedule-title">
-      <div class="container narrow">
-        <p class="schedule-eyebrow">Thực hành hôm nay · Vì ngày mai an toàn hơn</p>
-        <h2 id="schedule-title">Lịch thực hành cùng chuyên gia GHME</h2>
-        <p class="section-intro">Cập nhật hàng tháng • Học trực tiếp • Tổ chức linh hoạt theo khu vực</p>
-        <p class="sr-only" id="schedule-status" role="status" aria-live="polite"></p>
-        <div class="schedule-carousel">
-        <button class="schedule-arrow schedule-side schedule-side-prev" type="button" data-schedule-step="-1" aria-label="Trang lịch trước" aria-controls="schedule-results" hidden><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
-        <div class="schedule-grid" id="schedule-results">
-          <article class="schedule-card" data-schedule-city="hanoi" aria-label="Lịch thực hành Hà Nội">
-            <div class="schedule-top"><img class="" src="assets/images/hanoi.webp" alt="Phong cảnh HÀ NỘI"
-                loading="lazy" decoding="async">
-              <div class="schedule-copy">
-                <p class="city">HÀ NỘI</p>
-                <h3>LỊCH THỰC HÀNH<br><em>Y KHOA ỨNG DỤNG</em></h3><strong class="month">THÁNG 09/2026</strong>
-                <p class="location"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Hà Nội<small>Trung tâm đào tạo GHME, Q. Cầu Giấy, Hà Nội</small></p>
-              </div>
-            </div>
-            <div class="table-wrap">
-              <table>
-                <caption class="sr-only">Lịch thực hành tại HÀ NỘI</caption>
-                <thead>
-                  <tr>
-                    <th scope="col"><i class="fa-solid fa-list" aria-hidden="true"></i> Nội dung</th>
-                    <th scope="col"><i class="fa-solid fa-clock" aria-hidden="true"></i> Giờ học</th>
-                    <th scope="col"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> Ngày học</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">Sơ cấp cứu cơ bản</th>
-                    <td>08:30 – 12:00</td>
-                    <td>05/09/2026</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">CPR & AED thực hành</th>
-                    <td>13:30 – 17:00</td>
-                    <td>12/09/2026</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Sơ cấp cứu cho người chăm sóc</th>
-                    <td>08:30 – 12:00</td>
-                    <td>27/09/2026</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="schedule-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Lịch học có thể được điều chỉnh và cập nhật hàng
-              tháng.<br>Lớp học được tổ chức khi đủ số lượng học viên đăng ký.</p>
-          </article>
-          <article class="schedule-card" data-schedule-city="danang" aria-label="Lịch thực hành Đà Nẵng" hidden>
-            <div class="schedule-top">
-              <img src="assets/images/danang.png" alt="Cầu Rồng trên sông Hàn, Đà Nẵng" loading="lazy" decoding="async" draggable="false">
-              <div class="schedule-copy">
-                <p class="city">ĐÀ NẴNG</p>
-                <h3>LỊCH THỰC HÀNH<br><em>Y KHOA ỨNG DỤNG</em></h3><strong class="month">THÁNG 09/2026</strong>
-                <p class="location"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Đà Nẵng<small>Liên hệ GHME để xác nhận địa điểm học.</small></p>
-              </div>
-            </div>
-            <div class="schedule-pending">
-              <i class="fa-regular fa-calendar" aria-hidden="true"></i>
-              <h4>Lịch học đang cập nhật</h4>
-              <p>Liên hệ để được tư vấn chương trình, ngày và giờ học tại Đà Nẵng.</p>
-              <a href="#consultation">Nhận tư vấn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-            </div>
-            <p class="schedule-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Lịch học cụ thể sẽ được xác nhận khi tư vấn.<br>Lớp học được tổ chức khi đủ số lượng học viên đăng ký.</p>
-          </article>
-          <article class="schedule-card" data-schedule-city="cantho" aria-label="Lịch thực hành Cần Thơ" hidden>
-            <div class="schedule-top">
-              <img src="assets/images/cantho.png" alt="Cầu Cần Thơ bắc qua sông Hậu" loading="lazy" decoding="async" draggable="false">
-              <div class="schedule-copy">
-                <p class="city">CẦN THƠ</p>
-                <h3>LỊCH THỰC HÀNH<br><em>Y KHOA ỨNG DỤNG</em></h3><strong class="month">THÁNG 09/2026</strong>
-                <p class="location"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Cần Thơ<small>Liên hệ GHME để xác nhận địa điểm học.</small></p>
-              </div>
-            </div>
-            <div class="schedule-pending">
-              <i class="fa-regular fa-calendar" aria-hidden="true"></i>
-              <h4>Lịch học đang cập nhật</h4>
-              <p>Liên hệ để được tư vấn chương trình, ngày và giờ học tại Cần Thơ.</p>
-              <a href="#consultation">Nhận tư vấn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-            </div>
-            <p class="schedule-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Lịch học cụ thể sẽ được xác nhận khi tư vấn.<br>Lớp học được tổ chức khi đủ số lượng học viên đăng ký.</p>
-          </article>
-          <article class="schedule-card" data-schedule-city="hcm" aria-label="Lịch thực hành TP. Hồ Chí Minh">
-            <div class="schedule-top"><img class="" src="assets/images/hcm.webp" alt="Phong cảnh TP. HỒ CHÍ MINH"
-                loading="lazy" decoding="async">
-              <div class="schedule-copy">
-                <p class="city">TP. HỒ CHÍ MINH</p>
-                <h3>LỊCH THỰC HÀNH<br><em>Y KHOA ỨNG DỤNG</em></h3><strong class="month">THÁNG 09/2026</strong>
-                <p class="location"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Tp. Hồ Chí Minh<small>Trung tâm đào tạo GHME, Q. Bình Thạnh, TP. Hồ Chí
-                    Minh</small></p>
-              </div>
-            </div>
-            <div class="table-wrap">
-              <table>
-                <caption class="sr-only">Lịch thực hành tại TP. HỒ CHÍ MINH</caption>
-                <thead>
-                  <tr>
-                    <th scope="col"><i class="fa-solid fa-list" aria-hidden="true"></i> Nội dung</th>
-                    <th scope="col"><i class="fa-solid fa-clock" aria-hidden="true"></i> Giờ học</th>
-                    <th scope="col"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> Ngày học</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">Sơ cấp cứu cơ bản</th>
-                    <td>08:30 – 12:00</td>
-                    <td>06/09/2026</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Thực hành cấp cứu nâng cao</th>
-                    <td>13:30 – 17:00</td>
-                    <td>13/09/2026</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">First Aid for Workplace</th>
-                    <td>08:30 – 12:00</td>
-                    <td>20/09/2026</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="schedule-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Lịch học có thể được điều chỉnh và cập nhật hàng
-              tháng.<br>Lớp học được tổ chức khi đủ số lượng học viên đăng ký.</p>
-          </article>
-        </div>
-        <button class="schedule-arrow schedule-side schedule-side-next" type="button" data-schedule-step="1" aria-label="Trang lịch tiếp theo" aria-controls="schedule-results" hidden><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
-        </div>
-        <nav class="schedule-pagination" aria-label="Phân trang lịch thực hành" hidden>
-          <button class="schedule-arrow" type="button" data-schedule-step="-1" aria-label="Trang lịch trước" aria-controls="schedule-results"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
-          <button class="schedule-dot" type="button" data-schedule-page="0" aria-label="Trang 1: Hà Nội và TP. Hồ Chí Minh" aria-current="page" aria-controls="schedule-results"></button>
-          <button class="schedule-dot" type="button" data-schedule-page="1" aria-label="Trang 2: Đà Nẵng và Cần Thơ" aria-controls="schedule-results"></button>
-          <button class="schedule-arrow" type="button" data-schedule-step="1" aria-label="Trang lịch tiếp theo" aria-controls="schedule-results"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
-        </nav>
-        <div class="actions"><button class="button" id="schedule-detail"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> Xem lịch chi tiết <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button><a class="button outline" href="#consultation">Đăng ký tư vấn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
-        <p class="section-signature">GHME &nbsp; | &nbsp; ĐÀO TẠO THỰC HÀNH &nbsp; | &nbsp; LAN TỎA GIÁ TRỊ THỰC TẾ</p>
       </div>
     </section>
     <section class="programs decorated" id="programs" aria-labelledby="programs-title">
@@ -320,6 +196,57 @@
         </div>
       </div>
     </section>
+    <section class="schedule decorated product-showcase" id="schedule" aria-labelledby="schedule-title">
+ <div class="product-showcase__container">
+  <header class="product-showcase__heading"><p class="inner-eyebrow">SẢN PHẨM ỨNG DỤNG</p><h2 id="schedule-title">Thiết bị &amp; giải pháp sơ cấp cứu GHME</h2><p class="inner-intro">GHME cung cấp các sản phẩm sơ cấp cứu thực tiễn và giải pháp ứng phó khẩn cấp,<br> đồng hành cùng trường học, doanh nghiệp, bệnh viện và cộng đồng xây dựng môi trường an toàn hơn.</p></header>
+  <div class="product-categories" role="group" aria-label="Danh mục sản phẩm"><button type="button" class="product-category" data-product-category="aed" aria-pressed="true" aria-controls="product-aed"><img class="product-art product-art--aed" src="assets/images/products/aed-hd.png" alt="" loading="lazy" decoding="async"><span class="inner-label"><strong>Máy khử rung tim<br>tự động (AED)</strong><span>Đọc chi tiết <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></span><span class="inner-chevron"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span></button><button type="button" class="product-category" data-product-category="kits" aria-pressed="false" aria-controls="product-kit-options"><img class="product-art product-art--bag" src="assets/images/products/first-aid-bag-hd.png" alt="" loading="lazy" decoding="async"><span class="inner-label"><strong>Túi sơ cứu</strong><span>Đọc chi tiết <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></span><span class="inner-chevron"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span></button><button type="button" class="product-category" data-product-category="cpr" aria-pressed="false" aria-controls="product-cpr"><img class="product-art product-art--cpr" src="assets/images/products/cpr-kit-hd.png" alt="" loading="lazy" decoding="async"><span class="inner-label"><strong>Bộ dụng cụ CPR</strong><span>Đọc chi tiết <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></span><span class="inner-chevron"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span></button><button type="button" class="product-category" data-product-category="training" aria-pressed="false" aria-controls="product-training"><img class="product-art product-art--training" src="assets/images/products/training-equipment-hd.png" alt="" loading="lazy" decoding="async"><span class="inner-label"><strong>Thiết bị hỗ trợ<br>đào tạo</strong><span>Đọc chi tiết <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></span><span class="inner-chevron"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span></button></div>
+  <div class="product-kit-options" id="product-kit-options" role="group" aria-label="Chọn bộ sơ cứu" hidden><button type="button" data-product-kit="personal" aria-pressed="true" aria-controls="product-personal">Cá nhân · 55+ vật tư</button><button type="button" data-product-kit="office" aria-pressed="false" aria-controls="product-office">Gia đình / Văn phòng · 200+ vật tư</button><button type="button" data-product-kit="travel" aria-pressed="false" aria-controls="product-travel">Du lịch · 60+ vật tư</button></div>
+  <article class="product-panel" id="product-aed" data-product-panel="aed" aria-labelledby="product-title-aed">
+ <div class="inner-wrap">
+  <div class="inner-visual"><img class="product-art product-art--aed" src="assets/images/products/aed-hd.png" alt="Máy khử rung tim tự động (AED)" loading="lazy" decoding="async"></div>
+  <div class="inner-content"><span class="inner-badge">SẢN PHẨM NỔI BẬT</span><h3 id="product-title-aed">Máy khử rung tim tự động (AED)</h3><p class="inner-desc">Thiết bị thiết yếu trong sơ cấp cứu ngừng tim đột ngột, giúp tăng cơ hội sống sót và bảo vệ cộng đồng tại trường học, doanh nghiệp, cơ sở y tế và nơi công cộng.</p>
+   <div class="inner-specs"><div class="inner-spec"><h4><span><i class="fa-solid fa-building" aria-hidden="true"></i></span>Nhà sản xuất</h4><div class="inner-audience"><strong>Nihon Kohden (Nhật Bản)</strong><p>Thương hiệu thiết bị y tế hàng đầu với chất lượng và độ tin cậy cao, được tin dùng tại nhiều quốc gia.</p></div></div><div class="inner-spec"><h4><span><i class="fa-solid fa-star" aria-hidden="true"></i></span>Điểm nổi bật</h4><ul><li>Luôn sẵn sàng hoạt động với chức năng tự động kiểm tra hằng ngày.</li><li>Hướng dẫn bằng giọng nói, thao tác đơn giản chỉ với 3 bước.</li><li>Phân tích nhịp tim chính xác, hỗ trợ người không chuyên.</li><li>Thiết kế nhỏ gọn, bền bỉ, đạt chuẩn IP55.</li><li>Sạc và xả nhanh, sẵn sàng cho tình huống khẩn cấp.</li></ul></div><div class="inner-spec"><h4><span><i class="fa-solid fa-gear" aria-hidden="true"></i></span>Thông số chính</h4><ul><li>Công nghệ: Sóng hai pha (ActiBiphasic)</li><li>Năng lượng: 50 – 200J</li><li>Thời lượng pin: 4 năm, > 200 lần sốc</li><li>Lưu trữ dữ liệu: đến 90 phút / 3 lần cứu hộ</li><li>Kết nối: Bluetooth</li><li>Độ bền: Chống va đập, rung, rơi theo tiêu chuẩn quân sự MIL-STD</li></ul></div></div>
+   <div class="inner-actions"><button class="button" type="button" data-product-detail="aed"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> Xem chi tiết sản phẩm <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button><a class="button outline" href="#consultation" data-product-consult="aed"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i> Nhận tư vấn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+  </div>
+ </div>
+ <div class="inner-benefits"><div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></span><div><h4>Ứng dụng thực tế</h4><p>Phù hợp nhiều môi trường: trường học, doanh nghiệp, bệnh viện, cộng đồng</p></div></div><div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span><div><h4>Sản phẩm chính hãng</h4><p>Từ các thương hiệu uy tín, đạt tiêu chuẩn quốc tế</p></div></div><div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-gear" aria-hidden="true"></i></span><div><h4>Sẵn sàng triển khai</h4><p>Tư vấn, đào tạo và hỗ trợ lắp đặt</p></div></div><div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-heart" aria-hidden="true"></i></span><div><h4>Đồng hành lâu dài</h4><p>Bảo hành, bảo trì và hỗ trợ chuyên môn</p></div></div></div>
+</article>
+<article class="product-panel" id="product-personal" data-product-panel="personal" aria-labelledby="product-title-personal" hidden>
+ <div class="inner-wrap">
+  <div class="inner-visual"><img class="product-art product-art--personal" src="assets/images/products/personal-kit-hd.png" alt="Personal First Aid Kit (55+ items)" loading="lazy" decoding="async"></div>
+  <div class="inner-content"><span class="inner-badge">SẢN PHẨM NỔI BẬT</span><h3 id="product-title-personal">Personal First Aid Kit (55+ items)</h3><p class="inner-desc">Bộ sơ cứu cá nhân nhỏ gọn, tiện dụng cho nhu cầu sơ cứu cơ bản hằng ngày, phù hợp mang theo và sử dụng nhanh trong nhiều tình huống thông thường.</p>
+   <div class="inner-specs"><div class="inner-spec"><h4><span><i class="fa-solid fa-users" aria-hidden="true"></i></span>Phù hợp sử dụng</h4><div class="inner-audience">Cá nhân, xe cá nhân, balo, văn phòng nhỏ, sử dụng hằng ngày.</div></div><div class="inner-spec"><h4><span><i class="fa-solid fa-star" aria-hidden="true"></i></span>Điểm nổi bật</h4><ul><li>Nhỏ gọn, tiện dụng và dễ mang theo.</li><li>Đáp ứng nhu cầu của hầu hết các tình huống sơ cứu cơ bản.</li><li>Bố cục vật tư gọn gàng, dễ tìm kiếm.</li><li>Dễ mang theo trong nhiều bối cảnh sử dụng.</li></ul></div><div class="inner-spec"><h4><span><i class="fa-solid fa-gear" aria-hidden="true"></i></span>Thông số chính</h4><ul><li>55+ items</li><li>Thiết kế nhỏ gọn</li><li>Phù hợp sơ cứu cơ bản</li><li>Dễ mang theo</li></ul></div></div>
+   <div class="inner-actions"><button class="button" type="button" data-product-detail="personal"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> Xem chi tiết sản phẩm <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button><a class="button outline" href="#consultation" data-product-consult="personal"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i> Nhận tư vấn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+  </div>
+ </div>
+ <div class="inner-benefits"><div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></span><div><h4>Ứng dụng thực tế</h4><p>Hỗ trợ xử lý các tình huống thường gặp trong cuộc sống.</p></div></div><div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-briefcase-medical" aria-hidden="true"></i></span><div><h4>Nhỏ gọn tiện lợi</h4><p>Dễ mang theo, phù hợp nhiều hoạt động hằng ngày.</p></div></div><div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span><div><h4>Sẵn sàng sử dụng</h4><p>Trang bị đầy đủ vật tư cần thiết cho sơ cứu cơ bản.</p></div></div><div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-table-cells-large" aria-hidden="true"></i></span><div><h4>Phù hợp nhiều bối cảnh</h4><p>Sử dụng tại nhà, nơi làm việc, trên xe, khi đi học, du lịch…</p></div></div></div>
+</article>
+<article class="product-panel" id="product-office" data-product-panel="office" aria-labelledby="product-title-office" hidden>
+ <div class="inner-wrap">
+  <div class="inner-visual"><img class="product-art product-art--office" src="assets/images/products/office-family-kit-hd.png" alt="Office/Family First Aid Kit (200+ items)" loading="lazy" decoding="async"></div>
+  <div class="inner-content"><span class="inner-badge">SẢN PHẨM NỔI BẬT</span><h3 id="product-title-office">Office/Family First Aid Kit (200+ items)</h3><p class="inner-desc">Bộ sơ cứu dành cho gia đình và văn phòng với số lượng vật tư phong phú, hỗ trợ xử lý đa dạng tình huống khẩn cấp thường gặp trong nhà hoặc tại nơi làm việc.</p>
+   <div class="inner-specs"><div class="inner-spec"><h4><span><i class="fa-solid fa-users" aria-hidden="true"></i></span>Phù hợp sử dụng</h4><div class="inner-audience">Thích hợp cho gia đình, văn phòng, căn hộ, nơi làm việc và nhiều môi trường khác.</div></div><div class="inner-spec"><h4><span><i class="fa-solid fa-star" aria-hidden="true"></i></span>Điểm nổi bật</h4><ul><li>Trang bị toàn diện với hơn 200 vật tư thiết yếu.</li><li>Hỗ trợ xử lý đa dạng tình huống khẩn cấp thường gặp trong nhà.</li><li>Phù hợp cho cả gia đình và môi trường văn phòng.</li><li>Dễ sử dụng, sẵn sàng khi cần thiết.</li></ul></div><div class="inner-spec"><h4><span><i class="fa-solid fa-gear" aria-hidden="true"></i></span>Thông số chính</h4><ul><li>200+ items</li><li>Trang bị toàn diện</li><li>Phù hợp gia đình / văn phòng</li><li>Sẵn sàng sử dụng</li></ul></div></div>
+   <div class="inner-actions"><button class="button" type="button" data-product-detail="office"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> Xem chi tiết sản phẩm <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button><a class="button outline" href="#consultation" data-product-consult="office"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i> Nhận tư vấn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+  </div>
+ </div>
+ <div class="inner-benefits"><div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-house" aria-hidden="true"></i></span><div><h4>Sử dụng tại nhà</h4><p>Hỗ trợ xử lý các tình huống khẩn cấp thường gặp tại gia đình.</p></div></div><div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></span><div><h4>Sẵn sàng cho nhiều môi trường</h4><p>Phù hợp cho văn phòng, căn hộ, trường học và nơi làm việc.</p></div></div><div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span><div><h4>Vật tư được sắp xếp khoa học</h4><p>Dễ dàng tìm kiếm, thuận tiện sử dụng khi cần thiết.</p></div></div><div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-table-cells-large" aria-hidden="true"></i></span><div><h4>Bảo vệ an toàn mỗi ngày</h4><p>Giúp bạn và gia đình chủ động hơn trước các tình huống khẩn cấp.</p></div></div></div>
+</article>
+<article class="product-panel" id="product-travel" data-product-panel="travel" aria-labelledby="product-title-travel" hidden>
+ <div class="inner-wrap">
+  <div class="inner-visual"><img class="product-art product-art--travel" src="assets/images/products/travel-kit-hd.png" alt="Travel First Aid Kit (60+ items)" loading="lazy" decoding="async"></div>
+  <div class="inner-content"><span class="inner-badge">SẢN PHẨM NỔI BẬT</span><h3 id="product-title-travel">Travel First Aid Kit (60+ items)</h3><p class="inner-desc">Bộ sơ cứu du lịch được trang bị đầy đủ cho các chuyến đi dã ngoại, picnic và di chuyển nhóm, hỗ trợ xử lý nhanh các tình huống sơ cứu ngoài trời và khi đang di chuyển.</p>
+   <div class="inner-specs"><div class="inner-spec"><h4><span><i class="fa-solid fa-users" aria-hidden="true"></i></span>Phù hợp sử dụng</h4><div class="inner-audience">Lý tưởng cho các chuyến dã ngoại, picnic, du lịch nhóm, di chuyển bằng ô tô và các hoạt động ngoài trời.</div></div><div class="inner-spec"><h4><span><i class="fa-solid fa-star" aria-hidden="true"></i></span>Điểm nổi bật</h4><ul><li>Phù hợp cho các chuyến dã ngoại và du lịch nhóm.</li><li>Được trang bị đầy đủ cho sơ cứu ngoài trời và khi di chuyển.</li><li>Đa dạng vật tư y tế thiết yếu, xử lý các tình huống thường gặp.</li><li>Thiết kế tiện dụng, dễ sử dụng.</li></ul></div><div class="inner-spec"><h4><span><i class="fa-solid fa-gear" aria-hidden="true"></i></span>Thông số chính</h4><ul><li>60+ items</li><li>Thiết kế cơ động</li><li>Phù hợp du lịch</li><li>Dễ mang theo</li></ul></div></div>
+   <div class="inner-actions"><button class="button" type="button" data-product-detail="travel"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> Xem chi tiết sản phẩm <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button><a class="button outline" href="#consultation" data-product-consult="travel"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i> Nhận tư vấn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+  </div>
+ </div>
+ <div class="inner-benefits"><div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></span><div><h4>Phù hợp hoạt động ngoài trời</h4><p>Hỗ trợ xử lý các tình huống thường gặp khi dã ngoại, picnic, du lịch và di chuyển.</p></div></div><div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-briefcase-medical" aria-hidden="true"></i></span><div><h4>Gọn nhẹ, dễ mang theo</h4><p>Thiết kế nhỏ gọn, tiện lợi để mang theo mọi hành trình.</p></div></div><div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span><div><h4>Đầy đủ vật tư cần thiết</h4><p>Trang bị đa dạng vật tư sơ cứu phục vụ nhiều tình huống thường gặp.</p></div></div><div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-table-cells-large" aria-hidden="true"></i></span><div><h4>Linh hoạt sử dụng</h4><p>Phù hợp cho cá nhân, gia đình, nhóm du lịch, sử dụng trong ô tô và các hoạt động ngoài trời.</p></div></div></div>
+</article>
+  <article class="product-panel product-panel--category" id="product-cpr" data-product-panel="cpr" aria-labelledby="product-title-cpr" hidden><div class="inner-wrap"><div class="inner-visual"><img class="product-art product-art--cpr" src="assets/images/products/cpr-kit-hd.png" alt="Bộ dụng cụ CPR" loading="lazy" decoding="async"></div><div class="inner-content"><span class="inner-badge">GIẢI PHÁP ĐÀO TẠO</span><h3 id="product-title-cpr">Bộ dụng cụ CPR</h3><p class="inner-desc">Dụng cụ phục vụ thực hành kỹ năng hồi sinh tim phổi (CPR).</p><p class="inner-category-note">Liên hệ GHME để được tư vấn danh mục, cấu hình và thiết bị phù hợp với nhu cầu đào tạo của bạn.</p><a class="button" href="#consultation" data-product-consult="cpr"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i> Nhận tư vấn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div></div></article>
+<article class="product-panel product-panel--category" id="product-training" data-product-panel="training" aria-labelledby="product-title-training" hidden><div class="inner-wrap"><div class="inner-visual"><img class="product-art product-art--training" src="assets/images/products/training-equipment-hd.png" alt="Thiết bị hỗ trợ đào tạo" loading="lazy" decoding="async"></div><div class="inner-content"><span class="inner-badge">GIẢI PHÁP ĐÀO TẠO</span><h3 id="product-title-training">Thiết bị hỗ trợ đào tạo</h3><p class="inner-desc">Thiết bị hỗ trợ các buổi đào tạo và thực hành sơ cấp cứu.</p><p class="inner-category-note">Liên hệ GHME để được tư vấn danh mục, cấu hình và thiết bị phù hợp với nhu cầu đào tạo của bạn.</p><a class="button" href="#consultation" data-product-consult="training"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i> Nhận tư vấn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div></div></article>
+ </div>
+ <p class="sr-only" id="product-status" role="status" aria-live="polite"></p>
+ <dialog class="product-dialog" id="product-dialog" aria-labelledby="product-dialog-title"><button class="product-dialog__close" type="button" aria-label="Đóng chi tiết sản phẩm"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button><span class="inner-badge">THÔNG TIN SẢN PHẨM</span><h2 id="product-dialog-title"></h2><div id="product-dialog-content"></div><a class="button" href="#consultation" id="product-dialog-consult">Nhận tư vấn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></dialog>
+</section>
     <section class="activities decorated" id="activities" aria-labelledby="activities-title">
       <span class="activity-orbit" aria-hidden="true"></span>
       <span class="activity-cross" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
@@ -536,37 +463,25 @@
       </div>
     </section>
   </main>
-  <footer id="about">
-    <div class="container footer-grid">
-      <div class="footer-brand"><img class="" src="assets/images/footer-logo.webp"
-          alt="GHME — Global Healthcare Medical Education" loading="lazy" decoding="async">
-        <h3>Đào tạo y khoa thực hành<br>vì một hệ thống y tế an toàn hơn.</h3>
-        <p>GHME cung cấp các chương trình đào tạo y khoa thực hành, trang bị kỹ năng ứng phó khẩn cấp và kiến thức ứng
-          dụng, góp phần nâng cao chất lượng chăm sóc và sự an toàn cho người bệnh.</p><small>KIẾN THỨC &nbsp; • &nbsp;
-          KỸ NĂNG &nbsp; • &nbsp; VÌ NGƯỜI BỆNH</small>
+  <footer class="ghme-footer" id="about" aria-label="Thông tin GHME">
+    <svg class="footer-symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><symbol id="footer-icon-document" viewBox="0 0 24 24"><path d="M7 3h8l5 5v13H7zM15 3v6h5M10 13h7M10 17h7"/></symbol><symbol id="footer-icon-book" viewBox="0 0 24 24"><path d="M12 5v16M12 5C8 2 3 3 2 4v15c3-1 6-1 10 2 4-3 7-3 10-2V4c-3-1-7-2-10 1zM5 8h3M16 8h3"/></symbol><symbol id="footer-icon-users" viewBox="0 0 24 24"><circle cx="10" cy="7" r="4"/><path d="M2 21v-3a8 8 0 0 1 16 0v3zM17 3a4 4 0 0 1 0 8M20 13a7 7 0 0 1 3 6v2"/></symbol><symbol id="footer-icon-museum" viewBox="0 0 24 24"><path d="m2 8 10-6 10 6H2zM4 20h16M2 23h20M5 11v6M10 11v6M14 11v6M19 11v6"/><circle cx="12" cy="6" r=".7"/></symbol><symbol id="footer-icon-stethoscope" viewBox="0 0 24 24"><path d="M3 3v7a5 5 0 0 0 10 0V3M2 3h3M11 3h3M8 15v2a5 5 0 0 0 10 0v-3"/><circle cx="18" cy="11" r="3"/></symbol><symbol id="footer-icon-chart" viewBox="0 0 24 24"><path d="M2 22h20M4 21V13h4v8M10 21V8h4v13M16 21V3h4v18"/></symbol><symbol id="footer-icon-bulb" viewBox="0 0 24 24"><path d="M8 17c0-4-4-4-4-9a8 8 0 0 1 16 0c0 5-4 5-4 9M8 17h8v3H8zM10 23h4M12 1v-1M2 7H0M24 7h-2M4 1 2 0M20 1l2-1M10 8l2 7 2-7"/></symbol><symbol id="footer-icon-graduation" viewBox="0 0 24 24"><path d="m1 8 11-5 11 5-11 5L1 8zM5 10v8c4 3 10 3 14 0v-8M23 8v10"/></symbol><symbol id="footer-icon-gear" viewBox="0 0 24 24"><path d="m10 2-1 3-3 1-3-1-2 4 3 2v3l-3 2 2 4 3-1 3 1 1 3h4l1-3 3-1 3 1 2-4-3-2v-3l3-2-2-4-3 1-3-1-1-3z"/><circle cx="12" cy="12" r="4"/></symbol><symbol id="footer-icon-heart" viewBox="0 0 24 24"><path d="M12 21S2 15 2 8a5 5 0 0 1 10-2 5 5 0 0 1 10 2c0 7-10 13-10 13z"/></symbol><symbol id="footer-icon-pin" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 1a8 8 0 0 0-8 8c0 6 8 14 8 14s8-8 8-14a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></symbol><symbol id="footer-icon-phone" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="m6 2 4 5-3 3c1 4 3 6 7 7l3-3 5 4c0 3-2 5-5 5C9 22 2 15 1 7 1 4 3 2 6 2z"/></symbol><symbol id="footer-icon-mail" viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="1.5" fill="currentColor" stroke="none"/><path d="m3 7 9 7 9-7" stroke="#102b4c" stroke-width="1.7"/></symbol><symbol id="footer-icon-chevron" viewBox="0 0 24 24"><path d="m9 4 7 8-7 8"/></symbol></defs></svg>
+    <span class="footer-decoration footer-decoration--large" aria-hidden="true">+</span><span class="footer-decoration footer-decoration--small" aria-hidden="true">+</span>
+    <div class="inner-container inner-grid">
+      <div class="inner-brand">
+        <a class="inner-logo" href="#main" aria-label="GHME — Trang chủ"><img src="assets/images/branding/logo-ghme.svg" alt="GHME — Saving lives starts with proper education" loading="lazy" decoding="async" width="1257" height="660"></a>
+        <h3>Đào tạo y khoa thực hành<br>vì một hệ thống y tế <em>an toàn hơn.</em></h3>
+        <span class="inner-accent" aria-hidden="true"></span>
+        <p>GHME cung cấp các chương trình đào tạo y khoa thực hành, trang bị kỹ năng ứng phó khẩn cấp và kiến thức ứng dụng, góp phần nâng cao chất lượng chăm sóc và sự an toàn cho người bệnh.</p>
+        <ul class="inner-values" aria-label="Giá trị GHME"><li><span><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-graduation"></use></svg></span>KIẾN THỨC</li><li><span><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-gear"></use></svg></span>KỸ NĂNG</li><li><span><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-heart"></use></svg></span>VÌ NGƯỜI BỆNH</li></ul>
       </div>
-      <div>
-        <h3>Về GHME</h3><a href="#about">Giới thiệu</a><a href="#programs">Chương trình đào tạo</a><a
-          href="#activities">Chuyên gia giảng dạy</a><button data-info="news">Tin tức & kiến thức</button>
-      </div>
-      <div>
-        <h3>Đối tượng phục vụ</h3><a href="#consultation">Bệnh viện</a><a href="#activities">Doanh nghiệp</a><a
-          href="#activities">Trường học</a><a href="#programs">Cộng đồng</a>
-      </div>
-      <div>
-        <h3>Hỗ trợ</h3><button data-info="faq">Câu hỏi thường gặp</button><a href="#consultation">Đăng ký tư
-          vấn</a><button data-info="privacy">Chính sách bảo mật</button><button data-info="terms">Điều khoản sử
-          dụng</button>
-      </div>
-      <div class="footer-contact">
-        <h3>Liên hệ</h3><p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> 8th floor, Hyco 4 building, 205A Nguyen Xi Street, Binh Thanh Ward, HCMC</p><a href="tel:0902204933"><i class="fa-solid fa-phone" aria-hidden="true"></i> 0902204933</a><a href="mailto:mkt@healthcarealliance.vn"><i class="fa-solid fa-envelope" aria-hidden="true"></i>
-          mkt@healthcarealliance.vn</a><p class="footer-contact__motto"><span>Đồng hành vì một nền y tế an toàn hơn ngay từ hôm nay.</span></p>
+      <nav class="inner-column inner-about" aria-label="Về GHME"><h3>Về GHME</h3><span class="inner-accent" aria-hidden="true"></span><ul class="inner-links"><li><a href="#about"><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-document"></use></svg><span>Giới thiệu</span><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-chevron"></use></svg></a></li><li><a href="#programs"><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-book"></use></svg><span>Chương trình đào tạo</span><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-chevron"></use></svg></a></li><li><a href="#activities"><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-users"></use></svg><span>Chuyên gia giảng dạy</span><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-chevron"></use></svg></a></li></ul></nav>
+      <nav class="inner-column inner-ecosystem" aria-label="Hệ sinh thái GHME"><h3>ECOSYSTEM</h3><span class="inner-accent" aria-hidden="true"></span><ul class="inner-links"><li><a href="/"><span class="inner-ecosystem-icon"><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-museum"></use></svg></span><span>Museco</span><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-chevron"></use></svg></a></li><li><a href="https://www.ghme.edu.vn/" target="_blank" rel="noopener noreferrer"><span class="inner-ecosystem-icon"><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-users"></use></svg></span><span>GHME</span><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-chevron"></use></svg></a></li><li><a href="https://healthcaretalent.vn/" target="_blank" rel="noopener noreferrer"><span class="inner-ecosystem-icon"><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-stethoscope"></use></svg></span><span>Healthcare Talent</span><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-chevron"></use></svg></a></li><li><a href="https://hcxcoaching.com/" target="_blank" rel="noopener noreferrer"><span class="inner-ecosystem-icon"><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-chart"></use></svg></span><span>HCX Coaching</span><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-chevron"></use></svg></a></li><li><a href="https://healthcareinsights.vn/" target="_blank" rel="noopener noreferrer"><span class="inner-ecosystem-icon"><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-bulb"></use></svg></span><span>Healthcare Insights</span><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-chevron"></use></svg></a></li></ul></nav>
+      <div class="inner-column inner-contact"><h3>Liên hệ</h3><span class="inner-accent" aria-hidden="true"></span>
+        <address><a href="https://www.google.com/maps/search/?api=1&query=Hyco+4+Building+205A+Nguyen+Xi+Ho+Chi+Minh+City" target="_blank" rel="noopener noreferrer"><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-pin"></use></svg><span>8th floor, Hyco 4 building, 205A Nguyen Xi Street,<br class="inner-desktop-break"> Binh Thanh Ward, HCMC</span></a><a href="tel:0902204933"><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-phone"></use></svg><span>0902204933</span></a><a href="mailto:mkt@healthcarealliance.vn"><svg class="inner-icon" aria-hidden="true" focusable="false"><use href="#footer-icon-mail"></use></svg><span>mkt@healthcarealliance.vn</span></a></address>
+        <a class="inner-map" href="https://www.google.com/maps/search/?api=1&query=Hyco+4+Building+205A+Nguyen+Xi+Ho+Chi+Minh+City" target="_blank" rel="noopener noreferrer" aria-label="Mở bản đồ chỉ đường đến Hyco 4 Building, 205A Nguyễn Xí, TP. Hồ Chí Minh"><span class="inner-map-image" aria-hidden="true"></span></a>
       </div>
     </div>
-    <div class="container footer-bottom"><span>© GHME. All rights reserved.</span>
-      <div><button data-info="privacy">Chính sách</button><span>|</span><button data-info="terms">Điều
-          khoản</button><span>Kiến thức • Kỹ năng • Vì người bệnh</span></div>
-    </div>
+    <div class="inner-bottom"><div class="inner-container inner-bottom-wrap"><p>© 2024 GHME. All rights reserved.</p><div class="inner-bottom-links"><button type="button" data-info="privacy">Chính sách bảo mật</button><button type="button" data-info="terms">Điều khoản sử dụng</button><span>Kiến thức • Kỹ năng • Vì người bệnh</span></div></div></div>
   </footer>
   <dialog id="info-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Đóng"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
     <h2 id="dialog-title"></h2>

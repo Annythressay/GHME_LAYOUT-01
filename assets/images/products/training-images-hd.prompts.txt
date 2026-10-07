@@ -1,0 +1,27 @@
+Built-in image_gen; transparent_background=true
+
+CPR kit prompt
+
+Use case: background-extraction and precise-object-edit.
+Asset type: high-resolution transparent catalog product photo for a medical education website.
+Input image: the attached CPR training kit screenshot is the edit target and composition reference.
+Primary request: Remake this blurred product grouping as a crisp 2048x2048 studio catalog photograph, preserving exactly the product grouping, colors, proportions and arrangement.
+Subject: One skin-tone beige adult CPR mannequin torso with realistic molded polymer face/head, shoulders, chest and abdomen, upright at center-back. In front and around it are four visible accessory training units: a slim white rounded training unit with an orange anatomical diagram at left-back; a square red medical zip case with white cross and small GHME lettering at left-front; a compact white rounded AED trainer/control unit with blue-and-orange printed details in center-front; and a square deep-blue zip case with white cross and small inconspicuous training label at right-front.
+Composition/framing: Complete group fully visible, no cropped objects. Centered front three-quarter product view. Square canvas with 8-10% safe transparent padding at each edge. Preserve the relative height and positions shown in the input.
+Style/medium: Realistic professional catalog product photography; ultra-clean sharp edges, high-fidelity surface detail on molded polymer, nylon zipper fabric and printed markings. Lighting: soft even neutral studio lighting, realistic subtle contact shadows only directly beneath objects.
+Scene/backdrop: Genuine transparent alpha background. Remove screenshot border, white rounded panel, pale blue webpage background and all webpage elements.
+Constraints: No added props, no pedestal, no banner, no caption, no gradient background, no watermarks. Sharp not blurred. Do not render a checkerboard; the background must actually be transparent.
+
+Training equipment prompt
+
+Use case: background-extraction and precise-object-edit.
+Asset type: high-resolution transparent catalog product photo for a medical education website.
+Input image: the attached training equipment screenshot is the edit target and composition reference.
+Primary request: Remake this blurred product grouping as a crisp 2048x2048 studio catalog photograph, preserving exactly the product grouping, colors, proportions and arrangement.
+Subject: A large black medical CPR training monitor/tablet on its black stand, upright at center-back and at a slight three-quarter perspective, its bright display showing small medical training charts, mannequin diagram and feedback UI matching the reference. A skin-tone beige CPR upper-torso mannequin lies horizontally supine across left-front, chest left and molded head toward right. A square red medical zip carry case with black handle and white cross and small GHME label stands at right-back. One slim black handheld training controller lies in front-right of the tablet stand, in the same relative arrangement as reference.
+Composition/framing: Complete group fully visible, no cropped objects. Centered front three-quarter product view. Square canvas with 8-10% safe transparent padding at each edge. Preserve the reference relative sizes: monitor tallest, torso broad low across front-left, case lower at right.
+Style/medium: Realistic professional catalog product photography; ultra-clean sharp edges, crisp high-fidelity detail on monitor frame and stand, molded polymer mannequin face/chest and nylon zipper fabric. Monitor should have a plausible clear medical education display, no blurred unreadable smear.
+Lighting/mood: Soft even neutral studio lighting, realistic subtle contact shadows only directly beneath objects.
+Scene/backdrop: Genuine transparent alpha background. Remove screenshot border, white rounded panel, pale blue webpage background and all webpage elements.
+Constraints: No added props, no pedestal, no banner, no caption, no background gradient, no watermarks. Sharp not blurred. Do not render a checkerboard; background must actually be transparent.
+

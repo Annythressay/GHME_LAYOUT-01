@@ -1,0 +1,22 @@
+Built-in image_gen mode. Edit references: personal-kit.png, office-family-kit.png, travel-kit.png.
+
+personal-kit-hd.png
+Use case: background-extraction
+Asset type: transparent website product photograph.
+Input image: edit target containing a small personal first aid kit inside a full website design.
+Primary request: Recreate and isolate ONLY the open red zippered personal first aid pouch seen on the left of the reference, producing a crisp high-resolution catalog product photograph with real alpha transparency. The product is a two-leaf bright red rounded soft pouch, open horizontally, black zip edging, red fabric spine in the center and black mesh pockets holding white bandages and first aid packets. Preserve the size proportions, open position, front view with slight overhead perspective, original red and black colors, mesh pocket structure and supplies placement. Fully visible product with 8% safe transparent padding around all edges. Render at 2048 px long edge, sharply resolved stitching, fabric, zipper, fine mesh and medical packets, realistic soft studio illumination.
+Constraints: Keep only the pouch itself and its contents. Remove all UI text, columns, icons, badges, circles, podium and every background detail. No floor, no shadow beneath a pedestal, no plant, no decorative cross, no added props, no new logo or prominent writing. Transparent background, never a white or colored background. Do not include any website UI or lettering.
+
+office-family-kit-hd.png
+Use case: background-extraction
+Asset type: transparent website product photograph.
+Input image: edit target containing a large office/family first aid kit inside a full website design.
+Primary request: Recreate and isolate ONLY the large open red multi-panel family/office first aid bag seen on the left of the reference as a crisp high-resolution catalog product photograph with real alpha transparency. Preserve the bag's original wide tri-fold shape, black zip edging and red structural seams, open front-facing position with slight overhead perspective, transparent pockets containing white dressings, rolls, wipes and first aid packets, middle red compartment dividers and outward curved right end. Keep its original proportions, red and black fabric colors, configuration and supplies placement. Fully visible product with 8% safe transparent padding around all edges. Render at 2048 px long edge with sharply resolved transparent plastic, stitching, woven fabric, zip teeth and supply details, realistic soft studio illumination.
+Constraints: Keep only the bag itself and its contents. Remove all UI text, columns, icons, badges, circles, podium and all background details. No floor, no pedestal shadow, no plant, no decorative cross, no added props or prominent new writing. Transparent background, never a white or colored background. Do not include website UI.
+
+travel-kit-hd.png
+Use case: background-extraction
+Asset type: transparent website product photograph.
+Input image: edit target containing a blue travel first aid kit inside a full website design.
+Primary request: Recreate and isolate ONLY the open dark blue travel first aid bag seen on the left of the reference as a crisp high-resolution catalog product photograph with real alpha transparency. Preserve the original open two-leaf bag shape, blue woven lining, black zip edging, clear plastic pockets, contents configuration, front-facing view with slight overhead perspective, and black shoulder strap with buckle extending to the right. On the left are transparent pockets, metallic scissors and a red rolled item; at the middle are upright rolls held under dark elastic; on the right are white first aid packets and bandages, with a cream tape roll at the top. Keep original bag proportions and layout, no added supplies. Fully visible including the strap, with 8% safe transparent padding around all edges. Render at 2048 px long edge, sharp woven fabric, stitching, zip teeth, clear plastic and medical packet edges, realistic soft studio illumination.
+Constraints: Keep only the bag itself, attached strap and its contents. Remove all UI text, columns, icons, badges, circles, podium and all background details. No floor, no pedestal shadow, no plant, no decorative cross, no added props or new prominent writing. Transparent background, never a white or colored background. Do not include website UI.
