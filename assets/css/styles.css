@@ -437,7 +437,7 @@ header { background: white; }
 .programs .programs-benefits p { font-size: 12px; line-height: 1.6; color: #526b8c; }
 .programs .programs-quote { position: relative; margin: 32px 0 0; padding: 28px 0 0 44px; border-top: 1px solid var(--line); color: var(--navy); }
 .programs .programs-quote > i { position: absolute; left: 0; top: 28px; color: #dbe9fa; font-size: 32px; }
-.programs .programs-quote p { font-family: Georgia, serif; font-style: italic; font-size: 22px; line-height: 1.5; }
+.programs .programs-quote p { font-family: 'Times New Roman', serif; font-style: italic; font-size: 22px; line-height: 1.5; }
 .programs .programs-quote cite { display: block; font: 600 10px 'Be Vietnam Pro', sans-serif; letter-spacing: 3px; margin-top: 18px; }
 .programs .programs-viewport { --programs-visible: 2; overflow-x: auto; scrollbar-width: none; padding: 8px 0 12px; touch-action: pan-y pinch-zoom; }
 .programs .programs-viewport::-webkit-scrollbar { display: none; }
@@ -1031,7 +1031,7 @@ dialog h2 { font-size: 24px; text-align: left; margin-bottom: 18px; }
 .ghme-footer .inner-ecosystem li:not(:last-child) a::after { content: ''; position: absolute; bottom: 0; left: calc(108 * var(--footer-unit)); right: 0; height: 1px; background: #35577a; }
 .ghme-footer .inner-ecosystem-icon { display: grid; place-items: center; width: calc(65 * var(--footer-unit)); height: calc(65 * var(--footer-unit)); border: 1px solid #36577b; border-radius: 50%; flex-shrink: 0; }
 .ghme-footer .inner-ecosystem-icon .inner-icon { width: calc(32 * var(--footer-unit)); height: calc(32 * var(--footer-unit)); }
-.ghme-footer .inner-ecosystem li:nth-child(2) .inner-ecosystem-icon, .ghme-footer .inner-ecosystem li:last-child .inner-ecosystem-icon { color: var(--footer-orange); }
+.ghme-footer .inner-ecosystem li:nth-child(2) .inner-ecosystem-icon, .ghme-footer .inner-ecosystem li:nth-child(4) .inner-ecosystem-icon { color: var(--footer-orange); }
 .ghme-footer .inner-contact .inner-accent { margin-bottom: calc(27 * var(--footer-unit)); }
 .ghme-footer address { font-style: normal; display: flex; flex-direction: column; gap: calc(14 * var(--footer-unit)); }
 .ghme-footer address a { display: flex; align-items: flex-start; gap: calc(20 * var(--footer-unit)); font-size: calc(20 * var(--footer-unit)); line-height: 1.5; letter-spacing: -.3px; overflow-wrap: anywhere; }
