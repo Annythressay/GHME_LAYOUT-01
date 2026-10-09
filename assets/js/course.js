@@ -6,7 +6,7 @@ const compactNavigation = window.matchMedia('(max-width: 767px)');
 
 function setMenu(open) {
   courseMenu.setAttribute('aria-expanded', String(open));
-  courseMenu.setAttribute('aria-label', open ? 'Đóng menu' : 'Mở menu');
+  courseMenu.setAttribute('aria-label', window.GHMEI18n.translate(open ? 'Đóng menu' : 'Mở menu'));
   courseNavigation.hidden = compactNavigation.matches && !open;
 }
 courseMenu.addEventListener('click', () => setMenu(courseMenu.getAttribute('aria-expanded') !== 'true'));
@@ -37,3 +37,5 @@ if ('IntersectionObserver' in window) {
   }, { rootMargin: '-10% 0px -55% 0px', threshold: 0 });
   linkedSections.forEach(section => observer.observe(section));
 }
+
+window.addEventListener('ghme:languagechange', () => setMenu(courseMenu.getAttribute('aria-expanded') === 'true'));

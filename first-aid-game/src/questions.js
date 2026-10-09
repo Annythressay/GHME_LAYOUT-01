@@ -1,3 +1,5 @@
+import { englishQuestions } from './questions.en';
+
 const sources = {
   steps: 'https://www.redcross.org/take-a-class/first-aid/performing-first-aid/first-aid-steps',
   cpr: 'https://guidelines.redcross.org/guidelines-database/cpr-techniques-and-sequence/',
@@ -81,3 +83,9 @@ export const questions = [
     explanation: 'Ở lại nếu an toàn, trấn an và theo dõi phản ứng, nhịp thở. Điều chỉnh hỗ trợ theo tình trạng và hướng dẫn của tổng đài.', source: sources.bleeding,
   },
 ];
+
+const localizedQuestions = {
+  vi: questions,
+  en: questions.map(question => ({ ...question, ...englishQuestions[question.id] })),
+};
+export const getQuestions = language => localizedQuestions[language] || localizedQuestions.vi;

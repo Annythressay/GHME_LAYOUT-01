@@ -1,0 +1,2394 @@
+{
+  "copy.GhmePracticalFirstAidAndMedicalTraining": {
+    "vi": "GHME — Đào tạo sơ cấp cứu và y khoa thực hành. Tìm chương trình phù hợp và lịch thực hành cùng chuyên gia.",
+    "en": "GHME — Practical first aid and medical training. Find the right program and hands-on sessions with our experts."
+  },
+  "copy.GhmePracticalFirstAidMedicalTraining": {
+    "vi": "GHME | Đào tạo sơ cấp cứu & y khoa thực hành",
+    "en": "GHME | Practical First Aid & Medical Training"
+  },
+  "copy.SkipToMainContent": {
+    "vi": "Đến nội dung chính",
+    "en": "Skip to main content"
+  },
+  "copy.ForASaferCommunity": {
+    "vi": "Vì một cộng đồng an toàn hơn",
+    "en": "For a safer community"
+  },
+  "copy.ExploreGhme": {
+    "vi": "Khám phá GHME",
+    "en": "Explore GHME"
+  },
+  "copy.FirstAidTraining": {
+    "vi": "Đào tạo sơ cứu",
+    "en": "First aid training"
+  },
+  "copy.KnowledgeThatSavesLives": {
+    "vi": "Kiến thức cứu người",
+    "en": "Knowledge that saves lives"
+  },
+  "copy.SharingCareWithTheCommunity": {
+    "vi": "Lan tỏa giá trị nhân văn",
+    "en": "Sharing care with the community"
+  },
+  "copy.LanguageVietnameseEnglish": {
+    "vi": "Ngôn ngữ: Tiếng Việt / English",
+    "en": "Language: Vietnamese / English"
+  },
+  "copy.GhmeHome": {
+    "vi": "GHME — Trang chủ",
+    "en": "GHME — Home"
+  },
+  "copy.OpenMenu": {
+    "vi": "Mở menu",
+    "en": "Open menu"
+  },
+  "copy.CloseMenu": {
+    "vi": "Đóng menu",
+    "en": "Close menu"
+  },
+  "copy.MainNavigation": {
+    "vi": "Điều hướng chính",
+    "en": "Main navigation"
+  },
+  "copy.Home": {
+    "vi": "Trang chủ",
+    "en": "Home"
+  },
+  "copy.About": {
+    "vi": "Giới thiệu",
+    "en": "About"
+  },
+  "copy.Courses": {
+    "vi": "Khóa học",
+    "en": "Courses"
+  },
+  "copy.TrainingPrograms": {
+    "vi": "CHƯƠNG TRÌNH ĐÀO TẠO",
+    "en": "TRAINING PROGRAMS"
+  },
+  "copy.PreHospitalEmergencyCare": {
+    "vi": "Cấp cứu ngoại viện",
+    "en": "Pre-hospital emergency care"
+  },
+  "copy.BpecProgram": {
+    "vi": "Chương trình BPEC",
+    "en": "BPEC program"
+  },
+  "copy.HealthEducation": {
+    "vi": "Giáo dục sức khỏe",
+    "en": "Health education"
+  },
+  "copy.DoctorTalkWithExperts": {
+    "vi": "Doctor Talk cùng chuyên gia",
+    "en": "Doctor Talk with experts"
+  },
+  "copy.AllPrograms": {
+    "vi": "Tất cả chương trình",
+    "en": "All programs"
+  },
+  "copy.CloseCoursesMenu": {
+    "vi": "Đóng menu Khóa học",
+    "en": "Close Courses menu"
+  },
+  "copy.SkillsForEmergencies": {
+    "vi": "KỸ NĂNG CHO TÌNH HUỐNG KHẨN CẤP",
+    "en": "SKILLS FOR EMERGENCIES"
+  },
+  "copy.ReadyToActReadyToSaveLives": {
+    "vi": "Sẵn sàng hành động. Sẵn sàng cứu người.",
+    "en": "Ready to act. Ready to save lives."
+  },
+  "copy.FromKnowledgeToPracticeWithGhmeExperts": {
+    "vi": "Từ kiến thức đến thực hành, cùng đội ngũ chuyên gia GHME.",
+    "en": "From knowledge to practice, with GHME experts."
+  },
+  "copy.BpecProgram26": {
+    "vi": "CHƯƠNG TRÌNH BPEC",
+    "en": "BPEC PROGRAM"
+  },
+  "copy.BasicPreHospitalEmergencyCare": {
+    "vi": "Cấp cứu ngoại viện cơ bản",
+    "en": "Basic Pre-hospital Emergency Care"
+  },
+  "copy.PracticeCprUseAnAedAndProvide": {
+    "vi": "Thực hành CPR, sử dụng AED và xử trí ban đầu các tình huống cấp cứu trước viện.",
+    "en": "Practice CPR, use an AED and provide initial care in pre-hospital emergencies."
+  },
+  "copy.ViewProgramDetails": {
+    "vi": "Xem chi tiết chương trình",
+    "en": "View program details"
+  },
+  "copy.ExploreMore": {
+    "vi": "KHÁM PHÁ THÊM",
+    "en": "EXPLORE MORE"
+  },
+  "copy.HandsOnLearning": {
+    "vi": "Học qua thực hành",
+    "en": "Hands-on learning"
+  },
+  "copy.ExploreTheBpecProgram": {
+    "vi": "Xem chương trình BPEC",
+    "en": "Explore the BPEC program"
+  },
+  "copy.PracticalSkillsForIndividualsBusinessesAndCommunities": {
+    "vi": "Kỹ năng thiết thực cho cá nhân, doanh nghiệp và cộng đồng.",
+    "en": "Practical skills for individuals, businesses and communities."
+  },
+  "copy.HealthKnowledgeForTheCommunity": {
+    "vi": "KIẾN THỨC SỨC KHỎE CHO CỘNG ĐỒNG",
+    "en": "HEALTH KNOWLEDGE FOR THE COMMUNITY"
+  },
+  "copy.UnderstandYourHealthTakeAnActiveRole": {
+    "vi": "Hiểu sức khỏe. Chủ động chăm sóc.",
+    "en": "Understand your health. Take an active role in your care."
+  },
+  "copy.MedicalKnowledgeSharedByPhysiciansAndExperts": {
+    "vi": "Chia sẻ kiến thức y khoa cùng bác sĩ và chuyên gia.",
+    "en": "Medical knowledge shared by physicians and experts."
+  },
+  "copy.ExpertLedSessionsOnHealthcareDiseasePrevention": {
+    "vi": "Chương trình chia sẻ về chăm sóc sức khỏe, phòng bệnh và an toàn cộng đồng cùng chuyên gia.",
+    "en": "Expert-led sessions on healthcare, disease prevention and community safety."
+  },
+  "copy.LearnWithExperts": {
+    "vi": "Chia sẻ cùng chuyên gia",
+    "en": "Learn with experts"
+  },
+  "copy.ExploreDoctorTalk": {
+    "vi": "Xem chương trình Doctor Talk",
+    "en": "Explore Doctor Talk"
+  },
+  "copy.PracticalContentAddressingHealthNeedsInThe": {
+    "vi": "Nội dung thiết thực, gắn với nhu cầu chăm sóc sức khỏe tại nơi làm việc.",
+    "en": "Practical content addressing health needs in the workplace."
+  },
+  "copy.ProperEducationForASaferCommunity": {
+    "vi": "Giáo dục đúng cách, vì một cộng đồng an toàn hơn.",
+    "en": "Proper education for a safer community."
+  },
+  "copy.FindTheRightTrainingProgram": {
+    "vi": "Tư vấn chương trình phù hợp",
+    "en": "Find the right training program"
+  },
+  "copy.Products": {
+    "vi": "Sản phẩm",
+    "en": "Products"
+  },
+  "copy.FirstAidSolutions": {
+    "vi": "GIẢI PHÁP SƠ CẤP CỨU",
+    "en": "FIRST AID SOLUTIONS"
+  },
+  "copy.EmergencyEquipment": {
+    "vi": "Thiết bị cấp cứu",
+    "en": "Emergency equipment"
+  },
+  "copy.AutomatedExternalDefibrillator": {
+    "vi": "Máy khử rung tim tự động",
+    "en": "Automated external defibrillator"
+  },
+  "copy.FirstAidKits": {
+    "vi": "Bộ dụng cụ sơ cứu",
+    "en": "First aid kits"
+  },
+  "copy.PersonalFamilyTravel": {
+    "vi": "Cá nhân, gia đình & du lịch",
+    "en": "Personal, family & travel"
+  },
+  "copy.TrainingSupport": {
+    "vi": "Hỗ trợ đào tạo",
+    "en": "Training support"
+  },
+  "copy.PracticeToolsEquipment": {
+    "vi": "Dụng cụ & thiết bị thực hành",
+    "en": "Practice tools & equipment"
+  },
+  "copy.AllProducts": {
+    "vi": "Tất cả sản phẩm",
+    "en": "All products"
+  },
+  "copy.CloseProductsMenu": {
+    "vi": "Đóng menu Sản phẩm",
+    "en": "Close Products menu"
+  },
+  "copy.EmergencyEquipment53": {
+    "vi": "THIẾT BỊ CẤP CỨU",
+    "en": "EMERGENCY EQUIPMENT"
+  },
+  "copy.EquipTodayBeReadyWhenItMatters": {
+    "vi": "Trang bị hôm nay. Sẵn sàng khi cần.",
+    "en": "Equip today. Be ready when it matters."
+  },
+  "copy.EmergencyCareSolutionsForBusinessesSchoolsAnd": {
+    "vi": "Giải pháp cấp cứu cho doanh nghiệp, trường học và cộng đồng.",
+    "en": "Emergency care solutions for businesses, schools and communities."
+  },
+  "copy.AutomatedExternalDefibrillatorAed": {
+    "vi": "Máy khử rung tim tự động (AED)",
+    "en": "Automated External Defibrillator (AED)"
+  },
+  "copy.SupportsFirstAidForSuddenCardiacArrest": {
+    "vi": "Hỗ trợ sơ cấp cứu ngừng tim đột ngột.",
+    "en": "Supports first aid for sudden cardiac arrest."
+  },
+  "copy.ExploreProducts": {
+    "vi": "Khám phá sản phẩm",
+    "en": "Explore products"
+  },
+  "copy.FirstAidKits59": {
+    "vi": "BỘ DỤNG CỤ SƠ CỨU",
+    "en": "FIRST AID KITS"
+  },
+  "copy.AFirstAidKitForEveryNeed": {
+    "vi": "Một bộ sơ cứu cho mỗi nhu cầu.",
+    "en": "A first aid kit for every need."
+  },
+  "copy.ChooseSuppliesSuitedToYourHomeAnd": {
+    "vi": "Chọn bộ vật tư phù hợp với môi trường sống và làm việc.",
+    "en": "Choose supplies suited to your home and workplace."
+  },
+  "copy.55ItemsPersonal": {
+    "vi": "55+ VẬT TƯ · CÁ NHÂN",
+    "en": "55+ ITEMS · PERSONAL"
+  },
+  "copy.CompactAndLightweightForEverydayNeeds": {
+    "vi": "Gọn nhẹ cho nhu cầu hằng ngày.",
+    "en": "Compact and lightweight for everyday needs."
+  },
+  "copy.200ItemsFamilyOffice": {
+    "vi": "200+ VẬT TƯ · GIA ĐÌNH / VĂN PHÒNG",
+    "en": "200+ ITEMS · FAMILY / OFFICE"
+  },
+  "copy.ARangeOfSuppliesForHomeAnd": {
+    "vi": "Vật tư đa dạng cho gia đình, nơi làm việc.",
+    "en": "A range of supplies for home and work."
+  },
+  "copy.60ItemsTravel": {
+    "vi": "60+ VẬT TƯ · DU LỊCH",
+    "en": "60+ ITEMS · TRAVEL"
+  },
+  "copy.ReadyForYourNextJourney": {
+    "vi": "Sẵn sàng cho những hành trình.",
+    "en": "Ready for your next journey."
+  },
+  "copy.TrainingSupport68": {
+    "vi": "HỖ TRỢ ĐÀO TẠO",
+    "en": "TRAINING SUPPORT"
+  },
+  "copy.PutKnowledgeIntoPractice": {
+    "vi": "Đưa kiến thức vào thực hành.",
+    "en": "Put knowledge into practice."
+  },
+  "copy.ToolsAndEquipmentForFirstAidTraining": {
+    "vi": "Dụng cụ và thiết bị phục vụ đào tạo sơ cấp cứu.",
+    "en": "Tools and equipment for first aid training."
+  },
+  "copy.CprTrainingKit": {
+    "vi": "Bộ dụng cụ CPR",
+    "en": "CPR training kit"
+  },
+  "copy.ForHandsOnCardiopulmonaryResuscitationPractice": {
+    "vi": "Phục vụ thực hành hồi sinh tim phổi.",
+    "en": "For hands-on cardiopulmonary resuscitation practice."
+  },
+  "copy.TrainingEquipment": {
+    "vi": "Thiết bị hỗ trợ đào tạo",
+    "en": "Training equipment"
+  },
+  "copy.EquipmentForPracticalTrainingSessions": {
+    "vi": "Trang bị cho các buổi học thực hành.",
+    "en": "Equipment for practical training sessions."
+  },
+  "copy.SolutionsForIndividualsAndOrganizations": {
+    "vi": "Giải pháp phù hợp cho cá nhân và tổ chức.",
+    "en": "Solutions for individuals and organizations."
+  },
+  "copy.RequestProductAdvice": {
+    "vi": "Nhận tư vấn sản phẩm",
+    "en": "Request product advice"
+  },
+  "copy.SearchCoursesProgramsCertificates": {
+    "vi": "Tìm khóa học, chương trình, chứng chỉ",
+    "en": "Search courses, programs, certificates"
+  },
+  "copy.SearchCoursesProgramsCertificates78": {
+    "vi": "Tìm khóa học, chương trình, chứng chỉ...",
+    "en": "Search courses, programs, certificates..."
+  },
+  "copy.Search": {
+    "vi": "Tìm kiếm",
+    "en": "Search"
+  },
+  "copy.RequestAConsultation": {
+    "vi": "Đăng ký tư vấn",
+    "en": "Request a Consultation"
+  },
+  "copy.FourLearnersPracticingCprOnManikinsWith": {
+    "vi": "Bốn học viên thực hành hồi sinh tim phổi trên mô hình với máy AED và túi sơ cứu",
+    "en": "Four learners practicing CPR on manikins with an AED and a first aid bag"
+  },
+  "copy.ConsultingTrainingEquipment": {
+    "vi": "TƯ VẤN – ĐÀO TẠO – CUNG CẤP",
+    "en": "CONSULTING – TRAINING – EQUIPMENT"
+  },
+  "copy.ProfessionalPreHospitalEmergencyCare": {
+    "vi": "THIẾT BỊ CẤP CỨU NGOẠI VIỆN CHUYÊN NGHIỆP",
+    "en": "PROFESSIONAL PRE-HOSPITAL EMERGENCY CARE"
+  },
+  "copy.ContactUs": {
+    "vi": "LIÊN HỆ NGAY",
+    "en": "CONTACT US"
+  },
+  "copy.AGhmeInstructorGuidingLearnersThroughCpr": {
+    "vi": "Giảng viên GHME hướng dẫn học viên thực hành CPR trên mô hình trong chương trình BPEC",
+    "en": "A GHME instructor guiding learners through CPR practice on a manikin in the BPEC program"
+  },
+  "copy.PracticeWithGhmeExperts": {
+    "vi": "Thực hành cùng chuyên gia GHME",
+    "en": "Practice with GHME experts"
+  },
+  "copy.CprPracticeOnManikinsInTheBpec": {
+    "vi": "Hướng dẫn CPR trên mô hình trong chương trình BPEC",
+    "en": "CPR practice on manikins in the BPEC program"
+  },
+  "copy.AboutUs": {
+    "vi": "VỀ CHÚNG TÔI",
+    "en": "ABOUT US"
+  },
+  "copy.FromKnowledgeTo": {
+    "vi": "Từ kiến thức đến",
+    "en": "From knowledge to"
+  },
+  "copy.LifesavingSkills": {
+    "vi": "kỹ năng cứu người.",
+    "en": "lifesaving skills."
+  },
+  "copy.GhmeCombinesPreHospitalEmergencyCareTraining": {
+    "vi": "GHME kết hợp đào tạo cấp cứu trước viện, giáo dục sức khỏe và giải pháp sơ cấp cứu, giúp doanh nghiệp, trường học và cộng đồng chủ động ứng phó với tình huống khẩn cấp.",
+    "en": "GHME combines pre-hospital emergency care training, health education and first aid solutions to help businesses, schools and communities respond to emergencies."
+  },
+  "copy.ProgramsAreTailoredToYourNeedsWith": {
+    "vi": "Chương trình được thiết kế theo nhu cầu, chú trọng tương tác và thực hành cùng đội ngũ bác sĩ, chuyên gia.",
+    "en": "Programs are tailored to your needs, with interactive learning and hands-on practice led by physicians and experts."
+  },
+  "copy.PracticalFirstAidTraining": {
+    "vi": "Đào tạo sơ cấp cứu thực hành",
+    "en": "Practical first aid training"
+  },
+  "copy.CprSkillsAedUseAndInitialEmergency": {
+    "vi": "Kỹ năng CPR, sử dụng AED và xử trí ban đầu tình huống cấp cứu.",
+    "en": "CPR skills, AED use and initial emergency care."
+  },
+  "copy.HealthEducationDoctorTalk": {
+    "vi": "Giáo dục sức khỏe – Doctor Talk",
+    "en": "Health Education – Doctor Talk"
+  },
+  "copy.HealthcareAndDiseasePreventionKnowledgeSharedBy": {
+    "vi": "Kiến thức chăm sóc sức khỏe, phòng bệnh cùng bác sĩ và chuyên gia.",
+    "en": "Healthcare and disease prevention knowledge shared by physicians and experts."
+  },
+  "copy.FirstAidEquipmentSolutions": {
+    "vi": "Thiết bị & giải pháp sơ cấp cứu",
+    "en": "First aid equipment & solutions"
+  },
+  "copy.FirstAidBagsAndMedicalEquipmentFor": {
+    "vi": "Túi sơ cứu và thiết bị y tế cho cá nhân, gia đình, doanh nghiệp.",
+    "en": "First aid bags and medical equipment for individuals, families and businesses."
+  },
+  "copy.LearnMoreAboutGhme": {
+    "vi": "Tìm hiểu thêm về GHME",
+    "en": "Learn more about GHME"
+  },
+  "copy.ExploreTrainingPrograms": {
+    "vi": "Khám phá chương trình đào tạo",
+    "en": "Explore training programs"
+  },
+  "copy.GhmeTrainingPrograms": {
+    "vi": "Chương trình đào tạo GHME",
+    "en": "GHME training programs"
+  },
+  "copy.EmergencyCareSkillsHealthKnowledgeForThe": {
+    "vi": "Kỹ năng cấp cứu & kiến thức sức khỏe cho cộng đồng",
+    "en": "Emergency care skills & health knowledge for the community"
+  },
+  "copy.BuildPreHospitalEmergencyCareSkillsAnd": {
+    "vi": "Trang bị kỹ năng cấp cứu ngoại viện và kiến thức chăm sóc sức khỏe thông qua đào tạo thực hành, hội thảo và các buổi chia sẻ cùng chuyên gia.",
+    "en": "Build pre-hospital emergency care skills and healthcare knowledge through practical training, workshops and expert-led sessions."
+  },
+  "copy.FocusOnPractice": {
+    "vi": "Chú trọng thực hành",
+    "en": "Focus on practice"
+  },
+  "copy.EmergencyCareSkillsBasedOnInternationalStandards": {
+    "vi": "Kỹ năng cấp cứu theo tiêu chuẩn quốc tế, ứng dụng trong thực tế.",
+    "en": "Emergency care skills based on international standards, with practical applications."
+  },
+  "copy.DoctorTalkIsLedDirectlyByExperienced": {
+    "vi": "Doctor Talk do bác sĩ và chuyên gia giàu kinh nghiệm trực tiếp dẫn dắt.",
+    "en": "Doctor Talk is led directly by experienced physicians and experts."
+  },
+  "copy.ProactivePrevention": {
+    "vi": "Chủ động phòng ngừa",
+    "en": "Proactive prevention"
+  },
+  "copy.DevelopYourUnderstandingOfHealthDiseasePrevention": {
+    "vi": "Nâng cao hiểu biết về sức khỏe, phòng bệnh và an toàn cộng đồng.",
+    "en": "Develop your understanding of health, disease prevention and community safety."
+  },
+  "copy.SavingLivesStartsWith": {
+    "vi": "Cứu người bắt đầu từ",
+    "en": "Saving lives starts with"
+  },
+  "copy.ProperEducation": {
+    "vi": "giáo dục đúng cách.",
+    "en": "proper education."
+  },
+  "copy.GhmeTrainingPrograms111": {
+    "vi": "Các chương trình đào tạo GHME",
+    "en": "GHME training programs"
+  },
+  "copy.LearnersPracticingCprOnManikinsInGhme": {
+    "vi": "Học viên thực hành CPR trên mô hình trong chương trình BPEC của GHME",
+    "en": "Learners practicing CPR on manikins in GHME's BPEC program"
+  },
+  "copy.BasicPreHospitalEmergencyCareBpec": {
+    "vi": "Cấp cứu ngoại viện cơ bản (BPEC)",
+    "en": "Basic Pre-hospital Emergency Care (BPEC)"
+  },
+  "copy.SkillsTraining": {
+    "vi": "Đào tạo kỹ năng",
+    "en": "Skills training"
+  },
+  "copy.LearnCardiopulmonaryResuscitationCprAutomatedExternalDefibrillator": {
+    "vi": "Trang bị kỹ năng hồi sinh tim phổi (CPR), sử dụng máy khử rung tim tự động (AED) và xử trí ban đầu các tình huống cấp cứu.",
+    "en": "Learn cardiopulmonary resuscitation (CPR), automated external defibrillator (AED) use and initial emergency care."
+  },
+  "copy.CprSkillsAndAedUse": {
+    "vi": "Kỹ năng CPR và sử dụng AED",
+    "en": "CPR skills and AED use"
+  },
+  "copy.InitialEmergencyCare": {
+    "vi": "Xử trí ban đầu tình huống cấp cứu",
+    "en": "Initial emergency care"
+  },
+  "copy.InternationalStandardsWithAFocusOnPractice": {
+    "vi": "Theo tiêu chuẩn quốc tế, chú trọng thực hành và ứng dụng thực tế",
+    "en": "International standards, with a focus on practice and real-world application"
+  },
+  "copy.ExploreTheProgram": {
+    "vi": "Tìm hiểu chương trình",
+    "en": "Explore the program"
+  },
+  "copy.APhysicianSharingHealthKnowledgeAtA": {
+    "vi": "Bác sĩ chia sẻ kiến thức sức khỏe tại buổi Doctor Talk của GHME",
+    "en": "A physician sharing health knowledge at a GHME Doctor Talk session"
+  },
+  "copy.HealthTopics": {
+    "vi": "Chuyên đề sức khỏe",
+    "en": "Health topics"
+  },
+  "copy.MedicalTrainingWorkshopsAndHealthEducationSessions": {
+    "vi": "Các buổi đào tạo y khoa, hội thảo và chia sẻ kiến thức sức khỏe do đội ngũ bác sĩ, chuyên gia giàu kinh nghiệm trực tiếp dẫn dắt.",
+    "en": "Medical training, workshops and health education sessions led directly by experienced physicians and experts."
+  },
+  "copy.HealthcareAndDiseasePrevention": {
+    "vi": "Chăm sóc sức khỏe và phòng ngừa bệnh",
+    "en": "Healthcare and disease prevention"
+  },
+  "copy.CommunitySafetyKnowledge": {
+    "vi": "Kiến thức an toàn cho cộng đồng",
+    "en": "Community safety knowledge"
+  },
+  "copy.ARangeOfTopicsWithPhysiciansAnd": {
+    "vi": "Chuyên đề đa dạng cùng bác sĩ và chuyên gia",
+    "en": "A range of topics with physicians and experts"
+  },
+  "copy.PreviousProgram": {
+    "vi": "Chương trình trước",
+    "en": "Previous program"
+  },
+  "copy.NextProgram": {
+    "vi": "Chương trình tiếp theo",
+    "en": "Next program"
+  },
+  "copy.TakeActionToday": {
+    "vi": "Chủ động hôm nay",
+    "en": "Take action today"
+  },
+  "copy.BeReadyToRespond": {
+    "vi": "Sẵn sàng ứng phó",
+    "en": "Be ready to respond"
+  },
+  "copy.AHealthierCommunity": {
+    "vi": "Cộng đồng khỏe mạnh hơn",
+    "en": "A healthier community"
+  },
+  "copy.PracticalProducts": {
+    "vi": "SẢN PHẨM ỨNG DỤNG",
+    "en": "PRACTICAL PRODUCTS"
+  },
+  "copy.GhmeFirstAidEquipmentSolutions": {
+    "vi": "Thiết bị & giải pháp sơ cấp cứu GHME",
+    "en": "GHME first aid equipment & solutions"
+  },
+  "copy.GhmeProvidesPracticalFirstAidProductsAnd": {
+    "vi": "GHME cung cấp các sản phẩm sơ cấp cứu thực tiễn và giải pháp ứng phó khẩn cấp,",
+    "en": "GHME provides practical first aid products and emergency response solutions,"
+  },
+  "copy.WorkingWithSchoolsBusinessesHospitalsAndCommunities": {
+    "vi": "đồng hành cùng trường học, doanh nghiệp, bệnh viện và cộng đồng xây dựng môi trường an toàn hơn.",
+    "en": "working with schools, businesses, hospitals and communities to create safer environments."
+  },
+  "copy.ProductCategories": {
+    "vi": "Danh mục sản phẩm",
+    "en": "Product categories"
+  },
+  "copy.AutomatedExternal": {
+    "vi": "Máy khử rung tim",
+    "en": "Automated external"
+  },
+  "copy.DefibrillatorAed": {
+    "vi": "tự động (AED)",
+    "en": "defibrillator (AED)"
+  },
+  "copy.ViewDetails": {
+    "vi": "Đọc chi tiết",
+    "en": "View details"
+  },
+  "copy.FirstAidKits139": {
+    "vi": "Túi sơ cứu",
+    "en": "First aid kits"
+  },
+  "copy.Training": {
+    "vi": "Thiết bị hỗ trợ",
+    "en": "Training"
+  },
+  "copy.Equipment": {
+    "vi": "đào tạo",
+    "en": "equipment"
+  },
+  "copy.ChooseAFirstAidKit": {
+    "vi": "Chọn bộ sơ cứu",
+    "en": "Choose a first aid kit"
+  },
+  "copy.Personal55Items": {
+    "vi": "Cá nhân · 55+ vật tư",
+    "en": "Personal · 55+ items"
+  },
+  "copy.FamilyOffice200Items": {
+    "vi": "Gia đình / Văn phòng · 200+ vật tư",
+    "en": "Family / Office · 200+ items"
+  },
+  "copy.Travel60Items": {
+    "vi": "Du lịch · 60+ vật tư",
+    "en": "Travel · 60+ items"
+  },
+  "copy.FeaturedProduct": {
+    "vi": "SẢN PHẨM NỔI BẬT",
+    "en": "FEATURED PRODUCT"
+  },
+  "copy.EssentialEquipmentForFirstAidInSudden": {
+    "vi": "Thiết bị thiết yếu trong sơ cấp cứu ngừng tim đột ngột, giúp tăng cơ hội sống sót và bảo vệ cộng đồng tại trường học, doanh nghiệp, cơ sở y tế và nơi công cộng.",
+    "en": "Essential equipment for first aid in sudden cardiac arrest, helping improve survival and protect communities in schools, businesses, healthcare facilities and public spaces."
+  },
+  "copy.Manufacturer": {
+    "vi": "Nhà sản xuất",
+    "en": "Manufacturer"
+  },
+  "copy.NihonKohdenJapan": {
+    "vi": "Nihon Kohden (Nhật Bản)",
+    "en": "Nihon Kohden (Japan)"
+  },
+  "copy.ALeadingMedicalEquipmentBrandKnownFor": {
+    "vi": "Thương hiệu thiết bị y tế hàng đầu với chất lượng và độ tin cậy cao, được tin dùng tại nhiều quốc gia.",
+    "en": "A leading medical equipment brand known for quality and reliability, trusted in many countries."
+  },
+  "copy.KeyFeatures": {
+    "vi": "Điểm nổi bật",
+    "en": "Key features"
+  },
+  "copy.ReadyForUseWithAutomaticDailySelf": {
+    "vi": "Luôn sẵn sàng hoạt động với chức năng tự động kiểm tra hằng ngày.",
+    "en": "Ready for use with automatic daily self-checks."
+  },
+  "copy.VoiceGuidanceAndASimpleThreeStep": {
+    "vi": "Hướng dẫn bằng giọng nói, thao tác đơn giản chỉ với 3 bước.",
+    "en": "Voice guidance and a simple three-step operation."
+  },
+  "copy.AccurateHeartRhythmAnalysisToSupportNon": {
+    "vi": "Phân tích nhịp tim chính xác, hỗ trợ người không chuyên.",
+    "en": "Accurate heart rhythm analysis to support non-specialist users."
+  },
+  "copy.CompactDurableDesignWithAnIp55Rating": {
+    "vi": "Thiết kế nhỏ gọn, bền bỉ, đạt chuẩn IP55.",
+    "en": "Compact, durable design with an IP55 rating."
+  },
+  "copy.RapidChargingAndDischargeForEmergencyResponse": {
+    "vi": "Sạc và xả nhanh, sẵn sàng cho tình huống khẩn cấp.",
+    "en": "Rapid charging and discharge for emergency response."
+  },
+  "copy.KeySpecifications": {
+    "vi": "Thông số chính",
+    "en": "Key specifications"
+  },
+  "copy.TechnologyBiphasicWaveformActibiphasic": {
+    "vi": "Công nghệ: Sóng hai pha (ActiBiphasic)",
+    "en": "Technology: Biphasic waveform (ActiBiphasic)"
+  },
+  "copy.Energy50200J": {
+    "vi": "Năng lượng: 50 – 200J",
+    "en": "Energy: 50–200 J"
+  },
+  "copy.BatteryLife4Years200Shocks": {
+    "vi": "Thời lượng pin: 4 năm, > 200 lần sốc",
+    "en": "Battery life: 4 years, >200 shocks"
+  },
+  "copy.DataStorageUpTo90Minutes3": {
+    "vi": "Lưu trữ dữ liệu: đến 90 phút / 3 lần cứu hộ",
+    "en": "Data storage: Up to 90 minutes / 3 rescues"
+  },
+  "copy.ConnectivityBluetooth": {
+    "vi": "Kết nối: Bluetooth",
+    "en": "Connectivity: Bluetooth"
+  },
+  "copy.DurabilityImpactVibrationAndDropResistanceTo": {
+    "vi": "Độ bền: Chống va đập, rung, rơi theo tiêu chuẩn quân sự MIL-STD",
+    "en": "Durability: Impact, vibration and drop resistance to MIL-STD military standards"
+  },
+  "copy.ViewProductDetails": {
+    "vi": "Xem chi tiết sản phẩm",
+    "en": "View product details"
+  },
+  "copy.RequestAdvice": {
+    "vi": "Nhận tư vấn",
+    "en": "Request advice"
+  },
+  "copy.PracticalApplications": {
+    "vi": "Ứng dụng thực tế",
+    "en": "Practical applications"
+  },
+  "copy.SuitableForSchoolsBusinessesHospitalsAndCommunities": {
+    "vi": "Phù hợp nhiều môi trường: trường học, doanh nghiệp, bệnh viện, cộng đồng",
+    "en": "Suitable for schools, businesses, hospitals and communities"
+  },
+  "copy.AuthenticProducts": {
+    "vi": "Sản phẩm chính hãng",
+    "en": "Authentic products"
+  },
+  "copy.FromTrustedBrandsMeetingInternationalStandards": {
+    "vi": "Từ các thương hiệu uy tín, đạt tiêu chuẩn quốc tế",
+    "en": "From trusted brands meeting international standards"
+  },
+  "copy.ReadyToDeploy": {
+    "vi": "Sẵn sàng triển khai",
+    "en": "Ready to deploy"
+  },
+  "copy.ConsultationTrainingAndInstallationSupport": {
+    "vi": "Tư vấn, đào tạo và hỗ trợ lắp đặt",
+    "en": "Consultation, training and installation support"
+  },
+  "copy.LongTermSupport": {
+    "vi": "Đồng hành lâu dài",
+    "en": "Long-term support"
+  },
+  "copy.WarrantyMaintenanceAndProfessionalSupport": {
+    "vi": "Bảo hành, bảo trì và hỗ trợ chuyên môn",
+    "en": "Warranty, maintenance and professional support"
+  },
+  "copy.ACompactConvenientPersonalFirstAidKit": {
+    "vi": "Bộ sơ cứu cá nhân nhỏ gọn, tiện dụng cho nhu cầu sơ cứu cơ bản hằng ngày, phù hợp mang theo và sử dụng nhanh trong nhiều tình huống thông thường.",
+    "en": "A compact, convenient personal first aid kit for everyday basic care, easy to carry and quick to use in common situations."
+  },
+  "copy.SuitableUses": {
+    "vi": "Phù hợp sử dụng",
+    "en": "Suitable uses"
+  },
+  "copy.PersonalUseCarsBackpacksSmallOfficesAnd": {
+    "vi": "Cá nhân, xe cá nhân, balo, văn phòng nhỏ, sử dụng hằng ngày.",
+    "en": "Personal use, cars, backpacks, small offices and everyday activities."
+  },
+  "copy.CompactConvenientAndEasyToCarry": {
+    "vi": "Nhỏ gọn, tiện dụng và dễ mang theo.",
+    "en": "Compact, convenient and easy to carry."
+  },
+  "copy.CoversTheNeedsOfMostBasicFirst": {
+    "vi": "Đáp ứng nhu cầu của hầu hết các tình huống sơ cứu cơ bản.",
+    "en": "Covers the needs of most basic first aid situations."
+  },
+  "copy.NeatlyOrganizedSuppliesThatAreEasyTo": {
+    "vi": "Bố cục vật tư gọn gàng, dễ tìm kiếm.",
+    "en": "Neatly organized supplies that are easy to find."
+  },
+  "copy.EasyToCarryInARangeOf": {
+    "vi": "Dễ mang theo trong nhiều bối cảnh sử dụng.",
+    "en": "Easy to carry in a range of settings."
+  },
+  "copy.CompactDesign": {
+    "vi": "Thiết kế nhỏ gọn",
+    "en": "Compact design"
+  },
+  "copy.SuitableForBasicFirstAid": {
+    "vi": "Phù hợp sơ cứu cơ bản",
+    "en": "Suitable for basic first aid"
+  },
+  "copy.EasyToCarry": {
+    "vi": "Dễ mang theo",
+    "en": "Easy to carry"
+  },
+  "copy.HelpsManageCommonSituationsInEverydayLife": {
+    "vi": "Hỗ trợ xử lý các tình huống thường gặp trong cuộc sống.",
+    "en": "Helps manage common situations in everyday life."
+  },
+  "copy.CompactAndConvenient": {
+    "vi": "Nhỏ gọn tiện lợi",
+    "en": "Compact and convenient"
+  },
+  "copy.EasyToCarryForEverydayActivities": {
+    "vi": "Dễ mang theo, phù hợp nhiều hoạt động hằng ngày.",
+    "en": "Easy to carry for everyday activities."
+  },
+  "copy.ReadyToUse": {
+    "vi": "Sẵn sàng sử dụng",
+    "en": "Ready to use"
+  },
+  "copy.EquippedWithEssentialSuppliesForBasicFirst": {
+    "vi": "Trang bị đầy đủ vật tư cần thiết cho sơ cứu cơ bản.",
+    "en": "Equipped with essential supplies for basic first aid."
+  },
+  "copy.SuitableForManySettings": {
+    "vi": "Phù hợp nhiều bối cảnh",
+    "en": "Suitable for many settings"
+  },
+  "copy.ForUseAtHomeAtWorkIn": {
+    "vi": "Sử dụng tại nhà, nơi làm việc, trên xe, khi đi học, du lịch…",
+    "en": "For use at home, at work, in the car, at school or while traveling."
+  },
+  "copy.AFamilyAndOfficeFirstAidKit": {
+    "vi": "Bộ sơ cứu dành cho gia đình và văn phòng với số lượng vật tư phong phú, hỗ trợ xử lý đa dạng tình huống khẩn cấp thường gặp trong nhà hoặc tại nơi làm việc.",
+    "en": "A family and office first aid kit with a wide range of supplies for common emergencies at home or in the workplace."
+  },
+  "copy.SuitableForFamiliesOfficesApartmentsWorkplacesAnd": {
+    "vi": "Thích hợp cho gia đình, văn phòng, căn hộ, nơi làm việc và nhiều môi trường khác.",
+    "en": "Suitable for families, offices, apartments, workplaces and other settings."
+  },
+  "copy.ComprehensivelyEquippedWithOver200EssentialItems": {
+    "vi": "Trang bị toàn diện với hơn 200 vật tư thiết yếu.",
+    "en": "Comprehensively equipped with over 200 essential items."
+  },
+  "copy.HelpsManageARangeOfCommonEmergencies": {
+    "vi": "Hỗ trợ xử lý đa dạng tình huống khẩn cấp thường gặp trong nhà.",
+    "en": "Helps manage a range of common emergencies at home."
+  },
+  "copy.SuitableForBothFamilyAndOfficeUse": {
+    "vi": "Phù hợp cho cả gia đình và môi trường văn phòng.",
+    "en": "Suitable for both family and office use."
+  },
+  "copy.EasyToUseAndReadyWhenNeeded": {
+    "vi": "Dễ sử dụng, sẵn sàng khi cần thiết.",
+    "en": "Easy to use and ready when needed."
+  },
+  "copy.ComprehensiveSupplies": {
+    "vi": "Trang bị toàn diện",
+    "en": "Comprehensive supplies"
+  },
+  "copy.SuitableForFamilyOfficeUse": {
+    "vi": "Phù hợp gia đình / văn phòng",
+    "en": "Suitable for family / office use"
+  },
+  "copy.ForHomeUse": {
+    "vi": "Sử dụng tại nhà",
+    "en": "For home use"
+  },
+  "copy.HelpsManageCommonHouseholdEmergencies": {
+    "vi": "Hỗ trợ xử lý các tình huống khẩn cấp thường gặp tại gia đình.",
+    "en": "Helps manage common household emergencies."
+  },
+  "copy.ReadyForDifferentSettings": {
+    "vi": "Sẵn sàng cho nhiều môi trường",
+    "en": "Ready for different settings"
+  },
+  "copy.SuitableForOfficesApartmentsSchoolsAndWorkplaces": {
+    "vi": "Phù hợp cho văn phòng, căn hộ, trường học và nơi làm việc.",
+    "en": "Suitable for offices, apartments, schools and workplaces."
+  },
+  "copy.WellOrganizedSupplies": {
+    "vi": "Vật tư được sắp xếp khoa học",
+    "en": "Well-organized supplies"
+  },
+  "copy.EasyToFindAndConvenientToUse": {
+    "vi": "Dễ dàng tìm kiếm, thuận tiện sử dụng khi cần thiết.",
+    "en": "Easy to find and convenient to use when needed."
+  },
+  "copy.EverydaySafety": {
+    "vi": "Bảo vệ an toàn mỗi ngày",
+    "en": "Everyday safety"
+  },
+  "copy.HelpsYouAndYourFamilyPrepareFor": {
+    "vi": "Giúp bạn và gia đình chủ động hơn trước các tình huống khẩn cấp.",
+    "en": "Helps you and your family prepare for emergencies."
+  },
+  "copy.ATravelFirstAidKitEquippedFor": {
+    "vi": "Bộ sơ cứu du lịch được trang bị đầy đủ cho các chuyến đi dã ngoại, picnic và di chuyển nhóm, hỗ trợ xử lý nhanh các tình huống sơ cứu ngoài trời và khi đang di chuyển.",
+    "en": "A travel first aid kit equipped for outings, picnics and group travel, supporting prompt first aid outdoors and on the move."
+  },
+  "copy.IdealForOutingsPicnicsGroupTravelCar": {
+    "vi": "Lý tưởng cho các chuyến dã ngoại, picnic, du lịch nhóm, di chuyển bằng ô tô và các hoạt động ngoài trời.",
+    "en": "Ideal for outings, picnics, group travel, car journeys and outdoor activities."
+  },
+  "copy.SuitableForOutingsAndGroupTravel": {
+    "vi": "Phù hợp cho các chuyến dã ngoại và du lịch nhóm.",
+    "en": "Suitable for outings and group travel."
+  },
+  "copy.FullyEquippedForFirstAidOutdoorsAnd": {
+    "vi": "Được trang bị đầy đủ cho sơ cứu ngoài trời và khi di chuyển.",
+    "en": "Fully equipped for first aid outdoors and on the move."
+  },
+  "copy.ARangeOfEssentialMedicalSuppliesFor": {
+    "vi": "Đa dạng vật tư y tế thiết yếu, xử lý các tình huống thường gặp.",
+    "en": "A range of essential medical supplies for common situations."
+  },
+  "copy.ConvenientEasyToUseDesign": {
+    "vi": "Thiết kế tiện dụng, dễ sử dụng.",
+    "en": "Convenient, easy-to-use design."
+  },
+  "copy.PortableDesign": {
+    "vi": "Thiết kế cơ động",
+    "en": "Portable design"
+  },
+  "copy.SuitableForTravel": {
+    "vi": "Phù hợp du lịch",
+    "en": "Suitable for travel"
+  },
+  "copy.SuitableForOutdoorActivities": {
+    "vi": "Phù hợp hoạt động ngoài trời",
+    "en": "Suitable for outdoor activities"
+  },
+  "copy.HelpsManageCommonSituationsOnOutingsPicnics": {
+    "vi": "Hỗ trợ xử lý các tình huống thường gặp khi dã ngoại, picnic, du lịch và di chuyển.",
+    "en": "Helps manage common situations on outings, picnics and journeys."
+  },
+  "copy.LightweightAndPortable": {
+    "vi": "Gọn nhẹ, dễ mang theo",
+    "en": "Lightweight and portable"
+  },
+  "copy.ACompactConvenientDesignToTakeOn": {
+    "vi": "Thiết kế nhỏ gọn, tiện lợi để mang theo mọi hành trình.",
+    "en": "A compact, convenient design to take on any journey."
+  },
+  "copy.EssentialSuppliesIncluded": {
+    "vi": "Đầy đủ vật tư cần thiết",
+    "en": "Essential supplies included"
+  },
+  "copy.ARangeOfFirstAidSuppliesFor": {
+    "vi": "Trang bị đa dạng vật tư sơ cứu phục vụ nhiều tình huống thường gặp.",
+    "en": "A range of first aid supplies for common situations."
+  },
+  "copy.FlexibleUse": {
+    "vi": "Linh hoạt sử dụng",
+    "en": "Flexible use"
+  },
+  "copy.SuitableForIndividualsFamiliesTravelGroupsCars": {
+    "vi": "Phù hợp cho cá nhân, gia đình, nhóm du lịch, sử dụng trong ô tô và các hoạt động ngoài trời.",
+    "en": "Suitable for individuals, families, travel groups, cars and outdoor activities."
+  },
+  "copy.TrainingSolutions": {
+    "vi": "GIẢI PHÁP ĐÀO TẠO",
+    "en": "TRAINING SOLUTIONS"
+  },
+  "copy.ToolsForPracticingCardiopulmonaryResuscitationCpr": {
+    "vi": "Dụng cụ phục vụ thực hành kỹ năng hồi sinh tim phổi (CPR).",
+    "en": "Tools for practicing cardiopulmonary resuscitation (CPR)."
+  },
+  "copy.ContactGhmeForAdviceOnProductsConfigurations": {
+    "vi": "Liên hệ GHME để được tư vấn danh mục, cấu hình và thiết bị phù hợp với nhu cầu đào tạo của bạn.",
+    "en": "Contact GHME for advice on products, configurations and equipment suited to your training needs."
+  },
+  "copy.EquipmentForFirstAidTrainingAndPractical": {
+    "vi": "Thiết bị hỗ trợ các buổi đào tạo và thực hành sơ cấp cứu.",
+    "en": "Equipment for first aid training and practical sessions."
+  },
+  "copy.CloseProductDetails": {
+    "vi": "Đóng chi tiết sản phẩm",
+    "en": "Close product details"
+  },
+  "copy.ProductInformation": {
+    "vi": "THÔNG TIN SẢN PHẨM",
+    "en": "PRODUCT INFORMATION"
+  },
+  "copy.OurProfessionalTeam": {
+    "vi": "ĐỘI NGŨ CHUYÊN MÔN",
+    "en": "OUR PROFESSIONAL TEAM"
+  },
+  "copy.MeetTheExpertsAt": {
+    "vi": "Gặp gỡ đội ngũ chuyên gia",
+    "en": "Meet the experts at"
+  },
+  "copy.FindAnInstructorInYourAreaOf": {
+    "vi": "Tìm giảng viên phù hợp với lĩnh vực bạn quan tâm.",
+    "en": "Find an instructor in your area of interest."
+  },
+  "copy.GhmeTeamGroups": {
+    "vi": "Nhóm nhân sự GHME",
+    "en": "GHME team groups"
+  },
+  "copy.Instructors": {
+    "vi": "Đội ngũ giảng viên",
+    "en": "Instructors"
+  },
+  "copy.Leadership": {
+    "vi": "Ban lãnh đạo",
+    "en": "Leadership"
+  },
+  "copy.SearchExpertsByName": {
+    "vi": "Tìm theo tên chuyên gia",
+    "en": "Search experts by name"
+  },
+  "copy.FilterBySpecialty": {
+    "vi": "Lọc theo chuyên khoa",
+    "en": "Filter by specialty"
+  },
+  "copy.AllSpecialties": {
+    "vi": "Tất cả chuyên khoa",
+    "en": "All specialties"
+  },
+  "copy.EmergencyPreHospitalCare": {
+    "vi": "Cấp cứu & Chăm sóc trước viện",
+    "en": "Emergency & Pre-hospital Care"
+  },
+  "copy.Nutrition": {
+    "vi": "Dinh dưỡng",
+    "en": "Nutrition"
+  },
+  "copy.HematologyTransfusionMedicine": {
+    "vi": "Huyết học & Truyền máu",
+    "en": "Hematology & Transfusion Medicine"
+  },
+  "copy.IntensiveCare": {
+    "vi": "Hồi sức tích cực",
+    "en": "Intensive Care"
+  },
+  "copy.Ophthalmology": {
+    "vi": "Nhãn khoa",
+    "en": "Ophthalmology"
+  },
+  "copy.InternalMedicine": {
+    "vi": "Nội khoa",
+    "en": "Internal Medicine"
+  },
+  "copy.ObstetricsGynecology": {
+    "vi": "Sản phụ khoa",
+    "en": "Obstetrics & Gynecology"
+  },
+  "copy.PsychologyRehabilitation": {
+    "vi": "Tâm lý học, Phục hồi chức năng",
+    "en": "Psychology, Rehabilitation"
+  },
+  "copy.TraditionalMedicine": {
+    "vi": "Y học cổ truyền",
+    "en": "Traditional Medicine"
+  },
+  "copy.PreventiveMedicine": {
+    "vi": "Y học dự phòng",
+    "en": "Preventive Medicine"
+  },
+  "copy.MilitaryMedicine": {
+    "vi": "Y học quân sự",
+    "en": "Military Medicine"
+  },
+  "copy.PortraitOfNguyenHongTruong": {
+    "vi": "Chân dung Nguyen Hong Truong",
+    "en": "Portrait of Nguyen Hong Truong"
+  },
+  "copy.FeaturedExpert": {
+    "vi": "Chuyên gia nổi bật",
+    "en": "Featured expert"
+  },
+  "copy.PhysicianMsc": {
+    "vi": "Bác sĩ, Thạc sĩ",
+    "en": "Physician, MSc"
+  },
+  "copy.ViewProfileNguyenHongTruong": {
+    "vi": "Xem hồ sơ: Nguyen Hong Truong",
+    "en": "View profile: Nguyen Hong Truong"
+  },
+  "copy.ViewProfile": {
+    "vi": "Xem hồ sơ",
+    "en": "View Profile"
+  },
+  "copy.PortraitOfNguyenQuocVuKhanh": {
+    "vi": "Chân dung Nguyen Quoc Vu Khanh",
+    "en": "Portrait of Nguyen Quoc Vu Khanh"
+  },
+  "copy.PhysicianSpecialistLevelI": {
+    "vi": "Bác sĩ chuyên khoa I",
+    "en": "Physician, Specialist Level I"
+  },
+  "copy.ViewProfileNguyenQuocVuKhanh": {
+    "vi": "Xem hồ sơ: Nguyen Quoc Vu Khanh",
+    "en": "View profile: Nguyen Quoc Vu Khanh"
+  },
+  "copy.PortraitOfNguyenKim": {
+    "vi": "Chân dung Nguyen Kim",
+    "en": "Portrait of Nguyen Kim"
+  },
+  "copy.ViewProfileNguyenKim": {
+    "vi": "Xem hồ sơ: Nguyen Kim",
+    "en": "View profile: Nguyen Kim"
+  },
+  "copy.PortraitOfNguyenVuTruongAn": {
+    "vi": "Chân dung Nguyen Vu Truong An",
+    "en": "Portrait of Nguyen Vu Truong An"
+  },
+  "copy.ViewProfileNguyenVuTruongAn": {
+    "vi": "Xem hồ sơ: Nguyen Vu Truong An",
+    "en": "View profile: Nguyen Vu Truong An"
+  },
+  "copy.PortraitOfTranNguyenQuynhAnh": {
+    "vi": "Chân dung Tran Nguyen Quynh Anh",
+    "en": "Portrait of Tran Nguyen Quynh Anh"
+  },
+  "copy.ViewProfileTranNguyenQuynhAnh": {
+    "vi": "Xem hồ sơ: Tran Nguyen Quynh Anh",
+    "en": "View profile: Tran Nguyen Quynh Anh"
+  },
+  "copy.PortraitOfLeDangDai": {
+    "vi": "Chân dung Le Dang Dai",
+    "en": "Portrait of Le Dang Dai"
+  },
+  "copy.ViewProfileLeDangDai": {
+    "vi": "Xem hồ sơ: Le Dang Dai",
+    "en": "View profile: Le Dang Dai"
+  },
+  "copy.PortraitOfLeNguyenThuyMai": {
+    "vi": "Chân dung Le Nguyen Thuy Mai",
+    "en": "Portrait of Le Nguyen Thuy Mai"
+  },
+  "copy.ViewProfileLeNguyenThuyMai": {
+    "vi": "Xem hồ sơ: Le Nguyen Thuy Mai",
+    "en": "View profile: Le Nguyen Thuy Mai"
+  },
+  "copy.PortraitOfNguyenThanhCong": {
+    "vi": "Chân dung Nguyen Thanh Cong",
+    "en": "Portrait of Nguyen Thanh Cong"
+  },
+  "copy.Physician": {
+    "vi": "Bác sĩ",
+    "en": "Physician"
+  },
+  "copy.ViewProfileNguyenThanhCong": {
+    "vi": "Xem hồ sơ: Nguyen Thanh Cong",
+    "en": "View profile: Nguyen Thanh Cong"
+  },
+  "copy.PortraitOfLeTranTheGia": {
+    "vi": "Chân dung Le Tran The Gia",
+    "en": "Portrait of Le Tran The Gia"
+  },
+  "copy.ViewProfileLeTranTheGia": {
+    "vi": "Xem hồ sơ: Le Tran The Gia",
+    "en": "View profile: Le Tran The Gia"
+  },
+  "copy.PortraitOfLeHoangLong": {
+    "vi": "Chân dung Le Hoang Long",
+    "en": "Portrait of Le Hoang Long"
+  },
+  "copy.BachelorOfNursing": {
+    "vi": "Cử nhân Điều dưỡng",
+    "en": "Bachelor of Nursing"
+  },
+  "copy.ViewProfileLeHoangLong": {
+    "vi": "Xem hồ sơ: Le Hoang Long",
+    "en": "View profile: Le Hoang Long"
+  },
+  "copy.PortraitOfNguyenThanhSang": {
+    "vi": "Chân dung Nguyen Thanh Sang",
+    "en": "Portrait of Nguyen Thanh Sang"
+  },
+  "copy.PhysicianMscSpecialistLevelIi": {
+    "vi": "Bác sĩ, Thạc sĩ, Chuyên khoa II",
+    "en": "Physician, MSc, Specialist Level II"
+  },
+  "copy.ViewProfileNguyenThanhSang": {
+    "vi": "Xem hồ sơ: Nguyen Thanh Sang",
+    "en": "View profile: Nguyen Thanh Sang"
+  },
+  "copy.PortraitOfNguyenQuangVinh": {
+    "vi": "Chân dung Nguyen Quang Vinh",
+    "en": "Portrait of Nguyen Quang Vinh"
+  },
+  "copy.PhysicianSpecialistLevelIi": {
+    "vi": "Bác sĩ chuyên khoa II",
+    "en": "Physician, Specialist Level II"
+  },
+  "copy.ViewProfileNguyenQuangVinh": {
+    "vi": "Xem hồ sơ: Nguyen Quang Vinh",
+    "en": "View profile: Nguyen Quang Vinh"
+  },
+  "copy.PortraitOfNguyenHoangLinh": {
+    "vi": "Chân dung Nguyen Hoang Linh",
+    "en": "Portrait of Nguyen Hoang Linh"
+  },
+  "copy.ChiefStrategyOfficerCsoCoFounder": {
+    "vi": "Giám đốc Chiến lược (CSO) / Đồng sáng lập",
+    "en": "Chief Strategy Officer (CSO) / Co-founder"
+  },
+  "copy.Nearly20YearsOfExperienceInPharmaceuticals": {
+    "vi": "Gần 20 năm kinh nghiệm trong lĩnh vực dược phẩm và chăm sóc sức khỏe; từng đảm nhiệm nhiều vị trí lãnh đạo tại các doanh nghiệp trong ngành.",
+    "en": "Nearly 20 years of experience in pharmaceuticals and healthcare, with leadership roles at companies across the sector."
+  },
+  "copy.ViewProfileNguyenHoangLinh": {
+    "vi": "Xem hồ sơ: Nguyen Hoang Linh",
+    "en": "View profile: Nguyen Hoang Linh"
+  },
+  "copy.MedicalAdvisorInstructor": {
+    "vi": "Cố vấn y khoa · Giảng viên",
+    "en": "Medical Advisor · Instructor"
+  },
+  "copy.LecturerAndAcademicAdvisorInTheEmergency": {
+    "vi": "Giảng viên và cố vấn học thuật tại Bộ môn Cấp cứu – Hồi sức – Chống độc, Trường Đại học Y khoa Phạm Ngọc Thạch. Giám đốc khóa học BLS, ACLS và PALS của Hiệp hội Tim mạch Hoa Kỳ (AHA).",
+    "en": "Lecturer and academic advisor in the Emergency, Critical Care and Toxicology department at Trường Đại học Y khoa Phạm Ngọc Thạch. Course director for American Heart Association (AHA) BLS, ACLS and PALS programs."
+  },
+  "copy.Instructor": {
+    "vi": "Giảng viên",
+    "en": "Instructor"
+  },
+  "copy.NoMatchingExpertsFound": {
+    "vi": "Không tìm thấy chuyên gia phù hợp.",
+    "en": "No matching experts found."
+  },
+  "copy.ClearSearchAndFilters": {
+    "vi": "Xóa tìm kiếm và bộ lọc",
+    "en": "Clear search and filters"
+  },
+  "copy.ExpertDirectoryPagination": {
+    "vi": "Phân trang đội ngũ chuyên gia",
+    "en": "Expert directory pagination"
+  },
+  "copy.CloseExpertProfile": {
+    "vi": "Đóng hồ sơ chuyên gia",
+    "en": "Close expert profile"
+  },
+  "copy.": {
+    "vi": "×",
+    "en": "×"
+  },
+  "copy.ProfessionalProfile": {
+    "vi": "HỒ SƠ CHUYÊN MÔN",
+    "en": "PROFESSIONAL PROFILE"
+  },
+  "copy.RoleAtGhme": {
+    "vi": "Vai trò tại GHME",
+    "en": "Role at GHME"
+  },
+  "copy.TrainingSpecialty": {
+    "vi": "Chuyên ngành đào tạo",
+    "en": "Training specialty"
+  },
+  "copy.ExperienceProfessionalActivities": {
+    "vi": "Kinh nghiệm & hoạt động chuyên môn",
+    "en": "Experience & professional activities"
+  },
+  "copy.AccordingToTheCompanyProfileDrNguyen": {
+    "vi": "Theo Company Profile, bác sĩ Nguyen Hong Truong là giảng viên và cố vấn học thuật tại Bộ môn Cấp cứu – Hồi sức – Chống độc, Trường Đại học Y khoa Phạm Ngọc Thạch; đồng thời là Trưởng khoa Hồi sức tích cực tại Bệnh viện Quận 11.",
+    "en": "According to the Company Profile, Dr. Nguyen Hong Truong is a lecturer and academic advisor in the Emergency, Critical Care and Toxicology department at Trường Đại học Y khoa Phạm Ngọc Thạch, and Head of Intensive Care at Bệnh viện Quận 11."
+  },
+  "copy.HeServesAsDeputySecretaryGeneralOf": {
+    "vi": "Ông giữ vai trò Phó Tổng thư ký Chi hội Cấp cứu – Hồi sức – Chống độc thuộc Hội Cấp cứu, Hồi sức tích cực và Chống độc Việt Nam.",
+    "en": "He serves as Deputy Secretary General of the Emergency, Critical Care and Toxicology chapter of Hội Cấp cứu, Hồi sức tích cực và Chống độc Việt Nam."
+  },
+  "copy.HePreviouslyLedTheEmergencyDepartmentAt": {
+    "vi": "Trước đó, ông phụ trách Khoa Cấp cứu tại Bệnh viện Thủ Đức và có nhiều năm kinh nghiệm điều trị người bệnh nặng tại Bệnh viện Nhân dân 115 và Bệnh viện Trưng Vương.",
+    "en": "He previously led the Emergency department at Bệnh viện Thủ Đức and has extensive experience caring for critically ill patients at Bệnh viện Nhân dân 115 and Bệnh viện Trưng Vương."
+  },
+  "copy.AlongsideHisHospitalWorkHeDirectsAmerican": {
+    "vi": "Bên cạnh công tác tại bệnh viện, ông là giám đốc các khóa học BLS, ACLS và PALS của Hiệp hội Tim mạch Hoa Kỳ (AHA).",
+    "en": "Alongside his hospital work, he directs American Heart Association (AHA) BLS, ACLS and PALS courses."
+  },
+  "copy.SourceGhmeCompanyProfilePages1415": {
+    "vi": "Nguồn: GHME Company Profile · Trang 14, 15",
+    "en": "Source: GHME Company Profile · Pages 14, 15"
+  },
+  "copy.SourceGhmeCompanyProfilePage15": {
+    "vi": "Nguồn: GHME Company Profile · Trang 15",
+    "en": "Source: GHME Company Profile · Page 15"
+  },
+  "copy.NguyenHoangLinhIsALeaderWith": {
+    "vi": "Nguyen Hoang Linh là nhà lãnh đạo có gần 20 năm kinh nghiệm trong lĩnh vực dược phẩm và chăm sóc sức khỏe.",
+    "en": "Nguyen Hoang Linh is a leader with nearly 20 years of experience in pharmaceuticals and healthcare."
+  },
+  "copy.HisPreviousRolesIncludeBoardMemberAt": {
+    "vi": "Ông từng giữ các vị trí: thành viên Hội đồng quản trị tại Diab; CEO và đồng sáng lập HCX COACHING; CEO và đồng sáng lập Healthcare Talent; cùng các vai trò điều hành cấp cao tại DKSH, MSG Medical Group, Kim Dental, Phano Pharmacy và IQVIA.",
+    "en": "His previous roles include board member at Diab; CEO and co-founder of HCX COACHING; CEO and co-founder of Healthcare Talent; and senior executive positions at DKSH, MSG Medical Group, Kim Dental, Phano Pharmacy and IQVIA."
+  },
+  "copy.TheCompanyProfileHighlightsHisStrategicThinking": {
+    "vi": "Company Profile nhấn mạnh tư duy chiến lược, tinh thần hợp tác và cam kết đổi mới của ông trong vai trò cố vấn và tạo giá trị cho ngành.",
+    "en": "The Company Profile highlights his strategic thinking, collaborative approach and commitment to innovation in advising and creating value for the sector."
+  },
+  "copy.SourceGhmeCompanyProfilePage11": {
+    "vi": "Nguồn: GHME Company Profile · Trang 11",
+    "en": "Source: GHME Company Profile · Page 11"
+  },
+  "copy.PortraitOfNguyenXuanPhuongUyen": {
+    "vi": "Chân dung Nguyen Xuan Phuong Uyen",
+    "en": "Portrait of Nguyen Xuan Phuong Uyen"
+  },
+  "copy.ChiefExecutiveOfficerCeoCoFounder": {
+    "vi": "Giám đốc Điều hành (CEO) / Đồng sáng lập",
+    "en": "Chief Executive Officer (CEO) / Co-founder"
+  },
+  "copy.NguyenXuanPhuongUyenIsAStrategic": {
+    "vi": "Nguyen Xuan Phuong Uyen là nhà lãnh đạo kinh doanh có tư duy chiến lược và kinh nghiệm sâu rộng về nâng cao hiệu quả vận hành, triển khai hoạt động kinh doanh tại các tổ chức đa quốc gia.",
+    "en": "Nguyen Xuan Phuong Uyen is a strategic business leader with extensive experience improving operations and implementing business activities in multinational organizations."
+  },
+  "copy.ThroughLeadershipRolesAtDkshViT": {
+    "vi": "Với kinh nghiệm lãnh đạo tại DKSH Việt Nam, Đại học Fulbright Việt Nam và Grundfos Việt Nam, bà đã thúc đẩy hoạt động vận hành trên toàn quốc, nâng cao hiệu quả đội ngũ tại hiện trường và triển khai các hệ thống dựa trên dữ liệu để cải thiện hiệu suất và tăng trưởng.",
+    "en": "Through leadership roles at DKSH Việt Nam, Đại học Fulbright Việt Nam and Grundfos Việt Nam, she has driven nationwide operations, improved field-team effectiveness and introduced data-driven systems to support performance and growth."
+  },
+  "copy.TheCompanyProfileRecognizesHerStrategicVision": {
+    "vi": "Company Profile ghi nhận tầm nhìn chiến lược, phong cách lãnh đạo có kỷ luật và tính chính trực của bà, hướng tới nâng cao hiệu quả tổ chức và thúc đẩy sức khỏe cộng đồng thông qua GHME.",
+    "en": "The Company Profile recognizes her strategic vision, disciplined leadership and integrity in improving organizational effectiveness and advancing community health through GHME."
+  },
+  "copy.SourceGhmeCompanyProfilePage12": {
+    "vi": "Nguồn: GHME Company Profile · Trang 12",
+    "en": "Source: GHME Company Profile · Page 12"
+  },
+  "copy.PortraitOfLeBinhPhuong": {
+    "vi": "Chân dung Le Binh Phuong",
+    "en": "Portrait of Le Binh Phuong"
+  },
+  "copy.PhysicianPhd": {
+    "vi": "Bác sĩ, Tiến sĩ",
+    "en": "Physician, PhD"
+  },
+  "copy.ChiefMedicalOfficerCmoCoFounder": {
+    "vi": "Giám đốc Y khoa (CMO) / Đồng sáng lập",
+    "en": "Chief Medical Officer (CMO) / Co-founder"
+  },
+  "copy.DrLeBinhPhuongIsAHealthcare": {
+    "vi": "Bác sĩ Le Binh Phuong là doanh nhân trong lĩnh vực chăm sóc sức khỏe, có nền tảng học thuật vững chắc và kinh nghiệm lãnh đạo sâu rộng.",
+    "en": "Dr. Le Binh Phuong is a healthcare entrepreneur with a strong academic background and extensive leadership experience."
+  },
+  "copy.AccordingToTheCompanyProfileHeHolds": {
+    "vi": "Theo Company Profile, ông có chứng nhận về Cấp cứu và Hồi sức cơ bản của Trường Y, Đại học Stanford; chứng nhận cập nhật giảng viên BLS năm 2020 của Hiệp hội Tim mạch Hoa Kỳ (AHA); và được chứng nhận là giảng viên An toàn, vệ sinh lao động (OHS) tại Việt Nam.",
+    "en": "According to the Company Profile, he holds a certificate in Emergency and Basic Resuscitation from Stanford University School of Medicine, a 2020 BLS instructor update certificate from the American Heart Association (AHA), and certification as an Occupational Health and Safety (OHS) instructor in Vietnam."
+  },
+  "copy.HeCoFoundedIvfmdAsiaInSingapore": {
+    "vi": "Ông đồng sáng lập IVFMD Asia tại Singapore, được Singmedic (thành viên Clermont Group) đề cử phát triển dịch vụ y tế tại Việt Nam, và từng đảm nhiệm các vai trò điều hành cấp cao như giám đốc bệnh viện/phòng khám tại Hoan My Medical Group.",
+    "en": "He co-founded IVFMD Asia in Singapore, was nominated by Singmedic (a Clermont Group member) to develop healthcare services in Vietnam, and held senior executive roles including hospital and clinic director at Hoan My Medical Group."
+  },
+  "copy.SourceGhmeCompanyProfilePage13": {
+    "vi": "Nguồn: GHME Company Profile · Trang 13",
+    "en": "Source: GHME Company Profile · Page 13"
+  },
+  "copy.PartnerNetwork": {
+    "vi": "MẠNG LƯỚI ĐỐI TÁC",
+    "en": "PARTNER NETWORK"
+  },
+  "copy.Partners": {
+    "vi": "Đối tác",
+    "en": "Partners"
+  },
+  "copy.Working": {
+    "vi": "đồng hành",
+    "en": "working"
+  },
+  "copy.WithGhme": {
+    "vi": "cùng GHME",
+    "en": "with GHME"
+  },
+  "copy.ConnectingAndCollaboratingWithOrganizationsInHealthcare": {
+    "vi": "Kết nối và hợp tác cùng các tổ chức, đơn vị trong lĩnh vực y tế, giáo dục và doanh nghiệp.",
+    "en": "Connecting and collaborating with organizations in healthcare, education and business."
+  },
+  "copy.GhmePartnersRow1": {
+    "vi": "Các đối tác GHME — hàng 1",
+    "en": "GHME partners — row 1"
+  },
+  "copy.TrThiNPreschool": {
+    "vi": "Trí Thiện Preschool",
+    "en": "Trí Thiện Preschool"
+  },
+  "copy.GhmePartnersRow2": {
+    "vi": "Các đối tác GHME — hàng 2",
+    "en": "GHME partners — row 2"
+  },
+  "copy.MedicalTeamDiscussingProfessionalPractice": {
+    "vi": "Đội ngũ y tế trao đổi chuyên môn",
+    "en": "Medical team discussing professional practice"
+  },
+  "copy.ContactConsultation": {
+    "vi": "LIÊN HỆ & TƯ VẤN",
+    "en": "CONTACT & CONSULTATION"
+  },
+  "copy.DiscussYourTrainingNeedsWithGhme": {
+    "vi": "Trao đổi nhu cầu đào tạo cùng GHME",
+    "en": "Discuss your training needs with GHME"
+  },
+  "copy.GhmeWorksWithHospitalsSchoolsBusinessesAnd": {
+    "vi": "GHME đồng hành cùng các bệnh viện, trường học, doanh nghiệp và cộng đồng trong việc xây dựng và triển khai các chương trình đào tạo y tế chất lượng, phù hợp với nhu cầu thực tiễn.",
+    "en": "GHME works with hospitals, schools, businesses and communities to develop and deliver quality medical training that meets practical needs."
+  },
+  "copy.ResponseWithin24BusinessHours": {
+    "vi": "Phản hồi trong 24 giờ làm việc",
+    "en": "Response within 24 business hours"
+  },
+  "copy.WeAreReadyToReceiveAndRespond": {
+    "vi": "Chúng tôi luôn sẵn sàng tiếp nhận và phản hồi nhanh chóng mọi yêu cầu của bạn.",
+    "en": "We are ready to receive and respond promptly to your requests."
+  },
+  "copy.AdviceTailoredToYourOrganization": {
+    "vi": "Tư vấn theo nhu cầu đơn vị",
+    "en": "Advice tailored to your organization"
+  },
+  "copy.ProgramsFormatsAndTrainingSolutionsAlignedWith": {
+    "vi": "Đề xuất chương trình, hình thức và giải pháp đào tạo phù hợp với mục tiêu của bạn.",
+    "en": "Programs, formats and training solutions aligned with your goals."
+  },
+  "copy.SupportInHanoiHoChiMinhCity": {
+    "vi": "Hỗ trợ tại Hà Nội, TP. Hồ Chí Minh",
+    "en": "Support in Hanoi, Ho Chi Minh City"
+  },
+  "copy.AndOnSiteCorporateTraining": {
+    "vi": "và đào tạo tại doanh nghiệp",
+    "en": "and on-site corporate training"
+  },
+  "copy.FlexibleInPersonOrOnlineDeliveryNationwide": {
+    "vi": "Linh hoạt triển khai trực tiếp hoặc trực tuyến trên toàn quốc.",
+    "en": "Flexible in-person or online delivery nationwide."
+  },
+  "copy.KnowledgeToday": {
+    "vi": "Kiến thức hôm nay",
+    "en": "Knowledge today"
+  },
+  "copy.ForBetterHealthcareTomorrow": {
+    "vi": "vì một nền y tế tốt hơn ngày mai",
+    "en": "for better healthcare tomorrow"
+  },
+  "copy.RequestATrainingConsultation": {
+    "vi": "Gửi yêu cầu tư vấn đào tạo",
+    "en": "Request a training consultation"
+  },
+  "copy.PleaseCompleteTheInformationBelowTheGhme": {
+    "vi": "Vui lòng điền thông tin dưới đây, đội ngũ GHME sẽ liên hệ với bạn trong thời gian sớm nhất.",
+    "en": "Please complete the information below. The GHME team will contact you as soon as possible."
+  },
+  "copy.FullName": {
+    "vi": "Họ và tên",
+    "en": "Full name"
+  },
+  "copy.EnterYourFullName": {
+    "vi": "Nhập họ và tên của bạn",
+    "en": "Enter your full name"
+  },
+  "copy.Organization": {
+    "vi": "Tên tổ chức",
+    "en": "Organization"
+  },
+  "copy.HospitalSchoolCompanyName": {
+    "vi": "Tên bệnh viện / trường học / doanh nghiệp",
+    "en": "Hospital / school / company name"
+  },
+  "copy.PhoneNumber": {
+    "vi": "Số điện thoại",
+    "en": "Phone number"
+  },
+  "copy.EnterAPhoneNumberOf920": {
+    "vi": "Nhập số điện thoại từ 9 đến 20 ký tự",
+    "en": "Enter a phone number of 9–20 characters"
+  },
+  "copy.EnterYourPhoneNumber": {
+    "vi": "Nhập số điện thoại",
+    "en": "Enter your phone number"
+  },
+  "copy.EnterYourEmailAddress": {
+    "vi": "Nhập địa chỉ email",
+    "en": "Enter your email address"
+  },
+  "copy.TypeOfRequest": {
+    "vi": "Loại nhu cầu",
+    "en": "Type of request"
+  },
+  "copy.SelectATrainingNeed": {
+    "vi": "Chọn loại nhu cầu đào tạo",
+    "en": "Select a training need"
+  },
+  "copy.CorporateTraining": {
+    "vi": "Đào tạo doanh nghiệp",
+    "en": "Corporate training"
+  },
+  "copy.OtherConsultation": {
+    "vi": "Tư vấn khác",
+    "en": "Other consultation"
+  },
+  "copy.DeliveryLocation": {
+    "vi": "Khu vực triển khai",
+    "en": "Delivery location"
+  },
+  "copy.SelectALocation": {
+    "vi": "Chọn khu vực",
+    "en": "Select a location"
+  },
+  "copy.Hanoi": {
+    "vi": "Hà Nội",
+    "en": "Hanoi"
+  },
+  "copy.HoChiMinhCity": {
+    "vi": "TP. Hồ Chí Minh",
+    "en": "Ho Chi Minh City"
+  },
+  "copy.AtYourOrganizationAnotherLocation": {
+    "vi": "Tại doanh nghiệp / khu vực khác",
+    "en": "At your organization / another location"
+  },
+  "copy.ConsultationDetails": {
+    "vi": "Nội dung cần tư vấn",
+    "en": "Consultation details"
+  },
+  "copy.PleaseDescribeYourNeedsTrainingGoalsAnd": {
+    "vi": "Vui lòng chia sẻ chi tiết nhu cầu, mục tiêu đào tạo, số lượng học viên…",
+    "en": "Please describe your needs, training goals and number of participants…"
+  },
+  "copy.IAgreeToGhmeContactingMeProviding": {
+    "vi": "Tôi đồng ý cho GHME liên hệ, tư vấn và gửi thông tin liên quan đến chương trình đào tạo.",
+    "en": "I agree to GHME contacting me, providing advice and sending information about its training programs."
+  },
+  "copy.YourInformationWillBeHandledInAccordance": {
+    "vi": "Thông tin của bạn sẽ được bảo mật theo",
+    "en": "Your information will be handled in accordance with"
+  },
+  "copy.GhmeSPrivacyPolicy": {
+    "vi": "chính sách riêng tư",
+    "en": "GHME's privacy policy"
+  },
+  "copy.365": {
+    "vi": "của GHME.",
+    "en": "."
+  },
+  "copy.SendConsultationRequest": {
+    "vi": "Gửi yêu cầu tư vấn",
+    "en": "Send Consultation Request"
+  },
+  "copy.Or": {
+    "vi": "Hoặc",
+    "en": "Or"
+  },
+  "copy.ViewTrainingPrograms": {
+    "vi": "Xem chương trình đào tạo",
+    "en": "View training programs"
+  },
+  "copy.GhmeInformation": {
+    "vi": "Thông tin GHME",
+    "en": "GHME information"
+  },
+  "copy.PracticalMedicalTraining": {
+    "vi": "Đào tạo y khoa thực hành",
+    "en": "Practical medical training"
+  },
+  "copy.ForAHealthcareSystemThatIs": {
+    "vi": "vì một hệ thống y tế",
+    "en": "for a healthcare system that is"
+  },
+  "copy.Safer": {
+    "vi": "an toàn hơn.",
+    "en": "safer."
+  },
+  "copy.GhmeDeliversPracticalMedicalTrainingEmergencyResponse": {
+    "vi": "GHME cung cấp các chương trình đào tạo y khoa thực hành, trang bị kỹ năng ứng phó khẩn cấp và kiến thức ứng dụng, góp phần nâng cao chất lượng chăm sóc và sự an toàn cho người bệnh.",
+    "en": "GHME delivers practical medical training, emergency response skills and applied knowledge to improve care quality and patient safety."
+  },
+  "copy.GhmeValues": {
+    "vi": "Giá trị GHME",
+    "en": "GHME values"
+  },
+  "copy.Knowledge": {
+    "vi": "KIẾN THỨC",
+    "en": "KNOWLEDGE"
+  },
+  "copy.Skills": {
+    "vi": "KỸ NĂNG",
+    "en": "SKILLS"
+  },
+  "copy.PatientCare": {
+    "vi": "VÌ NGƯỜI BỆNH",
+    "en": "PATIENT CARE"
+  },
+  "copy.AboutGhme": {
+    "vi": "Về GHME",
+    "en": "About GHME"
+  },
+  "copy.TrainingPrograms379": {
+    "vi": "Chương trình đào tạo",
+    "en": "Training programs"
+  },
+  "copy.TeachingExperts": {
+    "vi": "Chuyên gia giảng dạy",
+    "en": "Teaching experts"
+  },
+  "copy.GhmeEcosystem": {
+    "vi": "Hệ sinh thái GHME",
+    "en": "GHME ecosystem"
+  },
+  "copy.Contact": {
+    "vi": "Liên hệ",
+    "en": "Contact"
+  },
+  "copy.OpenDirectionsToHyco4Building205a": {
+    "vi": "Mở bản đồ chỉ đường đến Hyco 4 Building, 205A Nguyễn Xí, TP. Hồ Chí Minh",
+    "en": "Open directions to Hyco 4 Building, 205A Nguyễn Xí, Ho Chi Minh City"
+  },
+  "copy.PrivacyPolicy": {
+    "vi": "Chính sách bảo mật",
+    "en": "Privacy Policy"
+  },
+  "copy.TermsOfUse": {
+    "vi": "Điều khoản sử dụng",
+    "en": "Terms of Use"
+  },
+  "copy.KnowledgeSkillsPatientCare": {
+    "vi": "Kiến thức • Kỹ năng • Vì người bệnh",
+    "en": "Knowledge • Skills • Patient Care"
+  },
+  "copy.Close": {
+    "vi": "Đóng",
+    "en": "Close"
+  },
+  "copy.GotIt": {
+    "vi": "Đã hiểu",
+    "en": "Got it"
+  },
+  "copy.DiscoverGhmeBpecPreHospitalEmergencyCare": {
+    "vi": "Tìm hiểu GHME: đào tạo cấp cứu ngoại viện BPEC, giáo dục sức khỏe Doctor Talk, giải pháp sơ cấp cứu và đội ngũ chuyên môn.",
+    "en": "Discover GHME: BPEC pre-hospital emergency care training, Doctor Talk health education, first aid solutions and our professional team."
+  },
+  "copy.AboutGhmeHealthKnowledgeEmergencyCareSkills": {
+    "vi": "Giới thiệu GHME | Kiến thức sức khỏe & kỹ năng cấp cứu",
+    "en": "About GHME | Health Knowledge & Emergency Care Skills"
+  },
+  "copy.ContactGhme": {
+    "vi": "Liên hệ GHME",
+    "en": "Contact GHME"
+  },
+  "copy.Breadcrumb": {
+    "vi": "Đường dẫn",
+    "en": "Breadcrumb"
+  },
+  "copy.AboutGhme393": {
+    "vi": "Giới thiệu GHME",
+    "en": "About GHME"
+  },
+  "copy.GhmeBringsHealthKnowledgeAndFirstAid": {
+    "vi": "GHME mang kiến thức sức khỏe và kỹ năng sơ cấp cứu đến gần hơn với cá nhân, gia đình và tổ chức. Chúng tôi đồng hành để mỗi người chủ động chăm sóc sức khỏe và tự tin hơn khi cần ứng phó với tình huống khẩn cấp.",
+    "en": "GHME brings health knowledge and first aid skills to individuals, families and organizations. We help people take an active role in their health and respond to emergencies with greater confidence."
+  },
+  "copy.ExploreSolutions": {
+    "vi": "Khám phá giải pháp",
+    "en": "Explore solutions"
+  },
+  "copy.OurProfessionalTeam396": {
+    "vi": "Đội ngũ chuyên môn",
+    "en": "Our professional team"
+  },
+  "copy.StudentsAttendingAGhmeDoctorTalkSession": {
+    "vi": "Học sinh tham gia buổi Doctor Talk của GHME tại trường Đinh Thiện Lý",
+    "en": "Students attending a GHME Doctor Talk session at trường Đinh Thiện Lý"
+  },
+  "copy.KnowledgeForEverydayLife": {
+    "vi": "Kiến thức gắn với cuộc sống",
+    "en": "Knowledge for everyday life"
+  },
+  "copy.DoctorTalkAtTrNgInhThi": {
+    "vi": "Doctor Talk tại trường Đinh Thiện Lý",
+    "en": "Doctor Talk at trường Đinh Thiện Lý"
+  },
+  "copy.AboutPageSections": {
+    "vi": "Nội dung trang giới thiệu",
+    "en": "About page sections"
+  },
+  "copy.WhoIsGhme": {
+    "vi": "GHME là ai?",
+    "en": "Who is GHME?"
+  },
+  "copy.Solutions": {
+    "vi": "Giải pháp",
+    "en": "Solutions"
+  },
+  "copy.OurApproach": {
+    "vi": "Cách tiếp cận",
+    "en": "Our approach"
+  },
+  "copy.OurTeam": {
+    "vi": "Đội ngũ",
+    "en": "Our team"
+  },
+  "copy.GhmeSFocus": {
+    "vi": "Định hướng của GHME",
+    "en": "GHME's focus"
+  },
+  "copy.PracticalKnowledge": {
+    "vi": "Kiến thức thiết thực.",
+    "en": "Practical knowledge."
+  },
+  "copy.SkillsYouCanApply": {
+    "vi": "Kỹ năng có thể ứng dụng.",
+    "en": "Skills you can apply."
+  },
+  "copy.InAnEmergencyBeingPreparedStartsWith": {
+    "vi": "Trong một tình huống khẩn cấp, sự chủ động bắt đầu từ việc biết phải làm gì. GHME tập trung vào đào tạo cấp cứu ngoại viện, giáo dục sức khỏe và các sản phẩm sơ cấp cứu để giúp cá nhân, gia đình và tổ chức sẵn sàng hơn.",
+    "en": "In an emergency, being prepared starts with knowing what to do. GHME focuses on pre-hospital emergency care training, health education and first aid products to help individuals, families and organizations prepare."
+  },
+  "copy.FromCprAndAedUseToPhysical": {
+    "vi": "Từ kỹ năng CPR và sử dụng AED đến chăm sóc sức khỏe thể chất, tinh thần và phòng ngừa bệnh tật, các giải pháp của GHME hướng đến môi trường sống, học tập và làm việc an toàn hơn.",
+    "en": "From CPR and AED use to physical and mental health and disease prevention, GHME's solutions support safer places to live, learn and work."
+  },
+  "copy.IndividualsFamilies": {
+    "vi": "Cá nhân & gia đình",
+    "en": "Individuals & families"
+  },
+  "copy.Businesses": {
+    "vi": "Doanh nghiệp",
+    "en": "Businesses"
+  },
+  "copy.SchoolsCommunities": {
+    "vi": "Trường học & cộng đồng",
+    "en": "Schools & communities"
+  },
+  "copy.GhmeSolutions": {
+    "vi": "Giải pháp từ GHME",
+    "en": "GHME solutions"
+  },
+  "copy.TrainingHealthEducation": {
+    "vi": "Đào tạo, giáo dục sức khỏe",
+    "en": "Training, health education"
+  },
+  "copy.FirstAidEquipment": {
+    "vi": "& trang bị sơ cấp cứu",
+    "en": "& first aid equipment"
+  },
+  "copy.ThreeComplementaryAreasConnectKnowledgeAndSkills": {
+    "vi": "Ba nhóm giải pháp bổ trợ nhau, gắn kiến thức và kỹ năng với nhu cầu thực tế của người học và tổ chức.",
+    "en": "Three complementary areas connect knowledge and skills with the practical needs of learners and organizations."
+  },
+  "copy.BuildCprSkillsLearnToUseAn": {
+    "vi": "Trang bị kỹ năng hồi sinh tim phổi (CPR), sử dụng máy khử rung tim tự động (AED) và xử trí ban đầu các tình huống cấp cứu. Chương trình chú trọng thực hành và ứng dụng trong thực tế.",
+    "en": "Build CPR skills, learn to use an AED and provide initial emergency care. The program emphasizes hands-on learning and practical application."
+  },
+  "copy.LearnAboutBpec": {
+    "vi": "Tìm hiểu BPEC",
+    "en": "Learn about BPEC"
+  },
+  "copy.TrainingSessionsWorkshopsAndDiscussionsWithPhysicians": {
+    "vi": "Các buổi đào tạo, hội thảo và chia sẻ cùng bác sĩ, chuyên gia về chăm sóc sức khỏe, phòng ngừa bệnh và an toàn cộng đồng; với nhiều chủ đề thiết thực cho nhân viên văn phòng và đội ngũ doanh nghiệp.",
+    "en": "Training sessions, workshops and discussions with physicians and experts on healthcare, disease prevention and community safety, covering practical topics for office professionals and corporate teams."
+  },
+  "copy.ExploreDoctorTalk420": {
+    "vi": "Khám phá Doctor Talk",
+    "en": "Explore Doctor Talk"
+  },
+  "copy.FirstAidProducts": {
+    "vi": "Sản phẩm sơ cấp cứu",
+    "en": "First aid products"
+  },
+  "copy.EquippedToRespond": {
+    "vi": "Trang bị để sẵn sàng",
+    "en": "Equipped to respond"
+  },
+  "copy.NihonKohdenAedsAndPersonalTravelAnd": {
+    "vi": "Máy AED Nihon Kohden cùng bộ sơ cấp cứu cá nhân, du lịch và văn phòng/gia đình giúp trang bị phương tiện hỗ trợ cần thiết cho các tình huống khẩn cấp.",
+    "en": "Nihon Kohden AEDs and personal, travel and office/family first aid kits provide essential equipment for emergencies."
+  },
+  "copy.ViewProducts": {
+    "vi": "Xem các sản phẩm",
+    "en": "View products"
+  },
+  "copy.WhatMakesUsDifferent": {
+    "vi": "Điều tạo nên khác biệt",
+    "en": "What makes us different"
+  },
+  "copy.LearnToUnderstand": {
+    "vi": "Học để hiểu.",
+    "en": "Learn to understand."
+  },
+  "copy.PracticeToPrepare": {
+    "vi": "Thực hành để sẵn sàng.",
+    "en": "Practice to prepare."
+  },
+  "copy.GhmeCombinesMedicalExpertiseTailoredProgramsAnd": {
+    "vi": "GHME kết hợp chuyên môn y khoa, chương trình phù hợp nhu cầu và phương pháp học có tính tương tác cao để đưa kiến thức đến gần với thực tế.",
+    "en": "GHME combines medical expertise, tailored programs and interactive learning to connect knowledge with practice."
+  },
+  "copy.GhmeLearnersPracticingCprOnManikinsWith": {
+    "vi": "Học viên GHME thực hành CPR trên mô hình dưới sự hướng dẫn của người đào tạo",
+    "en": "GHME learners practicing CPR on manikins with an instructor"
+  },
+  "copy.HandsOnSkillsPracticeInTheBpec": {
+    "vi": "Thực hành kỹ năng trong chương trình BPEC",
+    "en": "Hands-on skills practice in the BPEC program"
+  },
+  "copy.MedicalExpertise": {
+    "vi": "Chuyên môn y khoa",
+    "en": "Medical expertise"
+  },
+  "copy.AnExperiencedMedicalTeamSupportedByA": {
+    "vi": "Đội ngũ y khoa giàu kinh nghiệm, được hỗ trợ bởi hội đồng chuyên môn.",
+    "en": "An experienced medical team supported by a professional advisory board."
+  },
+  "copy.TailoredToYourNeeds": {
+    "vi": "Thiết kế theo nhu cầu",
+    "en": "Tailored to your needs"
+  },
+  "copy.ProgramsAreAdaptedToTheSpecificNeeds": {
+    "vi": "Chương trình được điều chỉnh theo nhu cầu cụ thể của cá nhân và tổ chức, hướng đến tính phù hợp và hiệu quả.",
+    "en": "Programs are adapted to the specific needs of individuals and organizations for relevant, effective learning."
+  },
+  "copy.InteractiveLearningAndHandsOnPracticeHelp": {
+    "vi": "Tăng tương tác và thực hành trực tiếp để người học có thể vận dụng kỹ năng trong các tình huống thực tế.",
+    "en": "Interactive learning and hands-on practice help learners apply their skills in real situations."
+  },
+  "copy.ModernEquipmentFromLaerdalNihonKohdenAnd": {
+    "vi": "Sử dụng thiết bị hiện đại từ Laerdal, Nihon Kohden và các nhà cung cấp chuyên ngành.",
+    "en": "Modern equipment from Laerdal, Nihon Kohden and specialist suppliers."
+  },
+  "copy.TrainingStandards": {
+    "vi": "Chuẩn mực đào tạo",
+    "en": "Training standards"
+  },
+  "copy.ProgramsFollowInternationalStandardsToBuildCompetence": {
+    "vi": "Chương trình theo tiêu chuẩn quốc tế, hướng đến nâng cao năng lực và khả năng ứng dụng thực tế.",
+    "en": "Programs follow international standards to build competence and practical skills."
+  },
+  "copy.MedicalAdvisor": {
+    "vi": "Cố vấn y khoa",
+    "en": "Medical Advisor"
+  },
+  "copy.BuildASaferEnvironmentTogether": {
+    "vi": "Cùng xây dựng môi trường an toàn hơn",
+    "en": "Build a safer environment together"
+  },
+  "copy.StartWithTheNeeds": {
+    "vi": "Bắt đầu từ nhu cầu",
+    "en": "Start with the needs"
+  },
+  "copy.OfYouAndYourOrganization": {
+    "vi": "của bạn và tổ chức.",
+    "en": "of you and your organization."
+  },
+  "copy.DiscussTrainingProgramsHealthTopicsOrFirst": {
+    "vi": "Trao đổi với GHME về chương trình đào tạo, chuyên đề sức khỏe hoặc giải pháp trang bị sơ cấp cứu phù hợp.",
+    "en": "Discuss training programs, health topics or first aid equipment solutions with GHME."
+  },
+  "copy.Phone": {
+    "vi": "Điện thoại",
+    "en": "Phone"
+  },
+  "copy.PartnershipEmail": {
+    "vi": "Email hợp tác",
+    "en": "Partnership email"
+  },
+  "copy.Address": {
+    "vi": "Địa chỉ",
+    "en": "Address"
+  },
+  "copy.68NguyNHuPhNgS": {
+    "vi": "68 Nguyễn Huệ, phường Sài Gòn,",
+    "en": "68 Nguyễn Huệ, phường Sài Gòn,"
+  },
+  "copy.KnowledgeSkillsForASaferCommunity": {
+    "vi": "Kiến thức · Kỹ năng · Vì một cộng đồng an toàn hơn",
+    "en": "Knowledge · Skills · For a safer community"
+  },
+  "copy.FooterNavigation": {
+    "vi": "Điều hướng chân trang",
+    "en": "Footer navigation"
+  },
+  "copy.Program": {
+    "vi": "Chương trình",
+    "en": "Program"
+  },
+  "copy.BasicPreHospitalEmergencyCareBpecGhme": {
+    "vi": "Cấp cứu ngoại viện cơ bản (BPEC) | GHME",
+    "en": "Basic Pre-hospital Emergency Care (BPEC) | GHME"
+  },
+  "copy.PreHospitalEmergencyCareSkillsTraining": {
+    "vi": "Đào tạo kỹ năng cấp cứu ngoại viện",
+    "en": "Pre-hospital emergency care skills training"
+  },
+  "copy.GhmeLearnersPracticingCprOnManikinsAt": {
+    "vi": "Học viên GHME thực hành CPR trên mô hình trong buổi đào tạo BPEC",
+    "en": "GHME learners practicing CPR on manikins at a BPEC training session"
+  },
+  "copy.PreHospitalEmergencyCareSkillsPracticeIn": {
+    "vi": "Thực hành kỹ năng cấp cứu ngoại viện trong chương trình BPEC.",
+    "en": "Pre-hospital emergency care skills practice in the BPEC program."
+  },
+  "copy.ProgramInformation": {
+    "vi": "Thông tin chương trình",
+    "en": "Program information"
+  },
+  "copy.WhoItSFor": {
+    "vi": "Đối tượng",
+    "en": "Who it's for"
+  },
+  "copy.AnyoneSeekingTheKnowledgeAndSkillsTo": {
+    "vi": "Người cần trang bị kiến thức và kỹ năng sơ cứu ban đầu trong các tình huống khẩn cấp.",
+    "en": "Anyone seeking the knowledge and skills to provide initial first aid in emergencies."
+  },
+  "copy.Format": {
+    "vi": "Hình thức",
+    "en": "Format"
+  },
+  "copy.SkillsTrainingWithAFocusOnPractice": {
+    "vi": "Đào tạo kỹ năng, chú trọng thực hành",
+    "en": "Skills training with a focus on practice"
+  },
+  "copy.FeesSchedule": {
+    "vi": "Chi phí & lịch tổ chức",
+    "en": "Fees & schedule"
+  },
+  "copy.ContactGhmeForAdvice": {
+    "vi": "Liên hệ GHME để được tư vấn",
+    "en": "Contact GHME for advice"
+  },
+  "copy.ViewTheCurriculum": {
+    "vi": "Xem nội dung chương trình",
+    "en": "View the curriculum"
+  },
+  "copy.DiscussYourNeedsTopicsAndPreferredSchedule": {
+    "vi": "Trao đổi về nhu cầu, chủ đề và lịch tổ chức phù hợp.",
+    "en": "Discuss your needs, topics and preferred schedule."
+  },
+  "copy.ProgramContentsNavigation": {
+    "vi": "Mục lục chương trình",
+    "en": "Program contents navigation"
+  },
+  "copy.Overview": {
+    "vi": "Tổng quan",
+    "en": "Overview"
+  },
+  "copy.Curriculum": {
+    "vi": "Nội dung",
+    "en": "Curriculum"
+  },
+  "copy.LearningExperience": {
+    "vi": "Trải nghiệm học",
+    "en": "Learning experience"
+  },
+  "copy.Faqs": {
+    "vi": "Hỏi đáp",
+    "en": "FAQs"
+  },
+  "copy.BuildYourSkills": {
+    "vi": "Trang bị kỹ năng.",
+    "en": "Build your skills."
+  },
+  "copy.HelpWithConfidence": {
+    "vi": "Tự tin hỗ trợ khi cần.",
+    "en": "Help with confidence."
+  },
+  "copy.BpecDevelopsTheKnowledgeSkillsAndConfidence": {
+    "vi": "BPEC trang bị kiến thức, kỹ năng và sự tự tin để thực hiện sơ cứu ban đầu trước khi người bị nạn được tiếp cận chăm sóc y tế. Chương trình theo chuẩn quốc tế, chú trọng thực hành và ứng dụng trong các tình huống thực tế.",
+    "en": "BPEC develops the knowledge, skills and confidence to provide initial first aid before professional medical care is available. The program follows international standards, with an emphasis on practice and real-world application."
+  },
+  "copy.WhoIsThisProgramFor": {
+    "vi": "Chương trình này dành cho ai?",
+    "en": "Who is this program for?"
+  },
+  "copy.ProgramObjectives": {
+    "vi": "Mục tiêu của chương trình",
+    "en": "Program objectives"
+  },
+  "copy.GreaterConfidenceInProvidingInitialFirstAid": {
+    "vi": "Tự tin hơn khi thực hiện sơ cứu ban đầu",
+    "en": "Greater confidence in providing initial first aid"
+  },
+  "copy.HelpReduceTheRiskOfDeathAnd": {
+    "vi": "Hướng tới giảm nguy cơ tử vong và biến chứng cho người bị nạn",
+    "en": "Help reduce the risk of death and complications for people in need"
+  },
+  "copy.DevelopPracticalSkillsBasedOnInternationalStandards": {
+    "vi": "Trang bị kỹ năng thực hành theo chuẩn quốc tế",
+    "en": "Develop practical skills based on international standards"
+  },
+  "copy.TrainingContent": {
+    "vi": "Nội dung đào tạo",
+    "en": "Training content"
+  },
+  "copy.Curriculum478": {
+    "vi": "Nội dung chương trình",
+    "en": "Curriculum"
+  },
+  "copy.AssessTheSituationCallForHelpAnd": {
+    "vi": "Kiểm tra tình trạng, gọi trợ giúp và chăm sóc ban đầu theo quy trình Check – Call – Care.",
+    "en": "Assess the situation, call for help and provide initial care using the Check – Call – Care approach."
+  },
+  "copy.RecognizingEmergencies": {
+    "vi": "Nhận biết tình huống khẩn cấp",
+    "en": "Recognizing emergencies"
+  },
+  "copy.RecognizeEmergenciesAndChooseAppropriateActions": {
+    "vi": "Nhận biết các tình huống cấp cứu và lựa chọn hành động phù hợp.",
+    "en": "Recognize emergencies and choose appropriate actions."
+  },
+  "copy.RecoveryPositionAndSafeMovement": {
+    "vi": "Tư thế hồi phục và di chuyển an toàn",
+    "en": "Recovery position and safe movement"
+  },
+  "copy.PracticeTheRecoveryPositionAndMovingA": {
+    "vi": "Thực hành tư thế hồi phục và cách di chuyển người bị nạn an toàn.",
+    "en": "Practice the recovery position and moving a person safely."
+  },
+  "copy.ManagingChokingAcrossAgeGroups": {
+    "vi": "Xử trí hóc dị vật ở các nhóm tuổi",
+    "en": "Managing choking across age groups"
+  },
+  "copy.LearnAgeAppropriateSkillsForRespondingTo": {
+    "vi": "Trang bị kỹ năng xử trí hóc dị vật phù hợp với các nhóm tuổi khác nhau.",
+    "en": "Learn age-appropriate skills for responding to choking."
+  },
+  "copy.ControllingLifeThreateningBleeding": {
+    "vi": "Kiểm soát chảy máu đe dọa tính mạng",
+    "en": "Controlling life-threatening bleeding"
+  },
+  "copy.RecognizeLifeThreateningBleedingAndProvideInitial": {
+    "vi": "Nhận biết và thực hiện sơ cứu ban đầu khi có chảy máu đe dọa tính mạng.",
+    "en": "Recognize life-threatening bleeding and provide initial first aid."
+  },
+  "copy.CardiopulmonaryResuscitationCprAndAedUse": {
+    "vi": "Hồi sinh tim phổi (CPR) và sử dụng AED",
+    "en": "Cardiopulmonary resuscitation (CPR) and AED use"
+  },
+  "copy.PracticeCprAndTheUseOfAn": {
+    "vi": "Thực hành hồi sinh tim phổi (CPR) và sử dụng máy khử rung tim tự động (AED).",
+    "en": "Practice CPR and the use of an automated external defibrillator (AED)."
+  },
+  "copy.FromKnowledgeToApplication": {
+    "vi": "Từ kiến thức đến ứng dụng",
+    "en": "From knowledge to application"
+  },
+  "copy.SkillsForRealSituations": {
+    "vi": "Kỹ năng gắn với tình huống thực tế",
+    "en": "Skills for real situations"
+  },
+  "copy.TheProgramFocusesOnCprAedUse": {
+    "vi": "Chương trình tập trung vào thực hành CPR, AED và xử trí ban đầu trong các tình huống khẩn cấp, giúp người học vận dụng kiến thức vào thực tế.",
+    "en": "The program focuses on CPR, AED use and initial emergency care, helping learners put knowledge into practice."
+  },
+  "copy.WhatWillYouGain": {
+    "vi": "Bạn nhận được gì?",
+    "en": "What will you gain?"
+  },
+  "copy.FirstAidKnowledgeAndSkillsHelpYou": {
+    "vi": "Kiến thức và kỹ năng sơ cứu ban đầu giúp bạn chủ động hơn khi gặp tình huống khẩn cấp. Chương trình hướng tới nâng cao sự tự tin và góp phần giảm nguy cơ tử vong, biến chứng cho người bị nạn.",
+    "en": "First aid knowledge and skills help you respond proactively to emergencies. The program aims to build confidence and help reduce the risk of death and complications."
+  },
+  "copy.TrainingApproach": {
+    "vi": "Phương pháp đào tạo",
+    "en": "Training approach"
+  },
+  "copy.GuidedPractice": {
+    "vi": "Hướng dẫn thực hành",
+    "en": "Guided practice"
+  },
+  "copy.SkillsBasedOnInternationalStandards": {
+    "vi": "Kỹ năng theo chuẩn quốc tế",
+    "en": "Skills based on international standards"
+  },
+  "copy.TheCurriculumCombinesKnowledgeAndPracticeFocusing": {
+    "vi": "Nội dung kết hợp kiến thức với thực hành, tập trung vào kỹ năng cấp cứu ngoại viện và ứng dụng thực tế.",
+    "en": "The curriculum combines knowledge and practice, focusing on pre-hospital emergency care skills and practical applications."
+  },
+  "copy.BeforeYouRegister": {
+    "vi": "Trước khi đăng ký",
+    "en": "Before you register"
+  },
+  "copy.WhatYouNeedToKnow": {
+    "vi": "Những điều bạn muốn biết",
+    "en": "What you need to know"
+  },
+  "copy.DoesBpecIncludeCprAndAedTraining": {
+    "vi": "BPEC có nội dung CPR và AED không?",
+    "en": "Does BPEC include CPR and AED training?"
+  },
+  "copy.YesTheProgramIncludesCprPracticeAnd": {
+    "vi": "Có. Chương trình bao gồm thực hành hồi sinh tim phổi (CPR) và sử dụng máy khử rung tim tự động (AED).",
+    "en": "Yes. The program includes CPR practice and the use of an automated external defibrillator (AED)."
+  },
+  "copy.WhatOtherSkillsDoesTheProgramCover": {
+    "vi": "Chương trình còn có những kỹ năng nào?",
+    "en": "What other skills does the program cover?"
+  },
+  "copy.TopicsIncludeCheckCallCareRecognizingEmergencies": {
+    "vi": "Các nội dung gồm Check – Call – Care, nhận biết tình huống khẩn cấp, tư thế hồi phục, di chuyển an toàn, xử trí hóc dị vật theo nhóm tuổi và kiểm soát chảy máu đe dọa tính mạng.",
+    "en": "Topics include Check – Call – Care, recognizing emergencies, the recovery position, safe movement, age-appropriate choking response and control of life-threatening bleeding."
+  },
+  "copy.HowCanIDiscussTheScheduleAnd": {
+    "vi": "Làm thế nào để trao đổi về lịch học và học phí?",
+    "en": "How can I discuss the schedule and fees?"
+  },
+  "copy.RequestAConsultationToDiscussParticipationSchedules": {
+    "vi": "Đăng ký tư vấn để GHME trao đổi về nhu cầu tham gia, lịch học, địa điểm và học phí phù hợp.",
+    "en": "Request a consultation to discuss participation, schedules, locations and suitable fees with GHME."
+  },
+  "copy.DiscussTheProgram": {
+    "vi": "Trao đổi về chương trình",
+    "en": "Discuss the program"
+  },
+  "copy.Fees": {
+    "vi": "Chi phí",
+    "en": "Fees"
+  },
+  "copy.Schedule": {
+    "vi": "Lịch tổ chức",
+    "en": "Schedule"
+  },
+  "copy.ArrangedAroundParticipationNeeds": {
+    "vi": "Trao đổi theo nhu cầu tham gia",
+    "en": "Arranged around participation needs"
+  },
+  "copy.Location": {
+    "vi": "Địa điểm",
+    "en": "Location"
+  },
+  "copy.DiscussedDuringYourConsultation": {
+    "vi": "Trao đổi khi đăng ký tư vấn",
+    "en": "Discussed during your consultation"
+  },
+  "copy.ShareYourNeedsAndParticipantNumbersSo": {
+    "vi": "Chia sẻ nhu cầu và số người tham gia để GHME tư vấn phương án tổ chức phù hợp.",
+    "en": "Share your needs and participant numbers so GHME can recommend suitable arrangements."
+  },
+  "copy.NextSteps": {
+    "vi": "Bước tiếp theo",
+    "en": "Next steps"
+  },
+  "copy.NeedHelpChoosingAProgram": {
+    "vi": "Cần tư vấn chương trình phù hợp?",
+    "en": "Need help choosing a program?"
+  },
+  "copy.TellUsAboutYourParticipationNeedsAnd": {
+    "vi": "Chia sẻ nhu cầu tham gia và những chủ đề bạn quan tâm.",
+    "en": "Tell us about your participation needs and topics of interest."
+  },
+  "copy.DiscussTheSchedule": {
+    "vi": "Trao đổi về lịch tổ chức",
+    "en": "Discuss the schedule"
+  },
+  "copy.ViewOtherPrograms": {
+    "vi": "Xem các chương trình khác",
+    "en": "View other programs"
+  },
+  "copy.ProgramConsultation": {
+    "vi": "Tư vấn chương trình",
+    "en": "Program consultation"
+  },
+  "copy.HealthEducationDoctorTalkGhme": {
+    "vi": "Giáo dục sức khỏe – Doctor Talk | GHME",
+    "en": "Health Education – Doctor Talk | GHME"
+  },
+  "copy.APhysicianSharingHealthKnowledgeWithParticipants": {
+    "vi": "Bác sĩ chia sẻ kiến thức sức khỏe với người tham dự buổi Doctor Talk của GHME",
+    "en": "A physician sharing health knowledge with participants at a GHME Doctor Talk session"
+  },
+  "copy.AHealthEducationSessionInTheDoctor": {
+    "vi": "Buổi chia sẻ kiến thức sức khỏe trong chương trình Doctor Talk.",
+    "en": "A health education session in the Doctor Talk program."
+  },
+  "copy.OfficeProfessionalsAndCorporateTeams": {
+    "vi": "Nhân viên văn phòng và đội ngũ doanh nghiệp.",
+    "en": "Office professionals and corporate teams."
+  },
+  "copy.TrainingWorkshopsAndHealthDiscussions": {
+    "vi": "Đào tạo, hội thảo và chia sẻ sức khỏe",
+    "en": "Training, workshops and health discussions"
+  },
+  "copy.UnderstandYourHealth": {
+    "vi": "Hiểu sức khỏe.",
+    "en": "Understand your health."
+  },
+  "copy.TakeCareEveryDay": {
+    "vi": "Chủ động chăm sóc mỗi ngày.",
+    "en": "Take care every day."
+  },
+  "copy.DoctorTalkOffersTrainingWorkshopsAndHealth": {
+    "vi": "Doctor Talk gồm các buổi đào tạo, hội thảo và chia sẻ kiến thức sức khỏe dành cho nhân viên văn phòng và đội ngũ doanh nghiệp. Chương trình tập trung vào sức khỏe thể chất, tinh thần và phòng ngừa bệnh tật, do các bác sĩ và chuyên gia giàu kinh nghiệm trực tiếp chia sẻ.",
+    "en": "Doctor Talk offers training, workshops and health education sessions for office professionals and corporate teams. Experienced physicians and experts lead discussions on physical health, mental wellbeing and disease prevention."
+  },
+  "copy.UnderstandHowToCareForYourPhysical": {
+    "vi": "Hiểu cách chăm sóc sức khỏe thể chất",
+    "en": "Understand how to care for your physical health"
+  },
+  "copy.SupportMentalWellbeingAtWork": {
+    "vi": "Quan tâm đến sức khỏe tinh thần trong công việc",
+    "en": "Support mental wellbeing at work"
+  },
+  "copy.BuildAwarenessOfDiseasePrevention": {
+    "vi": "Nâng cao nhận thức về phòng ngừa bệnh tật",
+    "en": "Build awareness of disease prevention"
+  },
+  "copy.BalancedNutrition": {
+    "vi": "Dinh dưỡng cân bằng",
+    "en": "Balanced nutrition"
+  },
+  "copy.QuickHealthyEatingInABusyLifestyle": {
+    "vi": "Ăn uống nhanh chóng nhưng lành mạnh trong nhịp sống bận rộn, hướng tới hạn chế tăng cân và mệt mỏi.",
+    "en": "Quick, healthy eating in a busy lifestyle to help limit weight gain and fatigue."
+  },
+  "copy.StressAndEmotionalManagement": {
+    "vi": "Quản lý căng thẳng và cảm xúc",
+    "en": "Stress and emotional management"
+  },
+  "copy.ManagingStressAndEmotionsAndRaisingAwareness": {
+    "vi": "Kiểm soát căng thẳng, quản lý cảm xúc và nâng cao nhận thức về phòng ngừa trầm cảm tại nơi làm việc.",
+    "en": "Managing stress and emotions, and raising awareness of depression prevention in the workplace."
+  },
+  "copy.NeckShoulderAndBackPain": {
+    "vi": "Đau cổ, vai và lưng",
+    "en": "Neck, shoulder and back pain"
+  },
+  "copy.UnderstandCommonNeckShoulderAndBackProblems": {
+    "vi": "Tìm hiểu những vấn đề đau cổ, vai và lưng thường gặp ở nhân viên văn phòng cùng cách khắc phục.",
+    "en": "Understand common neck, shoulder and back problems among office professionals and ways to address them."
+  },
+  "copy.EyeHealthWhenUsingComputers": {
+    "vi": "Bảo vệ mắt khi sử dụng máy tính",
+    "en": "Eye health when using computers"
+  },
+  "copy.LearnAboutRefractiveErrorsDryEyesAnd": {
+    "vi": "Kiến thức về tật khúc xạ, khô mắt và cách phòng ngừa các vấn đề về mắt khi làm việc với máy tính.",
+    "en": "Learn about refractive errors, dry eyes and preventing eye problems when working at a computer."
+  },
+  "copy.AdultOralHealth": {
+    "vi": "Sức khỏe răng miệng ở người trưởng thành",
+    "en": "Adult oral health"
+  },
+  "copy.RecognizeAndPreventCommonOralHealthConditions": {
+    "vi": "Nhận biết và phòng ngừa các bệnh răng miệng thường gặp ở người trưởng thành.",
+    "en": "Recognize and prevent common oral health conditions in adults."
+  },
+  "copy.RespiratoryHealthAtWork": {
+    "vi": "Bệnh hô hấp tại nơi làm việc",
+    "en": "Respiratory health at work"
+  },
+  "copy.LearnAboutSinusitisAllergiesInfluenzaAndWays": {
+    "vi": "Tìm hiểu về viêm xoang, dị ứng, cúm và cách tự bảo vệ sức khỏe hô hấp tại nơi làm việc.",
+    "en": "Learn about sinusitis, allergies, influenza and ways to protect respiratory health in the workplace."
+  },
+  "copy.RisksOfAlcoholTobaccoAndDrugs": {
+    "vi": "Nguy cơ từ rượu, thuốc lá và ma túy",
+    "en": "Risks of alcohol, tobacco and drugs"
+  },
+  "copy.UnderstandTheRisksAndConsequencesOfAlcohol": {
+    "vi": "Nhận biết nguy cơ, hậu quả và cách tránh lệ thuộc vào rượu, thuốc lá, ma túy cùng các chất kích thích khác.",
+    "en": "Understand the risks and consequences of alcohol, tobacco, drugs and other stimulants, and how to avoid dependence."
+  },
+  "copy.PreventingCardiovascularDiseaseAndStroke": {
+    "vi": "Phòng ngừa bệnh tim mạch và đột quỵ",
+    "en": "Preventing cardiovascular disease and stroke"
+  },
+  "copy.RecognizeEarlySignsOfCardiovascularDiseaseAnd": {
+    "vi": "Nhận biết dấu hiệu sớm của bệnh tim mạch, đột quỵ và tìm hiểu các thói quen giúp phòng ngừa.",
+    "en": "Recognize early signs of cardiovascular disease and stroke, and learn habits that support prevention."
+  },
+  "copy.ReproductiveHealth": {
+    "vi": "Sức khỏe sinh sản",
+    "en": "Reproductive health"
+  },
+  "copy.ReproductiveHealthcareFamilyPlanningAndPreventionOf": {
+    "vi": "Chăm sóc sức khỏe sinh sản, kế hoạch hóa gia đình và phòng ngừa các bệnh phụ khoa, nam khoa.",
+    "en": "Reproductive healthcare, family planning and prevention of gynecological and men's reproductive health conditions."
+  },
+  "copy.CancerAwarenessAndEarlyScreening": {
+    "vi": "Nhận biết ung thư và tầm soát sớm",
+    "en": "Cancer awareness and early screening"
+  },
+  "copy.RecognizeCommonCancersEarlyWarningSignsAnd": {
+    "vi": "Nhận biết các loại ung thư thường gặp, dấu hiệu cảnh báo sớm và vai trò của tầm soát.",
+    "en": "Recognize common cancers, early warning signs and the role of screening."
+  },
+  "copy.LearnWithExperts551": {
+    "vi": "Chia sẻ kiến thức cùng chuyên gia",
+    "en": "Learn with experts"
+  },
+  "copy.PracticalContentForTheWorkplace": {
+    "vi": "Nội dung thiết thực cho môi trường làm việc",
+    "en": "Practical content for the workplace"
+  },
+  "copy.TrainingWorkshopsAndDiscussionsCoverHealthcareDisease": {
+    "vi": "Các buổi đào tạo, hội thảo và chia sẻ mang đến nội dung đa dạng về chăm sóc sức khỏe, phòng ngừa bệnh tật và an toàn cộng đồng, gắn với nhu cầu của nhân viên văn phòng và doanh nghiệp.",
+    "en": "Training, workshops and discussions cover healthcare, disease prevention and community safety topics relevant to office professionals and businesses."
+  },
+  "copy.TheProgramBuildsAwarenessOfPhysicalHealth": {
+    "vi": "Chương trình giúp nâng cao nhận thức về sức khỏe thể chất, tinh thần và phòng ngừa bệnh tật, để người tham gia quan tâm hơn đến việc chăm sóc sức khỏe trong cuộc sống và công việc.",
+    "en": "The program builds awareness of physical health, mental wellbeing and disease prevention, encouraging participants to care for their health at work and in everyday life."
+  },
+  "copy.YourGuides": {
+    "vi": "Người đồng hành",
+    "en": "Your guides"
+  },
+  "copy.PhysiciansAndExperts": {
+    "vi": "Bác sĩ và chuyên gia",
+    "en": "Physicians and experts"
+  },
+  "copy.AnExperiencedTeam": {
+    "vi": "Đội ngũ giàu kinh nghiệm",
+    "en": "An experienced team"
+  },
+  "copy.DoctorTalkSessionsAreLedDirectlyBy": {
+    "vi": "Các buổi Doctor Talk được trực tiếp chia sẻ bởi đội ngũ bác sĩ và chuyên gia giàu kinh nghiệm.",
+    "en": "Doctor Talk sessions are led directly by experienced physicians and experts."
+  },
+  "copy.WhoIsDoctorTalkFor": {
+    "vi": "Doctor Talk dành cho ai?",
+    "en": "Who is Doctor Talk for?"
+  },
+  "copy.TheProgramIsForOfficeProfessionalsAnd": {
+    "vi": "Chương trình dành cho nhân viên văn phòng và đội ngũ doanh nghiệp, với nội dung về sức khỏe thể chất, tinh thần và phòng ngừa bệnh tật.",
+    "en": "The program is for office professionals and corporate teams, covering physical health, mental wellbeing and disease prevention."
+  },
+  "copy.WhoDeliversTheProgram": {
+    "vi": "Ai chia sẻ nội dung trong chương trình?",
+    "en": "Who delivers the program?"
+  },
+  "copy.TrainingWorkshopsAndHealthEducationSessionsAre": {
+    "vi": "Các buổi đào tạo, hội thảo và chia sẻ sức khỏe được trực tiếp thực hiện bởi đội ngũ bác sĩ và chuyên gia giàu kinh nghiệm.",
+    "en": "Training, workshops and health education sessions are delivered directly by experienced physicians and experts."
+  },
+  "copy.CanBusinessesDiscussTopicsAndScheduling": {
+    "vi": "Doanh nghiệp có thể trao đổi về chủ đề và lịch tổ chức không?",
+    "en": "Can businesses discuss topics and scheduling?"
+  },
+  "copy.RequestAConsultationToDiscussYourTeam": {
+    "vi": "Đăng ký tư vấn để GHME trao đổi về nhu cầu của đội ngũ, chủ đề quan tâm, lịch tổ chức, địa điểm và chi phí.",
+    "en": "Request a consultation to discuss your team's needs, topics of interest, dates, locations and costs with GHME."
+  },
+  "copy.TrainingProgramsGhme": {
+    "vi": "Chương trình đào tạo | GHME",
+    "en": "Training Programs | GHME"
+  },
+  "copy.ExploreBasicPreHospitalEmergencyCareBpec": {
+    "vi": "Khám phá chương trình cấp cứu ngoại viện cơ bản (BPEC) và Giáo dục sức khỏe – Doctor Talk.",
+    "en": "Explore Basic Pre-hospital Emergency Care (BPEC) and Health Education – Doctor Talk."
+  },
+  "copy.ViewPrograms": {
+    "vi": "Xem các chương trình",
+    "en": "View programs"
+  },
+  "language.vi": {
+    "vi": "Tiếng Việt",
+    "en": "Vietnamese"
+  },
+  "form.required": {
+    "vi": "Vui lòng điền thông tin này.",
+    "en": "Please complete this field."
+  },
+  "form.consentRequired": {
+    "vi": "Vui lòng đồng ý trước khi tiếp tục.",
+    "en": "Please give your consent to continue."
+  },
+  "form.invalidEmail": {
+    "vi": "Vui lòng nhập địa chỉ email hợp lệ.",
+    "en": "Please enter a valid email address."
+  },
+  "form.invalidPhone": {
+    "vi": "Vui lòng nhập số điện thoại từ 9 đến 20 ký tự.",
+    "en": "Please enter a phone number of 9–20 characters."
+  },
+  "programs.status": {
+    "vi": "Chương trình: {title}",
+    "en": "Program: {title}"
+  },
+  "products.status": {
+    "vi": "Đang xem: {title}",
+    "en": "Viewing: {title}"
+  },
+  "products.consultation": {
+    "vi": "Tư vấn sản phẩm",
+    "en": "Product consultation"
+  },
+  "products.request": {
+    "vi": "Tôi muốn được tư vấn về {title}.",
+    "en": "I would like advice about {title}."
+  },
+  "experts.page": {
+    "vi": "Trang {page}",
+    "en": "Page {page}"
+  },
+  "experts.count": {
+    "vi": "Đang hiển thị {start}–{end} / {total} {group}",
+    "en": "Showing {start}–{end} of {total} {group}"
+  },
+  "experts.instructors": {
+    "vi": "giảng viên",
+    "en": "instructors"
+  },
+  "experts.members": {
+    "vi": "thành viên",
+    "en": "members"
+  },
+  "experts.empty": {
+    "vi": "Không có kết quả phù hợp",
+    "en": "No matching results"
+  },
+  "experts.previous": {
+    "vi": "‹ Trước",
+    "en": "‹ Previous"
+  },
+  "experts.next": {
+    "vi": "Sau ›",
+    "en": "Next ›"
+  },
+  "search.title": {
+    "vi": "Kết quả tìm kiếm",
+    "en": "Search results"
+  },
+  "search.matches": {
+    "vi": "Tìm thấy {count} chương trình phù hợp.",
+    "en": "Found {count} matching programs."
+  },
+  "search.empty": {
+    "vi": "Chưa có chương trình phù hợp. Hãy thử “BPEC”, “CPR” hoặc “Doctor Talk”.",
+    "en": "No matching programs. Try “BPEC”, “CPR” or “Doctor Talk”."
+  },
+  "form.success": {
+    "vi": "Thông tin đã được kiểm tra hợp lệ. Đây là bản thử nghiệm: yêu cầu chưa được gửi, dữ liệu không được lưu trên máy chủ.",
+    "en": "Your information has been validated. This is a demo: your request has not been sent and no data is stored on a server."
+  },
+  "info.login": {
+    "vi": "Đăng nhập",
+    "en": "Log in"
+  },
+  "info.loginBody": {
+    "vi": "Chức năng tài khoản chưa được kết nối trong bản frontend prototype. Bạn có thể sử dụng form tư vấn để trải nghiệm giao diện.",
+    "en": "Account functionality is not connected in this prototype. You can try the consultation form to explore the interface."
+  },
+  "info.productsBody": {
+    "vi": "Danh mục sản phẩm đang chờ nội dung chính thức từ GHME.",
+    "en": "Official product catalog content is pending from GHME."
+  },
+  "info.privacyTitle": {
+    "vi": "Chính sách riêng tư",
+    "en": "Privacy Policy"
+  },
+  "info.privacyBody": {
+    "vi": "Bản prototype không gửi hoặc lưu dữ liệu form lên máy chủ. Nội dung chính sách chính thức cần được GHME cung cấp trước khi vận hành.",
+    "en": "This prototype does not send or store form data on a server. GHME must provide its official policy before the website goes live."
+  },
+  "info.termsBody": {
+    "vi": "Nội dung điều khoản chính thức đang chờ GHME cung cấp. Đây là bản thử nghiệm giao diện.",
+    "en": "Official terms are pending from GHME. This is an interface demo."
+  },
+  "info.newsTitle": {
+    "vi": "Tin tức & kiến thức",
+    "en": "News & Insights"
+  },
+  "info.newsBody": {
+    "vi": "Nội dung tin tức đang chờ GHME cung cấp.",
+    "en": "News content is pending from GHME."
+  },
+  "info.faqTitle": {
+    "vi": "Câu hỏi thường gặp",
+    "en": "Frequently Asked Questions"
+  },
+  "info.faqBody": {
+    "vi": "Bạn có thể xem lịch thực hành, chọn chương trình và điền form tư vấn trên trang. Nội dung hỏi đáp chính thức đang chờ GHME cung cấp.",
+    "en": "You can view training schedules, choose a program and complete the consultation form. Official FAQ content is pending from GHME."
+  }
+}

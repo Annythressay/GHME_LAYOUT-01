@@ -3,11 +3,16 @@
 
 <head>
   <meta charset="utf-8">
+  <script src="assets/js/language.js"></script>
+  <link rel="stylesheet" href="assets/css/i18n.css">
+  <script src="assets/i18n/vi.js" defer></script>
+  <script src="assets/i18n/en.js" defer></script>
+  <script src="assets/js/i18n.js" defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
-    content="GHME — Đào tạo sơ cấp cứu và y khoa thực hành. Tìm chương trình phù hợp và lịch thực hành cùng chuyên gia.">
+    content="GHME — Đào tạo sơ cấp cứu và y khoa thực hành. Tìm chương trình phù hợp và lịch thực hành cùng chuyên gia." data-i18n-attrs="content:copy.GhmePracticalFirstAidAndMedicalTraining">
   <meta name="theme-color" content="#10365e">
-  <title>GHME | Đào tạo sơ cấp cứu & y khoa thực hành</title>
+  <title data-i18n="0:copy.GhmePracticalFirstAidMedicalTraining">GHME | Đào tạo sơ cấp cứu & y khoa thực hành</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css">
   <link rel="icon" href="assets/images/branding/logo-ghme.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -19,181 +24,178 @@
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Đến nội dung chính</a>
+  <a class="skip-link" href="#main" data-i18n="0:copy.SkipToMainContent">Đến nội dung chính</a>
   <header class="site-header premium-header">
     <div class="utility">
       <div class="utility-inner">
-        <span class="header-purpose"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> Vì một cộng đồng an toàn hơn</span>
-        <div class="utility-links" aria-label="Khám phá GHME">
-          <a href="#programs">Đào tạo sơ cứu</a>
-          <a href="courses/program-2.html">Kiến thức cứu người</a>
-          <a href="#activities">Lan tỏa giá trị nhân văn</a>
+        <span class="header-purpose" data-i18n="0:copy.ForASaferCommunity"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> Vì một cộng đồng an toàn hơn</span>
+        <div class="utility-links" aria-label="Khám phá GHME" data-i18n-attrs="aria-label:copy.ExploreGhme">
+          <a href="#programs" data-i18n="0:copy.FirstAidTraining">Đào tạo sơ cứu</a>
+          <a href="courses/program-2.html" data-i18n="0:copy.KnowledgeThatSavesLives">Kiến thức cứu người</a>
+          <a href="#activities" data-i18n="0:copy.SharingCareWithTheCommunity">Lan tỏa giá trị nhân văn</a>
         </div>
-        <button class="language" type="button" data-info="language" aria-label="Ngôn ngữ: Tiếng Việt / English">
-          <i class="fa-solid fa-globe" aria-hidden="true"></i> <span><b>VI</b> <span class="header-language-divider" aria-hidden="true">|</span> EN</span>
-          <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-        </button>
+        <div class="language-switch" role="group" aria-label="Ngôn ngữ: Tiếng Việt / English" data-i18n-attrs="aria-label:copy.LanguageVietnameseEnglish"><i class="fa-solid fa-globe" aria-hidden="true"></i><button type="button" data-language="vi" aria-pressed="true" lang="vi" aria-label="Tiếng Việt" data-i18n-attrs="aria-label:language.vi">VI</button><span aria-hidden="true">|</span><button type="button" data-language="en" aria-pressed="false" lang="en" aria-label="English">EN</button></div>
       </div>
     </div>
-    <div class="nav-wrap"><a class="header-brand" href="#main" aria-label="GHME — Trang chủ"><img class="brand"
+    <div class="nav-wrap"><a class="header-brand" href="#main" aria-label="GHME — Trang chủ" data-i18n-attrs="aria-label:copy.GhmeHome"><img class="brand"
           src="assets/images/branding/logo-ghme.svg" alt="GHME" width="170" height="64" decoding="async"></a>
-      <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="navigation"><i
+      <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="navigation" data-i18n-attrs="aria-label:copy.OpenMenu"><i
           class="fa-solid fa-bars" aria-hidden="true"></i></button>
       <div class="header-navigation" id="navigation">
-        <div class="header-drawer-top"><span>Khám phá GHME</span><button class="header-drawer-close" type="button"
-            aria-label="Đóng menu"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div>
-        <nav aria-label="Điều hướng chính">
-          <a class="header-nav-link active" aria-current="page" href="#main">Trang chủ</a><a class="header-nav-link"
-            href="about.html?v=20261007">Giới thiệu</a>
+        <div class="header-drawer-top"><span data-i18n="0:copy.ExploreGhme">Khám phá GHME</span><button class="header-drawer-close" type="button"
+            aria-label="Đóng menu" data-i18n-attrs="aria-label:copy.CloseMenu"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div>
+        <nav aria-label="Điều hướng chính" data-i18n-attrs="aria-label:copy.MainNavigation">
+          <a class="header-nav-link active" aria-current="page" href="#main" data-i18n="0:copy.Home">Trang chủ</a><a class="header-nav-link"
+            href="about.html?v=20261007" data-i18n="0:copy.About">Giới thiệu</a>
           <div class="nav-dropdown">
-            <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="course-dropdown">Khóa
+            <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="course-dropdown" data-i18n="0:copy.Courses">Khóa
               học <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
             <div class="header-mega" id="course-dropdown" hidden>
               <div class="header-mega-sidebar">
-                <p class="header-eyebrow">CHƯƠNG TRÌNH ĐÀO TẠO</p>
+                <p class="header-eyebrow" data-i18n="0:copy.TrainingPrograms">CHƯƠNG TRÌNH ĐÀO TẠO</p>
                 <button class="header-category" type="button" data-header-category="bpec" aria-expanded="true"
                   aria-controls="header-bpec"><span class="header-icon"><i class="fa-solid fa-heart-pulse"
-                      aria-hidden="true"></i></span><span><strong>Cấp cứu ngoại viện</strong><small>Chương trình
+                      aria-hidden="true"></i></span><span><strong data-i18n="0:copy.PreHospitalEmergencyCare">Cấp cứu ngoại viện</strong><small data-i18n="0:copy.BpecProgram">Chương trình
                       BPEC</small></span><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
                 <button class="header-category" type="button" data-header-category="doctor" aria-expanded="false"
                   aria-controls="header-doctor"><span class="header-icon"><i class="fa-solid fa-user-doctor"
-                      aria-hidden="true"></i></span><span><strong>Giáo dục sức khỏe</strong><small>Doctor Talk cùng
+                      aria-hidden="true"></i></span><span><strong data-i18n="0:copy.HealthEducation">Giáo dục sức khỏe</strong><small data-i18n="0:copy.DoctorTalkWithExperts">Doctor Talk cùng
                       chuyên gia</small></span><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
-                <a class="header-overview" href="#programs">Tất cả chương trình <i class="fa-solid fa-arrow-right"
+                <a class="header-overview" href="#programs" data-i18n="0:copy.AllPrograms">Tất cả chương trình <i class="fa-solid fa-arrow-right"
                     aria-hidden="true"></i></a>
               </div>
               <div class="header-mega-content">
-                <button class="header-mega-close" type="button" aria-label="Đóng menu Khóa học"><i
+                <button class="header-mega-close" type="button" aria-label="Đóng menu Khóa học" data-i18n-attrs="aria-label:copy.CloseCoursesMenu"><i
                     class="fa-solid fa-xmark" aria-hidden="true"></i></button>
                 <section class="header-group" id="header-bpec" aria-labelledby="header-bpec-title">
-                  <p class="header-eyebrow">KỸ NĂNG CHO TÌNH HUỐNG KHẨN CẤP</p>
-                  <h2 id="header-bpec-title">Sẵn sàng hành động. Sẵn sàng cứu người.</h2>
-                  <p class="header-group-desc">Từ kiến thức đến thực hành, cùng đội ngũ chuyên gia GHME.</p>
+                  <p class="header-eyebrow" data-i18n="0:copy.SkillsForEmergencies">KỸ NĂNG CHO TÌNH HUỐNG KHẨN CẤP</p>
+                  <h2 id="header-bpec-title" data-i18n="0:copy.ReadyToActReadyToSaveLives">Sẵn sàng hành động. Sẵn sàng cứu người.</h2>
+                  <p class="header-group-desc" data-i18n="0:copy.FromKnowledgeToPracticeWithGhmeExperts">Từ kiến thức đến thực hành, cùng đội ngũ chuyên gia GHME.</p>
                   <div class="header-course-layout">
                     <a class="header-course-card" href="courses/program-1.html"><span class="header-icon"><i
                           class="fa-solid fa-heart-pulse" aria-hidden="true"></i></span><span
-                        class="header-card-copy"><small>CHƯƠNG TRÌNH BPEC</small><strong>Cấp cứu ngoại viện cơ
-                          bản</strong><span>Thực hành CPR, sử dụng AED và xử trí ban đầu các tình huống cấp cứu trước
-                          viện.</span><b>Xem chi tiết chương trình <i class="fa-solid fa-arrow-right"
+                        class="header-card-copy"><small data-i18n="0:copy.BpecProgram26">CHƯƠNG TRÌNH BPEC</small><strong data-i18n="0:copy.BasicPreHospitalEmergencyCare">Cấp cứu ngoại viện cơ
+                          bản</strong><span data-i18n="0:copy.PracticeCprUseAnAedAndProvide">Thực hành CPR, sử dụng AED và xử trí ban đầu các tình huống cấp cứu trước
+                          viện.</span><b data-i18n="0:copy.ViewProgramDetails">Xem chi tiết chương trình <i class="fa-solid fa-arrow-right"
                             aria-hidden="true"></i></b></span></a>
                     <div class="header-course-aside">
-                      <p class="header-eyebrow">KHÁM PHÁ THÊM</p><a href="courses/program-1.html#experience">Học qua
-                        thực hành <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a><a href="#program-1">Xem
+                      <p class="header-eyebrow" data-i18n="0:copy.ExploreMore">KHÁM PHÁ THÊM</p><a href="courses/program-1.html#experience" data-i18n="0:copy.HandsOnLearning">Học qua
+                        thực hành <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a><a href="#program-1" data-i18n="0:copy.ExploreTheBpecProgram">Xem
                         chương trình BPEC <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-                      <p>Kỹ năng thiết thực cho cá nhân, doanh nghiệp và cộng đồng.</p>
+                      <p data-i18n="0:copy.PracticalSkillsForIndividualsBusinessesAndCommunities">Kỹ năng thiết thực cho cá nhân, doanh nghiệp và cộng đồng.</p>
                     </div>
                   </div>
                 </section>
                 <section class="header-group" id="header-doctor" aria-labelledby="header-doctor-title" hidden>
-                  <p class="header-eyebrow">KIẾN THỨC SỨC KHỎE CHO CỘNG ĐỒNG</p>
-                  <h2 id="header-doctor-title">Hiểu sức khỏe. Chủ động chăm sóc.</h2>
-                  <p class="header-group-desc">Chia sẻ kiến thức y khoa cùng bác sĩ và chuyên gia.</p>
+                  <p class="header-eyebrow" data-i18n="0:copy.HealthKnowledgeForTheCommunity">KIẾN THỨC SỨC KHỎE CHO CỘNG ĐỒNG</p>
+                  <h2 id="header-doctor-title" data-i18n="0:copy.UnderstandYourHealthTakeAnActiveRole">Hiểu sức khỏe. Chủ động chăm sóc.</h2>
+                  <p class="header-group-desc" data-i18n="0:copy.MedicalKnowledgeSharedByPhysiciansAndExperts">Chia sẻ kiến thức y khoa cùng bác sĩ và chuyên gia.</p>
                   <div class="header-course-layout">
                     <a class="header-course-card" href="courses/program-2.html"><span class="header-icon"><i
                           class="fa-solid fa-user-doctor" aria-hidden="true"></i></span><span
-                        class="header-card-copy"><small>DOCTOR TALK</small><strong>Giáo dục sức
-                          khỏe</strong><span>Chương trình chia sẻ về chăm sóc sức khỏe, phòng bệnh và an toàn cộng đồng
-                          cùng chuyên gia.</span><b>Xem chi tiết chương trình <i class="fa-solid fa-arrow-right"
+                        class="header-card-copy"><small>DOCTOR TALK</small><strong data-i18n="0:copy.HealthEducation">Giáo dục sức
+                          khỏe</strong><span data-i18n="0:copy.ExpertLedSessionsOnHealthcareDiseasePrevention">Chương trình chia sẻ về chăm sóc sức khỏe, phòng bệnh và an toàn cộng đồng
+                          cùng chuyên gia.</span><b data-i18n="0:copy.ViewProgramDetails">Xem chi tiết chương trình <i class="fa-solid fa-arrow-right"
                             aria-hidden="true"></i></b></span></a>
                     <div class="header-course-aside">
-                      <p class="header-eyebrow">KHÁM PHÁ THÊM</p><a href="courses/program-2.html#experience">Chia sẻ
+                      <p class="header-eyebrow" data-i18n="0:copy.ExploreMore">KHÁM PHÁ THÊM</p><a href="courses/program-2.html#experience" data-i18n="0:copy.LearnWithExperts">Chia sẻ
                         cùng chuyên gia <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a><a
-                        href="#program-2">Xem chương trình Doctor Talk <i class="fa-solid fa-arrow-right"
+                        href="#program-2" data-i18n="0:copy.ExploreDoctorTalk">Xem chương trình Doctor Talk <i class="fa-solid fa-arrow-right"
                           aria-hidden="true"></i></a>
-                      <p>Nội dung thiết thực, gắn với nhu cầu chăm sóc sức khỏe tại nơi làm việc.</p>
+                      <p data-i18n="0:copy.PracticalContentAddressingHealthNeedsInThe">Nội dung thiết thực, gắn với nhu cầu chăm sóc sức khỏe tại nơi làm việc.</p>
                     </div>
                   </div>
                 </section>
               </div>
-              <div class="header-mega-footer"><span><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> Giáo dục
-                  đúng cách, vì một cộng đồng an toàn hơn.</span><a href="#consultation">Tư vấn chương trình phù hợp <i
+              <div class="header-mega-footer"><span data-i18n="0:copy.ProperEducationForASaferCommunity"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> Giáo dục
+                  đúng cách, vì một cộng đồng an toàn hơn.</span><a href="#consultation" data-i18n="0:copy.FindTheRightTrainingProgram">Tư vấn chương trình phù hợp <i
                     class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
             </div>
           </div>
           <div class="nav-dropdown">
-            <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="product-dropdown">Sản
+            <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="product-dropdown" data-i18n="0:copy.Products">Sản
               phẩm <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
             <div class="header-mega" id="product-dropdown" hidden>
               <div class="header-mega-sidebar">
-                <p class="header-eyebrow">GIẢI PHÁP SƠ CẤP CỨU</p>
+                <p class="header-eyebrow" data-i18n="0:copy.FirstAidSolutions">GIẢI PHÁP SƠ CẤP CỨU</p>
                 <button class="header-category" type="button" data-header-category="aed" aria-expanded="true"
                   aria-controls="header-aed"><span class="header-icon"><i class="fa-solid fa-heart-pulse"
-                      aria-hidden="true"></i></span><span><strong>Thiết bị cấp cứu</strong><small>Máy khử rung tim tự
+                      aria-hidden="true"></i></span><span><strong data-i18n="0:copy.EmergencyEquipment">Thiết bị cấp cứu</strong><small data-i18n="0:copy.AutomatedExternalDefibrillator">Máy khử rung tim tự
                       động</small></span><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
                 <button class="header-category" type="button" data-header-category="kits" aria-expanded="false"
                   aria-controls="header-kits"><span class="header-icon"><i class="fa-solid fa-kit-medical"
-                      aria-hidden="true"></i></span><span><strong>Bộ dụng cụ sơ cứu</strong><small>Cá nhân, gia đình
+                      aria-hidden="true"></i></span><span><strong data-i18n="0:copy.FirstAidKits">Bộ dụng cụ sơ cứu</strong><small data-i18n="0:copy.PersonalFamilyTravel">Cá nhân, gia đình
                       &amp; du lịch</small></span><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
                 <button class="header-category" type="button" data-header-category="training" aria-expanded="false"
                   aria-controls="header-training"><span class="header-icon"><i class="fa-solid fa-graduation-cap"
-                      aria-hidden="true"></i></span><span><strong>Hỗ trợ đào tạo</strong><small>Dụng cụ &amp; thiết bị
+                      aria-hidden="true"></i></span><span><strong data-i18n="0:copy.TrainingSupport">Hỗ trợ đào tạo</strong><small data-i18n="0:copy.PracticeToolsEquipment">Dụng cụ &amp; thiết bị
                       thực hành</small></span><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
-                <a class="header-overview" href="#schedule">Tất cả sản phẩm <i class="fa-solid fa-arrow-right"
+                <a class="header-overview" href="#schedule" data-i18n="0:copy.AllProducts">Tất cả sản phẩm <i class="fa-solid fa-arrow-right"
                     aria-hidden="true"></i></a>
               </div>
               <div class="header-mega-content">
-                <button class="header-mega-close" type="button" aria-label="Đóng menu Sản phẩm"><i
+                <button class="header-mega-close" type="button" aria-label="Đóng menu Sản phẩm" data-i18n-attrs="aria-label:copy.CloseProductsMenu"><i
                     class="fa-solid fa-xmark" aria-hidden="true"></i></button>
                 <section class="header-group" id="header-aed" aria-labelledby="header-aed-title">
-                  <p class="header-eyebrow">THIẾT BỊ CẤP CỨU</p>
-                  <h2 id="header-aed-title">Trang bị hôm nay. Sẵn sàng khi cần.</h2>
-                  <p class="header-group-desc">Giải pháp cấp cứu cho doanh nghiệp, trường học và cộng đồng.</p>
+                  <p class="header-eyebrow" data-i18n="0:copy.EmergencyEquipment53">THIẾT BỊ CẤP CỨU</p>
+                  <h2 id="header-aed-title" data-i18n="0:copy.EquipTodayBeReadyWhenItMatters">Trang bị hôm nay. Sẵn sàng khi cần.</h2>
+                  <p class="header-group-desc" data-i18n="0:copy.EmergencyCareSolutionsForBusinessesSchoolsAnd">Giải pháp cấp cứu cho doanh nghiệp, trường học và cộng đồng.</p>
                   <div class="header-product-grid"><a class="header-product-card header-product-card--featured"
                       href="#product-aed" data-header-product="aed"><img src="assets/images/products/aed-hd.png" alt=""
-                        width="112" height="100" decoding="async"><span><small>THIẾT BỊ CẤP CỨU</small><strong>Máy khử
-                          rung tim tự động (AED)</strong><span>Hỗ trợ sơ cấp cứu ngừng tim đột ngột.</span><b>Khám phá
+                        width="112" height="100" decoding="async"><span><small data-i18n="0:copy.EmergencyEquipment53">THIẾT BỊ CẤP CỨU</small><strong data-i18n="0:copy.AutomatedExternalDefibrillatorAed">Máy khử
+                          rung tim tự động (AED)</strong><span data-i18n="0:copy.SupportsFirstAidForSuddenCardiacArrest">Hỗ trợ sơ cấp cứu ngừng tim đột ngột.</span><b data-i18n="0:copy.ExploreProducts">Khám phá
                           sản phẩm <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></b></span></a></div>
                 </section>
                 <section class="header-group" id="header-kits" aria-labelledby="header-kits-title" hidden>
-                  <p class="header-eyebrow">BỘ DỤNG CỤ SƠ CỨU</p>
-                  <h2 id="header-kits-title">Một bộ sơ cứu cho mỗi nhu cầu.</h2>
-                  <p class="header-group-desc">Chọn bộ vật tư phù hợp với môi trường sống và làm việc.</p>
+                  <p class="header-eyebrow" data-i18n="0:copy.FirstAidKits59">BỘ DỤNG CỤ SƠ CỨU</p>
+                  <h2 id="header-kits-title" data-i18n="0:copy.AFirstAidKitForEveryNeed">Một bộ sơ cứu cho mỗi nhu cầu.</h2>
+                  <p class="header-group-desc" data-i18n="0:copy.ChooseSuppliesSuitedToYourHomeAnd">Chọn bộ vật tư phù hợp với môi trường sống và làm việc.</p>
                   <div class="header-product-grid">
                     <a class="header-product-card" href="#product-personal" data-header-product="personal"><img
                         src="assets/images/products/personal-kit-hd.png" alt="" width="76" height="76"
-                        decoding="async"><span><small>55+ VẬT TƯ · CÁ NHÂN</small><strong>Personal First Aid
-                          Kit</strong><span>Gọn nhẹ cho nhu cầu hằng ngày.</span></span><i
+                        decoding="async"><span><small data-i18n="0:copy.55ItemsPersonal">55+ VẬT TƯ · CÁ NHÂN</small><strong>Personal First Aid
+                          Kit</strong><span data-i18n="0:copy.CompactAndLightweightForEverydayNeeds">Gọn nhẹ cho nhu cầu hằng ngày.</span></span><i
                         class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                     <a class="header-product-card" href="#product-office" data-header-product="office"><img
                         src="assets/images/products/office-family-kit-hd.png" alt="" width="76" height="76"
-                        decoding="async"><span><small>200+ VẬT TƯ · GIA ĐÌNH / VĂN PHÒNG</small><strong>Office/Family
-                          First Aid Kit</strong><span>Vật tư đa dạng cho gia đình, nơi làm việc.</span></span><i
+                        decoding="async"><span><small data-i18n="0:copy.200ItemsFamilyOffice">200+ VẬT TƯ · GIA ĐÌNH / VĂN PHÒNG</small><strong>Office/Family
+                          First Aid Kit</strong><span data-i18n="0:copy.ARangeOfSuppliesForHomeAnd">Vật tư đa dạng cho gia đình, nơi làm việc.</span></span><i
                         class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                     <a class="header-product-card" href="#product-travel" data-header-product="travel"><img
                         src="assets/images/products/travel-kit-hd.png" alt="" width="76" height="76"
-                        decoding="async"><span><small>60+ VẬT TƯ · DU LỊCH</small><strong>Travel First Aid
-                          Kit</strong><span>Sẵn sàng cho những hành trình.</span></span><i
+                        decoding="async"><span><small data-i18n="0:copy.60ItemsTravel">60+ VẬT TƯ · DU LỊCH</small><strong>Travel First Aid
+                          Kit</strong><span data-i18n="0:copy.ReadyForYourNextJourney">Sẵn sàng cho những hành trình.</span></span><i
                         class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                   </div>
                 </section>
                 <section class="header-group" id="header-training" aria-labelledby="header-training-title" hidden>
-                  <p class="header-eyebrow">HỖ TRỢ ĐÀO TẠO</p>
-                  <h2 id="header-training-title">Đưa kiến thức vào thực hành.</h2>
-                  <p class="header-group-desc">Dụng cụ và thiết bị phục vụ đào tạo sơ cấp cứu.</p>
+                  <p class="header-eyebrow" data-i18n="0:copy.TrainingSupport68">HỖ TRỢ ĐÀO TẠO</p>
+                  <h2 id="header-training-title" data-i18n="0:copy.PutKnowledgeIntoPractice">Đưa kiến thức vào thực hành.</h2>
+                  <p class="header-group-desc" data-i18n="0:copy.ToolsAndEquipmentForFirstAidTraining">Dụng cụ và thiết bị phục vụ đào tạo sơ cấp cứu.</p>
                   <div class="header-product-grid">
                     <a class="header-product-card" href="#product-cpr" data-header-product="cpr"><img
                         src="assets/images/products/cpr-kit-hd.png" alt="" width="76" height="76"
-                        decoding="async"><span><strong>Bộ dụng cụ CPR</strong><span>Phục vụ thực hành hồi sinh tim
+                        decoding="async"><span><strong data-i18n="0:copy.CprTrainingKit">Bộ dụng cụ CPR</strong><span data-i18n="0:copy.ForHandsOnCardiopulmonaryResuscitationPractice">Phục vụ thực hành hồi sinh tim
                           phổi.</span></span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                     <a class="header-product-card" href="#product-training" data-header-product="training"><img
                         src="assets/images/products/training-equipment-hd.png" alt="" width="76" height="76"
-                        decoding="async"><span><strong>Thiết bị hỗ trợ đào tạo</strong><span>Trang bị cho các buổi học
+                        decoding="async"><span><strong data-i18n="0:copy.TrainingEquipment">Thiết bị hỗ trợ đào tạo</strong><span data-i18n="0:copy.EquipmentForPracticalTrainingSessions">Trang bị cho các buổi học
                           thực hành.</span></span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                   </div>
                 </section>
               </div>
-              <div class="header-mega-footer"><span><i class="fa-solid fa-kit-medical" aria-hidden="true"></i> Giải pháp
-                  phù hợp cho cá nhân và tổ chức.</span><a href="#consultation">Nhận tư vấn sản phẩm <i
+              <div class="header-mega-footer"><span data-i18n="0:copy.SolutionsForIndividualsAndOrganizations"><i class="fa-solid fa-kit-medical" aria-hidden="true"></i> Giải pháp
+                  phù hợp cho cá nhân và tổ chức.</span><a href="#consultation" data-i18n="0:copy.RequestProductAdvice">Nhận tư vấn sản phẩm <i
                     class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
             </div>
           </div>
         </nav>
         <form class="header-search" role="search" id="search-form">
-          <label class="sr-only" for="search">Tìm khóa học, chương trình, chứng chỉ</label>
-          <input id="search" name="q" type="search" placeholder="Tìm khóa học, chương trình, chứng chỉ...">
-          <button aria-label="Tìm kiếm" type="submit"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+          <label class="sr-only" for="search" data-i18n="0:copy.SearchCoursesProgramsCertificates">Tìm khóa học, chương trình, chứng chỉ</label>
+          <input id="search" name="q" type="search" placeholder="Tìm khóa học, chương trình, chứng chỉ..." data-i18n-attrs="placeholder:copy.SearchCoursesProgramsCertificates78">
+          <button aria-label="Tìm kiếm" type="submit" data-i18n-attrs="aria-label:copy.Search"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
         </form>
-        <div class="nav-actions"><a class="button header-consultation" href="#consultation">Đăng ký tư vấn <i
+        <div class="nav-actions"><a class="button header-consultation" href="#consultation" data-i18n="0:copy.RequestAConsultation">Đăng ký tư vấn <i
               class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
         </div>
       </div>
@@ -204,12 +206,12 @@
     <section class="hero" aria-labelledby="hero-title">
       <img class="hero-image" src="assets/images/hero-cpr-banner-hd.png"
         alt="Bốn học viên thực hành hồi sinh tim phổi trên mô hình với máy AED và túi sơ cứu" width="1919" height="820"
-        fetchpriority="high" decoding="async">
+        fetchpriority="high" decoding="async" data-i18n-attrs="alt:copy.FourLearnersPracticingCprOnManikinsWith">
       <div class="inner-content">
         <img class="ghme-logo" src="assets/images/hero-ghme.svg" alt="GHME — Saving lives starts with proper education"
           width="1257" height="660" decoding="async">
-        <h1 id="hero-title">TƯ VẤN – ĐÀO TẠO – CUNG CẤP<br>THIẾT BỊ CẤP CỨU NGOẠI VIỆN CHUYÊN NGHIỆP</h1>
-        <a class="hero-button" href="#consultation">LIÊN HỆ NGAY</a>
+        <h1 id="hero-title" data-i18n="0:copy.ConsultingTrainingEquipment;1:copy.ProfessionalPreHospitalEmergencyCare">TƯ VẤN – ĐÀO TẠO – CUNG CẤP<br>THIẾT BỊ CẤP CỨU NGOẠI VIỆN CHUYÊN NGHIỆP</h1>
+        <a class="hero-button" href="#consultation" data-i18n="0:copy.ContactUs">LIÊN HỆ NGAY</a>
       </div>
     </section>
     <section class="activities decorated ghme-about" id="activities" aria-labelledby="activities-title">
@@ -217,43 +219,43 @@
         <figure class="ghme-about__visual" data-field="main_image">
           <div class="ghme-about__photo"><img src="assets/images/about/bpec-cpr-practice.webp"
               alt="Giảng viên GHME hướng dẫn học viên thực hành CPR trên mô hình trong chương trình BPEC" width="1600"
-              height="1200" loading="lazy" decoding="async"></div>
-          <figcaption><strong>Thực hành cùng chuyên gia GHME</strong>
-            <p>Hướng dẫn CPR trên mô hình trong chương trình BPEC</p>
+              height="1200" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.AGhmeInstructorGuidingLearnersThroughCpr"></div>
+          <figcaption><strong data-i18n="0:copy.PracticeWithGhmeExperts">Thực hành cùng chuyên gia GHME</strong>
+            <p data-i18n="0:copy.CprPracticeOnManikinsInTheBpec">Hướng dẫn CPR trên mô hình trong chương trình BPEC</p>
           </figcaption>
         </figure>
         <div class="ghme-about__intro">
-          <p class="ghme-about__eyebrow" data-field="eyebrow">VỀ CHÚNG TÔI</p>
-          <h2 id="activities-title" data-field="heading">Từ kiến thức đến<br><em>kỹ năng cứu người.</em></h2>
+          <p class="ghme-about__eyebrow" data-field="eyebrow" data-i18n="0:copy.AboutUs">VỀ CHÚNG TÔI</p>
+          <h2 id="activities-title" data-field="heading" data-i18n="0:copy.FromKnowledgeTo">Từ kiến thức đến<br><em data-i18n="0:copy.LifesavingSkills">kỹ năng cứu người.</em></h2>
           <div class="ghme-about__description" data-field="short_description">
-            <p>GHME kết hợp đào tạo cấp cứu trước viện, giáo dục sức khỏe và giải pháp sơ cấp cứu, giúp doanh nghiệp,
+            <p data-i18n="0:copy.GhmeCombinesPreHospitalEmergencyCareTraining">GHME kết hợp đào tạo cấp cứu trước viện, giáo dục sức khỏe và giải pháp sơ cấp cứu, giúp doanh nghiệp,
               trường học và cộng đồng chủ động ứng phó với tình huống khẩn cấp.</p>
-            <p>Chương trình được thiết kế theo nhu cầu, chú trọng tương tác và thực hành cùng đội ngũ bác sĩ, chuyên
+            <p data-i18n="0:copy.ProgramsAreTailoredToYourNeedsWith">Chương trình được thiết kế theo nhu cầu, chú trọng tương tác và thực hành cùng đội ngũ bác sĩ, chuyên
               gia.</p>
           </div>
           <ul class="ghme-about__services" data-field="core_services">
             <li><span class="ghme-about__icon" aria-hidden="true"><i class="fa-solid fa-heart-pulse"></i></span>
               <div>
-                <h3>Đào tạo sơ cấp cứu thực hành</h3>
-                <p>Kỹ năng CPR, sử dụng AED và xử trí ban đầu tình huống cấp cứu.</p>
+                <h3 data-i18n="0:copy.PracticalFirstAidTraining">Đào tạo sơ cấp cứu thực hành</h3>
+                <p data-i18n="0:copy.CprSkillsAedUseAndInitialEmergency">Kỹ năng CPR, sử dụng AED và xử trí ban đầu tình huống cấp cứu.</p>
               </div>
             </li>
             <li><span class="ghme-about__icon" aria-hidden="true"><i class="fa-solid fa-user-doctor"></i></span>
               <div>
-                <h3>Giáo dục sức khỏe – Doctor Talk</h3>
-                <p>Kiến thức chăm sóc sức khỏe, phòng bệnh cùng bác sĩ và chuyên gia.</p>
+                <h3 data-i18n="0:copy.HealthEducationDoctorTalk">Giáo dục sức khỏe – Doctor Talk</h3>
+                <p data-i18n="0:copy.HealthcareAndDiseasePreventionKnowledgeSharedBy">Kiến thức chăm sóc sức khỏe, phòng bệnh cùng bác sĩ và chuyên gia.</p>
               </div>
             </li>
             <li><span class="ghme-about__icon" aria-hidden="true"><i class="fa-solid fa-kit-medical"></i></span>
               <div>
-                <h3>Thiết bị &amp; giải pháp sơ cấp cứu</h3>
-                <p>Túi sơ cứu và thiết bị y tế cho cá nhân, gia đình, doanh nghiệp.</p>
+                <h3 data-i18n="0:copy.FirstAidEquipmentSolutions">Thiết bị &amp; giải pháp sơ cấp cứu</h3>
+                <p data-i18n="0:copy.FirstAidBagsAndMedicalEquipmentFor">Túi sơ cứu và thiết bị y tế cho cá nhân, gia đình, doanh nghiệp.</p>
               </div>
             </li>
           </ul>
-          <div class="ghme-about__actions" data-field="ctas"><a class="button ghme-about__primary" href="about.html">Tìm
+          <div class="ghme-about__actions" data-field="ctas"><a class="button ghme-about__primary" href="about.html" data-i18n="0:copy.LearnMoreAboutGhme">Tìm
               hiểu thêm về GHME <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a><a
-              class="ghme-about__secondary" href="#programs">Khám phá chương trình đào tạo <i
+              class="ghme-about__secondary" href="#programs" data-i18n="0:copy.ExploreTrainingPrograms">Khám phá chương trình đào tạo <i
                 class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
         </div>
       </div>
@@ -261,79 +263,79 @@
     <section class="programs decorated" id="programs" aria-labelledby="programs-title">
       <div class="programs-layout">
         <div class="programs-intro">
-          <p class="programs-eyebrow">Chương trình đào tạo GHME</p>
-          <h2 id="programs-title">Kỹ năng cấp cứu & kiến thức sức khỏe cho cộng đồng</h2>
-          <p class="programs-description">Trang bị kỹ năng cấp cứu ngoại viện và kiến thức chăm sóc sức khỏe thông qua
+          <p class="programs-eyebrow" data-i18n="0:copy.GhmeTrainingPrograms">Chương trình đào tạo GHME</p>
+          <h2 id="programs-title" data-i18n="0:copy.EmergencyCareSkillsHealthKnowledgeForThe">Kỹ năng cấp cứu & kiến thức sức khỏe cho cộng đồng</h2>
+          <p class="programs-description" data-i18n="0:copy.BuildPreHospitalEmergencyCareSkillsAnd">Trang bị kỹ năng cấp cứu ngoại viện và kiến thức chăm sóc sức khỏe thông qua
             đào tạo thực hành, hội thảo và các buổi chia sẻ cùng chuyên gia.</p>
           <ul class="programs-benefits">
             <li><span><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
               <div>
-                <h3>Chú trọng thực hành</h3>
-                <p>Kỹ năng cấp cứu theo tiêu chuẩn quốc tế, ứng dụng trong thực tế.</p>
+                <h3 data-i18n="0:copy.FocusOnPractice">Chú trọng thực hành</h3>
+                <p data-i18n="0:copy.EmergencyCareSkillsBasedOnInternationalStandards">Kỹ năng cấp cứu theo tiêu chuẩn quốc tế, ứng dụng trong thực tế.</p>
               </div>
             </li>
             <li><span><i class="fa-solid fa-user-doctor" aria-hidden="true"></i></span>
               <div>
-                <h3>Chia sẻ cùng chuyên gia</h3>
-                <p>Doctor Talk do bác sĩ và chuyên gia giàu kinh nghiệm trực tiếp dẫn dắt.</p>
+                <h3 data-i18n="0:copy.LearnWithExperts">Chia sẻ cùng chuyên gia</h3>
+                <p data-i18n="0:copy.DoctorTalkIsLedDirectlyByExperienced">Doctor Talk do bác sĩ và chuyên gia giàu kinh nghiệm trực tiếp dẫn dắt.</p>
               </div>
             </li>
             <li><span><i class="fa-solid fa-shield-heart" aria-hidden="true"></i></span>
               <div>
-                <h3>Chủ động phòng ngừa</h3>
-                <p>Nâng cao hiểu biết về sức khỏe, phòng bệnh và an toàn cộng đồng.</p>
+                <h3 data-i18n="0:copy.ProactivePrevention">Chủ động phòng ngừa</h3>
+                <p data-i18n="0:copy.DevelopYourUnderstandingOfHealthDiseasePrevention">Nâng cao hiểu biết về sức khỏe, phòng bệnh và an toàn cộng đồng.</p>
               </div>
             </li>
           </ul>
           <blockquote class="programs-quote"><i class="fa-solid fa-quote-left" aria-hidden="true"></i>
-            <p>Cứu người bắt đầu từ<br>giáo dục đúng cách.</p><cite>GHME</cite>
+            <p data-i18n="0:copy.SavingLivesStartsWith;1:copy.ProperEducation">Cứu người bắt đầu từ<br>giáo dục đúng cách.</p><cite>GHME</cite>
           </blockquote>
         </div>
         <div class="programs-area">
           <div class="programs-viewport" id="programs-viewport" role="region"
-            aria-label="Các chương trình đào tạo GHME">
+            aria-label="Các chương trình đào tạo GHME" data-i18n-attrs="aria-label:copy.GhmeTrainingPrograms111">
             <div class="program-grid">
               <article class="program-card" id="program-1">
                 <img src="assets/images/programs/bpec-training.webp"
                   alt="Học viên thực hành CPR trên mô hình trong chương trình BPEC của GHME" width="640" height="480"
-                  loading="lazy" decoding="async">
+                  loading="lazy" decoding="async" data-i18n-attrs="alt:copy.LearnersPracticingCprOnManikinsInGhme">
                 <div class="program-body">
                   <div class="program-title">
-                    <h3>Cấp cứu ngoại viện cơ bản (BPEC)</h3><span class="badge">Đào tạo kỹ năng</span>
+                    <h3 data-i18n="0:copy.BasicPreHospitalEmergencyCareBpec">Cấp cứu ngoại viện cơ bản (BPEC)</h3><span class="badge" data-i18n="0:copy.SkillsTraining">Đào tạo kỹ năng</span>
                   </div>
-                  <p>Trang bị kỹ năng hồi sinh tim phổi (CPR), sử dụng máy khử rung tim tự động (AED) và xử trí ban đầu
+                  <p data-i18n="0:copy.LearnCardiopulmonaryResuscitationCprAutomatedExternalDefibrillator">Trang bị kỹ năng hồi sinh tim phổi (CPR), sử dụng máy khử rung tim tự động (AED) và xử trí ban đầu
                     các tình huống cấp cứu.</p>
                   <ul class="feature-list">
-                    <li><span aria-hidden="true"><i class="fa-solid fa-heart-pulse"></i></span>Kỹ năng CPR và sử dụng
+                    <li data-i18n="0:copy.CprSkillsAndAedUse"><span aria-hidden="true"><i class="fa-solid fa-heart-pulse"></i></span>Kỹ năng CPR và sử dụng
                       AED</li>
-                    <li><span aria-hidden="true"><i class="fa-solid fa-truck-medical"></i></span>Xử trí ban đầu tình
+                    <li data-i18n="0:copy.InitialEmergencyCare"><span aria-hidden="true"><i class="fa-solid fa-truck-medical"></i></span>Xử trí ban đầu tình
                       huống cấp cứu</li>
-                    <li><span aria-hidden="true"><i class="fa-solid fa-person-chalkboard"></i></span>Theo tiêu chuẩn
+                    <li data-i18n="0:copy.InternationalStandardsWithAFocusOnPractice"><span aria-hidden="true"><i class="fa-solid fa-person-chalkboard"></i></span>Theo tiêu chuẩn
                       quốc tế, chú trọng thực hành và ứng dụng thực tế</li>
                   </ul>
-                  <a class="button" href="courses/program-1.html" data-program="Cấp cứu ngoại viện cơ bản (BPEC)">Tìm
+                  <a class="button" href="courses/program-1.html" data-program="Cấp cứu ngoại viện cơ bản (BPEC)" data-i18n="0:copy.ExploreTheProgram">Tìm
                     hiểu chương trình <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                 </div>
               </article>
               <article class="program-card" id="program-2">
                 <img src="assets/images/programs/doctor-talk.webp"
                   alt="Bác sĩ chia sẻ kiến thức sức khỏe tại buổi Doctor Talk của GHME" width="1210" height="908"
-                  loading="lazy" decoding="async">
+                  loading="lazy" decoding="async" data-i18n-attrs="alt:copy.APhysicianSharingHealthKnowledgeAtA">
                 <div class="program-body">
                   <div class="program-title">
-                    <h3>Giáo dục sức khỏe – Doctor Talk</h3><span class="badge">Chuyên đề sức khỏe</span>
+                    <h3 data-i18n="0:copy.HealthEducationDoctorTalk">Giáo dục sức khỏe – Doctor Talk</h3><span class="badge" data-i18n="0:copy.HealthTopics">Chuyên đề sức khỏe</span>
                   </div>
-                  <p>Các buổi đào tạo y khoa, hội thảo và chia sẻ kiến thức sức khỏe do đội ngũ bác sĩ, chuyên gia giàu
+                  <p data-i18n="0:copy.MedicalTrainingWorkshopsAndHealthEducationSessions">Các buổi đào tạo y khoa, hội thảo và chia sẻ kiến thức sức khỏe do đội ngũ bác sĩ, chuyên gia giàu
                     kinh nghiệm trực tiếp dẫn dắt.</p>
                   <ul class="feature-list">
-                    <li><span aria-hidden="true"><i class="fa-solid fa-hand-holding-heart"></i></span>Chăm sóc sức khỏe
+                    <li data-i18n="0:copy.HealthcareAndDiseasePrevention"><span aria-hidden="true"><i class="fa-solid fa-hand-holding-heart"></i></span>Chăm sóc sức khỏe
                       và phòng ngừa bệnh</li>
-                    <li><span aria-hidden="true"><i class="fa-solid fa-shield-heart"></i></span>Kiến thức an toàn cho
+                    <li data-i18n="0:copy.CommunitySafetyKnowledge"><span aria-hidden="true"><i class="fa-solid fa-shield-heart"></i></span>Kiến thức an toàn cho
                       cộng đồng</li>
-                    <li><span aria-hidden="true"><i class="fa-solid fa-user-doctor"></i></span>Chuyên đề đa dạng cùng
+                    <li data-i18n="0:copy.ARangeOfTopicsWithPhysiciansAnd"><span aria-hidden="true"><i class="fa-solid fa-user-doctor"></i></span>Chuyên đề đa dạng cùng
                       bác sĩ và chuyên gia</li>
                   </ul>
-                  <a class="button" href="courses/program-2.html" data-program="Giáo dục sức khỏe – Doctor Talk">Tìm
+                  <a class="button" href="courses/program-2.html" data-program="Giáo dục sức khỏe – Doctor Talk" data-i18n="0:copy.ExploreTheProgram">Tìm
                     hiểu chương trình <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                 </div>
               </article>
@@ -341,98 +343,98 @@
           </div>
           <div class="programs-navigation" hidden>
             <button type="button" data-program-step="-1" aria-label="Chương trình trước"
-              aria-controls="programs-viewport"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+              aria-controls="programs-viewport" data-i18n-attrs="aria-label:copy.PreviousProgram"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
             <button type="button" data-program-step="1" aria-label="Chương trình tiếp theo"
-              aria-controls="programs-viewport"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+              aria-controls="programs-viewport" data-i18n-attrs="aria-label:copy.NextProgram"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
           </div>
           <p class="sr-only" id="programs-status" role="status" aria-live="polite"></p>
         </div>
         <div class="programs-brand-strip">
-          <span><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> Chủ động hôm nay</span>
-          <span><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> Sẵn sàng ứng phó</span>
-          <span><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i> Cộng đồng khỏe mạnh hơn</span>
+          <span data-i18n="0:copy.TakeActionToday"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> Chủ động hôm nay</span>
+          <span data-i18n="0:copy.BeReadyToRespond"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> Sẵn sàng ứng phó</span>
+          <span data-i18n="0:copy.AHealthierCommunity"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i> Cộng đồng khỏe mạnh hơn</span>
         </div>
       </div>
     </section>
     <section class="schedule decorated product-showcase" id="schedule" aria-labelledby="schedule-title">
       <div class="product-showcase__container">
         <header class="product-showcase__heading">
-          <p class="inner-eyebrow">SẢN PHẨM ỨNG DỤNG</p>
-          <h2 id="schedule-title">Thiết bị &amp; giải pháp sơ cấp cứu GHME</h2>
-          <p class="inner-intro">GHME cung cấp các sản phẩm sơ cấp cứu thực tiễn và giải pháp ứng phó khẩn cấp,<br> đồng
+          <p class="inner-eyebrow" data-i18n="0:copy.PracticalProducts">SẢN PHẨM ỨNG DỤNG</p>
+          <h2 id="schedule-title" data-i18n="0:copy.GhmeFirstAidEquipmentSolutions">Thiết bị &amp; giải pháp sơ cấp cứu GHME</h2>
+          <p class="inner-intro" data-i18n="0:copy.GhmeProvidesPracticalFirstAidProductsAnd;1:copy.WorkingWithSchoolsBusinessesHospitalsAndCommunities">GHME cung cấp các sản phẩm sơ cấp cứu thực tiễn và giải pháp ứng phó khẩn cấp,<br> đồng
             hành cùng trường học, doanh nghiệp, bệnh viện và cộng đồng xây dựng môi trường an toàn hơn.</p>
         </header>
-        <div class="product-categories" role="group" aria-label="Danh mục sản phẩm"><button type="button"
+        <div class="product-categories" role="group" aria-label="Danh mục sản phẩm" data-i18n-attrs="aria-label:copy.ProductCategories"><button type="button"
             class="product-category" data-product-category="aed" aria-pressed="true" aria-controls="product-aed"><img
               class="product-art product-art--aed" src="assets/images/products/aed-hd.png" alt="" loading="lazy"
-              decoding="async"><span class="inner-label"><strong>Máy khử rung tim<br>tự động (AED)</strong><span>Đọc chi
+              decoding="async"><span class="inner-label"><strong data-i18n="0:copy.AutomatedExternal;1:copy.DefibrillatorAed">Máy khử rung tim<br>tự động (AED)</strong><span data-i18n="0:copy.ViewDetails">Đọc chi
                 tiết <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></span><span
               class="inner-chevron"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span></button><button
             type="button" class="product-category" data-product-category="kits" aria-pressed="false"
             aria-controls="product-kit-options"><img class="product-art product-art--bag"
               src="assets/images/products/first-aid-bag-hd.png" alt="" loading="lazy" decoding="async"><span
-              class="inner-label"><strong>Túi sơ cứu</strong><span>Đọc chi tiết <i class="fa-solid fa-arrow-right"
+              class="inner-label"><strong data-i18n="0:copy.FirstAidKits139">Túi sơ cứu</strong><span data-i18n="0:copy.ViewDetails">Đọc chi tiết <i class="fa-solid fa-arrow-right"
                   aria-hidden="true"></i></span></span><span class="inner-chevron"><i class="fa-solid fa-chevron-down"
                 aria-hidden="true"></i></span></button><button type="button" class="product-category"
             data-product-category="cpr" aria-pressed="false" aria-controls="product-cpr"><img
               class="product-art product-art--cpr" src="assets/images/products/cpr-kit-hd.png" alt="" loading="lazy"
-              decoding="async"><span class="inner-label"><strong>Bộ dụng cụ CPR</strong><span>Đọc chi tiết <i
+              decoding="async"><span class="inner-label"><strong data-i18n="0:copy.CprTrainingKit">Bộ dụng cụ CPR</strong><span data-i18n="0:copy.ViewDetails">Đọc chi tiết <i
                   class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></span><span class="inner-chevron"><i
                 class="fa-solid fa-chevron-down" aria-hidden="true"></i></span></button><button type="button"
             class="product-category" data-product-category="training" aria-pressed="false"
             aria-controls="product-training"><img class="product-art product-art--training"
               src="assets/images/products/training-equipment-hd.png" alt="" loading="lazy" decoding="async"><span
-              class="inner-label"><strong>Thiết bị hỗ trợ<br>đào tạo</strong><span>Đọc chi tiết <i
+              class="inner-label"><strong data-i18n="0:copy.Training;1:copy.Equipment">Thiết bị hỗ trợ<br>đào tạo</strong><span data-i18n="0:copy.ViewDetails">Đọc chi tiết <i
                   class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></span><span class="inner-chevron"><i
                 class="fa-solid fa-chevron-down" aria-hidden="true"></i></span></button></div>
-        <div class="product-kit-options" id="product-kit-options" role="group" aria-label="Chọn bộ sơ cứu" hidden>
-          <button type="button" data-product-kit="personal" aria-pressed="true" aria-controls="product-personal">Cá nhân
+        <div class="product-kit-options" id="product-kit-options" role="group" aria-label="Chọn bộ sơ cứu" hidden data-i18n-attrs="aria-label:copy.ChooseAFirstAidKit">
+          <button type="button" data-product-kit="personal" aria-pressed="true" aria-controls="product-personal" data-i18n="0:copy.Personal55Items">Cá nhân
             · 55+ vật tư</button><button type="button" data-product-kit="office" aria-pressed="false"
-            aria-controls="product-office">Gia đình / Văn phòng · 200+ vật tư</button><button type="button"
-            data-product-kit="travel" aria-pressed="false" aria-controls="product-travel">Du lịch · 60+ vật tư</button>
+            aria-controls="product-office" data-i18n="0:copy.FamilyOffice200Items">Gia đình / Văn phòng · 200+ vật tư</button><button type="button"
+            data-product-kit="travel" aria-pressed="false" aria-controls="product-travel" data-i18n="0:copy.Travel60Items">Du lịch · 60+ vật tư</button>
         </div>
         <article class="product-panel" id="product-aed" data-product-panel="aed" aria-labelledby="product-title-aed">
           <div class="inner-wrap">
             <div class="inner-visual"><img class="product-art product-art--aed" src="assets/images/products/aed-hd.png"
-                alt="Máy khử rung tim tự động (AED)" loading="lazy" decoding="async"></div>
-            <div class="inner-content"><span class="inner-badge">SẢN PHẨM NỔI BẬT</span>
-              <h3 id="product-title-aed">Máy khử rung tim tự động (AED)</h3>
-              <p class="inner-desc">Thiết bị thiết yếu trong sơ cấp cứu ngừng tim đột ngột, giúp tăng cơ hội sống sót và
+                alt="Máy khử rung tim tự động (AED)" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.AutomatedExternalDefibrillatorAed"></div>
+            <div class="inner-content"><span class="inner-badge" data-i18n="0:copy.FeaturedProduct">SẢN PHẨM NỔI BẬT</span>
+              <h3 id="product-title-aed" data-i18n="0:copy.AutomatedExternalDefibrillatorAed">Máy khử rung tim tự động (AED)</h3>
+              <p class="inner-desc" data-i18n="0:copy.EssentialEquipmentForFirstAidInSudden">Thiết bị thiết yếu trong sơ cấp cứu ngừng tim đột ngột, giúp tăng cơ hội sống sót và
                 bảo vệ cộng đồng tại trường học, doanh nghiệp, cơ sở y tế và nơi công cộng.</p>
               <div class="inner-specs">
                 <div class="inner-spec">
-                  <h4><span><i class="fa-solid fa-building" aria-hidden="true"></i></span>Nhà sản xuất</h4>
-                  <div class="inner-audience"><strong>Nihon Kohden (Nhật Bản)</strong>
-                    <p>Thương hiệu thiết bị y tế hàng đầu với chất lượng và độ tin cậy cao, được tin dùng tại nhiều quốc
+                  <h4 data-i18n="0:copy.Manufacturer"><span><i class="fa-solid fa-building" aria-hidden="true"></i></span>Nhà sản xuất</h4>
+                  <div class="inner-audience"><strong data-i18n="0:copy.NihonKohdenJapan">Nihon Kohden (Nhật Bản)</strong>
+                    <p data-i18n="0:copy.ALeadingMedicalEquipmentBrandKnownFor">Thương hiệu thiết bị y tế hàng đầu với chất lượng và độ tin cậy cao, được tin dùng tại nhiều quốc
                       gia.</p>
                   </div>
                 </div>
                 <div class="inner-spec">
-                  <h4><span><i class="fa-solid fa-star" aria-hidden="true"></i></span>Điểm nổi bật</h4>
+                  <h4 data-i18n="0:copy.KeyFeatures"><span><i class="fa-solid fa-star" aria-hidden="true"></i></span>Điểm nổi bật</h4>
                   <ul>
-                    <li>Luôn sẵn sàng hoạt động với chức năng tự động kiểm tra hằng ngày.</li>
-                    <li>Hướng dẫn bằng giọng nói, thao tác đơn giản chỉ với 3 bước.</li>
-                    <li>Phân tích nhịp tim chính xác, hỗ trợ người không chuyên.</li>
-                    <li>Thiết kế nhỏ gọn, bền bỉ, đạt chuẩn IP55.</li>
-                    <li>Sạc và xả nhanh, sẵn sàng cho tình huống khẩn cấp.</li>
+                    <li data-i18n="0:copy.ReadyForUseWithAutomaticDailySelf">Luôn sẵn sàng hoạt động với chức năng tự động kiểm tra hằng ngày.</li>
+                    <li data-i18n="0:copy.VoiceGuidanceAndASimpleThreeStep">Hướng dẫn bằng giọng nói, thao tác đơn giản chỉ với 3 bước.</li>
+                    <li data-i18n="0:copy.AccurateHeartRhythmAnalysisToSupportNon">Phân tích nhịp tim chính xác, hỗ trợ người không chuyên.</li>
+                    <li data-i18n="0:copy.CompactDurableDesignWithAnIp55Rating">Thiết kế nhỏ gọn, bền bỉ, đạt chuẩn IP55.</li>
+                    <li data-i18n="0:copy.RapidChargingAndDischargeForEmergencyResponse">Sạc và xả nhanh, sẵn sàng cho tình huống khẩn cấp.</li>
                   </ul>
                 </div>
                 <div class="inner-spec">
-                  <h4><span><i class="fa-solid fa-gear" aria-hidden="true"></i></span>Thông số chính</h4>
+                  <h4 data-i18n="0:copy.KeySpecifications"><span><i class="fa-solid fa-gear" aria-hidden="true"></i></span>Thông số chính</h4>
                   <ul>
-                    <li>Công nghệ: Sóng hai pha (ActiBiphasic)</li>
-                    <li>Năng lượng: 50 – 200J</li>
-                    <li>Thời lượng pin: 4 năm, > 200 lần sốc</li>
-                    <li>Lưu trữ dữ liệu: đến 90 phút / 3 lần cứu hộ</li>
-                    <li>Kết nối: Bluetooth</li>
-                    <li>Độ bền: Chống va đập, rung, rơi theo tiêu chuẩn quân sự MIL-STD</li>
+                    <li data-i18n="0:copy.TechnologyBiphasicWaveformActibiphasic">Công nghệ: Sóng hai pha (ActiBiphasic)</li>
+                    <li data-i18n="0:copy.Energy50200J">Năng lượng: 50 – 200J</li>
+                    <li data-i18n="0:copy.BatteryLife4Years200Shocks">Thời lượng pin: 4 năm, > 200 lần sốc</li>
+                    <li data-i18n="0:copy.DataStorageUpTo90Minutes3">Lưu trữ dữ liệu: đến 90 phút / 3 lần cứu hộ</li>
+                    <li data-i18n="0:copy.ConnectivityBluetooth">Kết nối: Bluetooth</li>
+                    <li data-i18n="0:copy.DurabilityImpactVibrationAndDropResistanceTo">Độ bền: Chống va đập, rung, rơi theo tiêu chuẩn quân sự MIL-STD</li>
                   </ul>
                 </div>
               </div>
-              <div class="inner-actions"><button class="button" type="button" data-product-detail="aed"><i
+              <div class="inner-actions"><button class="button" type="button" data-product-detail="aed" data-i18n="0:copy.ViewProductDetails"><i
                     class="fa-solid fa-file-lines" aria-hidden="true"></i> Xem chi tiết sản phẩm <i
                     class="fa-solid fa-arrow-right" aria-hidden="true"></i></button><a class="button outline"
-                  href="#consultation" data-product-consult="aed"><i class="fa-solid fa-comment-dots"
+                  href="#consultation" data-product-consult="aed" data-i18n="0:copy.RequestAdvice"><i class="fa-solid fa-comment-dots"
                     aria-hidden="true"></i> Nhận tư vấn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </div>
             </div>
@@ -441,29 +443,29 @@
             <div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-users"
                   aria-hidden="true"></i></span>
               <div>
-                <h4>Ứng dụng thực tế</h4>
-                <p>Phù hợp nhiều môi trường: trường học, doanh nghiệp, bệnh viện, cộng đồng</p>
+                <h4 data-i18n="0:copy.PracticalApplications">Ứng dụng thực tế</h4>
+                <p data-i18n="0:copy.SuitableForSchoolsBusinessesHospitalsAndCommunities">Phù hợp nhiều môi trường: trường học, doanh nghiệp, bệnh viện, cộng đồng</p>
               </div>
             </div>
             <div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-shield-halved"
                   aria-hidden="true"></i></span>
               <div>
-                <h4>Sản phẩm chính hãng</h4>
-                <p>Từ các thương hiệu uy tín, đạt tiêu chuẩn quốc tế</p>
+                <h4 data-i18n="0:copy.AuthenticProducts">Sản phẩm chính hãng</h4>
+                <p data-i18n="0:copy.FromTrustedBrandsMeetingInternationalStandards">Từ các thương hiệu uy tín, đạt tiêu chuẩn quốc tế</p>
               </div>
             </div>
             <div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-gear"
                   aria-hidden="true"></i></span>
               <div>
-                <h4>Sẵn sàng triển khai</h4>
-                <p>Tư vấn, đào tạo và hỗ trợ lắp đặt</p>
+                <h4 data-i18n="0:copy.ReadyToDeploy">Sẵn sàng triển khai</h4>
+                <p data-i18n="0:copy.ConsultationTrainingAndInstallationSupport">Tư vấn, đào tạo và hỗ trợ lắp đặt</p>
               </div>
             </div>
             <div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-heart"
                   aria-hidden="true"></i></span>
               <div>
-                <h4>Đồng hành lâu dài</h4>
-                <p>Bảo hành, bảo trì và hỗ trợ chuyên môn</p>
+                <h4 data-i18n="0:copy.LongTermSupport">Đồng hành lâu dài</h4>
+                <p data-i18n="0:copy.WarrantyMaintenanceAndProfessionalSupport">Bảo hành, bảo trì và hỗ trợ chuyên môn</p>
               </div>
             </div>
           </div>
@@ -474,38 +476,38 @@
             <div class="inner-visual"><img class="product-art product-art--personal"
                 src="assets/images/products/personal-kit-hd.png" alt="Personal First Aid Kit (55+ items)" loading="lazy"
                 decoding="async"></div>
-            <div class="inner-content"><span class="inner-badge">SẢN PHẨM NỔI BẬT</span>
+            <div class="inner-content"><span class="inner-badge" data-i18n="0:copy.FeaturedProduct">SẢN PHẨM NỔI BẬT</span>
               <h3 id="product-title-personal">Personal First Aid Kit (55+ items)</h3>
-              <p class="inner-desc">Bộ sơ cứu cá nhân nhỏ gọn, tiện dụng cho nhu cầu sơ cứu cơ bản hằng ngày, phù hợp
+              <p class="inner-desc" data-i18n="0:copy.ACompactConvenientPersonalFirstAidKit">Bộ sơ cứu cá nhân nhỏ gọn, tiện dụng cho nhu cầu sơ cứu cơ bản hằng ngày, phù hợp
                 mang theo và sử dụng nhanh trong nhiều tình huống thông thường.</p>
               <div class="inner-specs">
                 <div class="inner-spec">
-                  <h4><span><i class="fa-solid fa-users" aria-hidden="true"></i></span>Phù hợp sử dụng</h4>
-                  <div class="inner-audience">Cá nhân, xe cá nhân, balo, văn phòng nhỏ, sử dụng hằng ngày.</div>
+                  <h4 data-i18n="0:copy.SuitableUses"><span><i class="fa-solid fa-users" aria-hidden="true"></i></span>Phù hợp sử dụng</h4>
+                  <div class="inner-audience" data-i18n="0:copy.PersonalUseCarsBackpacksSmallOfficesAnd">Cá nhân, xe cá nhân, balo, văn phòng nhỏ, sử dụng hằng ngày.</div>
                 </div>
                 <div class="inner-spec">
-                  <h4><span><i class="fa-solid fa-star" aria-hidden="true"></i></span>Điểm nổi bật</h4>
+                  <h4 data-i18n="0:copy.KeyFeatures"><span><i class="fa-solid fa-star" aria-hidden="true"></i></span>Điểm nổi bật</h4>
                   <ul>
-                    <li>Nhỏ gọn, tiện dụng và dễ mang theo.</li>
-                    <li>Đáp ứng nhu cầu của hầu hết các tình huống sơ cứu cơ bản.</li>
-                    <li>Bố cục vật tư gọn gàng, dễ tìm kiếm.</li>
-                    <li>Dễ mang theo trong nhiều bối cảnh sử dụng.</li>
+                    <li data-i18n="0:copy.CompactConvenientAndEasyToCarry">Nhỏ gọn, tiện dụng và dễ mang theo.</li>
+                    <li data-i18n="0:copy.CoversTheNeedsOfMostBasicFirst">Đáp ứng nhu cầu của hầu hết các tình huống sơ cứu cơ bản.</li>
+                    <li data-i18n="0:copy.NeatlyOrganizedSuppliesThatAreEasyTo">Bố cục vật tư gọn gàng, dễ tìm kiếm.</li>
+                    <li data-i18n="0:copy.EasyToCarryInARangeOf">Dễ mang theo trong nhiều bối cảnh sử dụng.</li>
                   </ul>
                 </div>
                 <div class="inner-spec">
-                  <h4><span><i class="fa-solid fa-gear" aria-hidden="true"></i></span>Thông số chính</h4>
+                  <h4 data-i18n="0:copy.KeySpecifications"><span><i class="fa-solid fa-gear" aria-hidden="true"></i></span>Thông số chính</h4>
                   <ul>
                     <li>55+ items</li>
-                    <li>Thiết kế nhỏ gọn</li>
-                    <li>Phù hợp sơ cứu cơ bản</li>
-                    <li>Dễ mang theo</li>
+                    <li data-i18n="0:copy.CompactDesign">Thiết kế nhỏ gọn</li>
+                    <li data-i18n="0:copy.SuitableForBasicFirstAid">Phù hợp sơ cứu cơ bản</li>
+                    <li data-i18n="0:copy.EasyToCarry">Dễ mang theo</li>
                   </ul>
                 </div>
               </div>
-              <div class="inner-actions"><button class="button" type="button" data-product-detail="personal"><i
+              <div class="inner-actions"><button class="button" type="button" data-product-detail="personal" data-i18n="0:copy.ViewProductDetails"><i
                     class="fa-solid fa-file-lines" aria-hidden="true"></i> Xem chi tiết sản phẩm <i
                     class="fa-solid fa-arrow-right" aria-hidden="true"></i></button><a class="button outline"
-                  href="#consultation" data-product-consult="personal"><i class="fa-solid fa-comment-dots"
+                  href="#consultation" data-product-consult="personal" data-i18n="0:copy.RequestAdvice"><i class="fa-solid fa-comment-dots"
                     aria-hidden="true"></i> Nhận tư vấn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </div>
             </div>
@@ -514,29 +516,29 @@
             <div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-lightbulb"
                   aria-hidden="true"></i></span>
               <div>
-                <h4>Ứng dụng thực tế</h4>
-                <p>Hỗ trợ xử lý các tình huống thường gặp trong cuộc sống.</p>
+                <h4 data-i18n="0:copy.PracticalApplications">Ứng dụng thực tế</h4>
+                <p data-i18n="0:copy.HelpsManageCommonSituationsInEverydayLife">Hỗ trợ xử lý các tình huống thường gặp trong cuộc sống.</p>
               </div>
             </div>
             <div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-briefcase-medical"
                   aria-hidden="true"></i></span>
               <div>
-                <h4>Nhỏ gọn tiện lợi</h4>
-                <p>Dễ mang theo, phù hợp nhiều hoạt động hằng ngày.</p>
+                <h4 data-i18n="0:copy.CompactAndConvenient">Nhỏ gọn tiện lợi</h4>
+                <p data-i18n="0:copy.EasyToCarryForEverydayActivities">Dễ mang theo, phù hợp nhiều hoạt động hằng ngày.</p>
               </div>
             </div>
             <div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-shield-halved"
                   aria-hidden="true"></i></span>
               <div>
-                <h4>Sẵn sàng sử dụng</h4>
-                <p>Trang bị đầy đủ vật tư cần thiết cho sơ cứu cơ bản.</p>
+                <h4 data-i18n="0:copy.ReadyToUse">Sẵn sàng sử dụng</h4>
+                <p data-i18n="0:copy.EquippedWithEssentialSuppliesForBasicFirst">Trang bị đầy đủ vật tư cần thiết cho sơ cứu cơ bản.</p>
               </div>
             </div>
             <div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-table-cells-large"
                   aria-hidden="true"></i></span>
               <div>
-                <h4>Phù hợp nhiều bối cảnh</h4>
-                <p>Sử dụng tại nhà, nơi làm việc, trên xe, khi đi học, du lịch…</p>
+                <h4 data-i18n="0:copy.SuitableForManySettings">Phù hợp nhiều bối cảnh</h4>
+                <p data-i18n="0:copy.ForUseAtHomeAtWorkIn">Sử dụng tại nhà, nơi làm việc, trên xe, khi đi học, du lịch…</p>
               </div>
             </div>
           </div>
@@ -547,39 +549,39 @@
             <div class="inner-visual"><img class="product-art product-art--office"
                 src="assets/images/products/office-family-kit-hd.png" alt="Office/Family First Aid Kit (200+ items)"
                 loading="lazy" decoding="async"></div>
-            <div class="inner-content"><span class="inner-badge">SẢN PHẨM NỔI BẬT</span>
+            <div class="inner-content"><span class="inner-badge" data-i18n="0:copy.FeaturedProduct">SẢN PHẨM NỔI BẬT</span>
               <h3 id="product-title-office">Office/Family First Aid Kit (200+ items)</h3>
-              <p class="inner-desc">Bộ sơ cứu dành cho gia đình và văn phòng với số lượng vật tư phong phú, hỗ trợ xử lý
+              <p class="inner-desc" data-i18n="0:copy.AFamilyAndOfficeFirstAidKit">Bộ sơ cứu dành cho gia đình và văn phòng với số lượng vật tư phong phú, hỗ trợ xử lý
                 đa dạng tình huống khẩn cấp thường gặp trong nhà hoặc tại nơi làm việc.</p>
               <div class="inner-specs">
                 <div class="inner-spec">
-                  <h4><span><i class="fa-solid fa-users" aria-hidden="true"></i></span>Phù hợp sử dụng</h4>
-                  <div class="inner-audience">Thích hợp cho gia đình, văn phòng, căn hộ, nơi làm việc và nhiều môi
+                  <h4 data-i18n="0:copy.SuitableUses"><span><i class="fa-solid fa-users" aria-hidden="true"></i></span>Phù hợp sử dụng</h4>
+                  <div class="inner-audience" data-i18n="0:copy.SuitableForFamiliesOfficesApartmentsWorkplacesAnd">Thích hợp cho gia đình, văn phòng, căn hộ, nơi làm việc và nhiều môi
                     trường khác.</div>
                 </div>
                 <div class="inner-spec">
-                  <h4><span><i class="fa-solid fa-star" aria-hidden="true"></i></span>Điểm nổi bật</h4>
+                  <h4 data-i18n="0:copy.KeyFeatures"><span><i class="fa-solid fa-star" aria-hidden="true"></i></span>Điểm nổi bật</h4>
                   <ul>
-                    <li>Trang bị toàn diện với hơn 200 vật tư thiết yếu.</li>
-                    <li>Hỗ trợ xử lý đa dạng tình huống khẩn cấp thường gặp trong nhà.</li>
-                    <li>Phù hợp cho cả gia đình và môi trường văn phòng.</li>
-                    <li>Dễ sử dụng, sẵn sàng khi cần thiết.</li>
+                    <li data-i18n="0:copy.ComprehensivelyEquippedWithOver200EssentialItems">Trang bị toàn diện với hơn 200 vật tư thiết yếu.</li>
+                    <li data-i18n="0:copy.HelpsManageARangeOfCommonEmergencies">Hỗ trợ xử lý đa dạng tình huống khẩn cấp thường gặp trong nhà.</li>
+                    <li data-i18n="0:copy.SuitableForBothFamilyAndOfficeUse">Phù hợp cho cả gia đình và môi trường văn phòng.</li>
+                    <li data-i18n="0:copy.EasyToUseAndReadyWhenNeeded">Dễ sử dụng, sẵn sàng khi cần thiết.</li>
                   </ul>
                 </div>
                 <div class="inner-spec">
-                  <h4><span><i class="fa-solid fa-gear" aria-hidden="true"></i></span>Thông số chính</h4>
+                  <h4 data-i18n="0:copy.KeySpecifications"><span><i class="fa-solid fa-gear" aria-hidden="true"></i></span>Thông số chính</h4>
                   <ul>
                     <li>200+ items</li>
-                    <li>Trang bị toàn diện</li>
-                    <li>Phù hợp gia đình / văn phòng</li>
-                    <li>Sẵn sàng sử dụng</li>
+                    <li data-i18n="0:copy.ComprehensiveSupplies">Trang bị toàn diện</li>
+                    <li data-i18n="0:copy.SuitableForFamilyOfficeUse">Phù hợp gia đình / văn phòng</li>
+                    <li data-i18n="0:copy.ReadyToUse">Sẵn sàng sử dụng</li>
                   </ul>
                 </div>
               </div>
-              <div class="inner-actions"><button class="button" type="button" data-product-detail="office"><i
+              <div class="inner-actions"><button class="button" type="button" data-product-detail="office" data-i18n="0:copy.ViewProductDetails"><i
                     class="fa-solid fa-file-lines" aria-hidden="true"></i> Xem chi tiết sản phẩm <i
                     class="fa-solid fa-arrow-right" aria-hidden="true"></i></button><a class="button outline"
-                  href="#consultation" data-product-consult="office"><i class="fa-solid fa-comment-dots"
+                  href="#consultation" data-product-consult="office" data-i18n="0:copy.RequestAdvice"><i class="fa-solid fa-comment-dots"
                     aria-hidden="true"></i> Nhận tư vấn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </div>
             </div>
@@ -588,29 +590,29 @@
             <div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-house"
                   aria-hidden="true"></i></span>
               <div>
-                <h4>Sử dụng tại nhà</h4>
-                <p>Hỗ trợ xử lý các tình huống khẩn cấp thường gặp tại gia đình.</p>
+                <h4 data-i18n="0:copy.ForHomeUse">Sử dụng tại nhà</h4>
+                <p data-i18n="0:copy.HelpsManageCommonHouseholdEmergencies">Hỗ trợ xử lý các tình huống khẩn cấp thường gặp tại gia đình.</p>
               </div>
             </div>
             <div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-briefcase"
                   aria-hidden="true"></i></span>
               <div>
-                <h4>Sẵn sàng cho nhiều môi trường</h4>
-                <p>Phù hợp cho văn phòng, căn hộ, trường học và nơi làm việc.</p>
+                <h4 data-i18n="0:copy.ReadyForDifferentSettings">Sẵn sàng cho nhiều môi trường</h4>
+                <p data-i18n="0:copy.SuitableForOfficesApartmentsSchoolsAndWorkplaces">Phù hợp cho văn phòng, căn hộ, trường học và nơi làm việc.</p>
               </div>
             </div>
             <div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-shield-halved"
                   aria-hidden="true"></i></span>
               <div>
-                <h4>Vật tư được sắp xếp khoa học</h4>
-                <p>Dễ dàng tìm kiếm, thuận tiện sử dụng khi cần thiết.</p>
+                <h4 data-i18n="0:copy.WellOrganizedSupplies">Vật tư được sắp xếp khoa học</h4>
+                <p data-i18n="0:copy.EasyToFindAndConvenientToUse">Dễ dàng tìm kiếm, thuận tiện sử dụng khi cần thiết.</p>
               </div>
             </div>
             <div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-table-cells-large"
                   aria-hidden="true"></i></span>
               <div>
-                <h4>Bảo vệ an toàn mỗi ngày</h4>
-                <p>Giúp bạn và gia đình chủ động hơn trước các tình huống khẩn cấp.</p>
+                <h4 data-i18n="0:copy.EverydaySafety">Bảo vệ an toàn mỗi ngày</h4>
+                <p data-i18n="0:copy.HelpsYouAndYourFamilyPrepareFor">Giúp bạn và gia đình chủ động hơn trước các tình huống khẩn cấp.</p>
               </div>
             </div>
           </div>
@@ -621,39 +623,39 @@
             <div class="inner-visual"><img class="product-art product-art--travel"
                 src="assets/images/products/travel-kit-hd.png" alt="Travel First Aid Kit (60+ items)" loading="lazy"
                 decoding="async"></div>
-            <div class="inner-content"><span class="inner-badge">SẢN PHẨM NỔI BẬT</span>
+            <div class="inner-content"><span class="inner-badge" data-i18n="0:copy.FeaturedProduct">SẢN PHẨM NỔI BẬT</span>
               <h3 id="product-title-travel">Travel First Aid Kit (60+ items)</h3>
-              <p class="inner-desc">Bộ sơ cứu du lịch được trang bị đầy đủ cho các chuyến đi dã ngoại, picnic và di
+              <p class="inner-desc" data-i18n="0:copy.ATravelFirstAidKitEquippedFor">Bộ sơ cứu du lịch được trang bị đầy đủ cho các chuyến đi dã ngoại, picnic và di
                 chuyển nhóm, hỗ trợ xử lý nhanh các tình huống sơ cứu ngoài trời và khi đang di chuyển.</p>
               <div class="inner-specs">
                 <div class="inner-spec">
-                  <h4><span><i class="fa-solid fa-users" aria-hidden="true"></i></span>Phù hợp sử dụng</h4>
-                  <div class="inner-audience">Lý tưởng cho các chuyến dã ngoại, picnic, du lịch nhóm, di chuyển bằng ô
+                  <h4 data-i18n="0:copy.SuitableUses"><span><i class="fa-solid fa-users" aria-hidden="true"></i></span>Phù hợp sử dụng</h4>
+                  <div class="inner-audience" data-i18n="0:copy.IdealForOutingsPicnicsGroupTravelCar">Lý tưởng cho các chuyến dã ngoại, picnic, du lịch nhóm, di chuyển bằng ô
                     tô và các hoạt động ngoài trời.</div>
                 </div>
                 <div class="inner-spec">
-                  <h4><span><i class="fa-solid fa-star" aria-hidden="true"></i></span>Điểm nổi bật</h4>
+                  <h4 data-i18n="0:copy.KeyFeatures"><span><i class="fa-solid fa-star" aria-hidden="true"></i></span>Điểm nổi bật</h4>
                   <ul>
-                    <li>Phù hợp cho các chuyến dã ngoại và du lịch nhóm.</li>
-                    <li>Được trang bị đầy đủ cho sơ cứu ngoài trời và khi di chuyển.</li>
-                    <li>Đa dạng vật tư y tế thiết yếu, xử lý các tình huống thường gặp.</li>
-                    <li>Thiết kế tiện dụng, dễ sử dụng.</li>
+                    <li data-i18n="0:copy.SuitableForOutingsAndGroupTravel">Phù hợp cho các chuyến dã ngoại và du lịch nhóm.</li>
+                    <li data-i18n="0:copy.FullyEquippedForFirstAidOutdoorsAnd">Được trang bị đầy đủ cho sơ cứu ngoài trời và khi di chuyển.</li>
+                    <li data-i18n="0:copy.ARangeOfEssentialMedicalSuppliesFor">Đa dạng vật tư y tế thiết yếu, xử lý các tình huống thường gặp.</li>
+                    <li data-i18n="0:copy.ConvenientEasyToUseDesign">Thiết kế tiện dụng, dễ sử dụng.</li>
                   </ul>
                 </div>
                 <div class="inner-spec">
-                  <h4><span><i class="fa-solid fa-gear" aria-hidden="true"></i></span>Thông số chính</h4>
+                  <h4 data-i18n="0:copy.KeySpecifications"><span><i class="fa-solid fa-gear" aria-hidden="true"></i></span>Thông số chính</h4>
                   <ul>
                     <li>60+ items</li>
-                    <li>Thiết kế cơ động</li>
-                    <li>Phù hợp du lịch</li>
-                    <li>Dễ mang theo</li>
+                    <li data-i18n="0:copy.PortableDesign">Thiết kế cơ động</li>
+                    <li data-i18n="0:copy.SuitableForTravel">Phù hợp du lịch</li>
+                    <li data-i18n="0:copy.EasyToCarry">Dễ mang theo</li>
                   </ul>
                 </div>
               </div>
-              <div class="inner-actions"><button class="button" type="button" data-product-detail="travel"><i
+              <div class="inner-actions"><button class="button" type="button" data-product-detail="travel" data-i18n="0:copy.ViewProductDetails"><i
                     class="fa-solid fa-file-lines" aria-hidden="true"></i> Xem chi tiết sản phẩm <i
                     class="fa-solid fa-arrow-right" aria-hidden="true"></i></button><a class="button outline"
-                  href="#consultation" data-product-consult="travel"><i class="fa-solid fa-comment-dots"
+                  href="#consultation" data-product-consult="travel" data-i18n="0:copy.RequestAdvice"><i class="fa-solid fa-comment-dots"
                     aria-hidden="true"></i> Nhận tư vấn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </div>
             </div>
@@ -662,29 +664,29 @@
             <div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-lightbulb"
                   aria-hidden="true"></i></span>
               <div>
-                <h4>Phù hợp hoạt động ngoài trời</h4>
-                <p>Hỗ trợ xử lý các tình huống thường gặp khi dã ngoại, picnic, du lịch và di chuyển.</p>
+                <h4 data-i18n="0:copy.SuitableForOutdoorActivities">Phù hợp hoạt động ngoài trời</h4>
+                <p data-i18n="0:copy.HelpsManageCommonSituationsOnOutingsPicnics">Hỗ trợ xử lý các tình huống thường gặp khi dã ngoại, picnic, du lịch và di chuyển.</p>
               </div>
             </div>
             <div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-briefcase-medical"
                   aria-hidden="true"></i></span>
               <div>
-                <h4>Gọn nhẹ, dễ mang theo</h4>
-                <p>Thiết kế nhỏ gọn, tiện lợi để mang theo mọi hành trình.</p>
+                <h4 data-i18n="0:copy.LightweightAndPortable">Gọn nhẹ, dễ mang theo</h4>
+                <p data-i18n="0:copy.ACompactConvenientDesignToTakeOn">Thiết kế nhỏ gọn, tiện lợi để mang theo mọi hành trình.</p>
               </div>
             </div>
             <div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-shield-halved"
                   aria-hidden="true"></i></span>
               <div>
-                <h4>Đầy đủ vật tư cần thiết</h4>
-                <p>Trang bị đa dạng vật tư sơ cứu phục vụ nhiều tình huống thường gặp.</p>
+                <h4 data-i18n="0:copy.EssentialSuppliesIncluded">Đầy đủ vật tư cần thiết</h4>
+                <p data-i18n="0:copy.ARangeOfFirstAidSuppliesFor">Trang bị đa dạng vật tư sơ cứu phục vụ nhiều tình huống thường gặp.</p>
               </div>
             </div>
             <div class="inner-benefit"><span class="inner-icon"><i class="fa-solid fa-table-cells-large"
                   aria-hidden="true"></i></span>
               <div>
-                <h4>Linh hoạt sử dụng</h4>
-                <p>Phù hợp cho cá nhân, gia đình, nhóm du lịch, sử dụng trong ô tô và các hoạt động ngoài trời.</p>
+                <h4 data-i18n="0:copy.FlexibleUse">Linh hoạt sử dụng</h4>
+                <p data-i18n="0:copy.SuitableForIndividualsFamiliesTravelGroupsCars">Phù hợp cho cá nhân, gia đình, nhóm du lịch, sử dụng trong ô tô và các hoạt động ngoài trời.</p>
               </div>
             </div>
           </div>
@@ -693,12 +695,12 @@
           aria-labelledby="product-title-cpr" hidden>
           <div class="inner-wrap">
             <div class="inner-visual"><img class="product-art product-art--cpr"
-                src="assets/images/products/cpr-kit-hd.png" alt="Bộ dụng cụ CPR" loading="lazy" decoding="async"></div>
-            <div class="inner-content"><span class="inner-badge">GIẢI PHÁP ĐÀO TẠO</span>
-              <h3 id="product-title-cpr">Bộ dụng cụ CPR</h3>
-              <p class="inner-desc">Dụng cụ phục vụ thực hành kỹ năng hồi sinh tim phổi (CPR).</p>
-              <p class="inner-category-note">Liên hệ GHME để được tư vấn danh mục, cấu hình và thiết bị phù hợp với nhu
-                cầu đào tạo của bạn.</p><a class="button" href="#consultation" data-product-consult="cpr"><i
+                src="assets/images/products/cpr-kit-hd.png" alt="Bộ dụng cụ CPR" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.CprTrainingKit"></div>
+            <div class="inner-content"><span class="inner-badge" data-i18n="0:copy.TrainingSolutions">GIẢI PHÁP ĐÀO TẠO</span>
+              <h3 id="product-title-cpr" data-i18n="0:copy.CprTrainingKit">Bộ dụng cụ CPR</h3>
+              <p class="inner-desc" data-i18n="0:copy.ToolsForPracticingCardiopulmonaryResuscitationCpr">Dụng cụ phục vụ thực hành kỹ năng hồi sinh tim phổi (CPR).</p>
+              <p class="inner-category-note" data-i18n="0:copy.ContactGhmeForAdviceOnProductsConfigurations">Liên hệ GHME để được tư vấn danh mục, cấu hình và thiết bị phù hợp với nhu
+                cầu đào tạo của bạn.</p><a class="button" href="#consultation" data-product-consult="cpr" data-i18n="0:copy.RequestAdvice"><i
                   class="fa-solid fa-comment-dots" aria-hidden="true"></i> Nhận tư vấn <i
                   class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
             </div>
@@ -709,12 +711,12 @@
           <div class="inner-wrap">
             <div class="inner-visual"><img class="product-art product-art--training"
                 src="assets/images/products/training-equipment-hd.png" alt="Thiết bị hỗ trợ đào tạo" loading="lazy"
-                decoding="async"></div>
-            <div class="inner-content"><span class="inner-badge">GIẢI PHÁP ĐÀO TẠO</span>
-              <h3 id="product-title-training">Thiết bị hỗ trợ đào tạo</h3>
-              <p class="inner-desc">Thiết bị hỗ trợ các buổi đào tạo và thực hành sơ cấp cứu.</p>
-              <p class="inner-category-note">Liên hệ GHME để được tư vấn danh mục, cấu hình và thiết bị phù hợp với nhu
-                cầu đào tạo của bạn.</p><a class="button" href="#consultation" data-product-consult="training"><i
+                decoding="async" data-i18n-attrs="alt:copy.TrainingEquipment"></div>
+            <div class="inner-content"><span class="inner-badge" data-i18n="0:copy.TrainingSolutions">GIẢI PHÁP ĐÀO TẠO</span>
+              <h3 id="product-title-training" data-i18n="0:copy.TrainingEquipment">Thiết bị hỗ trợ đào tạo</h3>
+              <p class="inner-desc" data-i18n="0:copy.EquipmentForFirstAidTrainingAndPractical">Thiết bị hỗ trợ các buổi đào tạo và thực hành sơ cấp cứu.</p>
+              <p class="inner-category-note" data-i18n="0:copy.ContactGhmeForAdviceOnProductsConfigurations">Liên hệ GHME để được tư vấn danh mục, cấu hình và thiết bị phù hợp với nhu
+                cầu đào tạo của bạn.</p><a class="button" href="#consultation" data-product-consult="training" data-i18n="0:copy.RequestAdvice"><i
                   class="fa-solid fa-comment-dots" aria-hidden="true"></i> Nhận tư vấn <i
                   class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
             </div>
@@ -723,10 +725,10 @@
       </div>
       <p class="sr-only" id="product-status" role="status" aria-live="polite"></p>
       <dialog class="product-dialog" id="product-dialog" aria-labelledby="product-dialog-title"><button
-          class="product-dialog__close" type="button" aria-label="Đóng chi tiết sản phẩm"><i class="fa-solid fa-xmark"
-            aria-hidden="true"></i></button><span class="inner-badge">THÔNG TIN SẢN PHẨM</span>
+          class="product-dialog__close" type="button" aria-label="Đóng chi tiết sản phẩm" data-i18n-attrs="aria-label:copy.CloseProductDetails"><i class="fa-solid fa-xmark"
+            aria-hidden="true"></i></button><span class="inner-badge" data-i18n="0:copy.ProductInformation">THÔNG TIN SẢN PHẨM</span>
         <h2 id="product-dialog-title"></h2>
-        <div id="product-dialog-content"></div><a class="button" href="#consultation" id="product-dialog-consult">Nhận
+        <div id="product-dialog-content"></div><a class="button" href="#consultation" id="product-dialog-consult" data-i18n="0:copy.RequestAdvice">Nhận
           tư vấn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
       </dialog>
     </section>
@@ -735,607 +737,607 @@
       <div class="experts__container">
         <div class="experts__intro">
           <div>
-            <p class="experts__eyebrow">ĐỘI NGŨ CHUYÊN MÔN</p>
-            <h2 id="certificates-title">Gặp gỡ đội ngũ chuyên gia <em>GHME</em></h2>
+            <p class="experts__eyebrow" data-i18n="0:copy.OurProfessionalTeam">ĐỘI NGŨ CHUYÊN MÔN</p>
+            <h2 id="certificates-title" data-i18n="0:copy.MeetTheExpertsAt">Gặp gỡ đội ngũ chuyên gia <em>GHME</em></h2>
           </div>
-          <p class="experts__description">Tìm giảng viên phù hợp với lĩnh vực bạn quan tâm.</p>
+          <p class="experts__description" data-i18n="0:copy.FindAnInstructorInYourAreaOf">Tìm giảng viên phù hợp với lĩnh vực bạn quan tâm.</p>
         </div>
         <div class="experts__directory">
           <div class="experts__directory-header">
-            <div class="experts__tabs" aria-label="Nhóm nhân sự GHME">
+            <div class="experts__tabs" aria-label="Nhóm nhân sự GHME" data-i18n-attrs="aria-label:copy.GhmeTeamGroups">
               <button type="button" id="experts-tab-instructors" data-experts-tab="instructors"
-                aria-controls="experts-instructors">Đội ngũ giảng viên <span>12</span></button>
+                aria-controls="experts-instructors" data-i18n="0:copy.Instructors">Đội ngũ giảng viên <span>12</span></button>
               <button type="button" id="experts-tab-leadership" data-experts-tab="leadership"
-                aria-controls="experts-leadership">Ban lãnh đạo <span>03</span></button>
+                aria-controls="experts-leadership" data-i18n="0:copy.Leadership">Ban lãnh đạo <span>03</span></button>
             </div>
             <div class="experts__filters" hidden>
-              <label class="experts__search"><span class="sr-only">Tìm theo tên chuyên gia</span><i
+              <label class="experts__search"><span class="sr-only" data-i18n="0:copy.SearchExpertsByName">Tìm theo tên chuyên gia</span><i
                   class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><input id="experts-search" type="search"
                   placeholder="Tìm theo tên chuyên gia" autocomplete="off"
-                  aria-controls="experts-instructors experts-leadership"></label>
-              <label class="experts__filter"><span class="sr-only">Lọc theo chuyên khoa</span><select
+                  aria-controls="experts-instructors experts-leadership" data-i18n-attrs="placeholder:copy.SearchExpertsByName"></label>
+              <label class="experts__filter"><span class="sr-only" data-i18n="0:copy.FilterBySpecialty">Lọc theo chuyên khoa</span><select
                   id="experts-specialty" aria-controls="experts-instructors">
-                  <option value="">Tất cả chuyên khoa</option>
-                  <option value="Cấp cứu &amp; Chăm sóc trước viện">Cấp cứu &amp; Chăm sóc trước viện</option>
-                  <option value="Dinh dưỡng">Dinh dưỡng</option>
-                  <option value="Huyết học &amp; Truyền máu">Huyết học &amp; Truyền máu</option>
-                  <option value="Hồi sức tích cực">Hồi sức tích cực</option>
-                  <option value="Nhãn khoa">Nhãn khoa</option>
-                  <option value="Nội khoa">Nội khoa</option>
-                  <option value="Sản phụ khoa">Sản phụ khoa</option>
-                  <option value="Tâm lý học, Phục hồi chức năng">Tâm lý học, Phục hồi chức năng</option>
-                  <option value="Y học cổ truyền">Y học cổ truyền</option>
-                  <option value="Y học dự phòng">Y học dự phòng</option>
-                  <option value="Y học quân sự">Y học quân sự</option>
+                  <option value="" data-i18n="0:copy.AllSpecialties">Tất cả chuyên khoa</option>
+                  <option value="Cấp cứu &amp; Chăm sóc trước viện" data-i18n="0:copy.EmergencyPreHospitalCare">Cấp cứu &amp; Chăm sóc trước viện</option>
+                  <option value="Dinh dưỡng" data-i18n="0:copy.Nutrition">Dinh dưỡng</option>
+                  <option value="Huyết học &amp; Truyền máu" data-i18n="0:copy.HematologyTransfusionMedicine">Huyết học &amp; Truyền máu</option>
+                  <option value="Hồi sức tích cực" data-i18n="0:copy.IntensiveCare">Hồi sức tích cực</option>
+                  <option value="Nhãn khoa" data-i18n="0:copy.Ophthalmology">Nhãn khoa</option>
+                  <option value="Nội khoa" data-i18n="0:copy.InternalMedicine">Nội khoa</option>
+                  <option value="Sản phụ khoa" data-i18n="0:copy.ObstetricsGynecology">Sản phụ khoa</option>
+                  <option value="Tâm lý học, Phục hồi chức năng" data-i18n="0:copy.PsychologyRehabilitation">Tâm lý học, Phục hồi chức năng</option>
+                  <option value="Y học cổ truyền" data-i18n="0:copy.TraditionalMedicine">Y học cổ truyền</option>
+                  <option value="Y học dự phòng" data-i18n="0:copy.PreventiveMedicine">Y học dự phòng</option>
+                  <option value="Y học quân sự" data-i18n="0:copy.MilitaryMedicine">Y học quân sự</option>
                 </select></label>
             </div>
           </div>
           <div id="experts-instructors" class="experts__panel">
-            <h3 class="experts__group-title">Đội ngũ giảng viên</h3>
+            <h3 class="experts__group-title" data-i18n="0:copy.Instructors">Đội ngũ giảng viên</h3>
             <div class="experts__grid" id="experts-instructor-grid">
               <article class="experts__card experts__card--featured" data-profile="nguyen-hong-truong" data-name="Nguyen Hong Truong" data-specialty="Hồi sức tích cực">
-              <div class="experts__photo"><img class="experts__portrait" src="assets/images/about/nguyen-hong-truong.webp" alt="Chân dung Nguyen Hong Truong" width="1350" height="1350" loading="lazy" decoding="async"><p class="experts__advisor-tag"><i class="fa-regular fa-star" aria-hidden="true"></i><span>Chuyên gia nổi bật</span></p></div>
+              <div class="experts__photo"><img class="experts__portrait" src="assets/images/about/nguyen-hong-truong.webp" alt="Chân dung Nguyen Hong Truong" width="1350" height="1350" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfNguyenHongTruong"><p class="experts__advisor-tag"><i class="fa-regular fa-star" aria-hidden="true"></i><span data-i18n="0:copy.FeaturedExpert">Chuyên gia nổi bật</span></p></div>
               <div class="experts__card-copy">
-                <div class="experts__identity"><h4 class="experts__card-name">Nguyen Hong Truong</h4><p class="experts__academic">Bác sĩ, Thạc sĩ</p></div>
-                <p class="experts__specialty"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i><span>Hồi sức tích cực</span></p>
+                <div class="experts__identity"><h4 class="experts__card-name">Nguyen Hong Truong</h4><p class="experts__academic" data-i18n="0:copy.PhysicianMsc">Bác sĩ, Thạc sĩ</p></div>
+                <p class="experts__specialty"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i><span data-i18n="0:copy.IntensiveCare">Hồi sức tích cực</span></p>
                 <div class="experts__card-actions">
-                  <button type="button" class="experts__profile-button" data-expert-id="nguyen-hong-truong" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Hong Truong"><span class="experts__profile-label">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
-                  <button type="button" class="experts__profile-circle" data-expert-id="nguyen-hong-truong" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Hong Truong"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+                  <button type="button" class="experts__profile-button" data-expert-id="nguyen-hong-truong" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Hong Truong" data-i18n-attrs="aria-label:copy.ViewProfileNguyenHongTruong"><span class="experts__profile-label" data-i18n="0:copy.ViewProfile">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
+                  <button type="button" class="experts__profile-circle" data-expert-id="nguyen-hong-truong" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Hong Truong" data-i18n-attrs="aria-label:copy.ViewProfileNguyenHongTruong"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
               </div>
             </article>
               <article class="experts__card" data-profile="nguyen-quoc-vu-khanh" data-name="Nguyen Quoc Vu Khanh" data-specialty="Huyết học &amp; Truyền máu">
-              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/nguyen-quoc-vu-khanh.webp" alt="Chân dung Nguyen Quoc Vu Khanh" width="675" height="675" loading="lazy" decoding="async"></div>
+              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/nguyen-quoc-vu-khanh.webp" alt="Chân dung Nguyen Quoc Vu Khanh" width="675" height="675" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfNguyenQuocVuKhanh"></div>
               <div class="experts__card-copy">
-                <div class="experts__identity"><h4 class="experts__card-name">Nguyen Quoc Vu Khanh</h4><p class="experts__academic">Bác sĩ chuyên khoa I</p></div>
-                <p class="experts__specialty"><i class="fa-solid fa-droplet" aria-hidden="true"></i><span>Huyết học &amp; Truyền máu</span></p>
+                <div class="experts__identity"><h4 class="experts__card-name">Nguyen Quoc Vu Khanh</h4><p class="experts__academic" data-i18n="0:copy.PhysicianSpecialistLevelI">Bác sĩ chuyên khoa I</p></div>
+                <p class="experts__specialty"><i class="fa-solid fa-droplet" aria-hidden="true"></i><span data-i18n="0:copy.HematologyTransfusionMedicine">Huyết học &amp; Truyền máu</span></p>
                 <div class="experts__card-actions">
-                  <button type="button" class="experts__profile-button" data-expert-id="nguyen-quoc-vu-khanh" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Quoc Vu Khanh"><span class="experts__profile-label">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
-                  <button type="button" class="experts__profile-circle" data-expert-id="nguyen-quoc-vu-khanh" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Quoc Vu Khanh"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+                  <button type="button" class="experts__profile-button" data-expert-id="nguyen-quoc-vu-khanh" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Quoc Vu Khanh" data-i18n-attrs="aria-label:copy.ViewProfileNguyenQuocVuKhanh"><span class="experts__profile-label" data-i18n="0:copy.ViewProfile">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
+                  <button type="button" class="experts__profile-circle" data-expert-id="nguyen-quoc-vu-khanh" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Quoc Vu Khanh" data-i18n-attrs="aria-label:copy.ViewProfileNguyenQuocVuKhanh"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
               </div>
             </article>
               <article class="experts__card" data-profile="nguyen-kim" data-name="Nguyen Kim" data-specialty="Hồi sức tích cực">
-              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/nguyen-kim.webp" alt="Chân dung Nguyen Kim" width="675" height="675" loading="lazy" decoding="async"></div>
+              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/nguyen-kim.webp" alt="Chân dung Nguyen Kim" width="675" height="675" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfNguyenKim"></div>
               <div class="experts__card-copy">
-                <div class="experts__identity"><h4 class="experts__card-name">Nguyen Kim</h4><p class="experts__academic">Bác sĩ, Thạc sĩ</p></div>
-                <p class="experts__specialty"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i><span>Hồi sức tích cực</span></p>
+                <div class="experts__identity"><h4 class="experts__card-name">Nguyen Kim</h4><p class="experts__academic" data-i18n="0:copy.PhysicianMsc">Bác sĩ, Thạc sĩ</p></div>
+                <p class="experts__specialty"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i><span data-i18n="0:copy.IntensiveCare">Hồi sức tích cực</span></p>
                 <div class="experts__card-actions">
-                  <button type="button" class="experts__profile-button" data-expert-id="nguyen-kim" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Kim"><span class="experts__profile-label">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
-                  <button type="button" class="experts__profile-circle" data-expert-id="nguyen-kim" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Kim"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+                  <button type="button" class="experts__profile-button" data-expert-id="nguyen-kim" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Kim" data-i18n-attrs="aria-label:copy.ViewProfileNguyenKim"><span class="experts__profile-label" data-i18n="0:copy.ViewProfile">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
+                  <button type="button" class="experts__profile-circle" data-expert-id="nguyen-kim" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Kim" data-i18n-attrs="aria-label:copy.ViewProfileNguyenKim"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
               </div>
             </article>
               <article class="experts__card" data-profile="nguyen-vu-truong-an" data-name="Nguyen Vu Truong An" data-specialty="Y học cổ truyền">
-              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/nguyen-vu-truong-an.webp" alt="Chân dung Nguyen Vu Truong An" width="675" height="675" loading="lazy" decoding="async"></div>
+              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/nguyen-vu-truong-an.webp" alt="Chân dung Nguyen Vu Truong An" width="675" height="675" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfNguyenVuTruongAn"></div>
               <div class="experts__card-copy">
-                <div class="experts__identity"><h4 class="experts__card-name">Nguyen Vu Truong An</h4><p class="experts__academic">Bác sĩ, Thạc sĩ</p></div>
-                <p class="experts__specialty"><i class="fa-solid fa-stethoscope" aria-hidden="true"></i><span>Y học cổ truyền</span></p>
+                <div class="experts__identity"><h4 class="experts__card-name">Nguyen Vu Truong An</h4><p class="experts__academic" data-i18n="0:copy.PhysicianMsc">Bác sĩ, Thạc sĩ</p></div>
+                <p class="experts__specialty"><i class="fa-solid fa-stethoscope" aria-hidden="true"></i><span data-i18n="0:copy.TraditionalMedicine">Y học cổ truyền</span></p>
                 <div class="experts__card-actions">
-                  <button type="button" class="experts__profile-button" data-expert-id="nguyen-vu-truong-an" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Vu Truong An"><span class="experts__profile-label">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
-                  <button type="button" class="experts__profile-circle" data-expert-id="nguyen-vu-truong-an" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Vu Truong An"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+                  <button type="button" class="experts__profile-button" data-expert-id="nguyen-vu-truong-an" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Vu Truong An" data-i18n-attrs="aria-label:copy.ViewProfileNguyenVuTruongAn"><span class="experts__profile-label" data-i18n="0:copy.ViewProfile">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
+                  <button type="button" class="experts__profile-circle" data-expert-id="nguyen-vu-truong-an" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Vu Truong An" data-i18n-attrs="aria-label:copy.ViewProfileNguyenVuTruongAn"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
               </div>
             </article>
               <article class="experts__card" data-profile="tran-nguyen-quynh-anh" data-name="Tran Nguyen Quynh Anh" data-specialty="Dinh dưỡng">
-              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/tran-nguyen-quynh-anh.webp" alt="Chân dung Tran Nguyen Quynh Anh" width="675" height="675" loading="lazy" decoding="async"></div>
+              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/tran-nguyen-quynh-anh.webp" alt="Chân dung Tran Nguyen Quynh Anh" width="675" height="675" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfTranNguyenQuynhAnh"></div>
               <div class="experts__card-copy">
-                <div class="experts__identity"><h4 class="experts__card-name">Tran Nguyen Quynh Anh</h4><p class="experts__academic">Bác sĩ, Thạc sĩ</p></div>
-                <p class="experts__specialty"><i class="fa-solid fa-apple-whole" aria-hidden="true"></i><span>Dinh dưỡng</span></p>
+                <div class="experts__identity"><h4 class="experts__card-name">Tran Nguyen Quynh Anh</h4><p class="experts__academic" data-i18n="0:copy.PhysicianMsc">Bác sĩ, Thạc sĩ</p></div>
+                <p class="experts__specialty"><i class="fa-solid fa-apple-whole" aria-hidden="true"></i><span data-i18n="0:copy.Nutrition">Dinh dưỡng</span></p>
                 <div class="experts__card-actions">
-                  <button type="button" class="experts__profile-button" data-expert-id="tran-nguyen-quynh-anh" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Tran Nguyen Quynh Anh"><span class="experts__profile-label">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
-                  <button type="button" class="experts__profile-circle" data-expert-id="tran-nguyen-quynh-anh" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Tran Nguyen Quynh Anh"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+                  <button type="button" class="experts__profile-button" data-expert-id="tran-nguyen-quynh-anh" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Tran Nguyen Quynh Anh" data-i18n-attrs="aria-label:copy.ViewProfileTranNguyenQuynhAnh"><span class="experts__profile-label" data-i18n="0:copy.ViewProfile">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
+                  <button type="button" class="experts__profile-circle" data-expert-id="tran-nguyen-quynh-anh" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Tran Nguyen Quynh Anh" data-i18n-attrs="aria-label:copy.ViewProfileTranNguyenQuynhAnh"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
               </div>
             </article>
               <article class="experts__card" data-profile="le-dang-dai" data-name="Le Dang Dai" data-specialty="Sản phụ khoa">
-              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/le-dang-dai.webp" alt="Chân dung Le Dang Dai" width="675" height="675" loading="lazy" decoding="async"></div>
+              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/le-dang-dai.webp" alt="Chân dung Le Dang Dai" width="675" height="675" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfLeDangDai"></div>
               <div class="experts__card-copy">
-                <div class="experts__identity"><h4 class="experts__card-name">Le Dang Dai</h4><p class="experts__academic">Bác sĩ chuyên khoa I</p></div>
-                <p class="experts__specialty"><i class="fa-solid fa-person-pregnant" aria-hidden="true"></i><span>Sản phụ khoa</span></p>
+                <div class="experts__identity"><h4 class="experts__card-name">Le Dang Dai</h4><p class="experts__academic" data-i18n="0:copy.PhysicianSpecialistLevelI">Bác sĩ chuyên khoa I</p></div>
+                <p class="experts__specialty"><i class="fa-solid fa-person-pregnant" aria-hidden="true"></i><span data-i18n="0:copy.ObstetricsGynecology">Sản phụ khoa</span></p>
                 <div class="experts__card-actions">
-                  <button type="button" class="experts__profile-button" data-expert-id="le-dang-dai" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Le Dang Dai"><span class="experts__profile-label">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
-                  <button type="button" class="experts__profile-circle" data-expert-id="le-dang-dai" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Le Dang Dai"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+                  <button type="button" class="experts__profile-button" data-expert-id="le-dang-dai" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Le Dang Dai" data-i18n-attrs="aria-label:copy.ViewProfileLeDangDai"><span class="experts__profile-label" data-i18n="0:copy.ViewProfile">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
+                  <button type="button" class="experts__profile-circle" data-expert-id="le-dang-dai" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Le Dang Dai" data-i18n-attrs="aria-label:copy.ViewProfileLeDangDai"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
               </div>
             </article>
               <article class="experts__card" data-profile="le-nguyen-thuy-mai" data-name="Le Nguyen Thuy Mai" data-specialty="Y học dự phòng">
-              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/le-nguyen-thuy-mai.webp" alt="Chân dung Le Nguyen Thuy Mai" width="675" height="675" loading="lazy" decoding="async"></div>
+              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/le-nguyen-thuy-mai.webp" alt="Chân dung Le Nguyen Thuy Mai" width="675" height="675" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfLeNguyenThuyMai"></div>
               <div class="experts__card-copy">
-                <div class="experts__identity"><h4 class="experts__card-name">Le Nguyen Thuy Mai</h4><p class="experts__academic">Bác sĩ, Thạc sĩ</p></div>
-                <p class="experts__specialty"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i><span>Y học dự phòng</span></p>
+                <div class="experts__identity"><h4 class="experts__card-name">Le Nguyen Thuy Mai</h4><p class="experts__academic" data-i18n="0:copy.PhysicianMsc">Bác sĩ, Thạc sĩ</p></div>
+                <p class="experts__specialty"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i><span data-i18n="0:copy.PreventiveMedicine">Y học dự phòng</span></p>
                 <div class="experts__card-actions">
-                  <button type="button" class="experts__profile-button" data-expert-id="le-nguyen-thuy-mai" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Le Nguyen Thuy Mai"><span class="experts__profile-label">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
-                  <button type="button" class="experts__profile-circle" data-expert-id="le-nguyen-thuy-mai" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Le Nguyen Thuy Mai"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+                  <button type="button" class="experts__profile-button" data-expert-id="le-nguyen-thuy-mai" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Le Nguyen Thuy Mai" data-i18n-attrs="aria-label:copy.ViewProfileLeNguyenThuyMai"><span class="experts__profile-label" data-i18n="0:copy.ViewProfile">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
+                  <button type="button" class="experts__profile-circle" data-expert-id="le-nguyen-thuy-mai" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Le Nguyen Thuy Mai" data-i18n-attrs="aria-label:copy.ViewProfileLeNguyenThuyMai"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
               </div>
             </article>
               <article class="experts__card" data-profile="nguyen-thanh-cong" data-name="Nguyen Thanh Cong" data-specialty="Y học quân sự">
-              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/nguyen-thanh-cong.webp" alt="Chân dung Nguyen Thanh Cong" width="432" height="432" loading="lazy" decoding="async"></div>
+              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/nguyen-thanh-cong.webp" alt="Chân dung Nguyen Thanh Cong" width="432" height="432" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfNguyenThanhCong"></div>
               <div class="experts__card-copy">
-                <div class="experts__identity"><h4 class="experts__card-name">Nguyen Thanh Cong</h4><p class="experts__academic">Bác sĩ</p></div>
-                <p class="experts__specialty"><i class="fa-solid fa-kit-medical" aria-hidden="true"></i><span>Y học quân sự</span></p>
+                <div class="experts__identity"><h4 class="experts__card-name">Nguyen Thanh Cong</h4><p class="experts__academic" data-i18n="0:copy.Physician">Bác sĩ</p></div>
+                <p class="experts__specialty"><i class="fa-solid fa-kit-medical" aria-hidden="true"></i><span data-i18n="0:copy.MilitaryMedicine">Y học quân sự</span></p>
                 <div class="experts__card-actions">
-                  <button type="button" class="experts__profile-button" data-expert-id="nguyen-thanh-cong" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Thanh Cong"><span class="experts__profile-label">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
-                  <button type="button" class="experts__profile-circle" data-expert-id="nguyen-thanh-cong" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Thanh Cong"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+                  <button type="button" class="experts__profile-button" data-expert-id="nguyen-thanh-cong" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Thanh Cong" data-i18n-attrs="aria-label:copy.ViewProfileNguyenThanhCong"><span class="experts__profile-label" data-i18n="0:copy.ViewProfile">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
+                  <button type="button" class="experts__profile-circle" data-expert-id="nguyen-thanh-cong" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Thanh Cong" data-i18n-attrs="aria-label:copy.ViewProfileNguyenThanhCong"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
               </div>
             </article>
               <article class="experts__card" data-profile="le-tran-the-gia" data-name="Le Tran The Gia" data-specialty="Nội khoa">
-              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/le-tran-the-gia.webp" alt="Chân dung Le Tran The Gia" width="675" height="675" loading="lazy" decoding="async"></div>
+              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/le-tran-the-gia.webp" alt="Chân dung Le Tran The Gia" width="675" height="675" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfLeTranTheGia"></div>
               <div class="experts__card-copy">
-                <div class="experts__identity"><h4 class="experts__card-name">Le Tran The Gia</h4><p class="experts__academic">Bác sĩ, Thạc sĩ</p></div>
-                <p class="experts__specialty"><i class="fa-solid fa-stethoscope" aria-hidden="true"></i><span>Nội khoa</span></p>
+                <div class="experts__identity"><h4 class="experts__card-name">Le Tran The Gia</h4><p class="experts__academic" data-i18n="0:copy.PhysicianMsc">Bác sĩ, Thạc sĩ</p></div>
+                <p class="experts__specialty"><i class="fa-solid fa-stethoscope" aria-hidden="true"></i><span data-i18n="0:copy.InternalMedicine">Nội khoa</span></p>
                 <div class="experts__card-actions">
-                  <button type="button" class="experts__profile-button" data-expert-id="le-tran-the-gia" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Le Tran The Gia"><span class="experts__profile-label">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
-                  <button type="button" class="experts__profile-circle" data-expert-id="le-tran-the-gia" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Le Tran The Gia"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+                  <button type="button" class="experts__profile-button" data-expert-id="le-tran-the-gia" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Le Tran The Gia" data-i18n-attrs="aria-label:copy.ViewProfileLeTranTheGia"><span class="experts__profile-label" data-i18n="0:copy.ViewProfile">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
+                  <button type="button" class="experts__profile-circle" data-expert-id="le-tran-the-gia" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Le Tran The Gia" data-i18n-attrs="aria-label:copy.ViewProfileLeTranTheGia"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
               </div>
             </article>
               <article class="experts__card" data-profile="le-hoang-long" data-name="Le Hoang Long" data-specialty="Cấp cứu &amp; Chăm sóc trước viện">
-              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/le-hoang-long.webp" alt="Chân dung Le Hoang Long" width="675" height="675" loading="lazy" decoding="async"></div>
+              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/le-hoang-long.webp" alt="Chân dung Le Hoang Long" width="675" height="675" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfLeHoangLong"></div>
               <div class="experts__card-copy">
-                <div class="experts__identity"><h4 class="experts__card-name">Le Hoang Long</h4><p class="experts__academic">Cử nhân Điều dưỡng</p></div>
-                <p class="experts__specialty"><i class="fa-solid fa-truck-medical" aria-hidden="true"></i><span>Cấp cứu &amp; Chăm sóc trước viện</span></p>
+                <div class="experts__identity"><h4 class="experts__card-name">Le Hoang Long</h4><p class="experts__academic" data-i18n="0:copy.BachelorOfNursing">Cử nhân Điều dưỡng</p></div>
+                <p class="experts__specialty"><i class="fa-solid fa-truck-medical" aria-hidden="true"></i><span data-i18n="0:copy.EmergencyPreHospitalCare">Cấp cứu &amp; Chăm sóc trước viện</span></p>
                 <div class="experts__card-actions">
-                  <button type="button" class="experts__profile-button" data-expert-id="le-hoang-long" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Le Hoang Long"><span class="experts__profile-label">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
-                  <button type="button" class="experts__profile-circle" data-expert-id="le-hoang-long" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Le Hoang Long"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+                  <button type="button" class="experts__profile-button" data-expert-id="le-hoang-long" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Le Hoang Long" data-i18n-attrs="aria-label:copy.ViewProfileLeHoangLong"><span class="experts__profile-label" data-i18n="0:copy.ViewProfile">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
+                  <button type="button" class="experts__profile-circle" data-expert-id="le-hoang-long" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Le Hoang Long" data-i18n-attrs="aria-label:copy.ViewProfileLeHoangLong"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
               </div>
             </article>
               <article class="experts__card" data-profile="nguyen-thanh-sang" data-name="Nguyen Thanh Sang" data-specialty="Tâm lý học, Phục hồi chức năng">
-              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/nguyen-thanh-sang.webp" alt="Chân dung Nguyen Thanh Sang" width="675" height="675" loading="lazy" decoding="async"></div>
+              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/nguyen-thanh-sang.webp" alt="Chân dung Nguyen Thanh Sang" width="675" height="675" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfNguyenThanhSang"></div>
               <div class="experts__card-copy">
-                <div class="experts__identity"><h4 class="experts__card-name">Nguyen Thanh Sang</h4><p class="experts__academic">Bác sĩ, Thạc sĩ, Chuyên khoa II</p></div>
-                <p class="experts__specialty"><i class="fa-solid fa-brain" aria-hidden="true"></i><span>Tâm lý học, Phục hồi chức năng</span></p>
+                <div class="experts__identity"><h4 class="experts__card-name">Nguyen Thanh Sang</h4><p class="experts__academic" data-i18n="0:copy.PhysicianMscSpecialistLevelIi">Bác sĩ, Thạc sĩ, Chuyên khoa II</p></div>
+                <p class="experts__specialty"><i class="fa-solid fa-brain" aria-hidden="true"></i><span data-i18n="0:copy.PsychologyRehabilitation">Tâm lý học, Phục hồi chức năng</span></p>
                 <div class="experts__card-actions">
-                  <button type="button" class="experts__profile-button" data-expert-id="nguyen-thanh-sang" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Thanh Sang"><span class="experts__profile-label">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
-                  <button type="button" class="experts__profile-circle" data-expert-id="nguyen-thanh-sang" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Thanh Sang"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+                  <button type="button" class="experts__profile-button" data-expert-id="nguyen-thanh-sang" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Thanh Sang" data-i18n-attrs="aria-label:copy.ViewProfileNguyenThanhSang"><span class="experts__profile-label" data-i18n="0:copy.ViewProfile">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
+                  <button type="button" class="experts__profile-circle" data-expert-id="nguyen-thanh-sang" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Thanh Sang" data-i18n-attrs="aria-label:copy.ViewProfileNguyenThanhSang"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
               </div>
             </article>
               <article class="experts__card" data-profile="nguyen-quang-vinh" data-name="Nguyen Quang Vinh" data-specialty="Nhãn khoa">
-              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/nguyen-quang-vinh.webp" alt="Chân dung Nguyen Quang Vinh" width="675" height="675" loading="lazy" decoding="async"></div>
+              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/nguyen-quang-vinh.webp" alt="Chân dung Nguyen Quang Vinh" width="675" height="675" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfNguyenQuangVinh"></div>
               <div class="experts__card-copy">
-                <div class="experts__identity"><h4 class="experts__card-name">Nguyen Quang Vinh</h4><p class="experts__academic">Bác sĩ chuyên khoa II</p></div>
-                <p class="experts__specialty"><i class="fa-solid fa-eye" aria-hidden="true"></i><span>Nhãn khoa</span></p>
+                <div class="experts__identity"><h4 class="experts__card-name">Nguyen Quang Vinh</h4><p class="experts__academic" data-i18n="0:copy.PhysicianSpecialistLevelIi">Bác sĩ chuyên khoa II</p></div>
+                <p class="experts__specialty"><i class="fa-solid fa-eye" aria-hidden="true"></i><span data-i18n="0:copy.Ophthalmology">Nhãn khoa</span></p>
                 <div class="experts__card-actions">
-                  <button type="button" class="experts__profile-button" data-expert-id="nguyen-quang-vinh" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Quang Vinh"><span class="experts__profile-label">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
-                  <button type="button" class="experts__profile-circle" data-expert-id="nguyen-quang-vinh" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Quang Vinh"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+                  <button type="button" class="experts__profile-button" data-expert-id="nguyen-quang-vinh" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Quang Vinh" data-i18n-attrs="aria-label:copy.ViewProfileNguyenQuangVinh"><span class="experts__profile-label" data-i18n="0:copy.ViewProfile">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
+                  <button type="button" class="experts__profile-circle" data-expert-id="nguyen-quang-vinh" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Quang Vinh" data-i18n-attrs="aria-label:copy.ViewProfileNguyenQuangVinh"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
               </div>
             </article>
             </div>
           </div>
           <div id="experts-leadership" class="experts__panel">
-            <h3 class="experts__group-title">Ban lãnh đạo</h3>
+            <h3 class="experts__group-title" data-i18n="0:copy.Leadership">Ban lãnh đạo</h3>
             <div class="experts__grid experts__grid--leadership">
               <article class="experts__card" data-profile="nguyen-hoang-linh" data-name="Nguyen Hoang Linh" data-specialty="">
-              <div class="experts__photo"><img class="experts__portrait" src="assets/images/about/nguyen-hoang-linh.webp" alt="Chân dung Nguyen Hoang Linh" width="1350" height="1350" loading="lazy" decoding="async"></div>
+              <div class="experts__photo"><img class="experts__portrait" src="assets/images/about/nguyen-hoang-linh.webp" alt="Chân dung Nguyen Hoang Linh" width="1350" height="1350" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfNguyenHoangLinh"></div>
               <div class="experts__card-copy">
-                <div class="experts__identity"><h4 class="experts__card-name">Nguyen Hoang Linh</h4><p class="experts__position">Giám đốc Chiến lược (CSO) / Đồng sáng lập</p></div>
-                <p class="experts__bio">Gần 20 năm kinh nghiệm trong lĩnh vực dược phẩm và chăm sóc sức khỏe; từng đảm nhiệm nhiều vị trí lãnh đạo tại các doanh nghiệp trong ngành.</p>
+                <div class="experts__identity"><h4 class="experts__card-name">Nguyen Hoang Linh</h4><p class="experts__position" data-i18n="0:copy.ChiefStrategyOfficerCsoCoFounder">Giám đốc Chiến lược (CSO) / Đồng sáng lập</p></div>
+                <p class="experts__bio" data-i18n="0:copy.Nearly20YearsOfExperienceInPharmaceuticals">Gần 20 năm kinh nghiệm trong lĩnh vực dược phẩm và chăm sóc sức khỏe; từng đảm nhiệm nhiều vị trí lãnh đạo tại các doanh nghiệp trong ngành.</p>
                 <div class="experts__card-actions">
-                  <button type="button" class="experts__profile-button" data-expert-id="nguyen-hoang-linh" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Hoang Linh"><span class="experts__profile-label">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
-                  <button type="button" class="experts__profile-circle" data-expert-id="nguyen-hoang-linh" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Hoang Linh"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+                  <button type="button" class="experts__profile-button" data-expert-id="nguyen-hoang-linh" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Hoang Linh" data-i18n-attrs="aria-label:copy.ViewProfileNguyenHoangLinh"><span class="experts__profile-label" data-i18n="0:copy.ViewProfile">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
+                  <button type="button" class="experts__profile-circle" data-expert-id="nguyen-hoang-linh" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Hoang Linh" data-i18n-attrs="aria-label:copy.ViewProfileNguyenHoangLinh"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
               </div>
             </article>
               <article class="experts__card experts__card--featured" data-profile="nguyen-hong-truong" data-name="Nguyen Hong Truong" data-specialty="Hồi sức tích cực">
-              <div class="experts__photo"><img class="experts__portrait" src="assets/images/about/nguyen-hong-truong.webp" alt="Chân dung Nguyen Hong Truong" width="1350" height="1350" loading="lazy" decoding="async"><p class="experts__advisor-tag"><i class="fa-regular fa-star" aria-hidden="true"></i><span>Chuyên gia nổi bật</span></p></div>
+              <div class="experts__photo"><img class="experts__portrait" src="assets/images/about/nguyen-hong-truong.webp" alt="Chân dung Nguyen Hong Truong" width="1350" height="1350" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfNguyenHongTruong"><p class="experts__advisor-tag"><i class="fa-regular fa-star" aria-hidden="true"></i><span data-i18n="0:copy.FeaturedExpert">Chuyên gia nổi bật</span></p></div>
               <div class="experts__card-copy">
-                <div class="experts__identity"><h4 class="experts__card-name">Nguyen Hong Truong</h4><p class="experts__academic">Bác sĩ, Thạc sĩ</p><p class="experts__position">Cố vấn y khoa · Giảng viên</p></div>
-                <p class="experts__specialty"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i><span>Hồi sức tích cực</span></p><p class="experts__bio">Giảng viên và cố vấn học thuật tại Bộ môn Cấp cứu – Hồi sức – Chống độc, Trường Đại học Y khoa Phạm Ngọc Thạch. Giám đốc khóa học BLS, ACLS và PALS của Hiệp hội Tim mạch Hoa Kỳ (AHA).</p>
+                <div class="experts__identity"><h4 class="experts__card-name">Nguyen Hong Truong</h4><p class="experts__academic" data-i18n="0:copy.PhysicianMsc">Bác sĩ, Thạc sĩ</p><p class="experts__position" data-i18n="0:copy.MedicalAdvisorInstructor">Cố vấn y khoa · Giảng viên</p></div>
+                <p class="experts__specialty"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i><span data-i18n="0:copy.IntensiveCare">Hồi sức tích cực</span></p><p class="experts__bio" data-i18n="0:copy.LecturerAndAcademicAdvisorInTheEmergency">Giảng viên và cố vấn học thuật tại Bộ môn Cấp cứu – Hồi sức – Chống độc, Trường Đại học Y khoa Phạm Ngọc Thạch. Giám đốc khóa học BLS, ACLS và PALS của Hiệp hội Tim mạch Hoa Kỳ (AHA).</p>
                 <div class="experts__card-actions">
-                  <button type="button" class="experts__profile-button" data-expert-id="nguyen-hong-truong" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Hong Truong"><span class="experts__profile-label">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
-                  <button type="button" class="experts__profile-circle" data-expert-id="nguyen-hong-truong" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Hong Truong"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+                  <button type="button" class="experts__profile-button" data-expert-id="nguyen-hong-truong" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Hong Truong" data-i18n-attrs="aria-label:copy.ViewProfileNguyenHongTruong"><span class="experts__profile-label" data-i18n="0:copy.ViewProfile">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
+                  <button type="button" class="experts__profile-circle" data-expert-id="nguyen-hong-truong" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Hong Truong" data-i18n-attrs="aria-label:copy.ViewProfileNguyenHongTruong"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
               </div>
             </article>
               <article class="experts__card" data-profile="nguyen-vu-truong-an" data-name="Nguyen Vu Truong An" data-specialty="Y học cổ truyền">
-              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/nguyen-vu-truong-an.webp" alt="Chân dung Nguyen Vu Truong An" width="675" height="675" loading="lazy" decoding="async"></div>
+              <div class="experts__photo"><img class="experts__portrait" src="assets/images/experts/nguyen-vu-truong-an.webp" alt="Chân dung Nguyen Vu Truong An" width="675" height="675" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfNguyenVuTruongAn"></div>
               <div class="experts__card-copy">
-                <div class="experts__identity"><h4 class="experts__card-name">Nguyen Vu Truong An</h4><p class="experts__academic">Bác sĩ, Thạc sĩ</p><p class="experts__position">Giảng viên</p></div>
-                <p class="experts__specialty"><i class="fa-solid fa-stethoscope" aria-hidden="true"></i><span>Y học cổ truyền</span></p>
+                <div class="experts__identity"><h4 class="experts__card-name">Nguyen Vu Truong An</h4><p class="experts__academic" data-i18n="0:copy.PhysicianMsc">Bác sĩ, Thạc sĩ</p><p class="experts__position" data-i18n="0:copy.Instructor">Giảng viên</p></div>
+                <p class="experts__specialty"><i class="fa-solid fa-stethoscope" aria-hidden="true"></i><span data-i18n="0:copy.TraditionalMedicine">Y học cổ truyền</span></p>
                 <div class="experts__card-actions">
-                  <button type="button" class="experts__profile-button" data-expert-id="nguyen-vu-truong-an" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Vu Truong An"><span class="experts__profile-label">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
-                  <button type="button" class="experts__profile-circle" data-expert-id="nguyen-vu-truong-an" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Vu Truong An"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+                  <button type="button" class="experts__profile-button" data-expert-id="nguyen-vu-truong-an" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Vu Truong An" data-i18n-attrs="aria-label:copy.ViewProfileNguyenVuTruongAn"><span class="experts__profile-label" data-i18n="0:copy.ViewProfile">Xem hồ sơ</span> <span class="experts__profile-arrow" aria-hidden="true">→</span></button>
+                  <button type="button" class="experts__profile-circle" data-expert-id="nguyen-vu-truong-an" aria-haspopup="dialog" aria-controls="expert-dialog" aria-label="Xem hồ sơ: Nguyen Vu Truong An" data-i18n-attrs="aria-label:copy.ViewProfileNguyenVuTruongAn"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
               </div>
             </article>
             </div>
           </div>
           <div class="experts__empty" hidden>
-            <p>Không tìm thấy chuyên gia phù hợp.</p><button class="experts__reset" type="button">Xóa tìm kiếm và bộ
+            <p data-i18n="0:copy.NoMatchingExpertsFound">Không tìm thấy chuyên gia phù hợp.</p><button class="experts__reset" type="button" data-i18n="0:copy.ClearSearchAndFilters">Xóa tìm kiếm và bộ
               lọc</button>
           </div>
           <div class="experts__footer" hidden>
             <p id="experts-count" role="status" aria-live="polite" aria-atomic="true"></p>
-            <nav class="experts__pagination" aria-label="Phân trang đội ngũ chuyên gia" hidden></nav>
+            <nav class="experts__pagination" aria-label="Phân trang đội ngũ chuyên gia" hidden data-i18n-attrs="aria-label:copy.ExpertDirectoryPagination"></nav>
           </div>
         </div>
       </div>
       <dialog class="experts__dialog" id="expert-dialog" aria-labelledby="expert-dialog-title">
-        <button class="experts__close" type="button" aria-label="Đóng hồ sơ chuyên gia" autofocus><span
-            aria-hidden="true">×</span></button>
+        <button class="experts__close" type="button" aria-label="Đóng hồ sơ chuyên gia" autofocus data-i18n-attrs="aria-label:copy.CloseExpertProfile"><span
+            aria-hidden="true" data-i18n="0:copy.">×</span></button>
         <div id="expert-dialog-content"></div>
       </dialog>
       <template id="expert-profile-nguyen-hong-truong">
         <div class="experts__dialog-heading">
           <img class="experts__portrait" src="assets/images/about/nguyen-hong-truong.webp"
-            alt="Chân dung Nguyen Hong Truong" width="1350" height="1350" loading="lazy" decoding="async">
+            alt="Chân dung Nguyen Hong Truong" width="1350" height="1350" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfNguyenHongTruong">
           <div>
-            <p class="experts__eyebrow">HỒ SƠ CHUYÊN MÔN</p>
+            <p class="experts__eyebrow" data-i18n="0:copy.ProfessionalProfile">HỒ SƠ CHUYÊN MÔN</p>
             <h2 id="expert-dialog-title">Nguyen Hong Truong</h2>
-            <p class="experts__academic">Bác sĩ, Thạc sĩ</p>
+            <p class="experts__academic" data-i18n="0:copy.PhysicianMsc">Bác sĩ, Thạc sĩ</p>
           </div>
         </div>
         <dl class="experts__details">
           <div>
-            <dt>Vai trò tại GHME</dt>
-            <dd>Cố vấn y khoa · Giảng viên</dd>
+            <dt data-i18n="0:copy.RoleAtGhme">Vai trò tại GHME</dt>
+            <dd data-i18n="0:copy.MedicalAdvisorInstructor">Cố vấn y khoa · Giảng viên</dd>
           </div>
           <div>
-            <dt>Chuyên ngành đào tạo</dt>
-            <dd>Hồi sức tích cực</dd>
+            <dt data-i18n="0:copy.TrainingSpecialty">Chuyên ngành đào tạo</dt>
+            <dd data-i18n="0:copy.IntensiveCare">Hồi sức tích cực</dd>
           </div>
         </dl>
         <div class="experts__full-bio">
-          <h3>Kinh nghiệm &amp; hoạt động chuyên môn</h3>
-          <p>Theo Company Profile, bác sĩ Nguyen Hong Truong là giảng viên và cố vấn học thuật tại Bộ môn Cấp cứu – Hồi
+          <h3 data-i18n="0:copy.ExperienceProfessionalActivities">Kinh nghiệm &amp; hoạt động chuyên môn</h3>
+          <p data-i18n="0:copy.AccordingToTheCompanyProfileDrNguyen">Theo Company Profile, bác sĩ Nguyen Hong Truong là giảng viên và cố vấn học thuật tại Bộ môn Cấp cứu – Hồi
             sức – Chống độc, Trường Đại học Y khoa Phạm Ngọc Thạch; đồng thời là Trưởng khoa Hồi sức tích cực tại Bệnh
             viện Quận 11.</p>
-          <p>Ông giữ vai trò Phó Tổng thư ký Chi hội Cấp cứu – Hồi sức – Chống độc thuộc Hội Cấp cứu, Hồi sức tích cực
+          <p data-i18n="0:copy.HeServesAsDeputySecretaryGeneralOf">Ông giữ vai trò Phó Tổng thư ký Chi hội Cấp cứu – Hồi sức – Chống độc thuộc Hội Cấp cứu, Hồi sức tích cực
             và Chống độc Việt Nam.</p>
-          <p>Trước đó, ông phụ trách Khoa Cấp cứu tại Bệnh viện Thủ Đức và có nhiều năm kinh nghiệm điều trị người bệnh
+          <p data-i18n="0:copy.HePreviouslyLedTheEmergencyDepartmentAt">Trước đó, ông phụ trách Khoa Cấp cứu tại Bệnh viện Thủ Đức và có nhiều năm kinh nghiệm điều trị người bệnh
             nặng tại Bệnh viện Nhân dân 115 và Bệnh viện Trưng Vương.</p>
-          <p>Bên cạnh công tác tại bệnh viện, ông là giám đốc các khóa học BLS, ACLS và PALS của Hiệp hội Tim mạch Hoa
+          <p data-i18n="0:copy.AlongsideHisHospitalWorkHeDirectsAmerican">Bên cạnh công tác tại bệnh viện, ông là giám đốc các khóa học BLS, ACLS và PALS của Hiệp hội Tim mạch Hoa
             Kỳ (AHA).</p>
         </div>
-        <p class="experts__source">Nguồn: GHME Company Profile · Trang 14, 15</p>
+        <p class="experts__source" data-i18n="0:copy.SourceGhmeCompanyProfilePages1415">Nguồn: GHME Company Profile · Trang 14, 15</p>
       </template><template id="expert-profile-nguyen-quoc-vu-khanh">
         <div class="experts__dialog-heading">
           <img class="experts__portrait" src="assets/images/experts/nguyen-quoc-vu-khanh.webp"
-            alt="Chân dung Nguyen Quoc Vu Khanh" width="675" height="675" loading="lazy" decoding="async">
+            alt="Chân dung Nguyen Quoc Vu Khanh" width="675" height="675" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfNguyenQuocVuKhanh">
           <div>
-            <p class="experts__eyebrow">HỒ SƠ CHUYÊN MÔN</p>
+            <p class="experts__eyebrow" data-i18n="0:copy.ProfessionalProfile">HỒ SƠ CHUYÊN MÔN</p>
             <h2 id="expert-dialog-title">Nguyen Quoc Vu Khanh</h2>
-            <p class="experts__academic">Bác sĩ chuyên khoa I</p>
+            <p class="experts__academic" data-i18n="0:copy.PhysicianSpecialistLevelI">Bác sĩ chuyên khoa I</p>
           </div>
         </div>
         <dl class="experts__details">
           <div>
-            <dt>Vai trò tại GHME</dt>
-            <dd>Giảng viên</dd>
+            <dt data-i18n="0:copy.RoleAtGhme">Vai trò tại GHME</dt>
+            <dd data-i18n="0:copy.Instructor">Giảng viên</dd>
           </div>
           <div>
-            <dt>Chuyên ngành đào tạo</dt>
-            <dd>Huyết học &amp; Truyền máu</dd>
+            <dt data-i18n="0:copy.TrainingSpecialty">Chuyên ngành đào tạo</dt>
+            <dd data-i18n="0:copy.HematologyTransfusionMedicine">Huyết học &amp; Truyền máu</dd>
           </div>
         </dl>
 
-        <p class="experts__source">Nguồn: GHME Company Profile · Trang 15</p>
+        <p class="experts__source" data-i18n="0:copy.SourceGhmeCompanyProfilePage15">Nguồn: GHME Company Profile · Trang 15</p>
       </template><template id="expert-profile-nguyen-kim">
         <div class="experts__dialog-heading">
           <img class="experts__portrait" src="assets/images/experts/nguyen-kim.webp" alt="Chân dung Nguyen Kim"
-            width="675" height="675" loading="lazy" decoding="async">
+            width="675" height="675" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfNguyenKim">
           <div>
-            <p class="experts__eyebrow">HỒ SƠ CHUYÊN MÔN</p>
+            <p class="experts__eyebrow" data-i18n="0:copy.ProfessionalProfile">HỒ SƠ CHUYÊN MÔN</p>
             <h2 id="expert-dialog-title">Nguyen Kim</h2>
-            <p class="experts__academic">Bác sĩ, Thạc sĩ</p>
+            <p class="experts__academic" data-i18n="0:copy.PhysicianMsc">Bác sĩ, Thạc sĩ</p>
           </div>
         </div>
         <dl class="experts__details">
           <div>
-            <dt>Vai trò tại GHME</dt>
-            <dd>Giảng viên</dd>
+            <dt data-i18n="0:copy.RoleAtGhme">Vai trò tại GHME</dt>
+            <dd data-i18n="0:copy.Instructor">Giảng viên</dd>
           </div>
           <div>
-            <dt>Chuyên ngành đào tạo</dt>
-            <dd>Hồi sức tích cực</dd>
+            <dt data-i18n="0:copy.TrainingSpecialty">Chuyên ngành đào tạo</dt>
+            <dd data-i18n="0:copy.IntensiveCare">Hồi sức tích cực</dd>
           </div>
         </dl>
 
-        <p class="experts__source">Nguồn: GHME Company Profile · Trang 15</p>
+        <p class="experts__source" data-i18n="0:copy.SourceGhmeCompanyProfilePage15">Nguồn: GHME Company Profile · Trang 15</p>
       </template><template id="expert-profile-nguyen-vu-truong-an">
         <div class="experts__dialog-heading">
           <img class="experts__portrait" src="assets/images/experts/nguyen-vu-truong-an.webp"
-            alt="Chân dung Nguyen Vu Truong An" width="675" height="675" loading="lazy" decoding="async">
+            alt="Chân dung Nguyen Vu Truong An" width="675" height="675" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfNguyenVuTruongAn">
           <div>
-            <p class="experts__eyebrow">HỒ SƠ CHUYÊN MÔN</p>
+            <p class="experts__eyebrow" data-i18n="0:copy.ProfessionalProfile">HỒ SƠ CHUYÊN MÔN</p>
             <h2 id="expert-dialog-title">Nguyen Vu Truong An</h2>
-            <p class="experts__academic">Bác sĩ, Thạc sĩ</p>
+            <p class="experts__academic" data-i18n="0:copy.PhysicianMsc">Bác sĩ, Thạc sĩ</p>
           </div>
         </div>
         <dl class="experts__details">
           <div>
-            <dt>Vai trò tại GHME</dt>
-            <dd>Giảng viên</dd>
+            <dt data-i18n="0:copy.RoleAtGhme">Vai trò tại GHME</dt>
+            <dd data-i18n="0:copy.Instructor">Giảng viên</dd>
           </div>
           <div>
-            <dt>Chuyên ngành đào tạo</dt>
-            <dd>Y học cổ truyền</dd>
+            <dt data-i18n="0:copy.TrainingSpecialty">Chuyên ngành đào tạo</dt>
+            <dd data-i18n="0:copy.TraditionalMedicine">Y học cổ truyền</dd>
           </div>
         </dl>
 
-        <p class="experts__source">Nguồn: GHME Company Profile · Trang 15</p>
+        <p class="experts__source" data-i18n="0:copy.SourceGhmeCompanyProfilePage15">Nguồn: GHME Company Profile · Trang 15</p>
       </template><template id="expert-profile-tran-nguyen-quynh-anh">
         <div class="experts__dialog-heading">
           <img class="experts__portrait" src="assets/images/experts/tran-nguyen-quynh-anh.webp"
-            alt="Chân dung Tran Nguyen Quynh Anh" width="675" height="675" loading="lazy" decoding="async">
+            alt="Chân dung Tran Nguyen Quynh Anh" width="675" height="675" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfTranNguyenQuynhAnh">
           <div>
-            <p class="experts__eyebrow">HỒ SƠ CHUYÊN MÔN</p>
+            <p class="experts__eyebrow" data-i18n="0:copy.ProfessionalProfile">HỒ SƠ CHUYÊN MÔN</p>
             <h2 id="expert-dialog-title">Tran Nguyen Quynh Anh</h2>
-            <p class="experts__academic">Bác sĩ, Thạc sĩ</p>
+            <p class="experts__academic" data-i18n="0:copy.PhysicianMsc">Bác sĩ, Thạc sĩ</p>
           </div>
         </div>
         <dl class="experts__details">
           <div>
-            <dt>Vai trò tại GHME</dt>
-            <dd>Giảng viên</dd>
+            <dt data-i18n="0:copy.RoleAtGhme">Vai trò tại GHME</dt>
+            <dd data-i18n="0:copy.Instructor">Giảng viên</dd>
           </div>
           <div>
-            <dt>Chuyên ngành đào tạo</dt>
-            <dd>Dinh dưỡng</dd>
+            <dt data-i18n="0:copy.TrainingSpecialty">Chuyên ngành đào tạo</dt>
+            <dd data-i18n="0:copy.Nutrition">Dinh dưỡng</dd>
           </div>
         </dl>
 
-        <p class="experts__source">Nguồn: GHME Company Profile · Trang 15</p>
+        <p class="experts__source" data-i18n="0:copy.SourceGhmeCompanyProfilePage15">Nguồn: GHME Company Profile · Trang 15</p>
       </template><template id="expert-profile-le-dang-dai">
         <div class="experts__dialog-heading">
           <img class="experts__portrait" src="assets/images/experts/le-dang-dai.webp" alt="Chân dung Le Dang Dai"
-            width="675" height="675" loading="lazy" decoding="async">
+            width="675" height="675" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfLeDangDai">
           <div>
-            <p class="experts__eyebrow">HỒ SƠ CHUYÊN MÔN</p>
+            <p class="experts__eyebrow" data-i18n="0:copy.ProfessionalProfile">HỒ SƠ CHUYÊN MÔN</p>
             <h2 id="expert-dialog-title">Le Dang Dai</h2>
-            <p class="experts__academic">Bác sĩ chuyên khoa I</p>
+            <p class="experts__academic" data-i18n="0:copy.PhysicianSpecialistLevelI">Bác sĩ chuyên khoa I</p>
           </div>
         </div>
         <dl class="experts__details">
           <div>
-            <dt>Vai trò tại GHME</dt>
-            <dd>Giảng viên</dd>
+            <dt data-i18n="0:copy.RoleAtGhme">Vai trò tại GHME</dt>
+            <dd data-i18n="0:copy.Instructor">Giảng viên</dd>
           </div>
           <div>
-            <dt>Chuyên ngành đào tạo</dt>
-            <dd>Sản phụ khoa</dd>
+            <dt data-i18n="0:copy.TrainingSpecialty">Chuyên ngành đào tạo</dt>
+            <dd data-i18n="0:copy.ObstetricsGynecology">Sản phụ khoa</dd>
           </div>
         </dl>
 
-        <p class="experts__source">Nguồn: GHME Company Profile · Trang 15</p>
+        <p class="experts__source" data-i18n="0:copy.SourceGhmeCompanyProfilePage15">Nguồn: GHME Company Profile · Trang 15</p>
       </template><template id="expert-profile-le-nguyen-thuy-mai">
         <div class="experts__dialog-heading">
           <img class="experts__portrait" src="assets/images/experts/le-nguyen-thuy-mai.webp"
-            alt="Chân dung Le Nguyen Thuy Mai" width="675" height="675" loading="lazy" decoding="async">
+            alt="Chân dung Le Nguyen Thuy Mai" width="675" height="675" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfLeNguyenThuyMai">
           <div>
-            <p class="experts__eyebrow">HỒ SƠ CHUYÊN MÔN</p>
+            <p class="experts__eyebrow" data-i18n="0:copy.ProfessionalProfile">HỒ SƠ CHUYÊN MÔN</p>
             <h2 id="expert-dialog-title">Le Nguyen Thuy Mai</h2>
-            <p class="experts__academic">Bác sĩ, Thạc sĩ</p>
+            <p class="experts__academic" data-i18n="0:copy.PhysicianMsc">Bác sĩ, Thạc sĩ</p>
           </div>
         </div>
         <dl class="experts__details">
           <div>
-            <dt>Vai trò tại GHME</dt>
-            <dd>Giảng viên</dd>
+            <dt data-i18n="0:copy.RoleAtGhme">Vai trò tại GHME</dt>
+            <dd data-i18n="0:copy.Instructor">Giảng viên</dd>
           </div>
           <div>
-            <dt>Chuyên ngành đào tạo</dt>
-            <dd>Y học dự phòng</dd>
+            <dt data-i18n="0:copy.TrainingSpecialty">Chuyên ngành đào tạo</dt>
+            <dd data-i18n="0:copy.PreventiveMedicine">Y học dự phòng</dd>
           </div>
         </dl>
 
-        <p class="experts__source">Nguồn: GHME Company Profile · Trang 15</p>
+        <p class="experts__source" data-i18n="0:copy.SourceGhmeCompanyProfilePage15">Nguồn: GHME Company Profile · Trang 15</p>
       </template><template id="expert-profile-nguyen-thanh-cong">
         <div class="experts__dialog-heading">
           <img class="experts__portrait" src="assets/images/experts/nguyen-thanh-cong.webp"
-            alt="Chân dung Nguyen Thanh Cong" width="432" height="432" loading="lazy" decoding="async">
+            alt="Chân dung Nguyen Thanh Cong" width="432" height="432" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfNguyenThanhCong">
           <div>
-            <p class="experts__eyebrow">HỒ SƠ CHUYÊN MÔN</p>
+            <p class="experts__eyebrow" data-i18n="0:copy.ProfessionalProfile">HỒ SƠ CHUYÊN MÔN</p>
             <h2 id="expert-dialog-title">Nguyen Thanh Cong</h2>
-            <p class="experts__academic">Bác sĩ</p>
+            <p class="experts__academic" data-i18n="0:copy.Physician">Bác sĩ</p>
           </div>
         </div>
         <dl class="experts__details">
           <div>
-            <dt>Vai trò tại GHME</dt>
-            <dd>Giảng viên</dd>
+            <dt data-i18n="0:copy.RoleAtGhme">Vai trò tại GHME</dt>
+            <dd data-i18n="0:copy.Instructor">Giảng viên</dd>
           </div>
           <div>
-            <dt>Chuyên ngành đào tạo</dt>
-            <dd>Y học quân sự</dd>
+            <dt data-i18n="0:copy.TrainingSpecialty">Chuyên ngành đào tạo</dt>
+            <dd data-i18n="0:copy.MilitaryMedicine">Y học quân sự</dd>
           </div>
         </dl>
 
-        <p class="experts__source">Nguồn: GHME Company Profile · Trang 15</p>
+        <p class="experts__source" data-i18n="0:copy.SourceGhmeCompanyProfilePage15">Nguồn: GHME Company Profile · Trang 15</p>
       </template><template id="expert-profile-le-tran-the-gia">
         <div class="experts__dialog-heading">
           <img class="experts__portrait" src="assets/images/experts/le-tran-the-gia.webp"
-            alt="Chân dung Le Tran The Gia" width="675" height="675" loading="lazy" decoding="async">
+            alt="Chân dung Le Tran The Gia" width="675" height="675" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfLeTranTheGia">
           <div>
-            <p class="experts__eyebrow">HỒ SƠ CHUYÊN MÔN</p>
+            <p class="experts__eyebrow" data-i18n="0:copy.ProfessionalProfile">HỒ SƠ CHUYÊN MÔN</p>
             <h2 id="expert-dialog-title">Le Tran The Gia</h2>
-            <p class="experts__academic">Bác sĩ, Thạc sĩ</p>
+            <p class="experts__academic" data-i18n="0:copy.PhysicianMsc">Bác sĩ, Thạc sĩ</p>
           </div>
         </div>
         <dl class="experts__details">
           <div>
-            <dt>Vai trò tại GHME</dt>
-            <dd>Giảng viên</dd>
+            <dt data-i18n="0:copy.RoleAtGhme">Vai trò tại GHME</dt>
+            <dd data-i18n="0:copy.Instructor">Giảng viên</dd>
           </div>
           <div>
-            <dt>Chuyên ngành đào tạo</dt>
-            <dd>Nội khoa</dd>
+            <dt data-i18n="0:copy.TrainingSpecialty">Chuyên ngành đào tạo</dt>
+            <dd data-i18n="0:copy.InternalMedicine">Nội khoa</dd>
           </div>
         </dl>
 
-        <p class="experts__source">Nguồn: GHME Company Profile · Trang 15</p>
+        <p class="experts__source" data-i18n="0:copy.SourceGhmeCompanyProfilePage15">Nguồn: GHME Company Profile · Trang 15</p>
       </template><template id="expert-profile-le-hoang-long">
         <div class="experts__dialog-heading">
           <img class="experts__portrait" src="assets/images/experts/le-hoang-long.webp" alt="Chân dung Le Hoang Long"
-            width="675" height="675" loading="lazy" decoding="async">
+            width="675" height="675" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfLeHoangLong">
           <div>
-            <p class="experts__eyebrow">HỒ SƠ CHUYÊN MÔN</p>
+            <p class="experts__eyebrow" data-i18n="0:copy.ProfessionalProfile">HỒ SƠ CHUYÊN MÔN</p>
             <h2 id="expert-dialog-title">Le Hoang Long</h2>
-            <p class="experts__academic">Cử nhân Điều dưỡng</p>
+            <p class="experts__academic" data-i18n="0:copy.BachelorOfNursing">Cử nhân Điều dưỡng</p>
           </div>
         </div>
         <dl class="experts__details">
           <div>
-            <dt>Vai trò tại GHME</dt>
-            <dd>Giảng viên</dd>
+            <dt data-i18n="0:copy.RoleAtGhme">Vai trò tại GHME</dt>
+            <dd data-i18n="0:copy.Instructor">Giảng viên</dd>
           </div>
           <div>
-            <dt>Chuyên ngành đào tạo</dt>
-            <dd>Cấp cứu &amp; Chăm sóc trước viện</dd>
+            <dt data-i18n="0:copy.TrainingSpecialty">Chuyên ngành đào tạo</dt>
+            <dd data-i18n="0:copy.EmergencyPreHospitalCare">Cấp cứu &amp; Chăm sóc trước viện</dd>
           </div>
         </dl>
 
-        <p class="experts__source">Nguồn: GHME Company Profile · Trang 15</p>
+        <p class="experts__source" data-i18n="0:copy.SourceGhmeCompanyProfilePage15">Nguồn: GHME Company Profile · Trang 15</p>
       </template><template id="expert-profile-nguyen-thanh-sang">
         <div class="experts__dialog-heading">
           <img class="experts__portrait" src="assets/images/experts/nguyen-thanh-sang.webp"
-            alt="Chân dung Nguyen Thanh Sang" width="675" height="675" loading="lazy" decoding="async">
+            alt="Chân dung Nguyen Thanh Sang" width="675" height="675" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfNguyenThanhSang">
           <div>
-            <p class="experts__eyebrow">HỒ SƠ CHUYÊN MÔN</p>
+            <p class="experts__eyebrow" data-i18n="0:copy.ProfessionalProfile">HỒ SƠ CHUYÊN MÔN</p>
             <h2 id="expert-dialog-title">Nguyen Thanh Sang</h2>
-            <p class="experts__academic">Bác sĩ, Thạc sĩ, Chuyên khoa II</p>
+            <p class="experts__academic" data-i18n="0:copy.PhysicianMscSpecialistLevelIi">Bác sĩ, Thạc sĩ, Chuyên khoa II</p>
           </div>
         </div>
         <dl class="experts__details">
           <div>
-            <dt>Vai trò tại GHME</dt>
-            <dd>Giảng viên</dd>
+            <dt data-i18n="0:copy.RoleAtGhme">Vai trò tại GHME</dt>
+            <dd data-i18n="0:copy.Instructor">Giảng viên</dd>
           </div>
           <div>
-            <dt>Chuyên ngành đào tạo</dt>
-            <dd>Tâm lý học, Phục hồi chức năng</dd>
+            <dt data-i18n="0:copy.TrainingSpecialty">Chuyên ngành đào tạo</dt>
+            <dd data-i18n="0:copy.PsychologyRehabilitation">Tâm lý học, Phục hồi chức năng</dd>
           </div>
         </dl>
 
-        <p class="experts__source">Nguồn: GHME Company Profile · Trang 15</p>
+        <p class="experts__source" data-i18n="0:copy.SourceGhmeCompanyProfilePage15">Nguồn: GHME Company Profile · Trang 15</p>
       </template><template id="expert-profile-nguyen-quang-vinh">
         <div class="experts__dialog-heading">
           <img class="experts__portrait" src="assets/images/experts/nguyen-quang-vinh.webp"
-            alt="Chân dung Nguyen Quang Vinh" width="675" height="675" loading="lazy" decoding="async">
+            alt="Chân dung Nguyen Quang Vinh" width="675" height="675" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfNguyenQuangVinh">
           <div>
-            <p class="experts__eyebrow">HỒ SƠ CHUYÊN MÔN</p>
+            <p class="experts__eyebrow" data-i18n="0:copy.ProfessionalProfile">HỒ SƠ CHUYÊN MÔN</p>
             <h2 id="expert-dialog-title">Nguyen Quang Vinh</h2>
-            <p class="experts__academic">Bác sĩ chuyên khoa II</p>
+            <p class="experts__academic" data-i18n="0:copy.PhysicianSpecialistLevelIi">Bác sĩ chuyên khoa II</p>
           </div>
         </div>
         <dl class="experts__details">
           <div>
-            <dt>Vai trò tại GHME</dt>
-            <dd>Giảng viên</dd>
+            <dt data-i18n="0:copy.RoleAtGhme">Vai trò tại GHME</dt>
+            <dd data-i18n="0:copy.Instructor">Giảng viên</dd>
           </div>
           <div>
-            <dt>Chuyên ngành đào tạo</dt>
-            <dd>Nhãn khoa</dd>
+            <dt data-i18n="0:copy.TrainingSpecialty">Chuyên ngành đào tạo</dt>
+            <dd data-i18n="0:copy.Ophthalmology">Nhãn khoa</dd>
           </div>
         </dl>
 
-        <p class="experts__source">Nguồn: GHME Company Profile · Trang 15</p>
+        <p class="experts__source" data-i18n="0:copy.SourceGhmeCompanyProfilePage15">Nguồn: GHME Company Profile · Trang 15</p>
       </template><template id="expert-profile-nguyen-hoang-linh">
         <div class="experts__dialog-heading">
           <img class="experts__portrait" src="assets/images/about/nguyen-hoang-linh.webp"
-            alt="Chân dung Nguyen Hoang Linh" width="1350" height="1350" loading="lazy" decoding="async">
+            alt="Chân dung Nguyen Hoang Linh" width="1350" height="1350" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfNguyenHoangLinh">
           <div>
-            <p class="experts__eyebrow">HỒ SƠ CHUYÊN MÔN</p>
+            <p class="experts__eyebrow" data-i18n="0:copy.ProfessionalProfile">HỒ SƠ CHUYÊN MÔN</p>
             <h2 id="expert-dialog-title">Nguyen Hoang Linh</h2>
           </div>
         </div>
         <dl class="experts__details">
           <div>
-            <dt>Vai trò tại GHME</dt>
-            <dd>Giám đốc Chiến lược (CSO) / Đồng sáng lập</dd>
+            <dt data-i18n="0:copy.RoleAtGhme">Vai trò tại GHME</dt>
+            <dd data-i18n="0:copy.ChiefStrategyOfficerCsoCoFounder">Giám đốc Chiến lược (CSO) / Đồng sáng lập</dd>
           </div>
         </dl>
         <div class="experts__full-bio">
-          <h3>Kinh nghiệm &amp; hoạt động chuyên môn</h3>
-          <p>Nguyen Hoang Linh là nhà lãnh đạo có gần 20 năm kinh nghiệm trong lĩnh vực dược phẩm và chăm sóc sức khỏe.
+          <h3 data-i18n="0:copy.ExperienceProfessionalActivities">Kinh nghiệm &amp; hoạt động chuyên môn</h3>
+          <p data-i18n="0:copy.NguyenHoangLinhIsALeaderWith">Nguyen Hoang Linh là nhà lãnh đạo có gần 20 năm kinh nghiệm trong lĩnh vực dược phẩm và chăm sóc sức khỏe.
           </p>
-          <p>Ông từng giữ các vị trí: thành viên Hội đồng quản trị tại Diab; CEO và đồng sáng lập HCX COACHING; CEO và
+          <p data-i18n="0:copy.HisPreviousRolesIncludeBoardMemberAt">Ông từng giữ các vị trí: thành viên Hội đồng quản trị tại Diab; CEO và đồng sáng lập HCX COACHING; CEO và
             đồng sáng lập Healthcare Talent; cùng các vai trò điều hành cấp cao tại DKSH, MSG Medical Group, Kim Dental,
             Phano Pharmacy và IQVIA.</p>
-          <p>Company Profile nhấn mạnh tư duy chiến lược, tinh thần hợp tác và cam kết đổi mới của ông trong vai trò cố
+          <p data-i18n="0:copy.TheCompanyProfileHighlightsHisStrategicThinking">Company Profile nhấn mạnh tư duy chiến lược, tinh thần hợp tác và cam kết đổi mới của ông trong vai trò cố
             vấn và tạo giá trị cho ngành.</p>
         </div>
-        <p class="experts__source">Nguồn: GHME Company Profile · Trang 11</p>
+        <p class="experts__source" data-i18n="0:copy.SourceGhmeCompanyProfilePage11">Nguồn: GHME Company Profile · Trang 11</p>
       </template><template id="expert-profile-nguyen-xuan-phuong-uyen">
         <div class="experts__dialog-heading">
           <img class="experts__portrait" src="assets/images/about/nguyen-xuan-phuong-uyen.webp"
-            alt="Chân dung Nguyen Xuan Phuong Uyen" width="1350" height="1350" loading="lazy" decoding="async">
+            alt="Chân dung Nguyen Xuan Phuong Uyen" width="1350" height="1350" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfNguyenXuanPhuongUyen">
           <div>
-            <p class="experts__eyebrow">HỒ SƠ CHUYÊN MÔN</p>
+            <p class="experts__eyebrow" data-i18n="0:copy.ProfessionalProfile">HỒ SƠ CHUYÊN MÔN</p>
             <h2 id="expert-dialog-title">Nguyen Xuan Phuong Uyen</h2>
           </div>
         </div>
         <dl class="experts__details">
           <div>
-            <dt>Vai trò tại GHME</dt>
-            <dd>Giám đốc Điều hành (CEO) / Đồng sáng lập</dd>
+            <dt data-i18n="0:copy.RoleAtGhme">Vai trò tại GHME</dt>
+            <dd data-i18n="0:copy.ChiefExecutiveOfficerCeoCoFounder">Giám đốc Điều hành (CEO) / Đồng sáng lập</dd>
           </div>
         </dl>
         <div class="experts__full-bio">
-          <h3>Kinh nghiệm &amp; hoạt động chuyên môn</h3>
-          <p>Nguyen Xuan Phuong Uyen là nhà lãnh đạo kinh doanh có tư duy chiến lược và kinh nghiệm sâu rộng về nâng cao
+          <h3 data-i18n="0:copy.ExperienceProfessionalActivities">Kinh nghiệm &amp; hoạt động chuyên môn</h3>
+          <p data-i18n="0:copy.NguyenXuanPhuongUyenIsAStrategic">Nguyen Xuan Phuong Uyen là nhà lãnh đạo kinh doanh có tư duy chiến lược và kinh nghiệm sâu rộng về nâng cao
             hiệu quả vận hành, triển khai hoạt động kinh doanh tại các tổ chức đa quốc gia.</p>
-          <p>Với kinh nghiệm lãnh đạo tại DKSH Việt Nam, Đại học Fulbright Việt Nam và Grundfos Việt Nam, bà đã thúc đẩy
+          <p data-i18n="0:copy.ThroughLeadershipRolesAtDkshViT">Với kinh nghiệm lãnh đạo tại DKSH Việt Nam, Đại học Fulbright Việt Nam và Grundfos Việt Nam, bà đã thúc đẩy
             hoạt động vận hành trên toàn quốc, nâng cao hiệu quả đội ngũ tại hiện trường và triển khai các hệ thống dựa
             trên dữ liệu để cải thiện hiệu suất và tăng trưởng.</p>
-          <p>Company Profile ghi nhận tầm nhìn chiến lược, phong cách lãnh đạo có kỷ luật và tính chính trực của bà,
+          <p data-i18n="0:copy.TheCompanyProfileRecognizesHerStrategicVision">Company Profile ghi nhận tầm nhìn chiến lược, phong cách lãnh đạo có kỷ luật và tính chính trực của bà,
             hướng tới nâng cao hiệu quả tổ chức và thúc đẩy sức khỏe cộng đồng thông qua GHME.</p>
         </div>
-        <p class="experts__source">Nguồn: GHME Company Profile · Trang 12</p>
+        <p class="experts__source" data-i18n="0:copy.SourceGhmeCompanyProfilePage12">Nguồn: GHME Company Profile · Trang 12</p>
       </template><template id="expert-profile-le-binh-phuong">
         <div class="experts__dialog-heading">
           <img class="experts__portrait" src="assets/images/about/le-binh-phuong.webp" alt="Chân dung Le Binh Phuong"
-            width="1350" height="1350" loading="lazy" decoding="async">
+            width="1350" height="1350" loading="lazy" decoding="async" data-i18n-attrs="alt:copy.PortraitOfLeBinhPhuong">
           <div>
-            <p class="experts__eyebrow">HỒ SƠ CHUYÊN MÔN</p>
+            <p class="experts__eyebrow" data-i18n="0:copy.ProfessionalProfile">HỒ SƠ CHUYÊN MÔN</p>
             <h2 id="expert-dialog-title">Le Binh Phuong</h2>
-            <p class="experts__academic">Bác sĩ, Tiến sĩ</p>
+            <p class="experts__academic" data-i18n="0:copy.PhysicianPhd">Bác sĩ, Tiến sĩ</p>
           </div>
         </div>
         <dl class="experts__details">
           <div>
-            <dt>Vai trò tại GHME</dt>
-            <dd>Giám đốc Y khoa (CMO) / Đồng sáng lập</dd>
+            <dt data-i18n="0:copy.RoleAtGhme">Vai trò tại GHME</dt>
+            <dd data-i18n="0:copy.ChiefMedicalOfficerCmoCoFounder">Giám đốc Y khoa (CMO) / Đồng sáng lập</dd>
           </div>
         </dl>
         <div class="experts__full-bio">
-          <h3>Kinh nghiệm &amp; hoạt động chuyên môn</h3>
-          <p>Bác sĩ Le Binh Phuong là doanh nhân trong lĩnh vực chăm sóc sức khỏe, có nền tảng học thuật vững chắc và
+          <h3 data-i18n="0:copy.ExperienceProfessionalActivities">Kinh nghiệm &amp; hoạt động chuyên môn</h3>
+          <p data-i18n="0:copy.DrLeBinhPhuongIsAHealthcare">Bác sĩ Le Binh Phuong là doanh nhân trong lĩnh vực chăm sóc sức khỏe, có nền tảng học thuật vững chắc và
             kinh nghiệm lãnh đạo sâu rộng.</p>
-          <p>Theo Company Profile, ông có chứng nhận về Cấp cứu và Hồi sức cơ bản của Trường Y, Đại học Stanford; chứng
+          <p data-i18n="0:copy.AccordingToTheCompanyProfileHeHolds">Theo Company Profile, ông có chứng nhận về Cấp cứu và Hồi sức cơ bản của Trường Y, Đại học Stanford; chứng
             nhận cập nhật giảng viên BLS năm 2020 của Hiệp hội Tim mạch Hoa Kỳ (AHA); và được chứng nhận là giảng viên
             An toàn, vệ sinh lao động (OHS) tại Việt Nam.</p>
-          <p>Ông đồng sáng lập IVFMD Asia tại Singapore, được Singmedic (thành viên Clermont Group) đề cử phát triển
+          <p data-i18n="0:copy.HeCoFoundedIvfmdAsiaInSingapore">Ông đồng sáng lập IVFMD Asia tại Singapore, được Singmedic (thành viên Clermont Group) đề cử phát triển
             dịch vụ y tế tại Việt Nam, và từng đảm nhiệm các vai trò điều hành cấp cao như giám đốc bệnh viện/phòng khám
             tại Hoan My Medical Group.</p>
         </div>
-        <p class="experts__source">Nguồn: GHME Company Profile · Trang 13</p>
+        <p class="experts__source" data-i18n="0:copy.SourceGhmeCompanyProfilePage13">Nguồn: GHME Company Profile · Trang 13</p>
       </template>
     </section>
     <section class="partners decorated" id="partners" aria-labelledby="partners-title">
       <div class="container partners__header">
-        <p class="partners__eyebrow">MẠNG LƯỚI ĐỐI TÁC</p>
-        <h2 id="partners-title">Đối tác <em>đồng hành</em> cùng GHME</h2>
-        <p class="partners__description">Kết nối và hợp tác cùng các tổ chức, đơn vị trong lĩnh vực y tế, giáo dục và
+        <p class="partners__eyebrow" data-i18n="0:copy.PartnerNetwork">MẠNG LƯỚI ĐỐI TÁC</p>
+        <h2 id="partners-title" data-i18n="0:copy.Partners;1:copy.WithGhme">Đối tác <em data-i18n="0:copy.Working">đồng hành</em> cùng GHME</h2>
+        <p class="partners__description" data-i18n="0:copy.ConnectingAndCollaboratingWithOrganizationsInHealthcare">Kết nối và hợp tác cùng các tổ chức, đơn vị trong lĩnh vực y tế, giáo dục và
           doanh nghiệp.</p>
       </div>
       <div class="partners__marquee" id="partners-marquee">
         <div class="partners__row partners__row--top">
           <div class="partners__track">
             <!-- Canonical logos stay in order; JS adds only inaccessible animation copies. -->
-            <div class="partners__list" role="list" aria-label="Các đối tác GHME — hàng 1">
+            <div class="partners__list" role="list" aria-label="Các đối tác GHME — hàng 1" data-i18n-attrs="aria-label:copy.GhmePartnersRow1">
               <div class="partners__logo" role="listitem"><img width="158" height="78"
                   src="assets/images/partners/partner-01-bidv.svg" alt="BIDV" loading="eager" decoding="async"></div>
               <div class="partners__logo" role="listitem"><img width="158" height="78"
                   src="assets/images/partners/partner-02-amon-kindercare.png" alt="Amon Kindercare" loading="eager"
                   decoding="async"></div>
               <div class="partners__logo" role="listitem"><img width="158" height="78"
-                  src="assets/images/partner-3.webp" alt="Trí Thiện Preschool" loading="eager" decoding="async"></div>
+                  src="assets/images/partner-3.webp" alt="Trí Thiện Preschool" loading="eager" decoding="async" data-i18n-attrs="alt:copy.TrThiNPreschool"></div>
               <div class="partners__logo" role="listitem"><img width="158" height="78"
                   src="assets/images/partners/partner-04-olympia.svg" alt="The Olympia Schools" loading="eager"
                   decoding="async"></div>
@@ -1366,7 +1368,7 @@
         </div>
         <div class="partners__row partners__row--bottom">
           <div class="partners__track">
-            <div class="partners__list" role="list" aria-label="Các đối tác GHME — hàng 2">
+            <div class="partners__list" role="list" aria-label="Các đối tác GHME — hàng 2" data-i18n-attrs="aria-label:copy.GhmePartnersRow2">
               <div class="partners__logo" role="listitem"><img width="158" height="78"
                   src="assets/images/partners/partner-13-heineken.svg" alt="Heineken" loading="eager" decoding="async">
               </div>
@@ -1406,30 +1408,30 @@
       <script src="assets/js/partners.js" defer></script>
     </section>
     <section class="consultation decorated" id="consultation"><img class="contact-team"
-        src="assets/images/contact-team.webp" alt="Đội ngũ y tế trao đổi chuyên môn" loading="lazy">
+        src="assets/images/contact-team.webp" alt="Đội ngũ y tế trao đổi chuyên môn" loading="lazy" data-i18n-attrs="alt:copy.MedicalTeamDiscussingProfessionalPractice">
       <div class="container contact-grid">
         <div class="contact-copy">
-          <p class="eyebrow">LIÊN HỆ & TƯ VẤN</p>
-          <h2>Trao đổi nhu cầu đào tạo cùng GHME</h2>
-          <p>GHME đồng hành cùng các bệnh viện, trường học, doanh nghiệp và cộng đồng trong việc xây dựng và triển khai
+          <p class="eyebrow" data-i18n="0:copy.ContactConsultation">LIÊN HỆ & TƯ VẤN</p>
+          <h2 data-i18n="0:copy.DiscussYourTrainingNeedsWithGhme">Trao đổi nhu cầu đào tạo cùng GHME</h2>
+          <p data-i18n="0:copy.GhmeWorksWithHospitalsSchoolsBusinessesAnd">GHME đồng hành cùng các bệnh viện, trường học, doanh nghiệp và cộng đồng trong việc xây dựng và triển khai
             các chương trình đào tạo y tế chất lượng, phù hợp với nhu cầu thực tiễn.</p>
           <ul class="benefits">
             <li><span class="benefit-icon" aria-hidden="true"><i class="fa-solid fa-clock"></i></span>
               <div>
-                <h3>Phản hồi trong 24 giờ làm việc</h3>
-                <p>Chúng tôi luôn sẵn sàng tiếp nhận và phản hồi nhanh chóng mọi yêu cầu của bạn.</p>
+                <h3 data-i18n="0:copy.ResponseWithin24BusinessHours">Phản hồi trong 24 giờ làm việc</h3>
+                <p data-i18n="0:copy.WeAreReadyToReceiveAndRespond">Chúng tôi luôn sẵn sàng tiếp nhận và phản hồi nhanh chóng mọi yêu cầu của bạn.</p>
               </div>
             </li>
             <li><span class="benefit-icon" aria-hidden="true"><i class="fa-solid fa-comments"></i></span>
               <div>
-                <h3>Tư vấn theo nhu cầu đơn vị</h3>
-                <p>Đề xuất chương trình, hình thức và giải pháp đào tạo phù hợp với mục tiêu của bạn.</p>
+                <h3 data-i18n="0:copy.AdviceTailoredToYourOrganization">Tư vấn theo nhu cầu đơn vị</h3>
+                <p data-i18n="0:copy.ProgramsFormatsAndTrainingSolutionsAlignedWith">Đề xuất chương trình, hình thức và giải pháp đào tạo phù hợp với mục tiêu của bạn.</p>
               </div>
             </li>
             <li><span class="benefit-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
               <div>
-                <h3>Hỗ trợ tại Hà Nội, TP. Hồ Chí Minh<br>và đào tạo tại doanh nghiệp</h3>
-                <p>Linh hoạt triển khai trực tiếp hoặc trực tuyến trên toàn quốc.</p>
+                <h3 data-i18n="0:copy.SupportInHanoiHoChiMinhCity;1:copy.AndOnSiteCorporateTraining">Hỗ trợ tại Hà Nội, TP. Hồ Chí Minh<br>và đào tạo tại doanh nghiệp</h3>
+                <p data-i18n="0:copy.FlexibleInPersonOrOnlineDeliveryNationwide">Linh hoạt triển khai trực tiếp hoặc trực tuyến trên toàn quốc.</p>
               </div>
             </li>
           </ul>
@@ -1439,45 +1441,45 @@
             <div><i class="fa-solid fa-envelope" aria-hidden="true"></i> <span><small>Email</small><a
                   href="mailto:lienhe@ghme.vn">lienhe@ghme.vn</a></span></div>
           </div>
-          <p class="contact-motto"><span>Kiến thức hôm nay</span><span>vì một nền y tế tốt hơn ngày mai</span></p>
+          <p class="contact-motto"><span data-i18n="0:copy.KnowledgeToday">Kiến thức hôm nay</span><span data-i18n="0:copy.ForBetterHealthcareTomorrow">vì một nền y tế tốt hơn ngày mai</span></p>
         </div>
         <form id="consultation-form" class="contact-form">
-          <h3>Gửi yêu cầu tư vấn đào tạo</h3>
-          <p>Vui lòng điền thông tin dưới đây, đội ngũ GHME sẽ liên hệ với bạn trong thời gian sớm nhất.</p>
-          <div class="form-grid"><label>Họ và tên <b>*</b><input name="name" autocomplete="name"
-                placeholder="Nhập họ và tên của bạn" required></label><label>Tên tổ chức <b>*</b><input
+          <h3 data-i18n="0:copy.RequestATrainingConsultation">Gửi yêu cầu tư vấn đào tạo</h3>
+          <p data-i18n="0:copy.PleaseCompleteTheInformationBelowTheGhme">Vui lòng điền thông tin dưới đây, đội ngũ GHME sẽ liên hệ với bạn trong thời gian sớm nhất.</p>
+          <div class="form-grid"><label data-i18n="0:copy.FullName">Họ và tên <b>*</b><input name="name" autocomplete="name"
+                placeholder="Nhập họ và tên của bạn" required data-i18n-attrs="placeholder:copy.EnterYourFullName"></label><label data-i18n="0:copy.Organization">Tên tổ chức <b>*</b><input
                 name="organization" autocomplete="organization" placeholder="Tên bệnh viện / trường học / doanh nghiệp"
-                required></label><label>Số điện thoại <b>*</b><input name="phone" type="tel" autocomplete="tel"
-                pattern="[+0-9() .-]{9,20}" title="Nhập số điện thoại từ 9 đến 20 ký tự"
-                placeholder="Nhập số điện thoại" required></label><label>Email <b>*</b><input name="email" type="email"
-                autocomplete="email" placeholder="Nhập địa chỉ email" required></label><label>Loại nhu cầu
+                required data-i18n-attrs="placeholder:copy.HospitalSchoolCompanyName"></label><label data-i18n="0:copy.PhoneNumber">Số điện thoại <b>*</b><input name="phone" type="tel" autocomplete="tel"
+                pattern="[+0-9\(\) .\-]{9,20}" title="Nhập số điện thoại từ 9 đến 20 ký tự"
+                placeholder="Nhập số điện thoại" required data-i18n-attrs="title:copy.EnterAPhoneNumberOf920;placeholder:copy.EnterYourPhoneNumber"></label><label>Email <b>*</b><input name="email" type="email"
+                autocomplete="email" placeholder="Nhập địa chỉ email" required data-i18n-attrs="placeholder:copy.EnterYourEmailAddress"></label><label data-i18n="0:copy.TypeOfRequest">Loại nhu cầu
               <b>*</b><select name="need" required>
-                <option value="">Chọn loại nhu cầu đào tạo</option>
-                <option>Đào tạo doanh nghiệp</option>
-                <option>Cấp cứu ngoại viện cơ bản (BPEC)</option>
-                <option>Giáo dục sức khỏe – Doctor Talk</option>
-                <option>Tư vấn khác</option>
-              </select></label><label>Khu vực triển khai <b>*</b><select name="region" required>
-                <option value="">Chọn khu vực</option>
-                <option>Hà Nội</option>
-                <option>TP. Hồ Chí Minh</option>
-                <option>Tại doanh nghiệp / khu vực khác</option>
-              </select></label><label class="full">Nội dung cần tư vấn <b>*</b><textarea name="message" rows="4"
+                <option value="" data-i18n="0:copy.SelectATrainingNeed">Chọn loại nhu cầu đào tạo</option>
+                <option value="Đào tạo doanh nghiệp" data-i18n="0:copy.CorporateTraining">Đào tạo doanh nghiệp</option>
+                <option value="Cấp cứu ngoại viện cơ bản (BPEC)" data-i18n="0:copy.BasicPreHospitalEmergencyCareBpec">Cấp cứu ngoại viện cơ bản (BPEC)</option>
+                <option value="Giáo dục sức khỏe – Doctor Talk" data-i18n="0:copy.HealthEducationDoctorTalk">Giáo dục sức khỏe – Doctor Talk</option>
+                <option value="Tư vấn khác" data-i18n="0:copy.OtherConsultation">Tư vấn khác</option>
+              </select></label><label data-i18n="0:copy.DeliveryLocation">Khu vực triển khai <b>*</b><select name="region" required>
+                <option value="" data-i18n="0:copy.SelectALocation">Chọn khu vực</option>
+                <option value="Hà Nội" data-i18n="0:copy.Hanoi">Hà Nội</option>
+                <option value="TP. Hồ Chí Minh" data-i18n="0:copy.HoChiMinhCity">TP. Hồ Chí Minh</option>
+                <option value="Tại doanh nghiệp / khu vực khác" data-i18n="0:copy.AtYourOrganizationAnotherLocation">Tại doanh nghiệp / khu vực khác</option>
+              </select></label><label class="full" data-i18n="0:copy.ConsultationDetails">Nội dung cần tư vấn <b>*</b><textarea name="message" rows="4"
                 required
-                placeholder="Vui lòng chia sẻ chi tiết nhu cầu, mục tiêu đào tạo, số lượng học viên…"></textarea></label>
-          </div><label class="consent"><input type="checkbox" name="consent" required><span>Tôi đồng ý cho GHME liên hệ,
+                placeholder="Vui lòng chia sẻ chi tiết nhu cầu, mục tiêu đào tạo, số lượng học viên…" data-i18n-attrs="placeholder:copy.PleaseDescribeYourNeedsTrainingGoalsAnd"></textarea></label>
+          </div><label class="consent"><input type="checkbox" name="consent" required><span data-i18n="0:copy.IAgreeToGhmeContactingMeProviding;1:copy.YourInformationWillBeHandledInAccordance;2:copy.365">Tôi đồng ý cho GHME liên hệ,
               tư vấn và gửi thông tin liên quan đến chương trình đào tạo.<br>Thông tin của bạn sẽ được bảo mật theo
-              <button type="button" class="inline-link" data-info="privacy">chính sách riêng tư</button> của
-              GHME.</span></label><button class="button submit" type="submit"><i class="fa-solid fa-paper-plane"
+              <button type="button" class="inline-link" data-info="privacy" data-i18n="0:copy.GhmeSPrivacyPolicy">chính sách riêng tư</button> của
+              GHME.</span></label><button class="button submit" type="submit" data-i18n="0:copy.SendConsultationRequest"><i class="fa-solid fa-paper-plane"
               aria-hidden="true"></i> Gửi yêu cầu tư vấn</button>
           <p class="form-status" role="status" hidden></p>
-          <div class="form-or">Hoặc</div><a class="form-secondary" href="#programs">Xem chương trình đào tạo <i
+          <div class="form-or" data-i18n="0:copy.Or">Hoặc</div><a class="form-secondary" href="#programs" data-i18n="0:copy.ViewTrainingPrograms">Xem chương trình đào tạo <i
               class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
         </form>
       </div>
     </section>
   </main>
-  <footer class="ghme-footer" id="about" aria-label="Thông tin GHME">
+  <footer class="ghme-footer" id="about" aria-label="Thông tin GHME" data-i18n-attrs="aria-label:copy.GhmeInformation">
     <svg class="footer-symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <defs>
         <symbol id="footer-icon-document" viewBox="0 0 24 24">
@@ -1536,46 +1538,46 @@
       class="footer-decoration footer-decoration--small" aria-hidden="true">+</span>
     <div class="inner-container inner-grid">
       <div class="inner-brand">
-        <a class="inner-logo" href="#main" aria-label="GHME — Trang chủ"><img src="assets/images/branding/logo-ghme.svg"
+        <a class="inner-logo" href="#main" aria-label="GHME — Trang chủ" data-i18n-attrs="aria-label:copy.GhmeHome"><img src="assets/images/branding/logo-ghme.svg"
             alt="GHME — Saving lives starts with proper education" loading="lazy" decoding="async" width="1257"
             height="660"></a>
-        <h3>Đào tạo y khoa thực hành<br>vì một hệ thống y tế <em>an toàn hơn.</em></h3>
+        <h3 data-i18n="0:copy.PracticalMedicalTraining;1:copy.ForAHealthcareSystemThatIs">Đào tạo y khoa thực hành<br>vì một hệ thống y tế <em data-i18n="0:copy.Safer">an toàn hơn.</em></h3>
         <span class="inner-accent" aria-hidden="true"></span>
-        <p>GHME cung cấp các chương trình đào tạo y khoa thực hành, trang bị kỹ năng ứng phó khẩn cấp và kiến thức ứng
+        <p data-i18n="0:copy.GhmeDeliversPracticalMedicalTrainingEmergencyResponse">GHME cung cấp các chương trình đào tạo y khoa thực hành, trang bị kỹ năng ứng phó khẩn cấp và kiến thức ứng
           dụng, góp phần nâng cao chất lượng chăm sóc và sự an toàn cho người bệnh.</p>
-        <ul class="inner-values" aria-label="Giá trị GHME">
-          <li><span><svg class="inner-icon" aria-hidden="true" focusable="false">
+        <ul class="inner-values" aria-label="Giá trị GHME" data-i18n-attrs="aria-label:copy.GhmeValues">
+          <li data-i18n="0:copy.Knowledge"><span><svg class="inner-icon" aria-hidden="true" focusable="false">
                 <use href="#footer-icon-graduation"></use>
               </svg></span>KIẾN THỨC</li>
-          <li><span><svg class="inner-icon" aria-hidden="true" focusable="false">
+          <li data-i18n="0:copy.Skills"><span><svg class="inner-icon" aria-hidden="true" focusable="false">
                 <use href="#footer-icon-gear"></use>
               </svg></span>KỸ NĂNG</li>
-          <li><span><svg class="inner-icon" aria-hidden="true" focusable="false">
+          <li data-i18n="0:copy.PatientCare"><span><svg class="inner-icon" aria-hidden="true" focusable="false">
                 <use href="#footer-icon-heart"></use>
               </svg></span>VÌ NGƯỜI BỆNH</li>
         </ul>
       </div>
-      <nav class="inner-column inner-about" aria-label="Về GHME">
-        <h3>Về GHME</h3><span class="inner-accent" aria-hidden="true"></span>
+      <nav class="inner-column inner-about" aria-label="Về GHME" data-i18n-attrs="aria-label:copy.AboutGhme">
+        <h3 data-i18n="0:copy.AboutGhme">Về GHME</h3><span class="inner-accent" aria-hidden="true"></span>
         <ul class="inner-links">
           <li><a href="about.html?v=20261007"><svg class="inner-icon" aria-hidden="true" focusable="false">
                 <use href="#footer-icon-document"></use>
-              </svg><span>Giới thiệu</span><svg class="inner-icon" aria-hidden="true" focusable="false">
+              </svg><span data-i18n="0:copy.About">Giới thiệu</span><svg class="inner-icon" aria-hidden="true" focusable="false">
                 <use href="#footer-icon-chevron"></use>
               </svg></a></li>
           <li><a href="#programs"><svg class="inner-icon" aria-hidden="true" focusable="false">
                 <use href="#footer-icon-book"></use>
-              </svg><span>Chương trình đào tạo</span><svg class="inner-icon" aria-hidden="true" focusable="false">
+              </svg><span data-i18n="0:copy.TrainingPrograms379">Chương trình đào tạo</span><svg class="inner-icon" aria-hidden="true" focusable="false">
                 <use href="#footer-icon-chevron"></use>
               </svg></a></li>
           <li><a href="about.html?v=20261007#team"><svg class="inner-icon" aria-hidden="true" focusable="false">
                 <use href="#footer-icon-users"></use>
-              </svg><span>Chuyên gia giảng dạy</span><svg class="inner-icon" aria-hidden="true" focusable="false">
+              </svg><span data-i18n="0:copy.TeachingExperts">Chuyên gia giảng dạy</span><svg class="inner-icon" aria-hidden="true" focusable="false">
                 <use href="#footer-icon-chevron"></use>
               </svg></a></li>
         </ul>
       </nav>
-      <nav class="inner-column inner-ecosystem" aria-label="Hệ sinh thái GHME">
+      <nav class="inner-column inner-ecosystem" aria-label="Hệ sinh thái GHME" data-i18n-attrs="aria-label:copy.GhmeEcosystem">
         <h3>ECOSYSTEM</h3><span class="inner-accent" aria-hidden="true"></span>
         <ul class="inner-links">
           <li><a href="https://healthcarealliance.vn/" target="_blank" rel="noopener noreferrer"><span
@@ -1612,7 +1614,7 @@
         </ul>
       </nav>
       <div class="inner-column inner-contact">
-        <h3>Liên hệ</h3><span class="inner-accent" aria-hidden="true"></span>
+        <h3 data-i18n="0:copy.Contact">Liên hệ</h3><span class="inner-accent" aria-hidden="true"></span>
         <address><a
             href="https://www.google.com/maps/search/?api=1&query=Hyco+4+Building+205A+Nguyen+Xi+Ho+Chi+Minh+City"
             target="_blank" rel="noopener noreferrer"><svg class="inner-icon" aria-hidden="true" focusable="false">
@@ -1628,23 +1630,23 @@
         <a class="inner-map"
           href="https://www.google.com/maps/search/?api=1&query=Hyco+4+Building+205A+Nguyen+Xi+Ho+Chi+Minh+City"
           target="_blank" rel="noopener noreferrer"
-          aria-label="Mở bản đồ chỉ đường đến Hyco 4 Building, 205A Nguyễn Xí, TP. Hồ Chí Minh"><span
+          aria-label="Mở bản đồ chỉ đường đến Hyco 4 Building, 205A Nguyễn Xí, TP. Hồ Chí Minh" data-i18n-attrs="aria-label:copy.OpenDirectionsToHyco4Building205a"><span
             class="inner-map-image" aria-hidden="true"></span></a>
       </div>
     </div>
     <div class="inner-bottom">
       <div class="inner-container inner-bottom-wrap">
         <p>© 2024 GHME. All rights reserved.</p>
-        <div class="inner-bottom-links"><button type="button" data-info="privacy">Chính sách bảo mật</button><button
-            type="button" data-info="terms">Điều khoản sử dụng</button><span>Kiến thức • Kỹ năng • Vì người bệnh</span>
+        <div class="inner-bottom-links"><button type="button" data-info="privacy" data-i18n="0:copy.PrivacyPolicy">Chính sách bảo mật</button><button
+            type="button" data-info="terms" data-i18n="0:copy.TermsOfUse">Điều khoản sử dụng</button><span data-i18n="0:copy.KnowledgeSkillsPatientCare">Kiến thức • Kỹ năng • Vì người bệnh</span>
         </div>
       </div>
     </div>
   </footer>
-  <dialog id="info-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Đóng"><i
+  <dialog id="info-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Đóng" data-i18n-attrs="aria-label:copy.Close"><i
         class="fa-solid fa-xmark" aria-hidden="true"></i></button>
     <h2 id="dialog-title"></h2>
-    <div id="dialog-content"></div><button class="button dialog-done">Đã hiểu</button>
+    <div id="dialog-content"></div><button class="button dialog-done" data-i18n="0:copy.GotIt">Đã hiểu</button>
   </dialog>
   <div id="ghme-first-aid"></div>
   <script type="module" src="assets/first-aid/game.js"></script>

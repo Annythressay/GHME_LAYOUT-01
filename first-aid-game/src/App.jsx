@@ -1,6 +1,7 @@
+import { useLocalization } from './i18n';
 import { useEffect, useReducer, useRef, useState } from 'react';
 import { HeartPulse, X } from 'lucide-react';
-import { questions } from './questions';
+import { getQuestions } from './questions';
 import { createGame, gameReducer } from './game';
 import Header from './components/Header';
 import Situation from './components/Situation';
@@ -14,6 +15,8 @@ const memory = new Set();
 function remember(key) { memory.add(key); try { sessionStorage.setItem(key, 'true'); } catch { /* Retain choice in memory when storage is blocked. */ } }
 
 export default function App({ imageBase }) {
+  const { t, language } = useLocalization();
+  const questions = getQuestions(language);
   const [game, dispatch] = useReducer(gameReducer, undefined, createGame);
   const headingRef = useRef(null);
   const triggerRef = useRef(null);
@@ -56,10 +59,10 @@ export default function App({ imageBase }) {
         <span className="signal-heart"><HeartPulse className="game-trigger-icon" size={32} /></span>
         <span className="signal-waves signal-right"><i /><i /><i /></span>
       </span>
-      <span>Thử thách sơ cứu <strong>4 phút</strong></span>
+      <span>{t('ui.FirstAidChallenge')} <strong>{t('ui.4Minutes')}</strong></span>
     </button>
     {game.screen !== 'closed' && <GameDialog onClose={requestClose} fallbackRef={triggerRef}>
-      {(game.screen === 'entry' || game.screen === 'intro') && <button className="close-game" aria-label={game.screen === 'entry' ? 'Đóng' : 'Đóng thử thách'} title="Đóng" onClick={requestClose}><X size={21} aria-hidden="true" /></button>}
+      {(game.screen === 'entry' || game.screen === 'intro') && <button className="close-game" aria-label={game.screen === 'entry' ? t('ui.Close') : t('ui.CloseChallenge')} title={t('ui.Close')} onClick={requestClose}><X size={21} aria-hidden="true" /></button>}
       {(game.screen === 'entry' || game.screen === 'intro') ? <GameIntro imageBase={imageBase} headingRef={headingRef} onStart={requestStart} onClose={close} /> : <>
         <Header index={game.index} total={questions.length} answered={game.responses.length} remaining={game.remaining} finished={game.finished} imageBase={imageBase} onClose={requestClose} />
         <main className="game-main">
@@ -71,7 +74,7 @@ export default function App({ imageBase }) {
       </>}
       {registrationOpen && <ParticipantForm onClose={() => setRegistrationOpen(false)} onComplete={completeRegistration} />}
       {game.exit && <GameDialog confirmation onClose={() => send('continue')}>
-        <p className="section-label">Rời thử thách</p><h2 id="exit-title" className="exit-heading">Bạn muốn dừng thử thách?</h2><p className="exit-description">Lượt chơi này sẽ kết thúc. Khi quay lại, bạn sẽ bắt đầu một lượt mới. Đồng hồ vẫn chạy khi bạn cân nhắc.</p><div className="exit-actions"><button autoFocus className="button-primary" onClick={() => send('continue')}>Tiếp tục</button><button className="button-secondary" onClick={close}>Thoát thử thách</button></div>
+        <p className="section-label">{t('ui.LeaveChallenge')}</p><h2 id="exit-title" className="exit-heading">{t('ui.DoYouWantToStopThe')}</h2><p className="exit-description">{t('ui.ThisAttemptWillEndWhenYou')}</p><div className="exit-actions"><button autoFocus className="button-primary" onClick={() => send('continue')}>{t('ui.Continue')}</button><button className="button-secondary" onClick={close}>{t('ui.ExitChallenge')}</button></div>
       </GameDialog>}
     </GameDialog>}
   </>;

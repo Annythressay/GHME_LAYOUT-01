@@ -38,7 +38,9 @@ The website has no customer submission API. The form explicitly identifies this 
 
 ## Preserved behavior
 
-- `src/game.js`, `src/questions.js` and `src/main.jsx` remain unchanged.
+- `src/game.js` remains unchanged. Question order, IDs, answers, correct indices
+  and source references are shared; `src/questions.js` now selects localized
+  copy, and `src/main.jsx` adds the localization provider.
 - Timer: 240 seconds, absolute deadline, one 250ms interval while playing, visibility synchronization and cleanup.
 - Scoring: only confirmed responses count; hints do not change scoring.
 - Selection, confirmation, progress, hints, response history, timeout and replay still use the existing reducer.
@@ -61,6 +63,24 @@ The website has no customer submission API. The form explicitly identifies this 
 - `src/components/ParticipantForm.jsx`: pre-challenge customer details and validation.
 - `src/styles.css`: complete modal visual system; existing launcher CSS preserved.
 - `assets/first-aid/game.js`: rebuilt generated production bundle.
+
+## Localization (10 October 2026)
+
+The widget follows the website's `ghme:languagechange` event and saved
+`localStorage.ghmeLanguage` preference, with Vietnamese as the default.
+`src/i18n.jsx` supplies a small React context; `src/messages.js` contains both
+UI languages, including participant validation. `src/questions.en.js` contains
+the English version of every category, question, answer, hint, explanation,
+scene and image description. `getQuestions(language)` combines that copy with
+the original IDs, correct indices, images and Red Cross source URLs.
+
+The integrated widget leaves the website's title/meta management to its shared
+engine. In the standalone demo the provider updates document language/title/meta.
+Localization does not change the reducer, timer interval, score, participant
+storage, session markers or modal behavior. Both languages have been exercised
+through all ten questions at 1440, 1200, 1024, 768, 430 and 375px, including
+validation, hints, feedback, 7/10 results, review, replay, exit and timeout.
+Run `node scripts/qa_game_i18n.cjs` from the repository root for bilingual QA.
 
 ## QA
 

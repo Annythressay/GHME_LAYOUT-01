@@ -1,6 +1,7 @@
 'use strict';
 // Progressive enhancement: every profile and biography also exists in the HTML.
 (() => {
+  const i18n = window.GHMEI18n;
   const section = document.querySelector('.experts');
   if (!section) return;
   const tabs = [...section.querySelectorAll('[data-experts-tab]')];
@@ -36,7 +37,7 @@
     button.textContent = label;
     button.dataset.page = target;
     button.disabled = disabled;
-    button.setAttribute('aria-label', /^\d+$/.test(label) ? `Trang ${label}` : label);
+    button.setAttribute('aria-label', /^\d+$/.test(label) ? i18n.t('experts.page', {page: label}) : label);
     button.setAttribute('aria-controls', panels[activeGroup].id);
     if (current) button.setAttribute('aria-current', 'page');
     pagination.append(button);
@@ -54,15 +55,15 @@
     const focused = document.activeElement;
     const hidesFocus = groups[activeGroup].some(card => !visible.has(card) && card.contains(focused));
     groups[activeGroup].forEach(card => { card.hidden = !visible.has(card); });
-    const groupLabel = activeGroup === 0 ? 'giảng viên' : 'thành viên';
-    count.textContent = matching.length ? `Đang hiển thị ${start + 1}–${Math.min(start + initialCount, matching.length)} / ${matching.length} ${groupLabel}` : 'Không có kết quả phù hợp';
+    const groupLabel = i18n.t(activeGroup === 0 ? 'experts.instructors' : 'experts.members');
+    count.textContent = matching.length ? i18n.t('experts.count', {start: start + 1, end: Math.min(start + initialCount, matching.length), total: matching.length, group: groupLabel}) : i18n.t('experts.empty');
     empty.hidden = matching.length > 0;
     specialty.closest('label').hidden = activeGroup !== 0;
     const hadPaginationFocus = pagination.contains(focused);
     pagination.replaceChildren();
     pagination.hidden = totalPages <= 1;
     if (totalPages > 1) {
-      pageButton('‹ Trước', current - 1, current === 1);
+      pageButton(i18n.t('experts.previous'), current - 1, current === 1);
       const numbered = [...new Set([1, current - 1, current, current + 1, totalPages])]
         .filter(page => page >= 1 && page <= totalPages).sort((a, b) => a - b);
       numbered.forEach((page, index) => {
@@ -74,7 +75,7 @@
         }
         pageButton(String(page), page, false, page === current);
       });
-      pageButton('Sau ›', current + 1, current === totalPages);
+      pageButton(i18n.t('experts.next'), current + 1, current === totalPages);
     }
     if (hidesFocus || hadPaginationFocus) {
       (pagination.querySelector('[aria-current="page"]') || tabs[activeGroup]).focus({ preventScroll: true });
@@ -109,6 +110,7 @@
   section.querySelector('.experts__filters').hidden = false;
   section.querySelector('.experts__footer').hidden = false;
   selectTab(0);
+  window.addEventListener('ghme:languagechange', renderDirectory);
 
   function applyFilters() {
     pages.fill(1);

@@ -226,6 +226,8 @@ def main():
     for course in parser.courses:
         (destination / (course['id'] + '.html')).write_text(page(course), encoding='utf-8')
     print(f'Built {len(parser.courses)} program pages.')
+    from build_i18n import main as localize
+    localize()
 
 
 if __name__ == '__main__':

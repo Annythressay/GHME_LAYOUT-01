@@ -165,3 +165,5 @@ if __name__ == '__main__':
     with index.open('w', encoding='utf-8', newline='') as file:
         file.write(updated)
     print('Generated expert directory from source profiles.')
+    from build_i18n import main as localize
+    localize()

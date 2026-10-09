@@ -8,7 +8,7 @@ const aboutCompact = window.matchMedia('(max-width: 991px)');
 
 function setAboutMenu(open) {
   aboutMenu.setAttribute('aria-expanded', String(open));
-  aboutMenu.setAttribute('aria-label', open ? 'Đóng menu' : 'Mở menu');
+  aboutMenu.setAttribute('aria-label', window.GHMEI18n.translate(open ? 'Đóng menu' : 'Mở menu'));
   aboutNavigation.classList.toggle('open', open);
 }
 
@@ -24,3 +24,5 @@ document.addEventListener('keydown', event => {
   }
 });
 aboutCompact.addEventListener('change', () => setAboutMenu(false));
+
+window.addEventListener('ghme:languagechange', () => setAboutMenu(aboutMenu.getAttribute('aria-expanded') === 'true'));

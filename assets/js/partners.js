@@ -20,9 +20,10 @@
     copy.setAttribute('aria-hidden', 'true');
     copy.setAttribute('inert', '');
     copy.removeAttribute('aria-label');
+    copy.removeAttribute('data-i18n-attrs');
     copy.removeAttribute('id');
     copy.querySelectorAll('[id]').forEach(element => element.removeAttribute('id'));
-    copy.querySelectorAll('img').forEach(image => { image.alt = ''; });
+    copy.querySelectorAll('img').forEach(image => { image.alt = ''; image.removeAttribute('data-i18n-attrs'); });
     // Keep future partner links out of the duplicate keyboard sequence as well.
     copy.querySelectorAll('a, button, input, select, textarea, [tabindex], [contenteditable]').forEach(element => {
       element.setAttribute('tabindex', '-1');
