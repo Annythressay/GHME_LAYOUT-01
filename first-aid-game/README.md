@@ -1,6 +1,6 @@
-# GHME — 4 Phút Thời Gian Vàng
+# GHME — 4 phút thời gian vàng
 
-React 19 + Vite + Tailwind CSS v4 + Lucide. The original 10-question dataset and local training illustrations are retained. The game now mounts into the real static GHME homepage.
+Interactive first-aid training widget built with React 19, Vite, Tailwind CSS v4 and Lucide. The widget runs inside an open Shadow DOM on the existing GHME website.
 
 ## Run and build
 
@@ -12,90 +12,73 @@ npm --prefix first-aid-game run build
 python -m http.server 4173
 ```
 
-Open http://127.0.0.1:4173/. The build writes the self-contained ES module and local images into `assets/first-aid/`. These files are included for the existing no-build static deployment. Rebuild after changing source. Vite's `emptyOutDir` is limited to this generated directory.
+Open http://127.0.0.1:4173/ and use the existing “Thử thách sơ cứu 4 phút” launcher. For isolated source development, run `npm --prefix first-aid-game run dev`.
 
-For isolated source development: `npm --prefix first-aid-game run dev`. Open the URL printed by Vite. The standalone development page has a animated manual launcher, but the real website background is visible only on the integrated static homepage.
+The established build writes the ES module and local images into `assets/first-aid/`. Rebuild after editing React source. No homepage, website stylesheet, external launcher design or hosting changes are needed.
 
-## Integration
+## October 2026 presentation redesign
 
-`index.html` includes `#ghme-first-aid` and `assets/first-aid/game.js`. The entry creates an open Shadow DOM containing React and compiled Tailwind CSS, preventing preflight/utilities from changing the host website. Production image URLs resolve relative to the bundled module; subdirectory hosting is supported.
+The entry and replay screens share one typography-led opening: game title, 10 situations, short description and Start action, with an existing training photograph on desktop. Start now opens the participant popup on the first attempt in a page visit. Name and phone are required; email is optional. The duration remains static until valid form submission. Replay in the same visit reuses the in-memory participant details.
 
-The host uses its existing font. No backend, form, login, analytics or new UI framework was added.
+The quiz is an open editorial composition: a large situation photograph and caption beside the question and four full-width decision choices. The header contains GHME, confirmed-question progress, a quiet timer and Close. Below 820px, the photo precedes the question and choices. The mobile header remains visible, including Close, while the modal scrolls.
 
-## Experience
+Selection uses navy. After confirmation, the correct answer has a subtle green state and a wrong selected answer uses soft orange. Border, padding and icon slots retain identical geometry across states. Inline hints and feedback share a reserved learning region, keeping the primary action stable.
 
-- The launcher enters after 2.5 seconds (450ms), rests 600ms, then plays a 900ms heartbeat, 400ms duration emphasis and 700ms pill pulse. One heartbeat/pulse reminder follows after 13 seconds of rest. Hover, focus or activation cancels the pill/text attention for this mount. The icon independently repeats a CSS heartbeat/signal cycle every 4.8s: about 1.6s activity, then 3.2s rest. Three mirrored CSS border arcs stagger by 150ms over a soft pink glow; the Lucide heart is 32px desktop / 28px mobile. Signal motion pauses while the game is open. No automatic modal opening or JavaScript attention timers. Reduced motion shows the launcher immediately without movement.
-- Entry → quiz → per-answer feedback → result. Replay retains the existing readiness intro. Entry and replay intro have no active timer.
-- Entry CTA “Thử 4 phút” calls the existing start action directly, opening question 1 at 04:00. On replay, “Sẵn sàng, bắt đầu” starts the new attempt.
-- Selection does not disclose correctness. Confirm locks the answer; feedback includes the correct answer, explanation and original source link. A separate Next action advances exactly one question.
-- Progress measures confirmed questions, from 0/10 to 10/10. Timer remains navy, turning orange below 60 seconds.
-- Timeout immediately shows a calm result. Unconfirmed choices do not count. All 10 explanations remain available in review.
-- Result: score, answered count, elapsed time, encouraging copy and complete answer review. Tiers: 0–4 build foundations, 5–7 basic knowledge, 8–10 good foundations. An incomplete timed-out attempt gets neutral review copy instead of a tier judgement.
-- Course CTA closes the game, focuses and scrolls to the existing homepage `#programs` section. Standalone development links to `../#programs`.
-- Replay returns to intro with fresh state; timer starts only after readiness is confirmed again.
-- Close/Escape during quiz opens a confirmation. Continue retains progress; Exit discards the attempt. Timer continues while confirmation is open.
-- Dismissal/completion session markers remain recorded; the invitation opens only through the launcher.
+Feedback presents status, explanation, “Điều cần nhớ” and the original Red Cross reference. It only reformats existing explanation sentences and hints; no clinical content was added.
 
-## State and accessibility
+Results use a navy score hero with light text, green strengths, orange review topics and contrasting selected/correct answers. A direct review action scrolls to and focuses the review heading. Results prioritize the score and elapsed time, followed by actual question categories. “Bạn làm tốt” includes categories with all their questions correct; “Bạn nên xem lại” includes categories with wrong or unconfirmed answers. Wrong/unconfirmed answers appear first, with the user's choice, correct answer and expandable explanation. A toggle reveals all ten answers. The course CTA and replay follow the learning review.
 
-`game.js` owns screen, current question, selection, confirmation, hints, responses, remaining time, deadline and exit confirmation through a reducer. Score is derived from confirmed responses and question data. Feedback is derived from the confirmed selection; it is not stored redundantly.
+Screens share navy, white, very light blue, restrained orange, one type family, consistent controls and 200–220ms motion. Reduced-motion settings disable animation.
 
-Only the quiz has a 250 ms interval, with cleanup on completion, exit and unmount. An absolute deadline and visibility-change synchronization prevent background-tab drift. StrictMode is retained for source development.
+## Participant information
 
-Native modal dialogs make the background inert. Explicit Tab/Shift+Tab wrapping keeps focus inside each dialog, including nested exit confirmation. Escape is handled at the top dialog. Question/result headings receive focus; closing restores the prior element or launcher. Body overflow and padding are restored exactly, and scrollbar compensation prevents layout jump. Backdrop clicks cannot activate the underlying website. Reduced-motion settings suppress transitions.
+`ParticipantForm.jsx` validates a trimmed name, a 9–15 digit phone number (common international formatting is accepted), and an optional email. Errors are associated with their inputs; the first invalid field receives focus. The popup supports keyboard focus containment, Escape and focus restoration. No quiz timer runs while the form is open.
 
-## Components and modified files
+The website has no customer submission API. The form explicitly identifies this as a preview: participant details remain in React memory for the current page visit only; they are not sent to GHME, persisted in browser storage, or stored on a server. A production API/CRM destination is still required for real customer collection.
 
-New components:
-- `src/components/GameDialog.jsx`: modal lifecycle, body scroll lock, focus restoration and keyboard trap; also used for exit confirmation.
-- `src/components/GameIntro.jsx`: invitation and ready-to-start introduction.
+## Preserved behavior
 
-Updated:
-- `src/App.jsx`: launcher, session frequency, orchestration, timer lifecycle and course navigation.
-- `src/game.js`: centralized reducer.
-- `src/main.jsx`: isolated widget mount.
-- `src/components/Header.jsx`: brand, answered progress, timer.
-- `src/components/Situation.jsx`: existing local visual and training context.
-- `src/components/Question.jsx`: answers, local hint, feedback and next action.
-- `src/components/Results.jsx`: educational result, tiers, review, course CTA, replay.
-- `src/styles.css`: entry, overlay, responsive layouts and Shadow DOM border defaults.
-- `vite.config.js`: static-site widget build.
-- `qa-browser.cjs`: integrated production-browser QA.
-- `.gitignore`: local QA screenshots excluded.
-- This README, repository README and root `index.html`.
-- Generated `assets/first-aid/game.js` and nine images.
+- `src/game.js`, `src/questions.js` and `src/main.jsx` remain unchanged.
+- Timer: 240 seconds, absolute deadline, one 250ms interval while playing, visibility synchronization and cleanup.
+- Scoring: only confirmed responses count; hints do not change scoring.
+- Selection, confirmation, progress, hints, response history, timeout and replay still use the existing reducer.
+- Dismissal and completion markers use the existing sessionStorage keys and in-memory fallback.
+- Launcher markup, interaction handlers, heartbeat and signal CSS are retained.
+- Shadow DOM integration, image paths and the production build workflow are retained.
+- Native modal dialogs, focus containment, Escape, nested exit confirmation, focus restoration, inert background and scroll locking remain intact.
+- Course CTA closes the modal and focuses the existing homepage `#programs` section.
 
-`questions.js` and package dependencies are unchanged. Existing images are AI-generated illustrations according to the original project documentation, not documented real training events. No random web images were added. The four-minute duration is a game mechanic, not a universal clinical threshold.
+## Source organization
 
-## QA — 19 September 2026
+- `src/App.jsx`: existing state orchestration with revised presentation composition.
+- `src/components/GameIntro.jsx`: opening and replay intro.
+- `src/components/Header.jsx`: compact progress/timer header and Close.
+- `src/components/Situation.jsx`: situation number, image and caption.
+- `src/components/Question.jsx`: decision choices, inline aid and stable action.
+- `src/components/Feedback.jsx`: educational feedback presentation.
+- `src/components/Results.jsx`: score, category summary, filtered review and final CTA.
+- `src/components/GameDialog.jsx`: existing modal/focus behavior with configurable dialog title and styling for the participant popup.
+- `src/components/ParticipantForm.jsx`: pre-challenge customer details and validation.
+- `src/styles.css`: complete modal visual system; existing launcher CSS preserved.
+- `assets/first-aid/game.js`: rebuilt generated production bundle.
 
-Production bundle on the real homepage, Microsoft Edge headless with Playwright:
-- 1440, 1200, 1024, 768, 430 and 375 px, across entry, intro, quiz, feedback and result: no page/modal horizontal overflow; images decode successfully.
-- An additional 375 × 667 viewport keeps the entry dialog within the viewport; internal scrolling is allowed where needed.
-- Delayed invitation, dismissal, reload suppression, manual reopening, entry/replay intro without countdown, entry CTA starts directly at 04:00.
-- Keyboard radio selection, initial disabled confirmation, optional hint, deferred feedback, locked answers, next-question reset and answered progress.
-- All 10 questions, expected 9/10 score, complete review, replay, timeout excluding unconfirmed selection and timer frozen after completion.
-- Escape and nested exit confirmation, continuing and exiting, focus wrapping in both directions, restored focus, backdrop isolation and restored body scrolling.
-- Course CTA navigates and focuses the real programs section.
-- Exactly one game interval while playing; zero after completion or exit.
-- No console errors or page errors in the tested flow.
+## QA
 
-Run a static server on port 4173, then:
+Run against the static server using an available Playwright installation:
 
 ```sh
-node first-aid-game/qa-browser.cjs
+node first-aid-game/qa-redesign.cjs
+node first-aid-game/qa-trigger.cjs
 ```
 
-Requires Playwright (set `PLAYWRIGHT_MODULE` to an existing installation) and Microsoft Edge. `GAME_URL` overrides the homepage URL. The script uses a controlled clock and saves 30 screenshots in ignored `first-aid-game/qa-output/`. This is browser QA, not a screen-reader or clinical-content audit.
+If Playwright is not installed locally, set `NODE_PATH` to a runtime containing it, or set `PLAYWRIGHT_MODULE` to its absolute module path. Tests launch installed Microsoft Edge headlessly.
 
-## Selected design: Concept 04 — Micro Challenge
+Verified widths: **1440, 1200, 1024, 768, 430 and 375px**. Desktop screenshots use 1000px height; quiz fitting is additionally checked at 1440×900. Phone tests use 812px height with an additional 375×667 check.
 
-Entry is a small bottom-right invitation. No photograph, caption, benefits or privacy block. Copy: GHME · 4 PHÚT THỜI GIAN VÀNG; static 04:00 / thời lượng; 10 tình huống. Bạn sẽ xử trí thế nào?; Thử 4 phút; Để sau. The existing 44px close control remains.
+The redesign suite additionally checks form validation, optional email, keyboard focus, cancellation and timer gating. The redesign suite covers all ten questions at all six widths, radio-keyboard selection, inline hints, correct and incorrect feedback, progress, disabled/locked states, stable option and action geometry, 7/10 and 10/10 results, wrong-answer review, all-results toggle, replay, timeout, unconfirmed selections, session markers, CTA navigation, timer cleanup, Escape/exit, intro focus wrapping, restored focus, modal titles, mobile Close while scrolling and reduced motion.
 
-Desktop: 480 × 289px, right/bottom offsets 40px (24px on tablet). Mobile offsets: 12px with safe-area support. Measured size: 406 × 260 at 430px; 351 × 260 at 375px. Backdrop opacity .32; 300ms/10px entrance, honoring reduced motion.
+Final result: **PASS**. No page/dialog horizontal overflow and **0 console/page errors**. The measured maximum action movement was less than 0.001px (browser floating-point geometry); option heights remained unchanged. No duplicated timer.
 
-The 2000ms delay, session keys, focus trap, Escape, scroll locking and restoration are unchanged. Entry duration is static text, not a timer or live region. Thử 4 phút invokes the existing start action, opening the quiz at 04:00. Questions, reducer, scoring, feedback and result calculations are unchanged.
+The unchanged launcher suite also verifies animation counts, staggered signal waves, containment, rest periods, all six widths, keyboard activation, focus restoration and reduced motion.
 
-Changed for Concept 04: src/components/GameIntro.jsx, entry-only rules in src/styles.css, qa-browser.cjs, this README and rebuilt assets/first-aid/game.js.
-
-Production browser QA passes at 1440, 1200, 1024, 768, 430 and 375px. No entry internal scrolling or horizontal overflow at tested sizes; no console/page errors. Verified static duration after 20 seconds, keyboard Enter start, full quiz/result/replay/timeout flow, session dismissal, focus wrapping and timer cleanup.
+Screenshots and machine-readable evidence: `qa-output/redesign/` and `qa-output/redesign/report.json` (ignored generated output). `qa-redesign.cjs` is the current full-flow suite. The older `qa-browser.cjs` retains assertions for the superseded compact-entry design and is preserved as historical work.

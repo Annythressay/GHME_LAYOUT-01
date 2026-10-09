@@ -1,23 +1,35 @@
-import { ArrowRight, CheckCircle2, RotateCcw, Award, Minus, Info } from 'lucide-react';
+import { useRef, useState } from 'react';
+import { ArrowRight, CheckCircle2, RotateCcw, ChevronDown, BookOpen } from 'lucide-react';
 import { DURATION, formatTime } from '../game';
 
 export default function Results({ questions, responses, remaining, timedOut, onRestart, headingRef, onCourse }) {
+  const reviewRef = useRef(null);
+  const [showAll, setShowAll] = useState(false);
+  const isCorrect = i => responses[i]?.selected === questions[i].correct;
   const score = responses.filter((response, i) => response.selected === questions[i].correct).length;
-  return (
-    <section className="mx-auto w-full max-w-240 rounded-3xl border border-line bg-white p-7 shadow-[0_12px_50px_#10365e06] md:p-12">
-      <div className="mx-auto flex size-16 items-center justify-center rounded-2xl bg-orange-light text-orange"><Award size={32} aria-hidden="true" /></div>
-      <p className="eyebrow mt-6 text-center">Mỗi kiến thức đúng, thêm một cơ hội</p>
-      <h1 id="result-title" ref={headingRef} tabIndex={-1} className="question-heading mt-3 text-center text-3xl font-bold text-navy">{timedOut ? 'Hết 4 phút' : 'Bạn đã hoàn thành thử thách!'}</h1>
-      <p className="mt-4 text-center text-xl font-semibold text-navy">{timedOut && responses.length < questions.length ? 'Cùng nhìn lại những câu bạn đã thử' : score >= 8 ? 'Bạn đã có nền tảng tốt' : score >= 5 ? 'Bạn đã có kiến thức cơ bản' : 'Mỗi câu hỏi là một bước củng cố nền tảng'}</p>
-      <p className="mx-auto mt-3 max-w-140 text-center text-sm leading-7 text-muted">Trong tình huống thật, kiến thức chỉ là bước đầu. Thực hành giúp bạn phản ứng chính xác và tự tin hơn.</p>
-      <div className="my-8 grid grid-cols-3 divide-x divide-line rounded-2xl bg-pale py-6 text-center"><div><p className="text-3xl font-bold text-navy">{score}<span className="text-lg font-normal text-muted"> / {questions.length}</span></p><p className="mt-1 text-xs text-muted">Câu trả lời đúng</p></div><div><p className="text-3xl font-bold text-navy">{responses.length}</p><p className="mt-1 text-xs text-muted">Câu đã xác nhận</p></div><div><p className="text-3xl font-bold tabular-nums text-navy max-sm:text-2xl">{formatTime(DURATION - remaining)}</p><p className="mt-1 text-xs text-muted">Thời gian sử dụng</p></div></div>
-      <div className="result-next"><h2>Muốn tự tin hơn khi gặp tình huống thật?</h2><p>Khám phá các chương trình thực hành cùng chuyên gia GHME.</p><div className="flex flex-wrap justify-center gap-3"><a className="button-primary" href="../#programs" onClick={onCourse}>Khám phá khóa học sơ cấp cứu<ArrowRight size={17} aria-hidden="true" /></a><button className="button-secondary" onClick={onRestart}><RotateCcw size={17} aria-hidden="true" />Làm lại thử thách</button></div></div>
-      <div id="review" className="mt-10 border-t border-line pt-7"><h2 className="mb-4 text-lg font-semibold text-navy">Cùng nhìn lại kiến thức</h2><div className="divide-y divide-line">{questions.map((q, i) => {
-        const response = responses[i];
-        const correct = response?.selected === q.correct;
-        const Icon = !response ? Minus : correct ? CheckCircle2 : Info;
-        return <details key={q.id} className="group py-3"><summary className="flex cursor-pointer list-none items-start gap-3 rounded-md text-sm leading-6 text-navy"><Icon size={18} className={`mt-1 shrink-0 ${correct ? 'text-navy' : 'text-orange'}`} aria-hidden="true" /><span className="flex-1"><strong className="font-medium">{i + 1}. {q.question}</strong><span className="block text-[11px] text-muted">{!response ? 'Chưa xác nhận' : correct ? 'Trả lời đúng' : 'Cần ôn lại'} · Xem giải thích</span></span></summary><div className="ml-7 mt-3 rounded-lg bg-pale p-4 text-xs leading-6 text-muted">{response && <p>Bạn chọn: {'ABCD'[response.selected]}. {q.answers[response.selected]}</p>}<p className="font-semibold text-navy">Đáp án: {'ABCD'[q.correct]}. {q.answers[q.correct]}</p><p>{q.explanation}</p><a href={q.source} target="_blank" rel="noreferrer" className="underline underline-offset-2">Tham khảo Red Cross</a></div></details>;
-      })}</div></div>
+  const review = questions.map((q, i) => ({ q, i })).filter(({ i }) => !isCorrect(i));
+  const revisit = [...new Set(review.map(({ q }) => q.category))];
+  const strengths = [...new Set(questions.filter((q, i) => isCorrect(i) && !revisit.includes(q.category)).map(q => q.category))];
+  const visible = showAll ? questions.map((q, i) => ({ q, i })) : review;
+  const goToReview = () => {
+    if (!review.length) setShowAll(true);
+    requestAnimationFrame(() => { reviewRef.current?.scrollIntoView({ block: 'start', behavior: 'instant' }); reviewRef.current?.focus({ preventScroll: true }); });
+  };
+  const message = timedOut && responses.length < questions.length ? 'Cùng nhìn lại những câu bạn đã thử.' : score >= 8 ? 'Bạn đã có nền tảng tốt.' : score >= 5 ? 'Bạn đã có kiến thức cơ bản.' : 'Mỗi câu hỏi là một bước củng cố nền tảng.';
+  return <section className="results">
+    <div className="result-overview">
+      <div className="result-hero"><p className="section-label">{timedOut ? 'Hết 4 phút' : 'Hoàn thành thử thách'}</p><h1 id="result-title" ref={headingRef} tabIndex={-1} className="question-heading result-score"><span>{score}</span><span className="score-total"> / {questions.length}</span><span className="sr-only"> câu trả lời đúng</span></h1><h2>{message}</h2><p className="result-time">{timedOut ? 'Thời gian sử dụng' : 'Hoàn thành trong'} <strong>{formatTime(DURATION - remaining)}</strong>{responses.length < questions.length && <> · {responses.length}/{questions.length} câu đã xác nhận</>}</p><p className="result-support">Mỗi cách xử trí đúng là một bước để sẵn sàng giúp đỡ.</p><button className="result-review-action" onClick={goToReview}>{review.length ? `Ôn lại ${review.length} tình huống` : 'Xem lại các đáp án'}<ArrowRight size={17} aria-hidden="true" /></button></div>
+      <div className="learning-summary">
+        {strengths.length > 0 && <div className="summary-group summary-strength"><h2><CheckCircle2 size={18} aria-hidden="true" />Bạn làm tốt</h2><ul>{strengths.map(category => <li key={category}>{category}</li>)}</ul></div>}
+        <div className="summary-group summary-revisit"><h2><BookOpen size={18} aria-hidden="true" />{revisit.length ? 'Bạn nên xem lại' : 'Tiếp tục giữ vững kiến thức'}</h2>{revisit.length ? <><p className="summary-note">Các chủ đề có câu sai hoặc chưa trả lời.</p><ul className="revisit-list">{revisit.map(category => <li key={category}>{category}</li>)}</ul></> : <p className="summary-note">Bạn đã trả lời đúng cả 10 tình huống. Thực hành thường xuyên giúp củng cố kỹ năng.</p>}</div>
+      </div>
+    </div>
+    <section className="answer-review" aria-labelledby="review-title"><div className="review-heading"><h2 id="review-title" ref={reviewRef} tabIndex={-1}>{showAll ? 'Toàn bộ kết quả' : 'Các câu cần xem lại'} <span>{visible.length}</span></h2><p>Nhìn lại lựa chọn. Ghi nhớ cách xử trí.</p></div>
+      {visible.length === 0 && <p className="review-empty">Không có câu nào cần xem lại trong lượt chơi này.</p>}
+      <div className="review-list">{visible.map(({ q, i }) => <article className="review-row" key={q.id}><span className="review-number">{String(i + 1).padStart(2, '0')}</span><div className="review-content"><p className="review-category">{q.category}{showAll && isCorrect(i) && <span> · Chính xác</span>}</p><h3>{q.question}</h3><div className="review-answers"><p className={isCorrect(i) ? 'review-selected is-correct' : 'review-selected'}><span>Bạn chọn</span>{responses[i] ? <>{'ABCD'[responses[i].selected]}. {q.answers[responses[i].selected]}</> : 'Chưa xác nhận đáp án'}</p><p className="review-correct"><span>Đáp án đúng</span>{'ABCD'[q.correct]}. {q.answers[q.correct]}</p></div><details><summary>Xem giải thích<ChevronDown size={16} aria-hidden="true" /></summary><div className="review-explanation"><p>{q.explanation}</p><a className="source-link" href={q.source} target="_blank" rel="noreferrer">Tham khảo Red Cross</a></div></details></div></article>)}</div>
+      <button className="text-button review-toggle" aria-pressed={showAll} onClick={() => setShowAll(value => !value)}>{showAll ? 'Chỉ xem các câu cần ôn lại' : 'Xem toàn bộ kết quả'}<ArrowRight size={16} aria-hidden="true" /></button>
     </section>
-  );
+    <section className="result-next"><div><p className="section-label">Bước tiếp theo</p><h2>Muốn tự tin hơn trong tình huống thật?</h2><p>Thực hành trực tiếp giúp biến kiến thức thành phản xạ.</p></div><div className="result-next-actions"><a className="button-primary" href="../#programs" onClick={onCourse}>Khám phá khóa học sơ cấp cứu<ArrowRight size={17} aria-hidden="true" /></a><button className="text-button" onClick={onRestart}><RotateCcw size={16} aria-hidden="true" />Làm lại thử thách</button></div></section>
+    <p className="result-note">Bài ôn tập kiến thức · Không thay thế đào tạo sơ cứu thực hành.</p>
+  </section>;
 }

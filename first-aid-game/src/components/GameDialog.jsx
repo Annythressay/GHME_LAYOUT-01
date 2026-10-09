@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 
 // Native modal dialogs supply top-layer rendering, inert background and focus containment.
-export default function GameDialog({ children, compact, confirmation, onClose, fallbackRef }) {
+export default function GameDialog({ children, compact, confirmation, onClose, fallbackRef, labelledBy, className = '' }) {
   const ref = useRef(null);
   useEffect(() => {
     const dialog = ref.current;
@@ -32,5 +32,5 @@ export default function GameDialog({ children, compact, confirmation, onClose, f
     if (event.shiftKey && (active === first || !items.includes(active))) { event.preventDefault(); last?.focus(); }
     else if (!event.shiftKey && active === last) { event.preventDefault(); first?.focus(); }
   };
-  return <dialog onKeyDown={trapFocus} ref={ref} role="dialog" aria-modal="true" aria-labelledby={confirmation ? 'exit-title' : 'game-title'} className={'game-dialog ' + (compact ? 'entry-dialog ' : '') + (confirmation ? 'exit-dialog' : '')} onCancel={event => { event.preventDefault(); event.stopPropagation(); onClose(); }}>{children}</dialog>;
+  return <dialog onKeyDown={trapFocus} ref={ref} role="dialog" aria-modal="true" aria-labelledby={labelledBy || (confirmation ? 'exit-title' : 'game-title')} className={'game-dialog ' + (compact ? 'entry-dialog ' : '') + (confirmation ? 'exit-dialog ' : '') + className} onCancel={event => { event.preventDefault(); event.stopPropagation(); onClose(); }}>{children}</dialog>;
 }
