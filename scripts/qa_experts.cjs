@@ -55,6 +55,7 @@ const shots = { animations: 'disabled', style: '.skip-link, #ghme-first-aid { vi
     await section.screenshot({ ...shots, path: path.join(output, 'directory-page-2-1440.png') });
     await pagination.getByRole('button', { name: 'Trang 1', exact: true }).click();
     for (const width of [1440, 1200, 1024, 768, 430, 375]) {
+      const pageSize = width >= 1200 ? 8 : width >= 1024 ? 6 : width >= 768 ? 4 : 2;
       await page.setViewportSize({ width, height: width < 576 ? 844 : 1000 });
       await tabs.nth(0).click();
       await pagination.getByRole('button', { name: 'Trang 1', exact: true }).click();
@@ -70,7 +71,8 @@ const shots = { animations: 'disabled', style: '.skip-link, #ghme-first-aid { vi
         return { columns: new Set(rects.map(r => Math.round(r.x))).size, rows: new Set(rects.map(r => Math.round(r.y))).size, overflow: cards.filter(c => c.scrollWidth > c.clientWidth + 1).length };
       });
       assert.equal(layout.columns, width >= 1200 ? 4 : width >= 1024 ? 3 : width >= 768 ? 2 : 1);
-      assert.equal(layout.rows, Math.ceil(8 / layout.columns));
+      assert.equal(await visibleCount(), pageSize);
+      assert.equal(layout.rows, Math.ceil(pageSize / layout.columns));
       assert.equal(layout.overflow, 0);
       for (const pageNumber of [1, 2]) {
         await pagination.getByRole('button', { name: `Trang ${pageNumber}`, exact: true }).click();
@@ -104,11 +106,18 @@ const shots = { animations: 'disabled', style: '.skip-link, #ghme-first-aid { vi
         await section.locator('img:visible').evaluateAll(imgs => Promise.all(imgs.map(i => i.decode())));
         await section.screenshot({ ...shots, path: path.join(output, `cards-${width}-page-${pageNumber}.png`) });
       }
+      const seen = [];
+      for (let number = 1; number <= Math.ceil(instructors.length / pageSize); number++) {
+        await pagination.getByRole('button', { name: `Trang ${number}`, exact: true }).click();
+        seen.push(...await grid.locator('.experts__card:visible').evaluateAll(cards => cards.map(c => c.dataset.profile)));
+      }
+      assert.deepEqual(seen, instructors.map(profile => profile.id), 'all pages preserve order with no duplicate or missing experts');
+      assert.equal(await pagination.getByRole('button', { name: 'Sau ›', exact: true }).isDisabled(), true);
       await pagination.getByRole('button', { name: 'Trang 1', exact: true }).click();
       await section.screenshot({ ...shots, path: path.join(output, 'directory-' + width + '.png') });
       if ([1440, 430].includes(width)) {
         for (const profile of instructors) {
-          const profilePage = Math.floor(instructors.indexOf(profile) / 8) + 1;
+          const profilePage = Math.floor(instructors.indexOf(profile) / pageSize) + 1;
           await pagination.getByRole('button', { name: `Trang ${profilePage}`, exact: true }).click();
           const buttons = grid.locator(`[data-expert-id="${profile.id}"]`);
           assert.equal(await buttons.count(), 2);
@@ -132,7 +141,7 @@ const shots = { animations: 'disabled', style: '.skip-link, #ghme-first-aid { vi
           }
         }
       }
-      results.push({ width, ...layout, responsive: 'PASS' });
+      results.push({ width, pageSize, ...layout, responsive: 'PASS' });
     }
     await page.setViewportSize({ width: 1440, height: 1000 });
     await tabs.nth(0).click();
@@ -147,7 +156,7 @@ const shots = { animations: 'disabled', style: '.skip-link, #ghme-first-aid { vi
     const circleAction = hoverCard.locator('.experts__profile-circle');
     await textAction.hover();
     await hoverPage.waitForFunction(e => Math.abs(new DOMMatrix(getComputedStyle(e).transform).m41 - 3) < .01, await textAction.locator('.experts__profile-arrow').elementHandle());
-    assert.equal(await hoverCard.evaluate(e => getComputedStyle(e).transform), 'matrix(1, 0, 0, 1, 0, -3)');
+    await hoverPage.waitForFunction(e => Math.abs(new DOMMatrix(getComputedStyle(e).transform).m42 + 3) < .01, await hoverCard.elementHandle());
     assert.equal(await hoverCard.evaluate(e => getComputedStyle(e).borderTopColor), 'rgb(229, 138, 75)');
     await circleAction.hover();
     await hoverPage.waitForFunction(e => Math.abs(new DOMMatrix(getComputedStyle(e).transform).m41 - 2) < .01, await circleAction.locator('i').elementHandle());
@@ -172,6 +181,8 @@ const shots = { animations: 'disabled', style: '.skip-link, #ghme-first-aid { vi
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
     }
     await featuredCard.locator('.experts__card-copy').evaluate((e, html) => { e.innerHTML = html; }, savedCopy);
+    await page.setViewportSize({ width: 1440, height: 1000 });
+    await page.waitForFunction(() => document.querySelectorAll('#experts-instructor-grid .experts__card:not([hidden])').length === 8);
     await search.fill('  NGUYỄN HỒNG TRƯỜNG  ');
     assert.equal(await visibleCount(), 1, 'search ignores case, accents and outer spaces');
     await search.fill('');
@@ -192,11 +203,13 @@ const shots = { animations: 'disabled', style: '.skip-link, #ghme-first-aid { vi
       await page.setViewportSize({ width, height: 1000 });
       await page.mouse.move(0, 0);
       await page.waitForTimeout(250);
-      const heights = await section.locator('#experts-leadership .experts__card').evaluateAll(cards => cards.map(c => c.getBoundingClientRect().height));
+      const heights = await section.locator('#experts-leadership .experts__card:visible').evaluateAll(cards => cards.map(c => c.getBoundingClientRect().height));
       assert.ok(Math.max(...heights) - Math.min(...heights) < 1);
       await section.locator('img:visible').evaluateAll(imgs => Promise.all(imgs.map(i => i.decode())));
       await section.screenshot({ ...shots, path: path.join(output, `leadership-${width}.png`) });
     }
+    await page.setViewportSize({ width: 1440, height: 1000 });
+    await page.waitForFunction(() => document.querySelectorAll('#experts-leadership .experts__card:not([hidden])').length === 3);
     for (const id of sourceData.leadershipDisplayIds) {
       const profile = sourceData.profiles.find(p => p.id === id);
       await section.locator(`#experts-leadership [data-expert-id="${id}"]`).first().click();

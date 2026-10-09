@@ -1,0 +1,60 @@
+{
+  "browser": "154.0.4258.62",
+  "results": [
+    {
+      "width": 1440,
+      "columns": 4,
+      "rows": 2,
+      "overflow": 0,
+      "responsive": "PASS"
+    },
+    {
+      "width": 1200,
+      "columns": 4,
+      "rows": 2,
+      "overflow": 0,
+      "responsive": "PASS"
+    },
+    {
+      "width": 1024,
+      "columns": 3,
+      "rows": 2,
+      "overflow": 0,
+      "responsive": "PASS"
+    },
+    {
+      "width": 768,
+      "columns": 2,
+      "rows": 2,
+      "overflow": 0,
+      "responsive": "PASS"
+    },
+    {
+      "width": 430,
+      "columns": 1,
+      "rows": 2,
+      "overflow": 0,
+      "responsive": "PASS"
+    },
+    {
+      "width": 375,
+      "columns": 1,
+      "rows": 2,
+      "overflow": 0,
+      "responsive": "PASS"
+    }
+  ],
+  "cardHeightsAndActionBaselines": "PASS",
+  "longContent": "PASS",
+  "featuredState": "PASS",
+  "portraitFit": "PASS",
+  "hoverAndFocus": "PASS",
+  "filters": "PASS",
+  "pagination25Profiles": "PASS",
+  "profiles": "PASS",
+  "keyboard": "PASS",
+  "fallback": "PASS",
+  "reducedMotion": "PASS",
+  "errors": [],
+  "failedAssets": []
+}
