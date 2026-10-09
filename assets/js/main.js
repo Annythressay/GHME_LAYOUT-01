@@ -127,52 +127,7 @@ if (showcase) {
   showcase.querySelectorAll('[data-product-consult]').forEach(link => link.addEventListener('click', () => prepareConsultation(link.dataset.productConsult)));
   showcase.querySelector('#product-dialog-consult').addEventListener('click', () => prepareConsultation(selectedProduct));
 }
-const menu=document.querySelector('.menu-toggle');
-const nav=document.querySelector('#navigation');
-const dropdowns = [...nav.querySelectorAll('.nav-dropdown')];
-const mobileNavigation = window.matchMedia('(max-width: 991px)');
-function setDropdown(dropdown, open) {
-  dropdown.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', String(open));
-  dropdown.querySelector('.nav-dropdown-menu').hidden = !open;
-}
-function closeDropdowns() { dropdowns.forEach(dropdown => setDropdown(dropdown, false)); }
-function setNavigation(open) {
-  menu.setAttribute('aria-expanded', String(open));
-  menu.setAttribute('aria-label', open ? 'Đóng menu' : 'Mở menu');
-  nav.classList.toggle('open', open);
-  if (!open) closeDropdowns();
-}
-dropdowns.forEach(dropdown => {
-  const toggle = dropdown.querySelector('.nav-dropdown-toggle');
-  toggle.addEventListener('click', () => {
-    const open = toggle.getAttribute('aria-expanded') !== 'true';
-    closeDropdowns();
-    setDropdown(dropdown, open);
-  });
-  dropdown.addEventListener('focusout', event => {
-    if (!mobileNavigation.matches && !dropdown.contains(event.relatedTarget)) setDropdown(dropdown, false);
-  });
-});
-menu.addEventListener('click', () => setNavigation(menu.getAttribute('aria-expanded') !== 'true'));
-nav.addEventListener('click', event => {
-  const link = event.target.closest('a');
-  if (!link) return;
-  if (link.hasAttribute('data-nav-placeholder')) event.preventDefault();
-  setNavigation(false);
-});
-document.addEventListener('click', event => { if (!nav.contains(event.target)) closeDropdowns(); });
-document.addEventListener('keydown', event => {
-  if (event.key !== 'Escape') return;
-  const dropdown = dropdowns.find(item => item.querySelector('.nav-dropdown-toggle').getAttribute('aria-expanded') === 'true');
-  if (dropdown) {
-    setDropdown(dropdown, false);
-    dropdown.querySelector('.nav-dropdown-toggle').focus();
-  } else if (nav.classList.contains('open')) {
-    setNavigation(false);
-    menu.focus();
-  }
-});
-mobileNavigation.addEventListener('change', () => setNavigation(false));
+// Header navigation is handled in header.js.
 const dialog=document.querySelector('#info-dialog');
 const content=document.querySelector('#dialog-content');
 function show(title,text){document.querySelector('#dialog-title').textContent=title;content.replaceChildren();const p=document.createElement('p');p.textContent=text;content.append(p);dialog.showModal();}

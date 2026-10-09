@@ -1,10 +1,10 @@
 /* About GHME: shared site shell, with page-scoped content blocks. */
 .about-page { background: #fff; color: var(--navy); font-size: 16px; line-height: 1.75; }
 .about-page .about-container { width: calc(100% - 128px); max-width: 1300px; margin-inline: auto; }
-.about-page h2 { text-align: left; font-size: 40px; font-weight: 700; line-height: 1.25; letter-spacing: -1px; }
-.about-page h3 { font-size: 23px; font-weight: 700; line-height: 1.4; letter-spacing: -.35px; }
-.about-page p { color: #50647a; }
-.about-page .about-section { padding: 88px 0; scroll-margin-top: 84px; }
+.about-page h2:not(:where(.experts *, .partners *)) { text-align: left; font-size: 40px; font-weight: 700; line-height: 1.25; letter-spacing: -1px; }
+.about-page h3:not(:where(.experts *, .partners *)) { font-size: 23px; font-weight: 700; line-height: 1.4; letter-spacing: -.35px; }
+.about-page p:not(:where(.experts *, .partners *)) { color: #50647a; }
+.about-page .about-section:not(.experts, .partners) { padding: 88px 0; scroll-margin-top: 84px; }
 .about-page .about-eyebrow { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; color: #a94810; font-size: 12px; font-weight: 700; line-height: 1.7; letter-spacing: 1.2px; text-transform: uppercase; }
 .about-page .about-eyebrow::before { content: ''; flex: 0 0 28px; height: 2px; background: var(--orange); }
 .about-page .about-text-link { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; color: var(--navy); font-size: 14px; font-weight: 700; }
@@ -84,26 +84,8 @@
 .about-page .about-approach .inner-list h3 { font-size: 21px; margin-bottom: 9px; }
 .about-page .about-approach .inner-list p { font-size: 15px; }
 
-/* Team. */
-.about-page .about-team { background: #f5f9fc; }
-.about-page .about-team .inner-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; align-items: stretch; }
-.about-page .about-team .inner-item { overflow: hidden; border: 1px solid #dce6ef; border-radius: 12px; background: #fff; }
-.about-page .about-team .inner-image { width: 100%; aspect-ratio: 1; background: #fff; }
-.about-page .about-team .inner-image img { width: 100%; height: 100%; object-fit: contain; }
-.about-page .about-team .inner-content { padding: 22px 22px 26px; border-top: 1px solid #eef2f6; }
-.about-page .about-team .inner-role { margin-bottom: 8px; color: #a94810; font-size: 11px; font-weight: 700; line-height: 1.6; letter-spacing: .35px; }
-.about-page .about-team h3 { min-height: 56px; font-size: 20px; line-height: 1.4; }
-.about-page .about-team .inner-qualification { display: block; margin-top: 6px; color: #617185; font-size: 12px; font-weight: 600; }
-.about-page .about-team .inner-content > p:not(.inner-role) { margin-top: 16px; font-size: 14px; line-height: 1.8; }
-.about-page .about-team .inner-faculty { display: flex; align-items: flex-start; gap: 26px; margin-top: 32px; padding: 30px 34px; background: #eaf2f9; border-radius: 10px; }
-.about-page .about-team .inner-faculty .inner-icon { display: grid; place-items: center; flex: 0 0 54px; width: 54px; height: 54px; border-radius: 50%; background: #fff; color: var(--navy); font-size: 25px; }
-.about-page .about-team .inner-faculty h3 { min-height: 0; margin-bottom: 8px; font-size: 22px; }
-.about-page .about-team .inner-faculty p { max-width: 990px; font-size: 15px; }
-
-/* Partners. */
-.about-page .about-partners .inner-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin: 0 0 26px; padding: 0; list-style: none; }
-.about-page .about-partners .inner-grid li { display: grid; place-items: center; min-width: 0; min-height: 138px; padding: 24px; border: 1px solid #e3eaf0; border-radius: 8px; background: #fff; }
-.about-page .about-partners .inner-grid img { width: 100%; max-width: 190px; height: 76px; object-fit: contain; }
+/* Team and partners reuse the homepage components. */
+.about-page :is(.experts, .partners) { color: var(--deep); font-size: 14px; line-height: 1.55; scroll-margin-top: 84px; }
 
 /* Contact. */
 .about-page .about-contact { background: var(--navy); }
@@ -145,16 +127,13 @@
   .about-page .about-section-heading, .about-page .about-overview .inner-wrap { gap: 48px; }
   .about-page .about-solutions .inner-item { padding: 26px; }
   .about-page .about-approach .inner-wrap { gap: 56px; }
-  .about-page .about-team .inner-grid { gap: 18px; }
-  .about-page .about-team .inner-content { padding: 20px 18px 24px; }
-  .about-page .about-team h3 { font-size: 18px; min-height: 76px; }
   .about-page .about-contact .inner-wrap { gap: 56px; }
   .about-page .about-contact .inner-contact { padding-left: 30px; }
   .about-page .about-footer .inner-wrap { gap: 24px; }
 }
 @media (max-width: 991px) {
-  .about-page .about-section { padding: 64px 0; }
-  .about-page h2 { font-size: 36px; }
+  .about-page .about-section:not(.experts, .partners) { padding: 64px 0; }
+  .about-page h2:not(:where(.experts *, .partners *)) { font-size: 36px; }
   .about-page .nav-wrap { min-height: 94px; padding: 14px 0; gap: 16px; }
   .about-page .brand { width: 180px; height: 66px; }
   .about-page .nav-actions { order: 1; margin-left: auto; }
@@ -184,13 +163,6 @@
   .about-page .about-approach .inner-wrap { gap: 36px; grid-template-columns: minmax(0, 42fr) minmax(0, 58fr); }
   .about-page .about-approach .inner-list li { gap: 18px; padding-block: 23px; }
   .about-page .about-approach .inner-list h3 { font-size: 20px; }
-  .about-page .about-team .inner-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
-  .about-page .about-team .inner-image { aspect-ratio: 4 / 3; }
-  .about-page .about-team .inner-content { padding: 24px; }
-  .about-page .about-team h3 { min-height: 56px; font-size: 20px; }
-  .about-page .about-team .inner-faculty { padding: 26px; }
-  .about-page .about-partners .inner-grid li { min-height: 120px; padding: 20px; }
-  .about-page .about-partners .inner-grid img { height: 64px; }
   .about-page .about-contact .inner-wrap { gap: 38px; }
   .about-page .about-contact h2 { font-size: 36px; }
   .about-page .about-contact .inner-contact { padding-left: 24px; }
@@ -202,8 +174,8 @@
 @media (max-width: 767px) {
   .about-page { font-size: 15px; }
   .about-page .about-container, .about-page .utility-inner, .about-page .nav-wrap { width: calc(100% - 48px); }
-  .about-page .about-section { padding: 48px 0; scroll-margin-top: 78px; }
-  .about-page h2 { font-size: 32px; letter-spacing: -.7px; }
+  .about-page .about-section:not(.experts, .partners) { padding: 48px 0; scroll-margin-top: 78px; }
+  .about-page h2:not(:where(.experts *, .partners *)) { font-size: 32px; letter-spacing: -.7px; }
   .about-page .about-eyebrow { margin-bottom: 14px; font-size: 11px; }
   .about-page .utility-inner { min-height: 38px; gap: 12px; font-size: 10px; }
   .about-page .about-utility-contact { gap: 12px; }
@@ -228,13 +200,6 @@
   .about-page .about-approach .inner-image { margin-top: 24px; }
   .about-page .about-approach .inner-image img { aspect-ratio: 3 / 2; }
   .about-page .about-approach .inner-list li { padding-block: 22px; }
-  .about-page .about-team .inner-grid { gap: 18px; }
-  .about-page .about-team .inner-content { padding: 20px; }
-  .about-page .about-team h3 { min-height: 76px; font-size: 19px; }
-  .about-page .about-team .inner-faculty { padding: 24px; gap: 18px; }
-  .about-page .about-team .inner-faculty h3 { font-size: 20px; }
-  .about-page .about-partners .inner-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
-  .about-page .about-partners .inner-grid li { min-height: 120px; padding: 20px; }
   .about-page .about-contact .inner-wrap { grid-template-columns: minmax(0, 1fr); gap: 36px; }
   .about-page .about-contact h2 { font-size: 36px; }
   .about-page .about-contact .inner-content > p:not(.about-eyebrow) { font-size: 16px; margin-top: 20px; }
@@ -258,16 +223,6 @@
   .about-page .about-overview .inner-audience { gap: 8px; margin-top: 22px; }
   .about-page .about-overview .inner-audience span { font-size: 11px; }
   .about-page .about-solutions .inner-item { padding: 26px; }
-  .about-page .about-team .inner-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
-  .about-page .about-team .inner-image { aspect-ratio: 1; max-height: 370px; }
-  .about-page .about-team .inner-content { padding: 24px; }
-  .about-page .about-team h3 { min-height: 0; font-size: 22px; }
-  .about-page .about-team .inner-role { font-size: 12px; }
-  .about-page .about-team .inner-content > p:not(.inner-role) { font-size: 15px; margin-top: 14px; }
-  .about-page .about-team .inner-faculty { flex-direction: column; gap: 16px; margin-top: 26px; }
-  .about-page .about-partners .inner-grid { gap: 12px; }
-  .about-page .about-partners .inner-grid li { min-height: 112px; padding: 16px; }
-  .about-page .about-partners .inner-grid img { height: 60px; }
   .about-page .about-contact h2 { font-size: 32px; }
   .about-page .about-contact .inner-contact a { font-size: 20px; }
   .about-page .about-contact .inner-contact a[href^="tel:"] { font-size: 29px; }

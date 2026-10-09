@@ -28,6 +28,22 @@ Login, English, products, news, policies, terms and homepage FAQ show explicit p
 - `assets/css/course.css` and `assets/js/course.js`: responsive layout, sticky consultation panel, mobile CTA/navigation and native disclosure panels.
 - Consultation links pass the card ID as `?program=program-1#consultation` or `?program=program-2#consultation`; the homepage selects the matching option. Unknown IDs are ignored.
 
+## Homepage expert directory (9 October 2026)
+
+The `#certificates` section follows the selected expert-directory concept:
+horizontal cards with circular source portraits, search by name and a specialty
+filter. Desktop uses three columns and up to two rows (6 people per page);
+tablet uses two columns and phone uses one. Pagination appears only when the
+filtered list has more than 6 people. Search/filter changes return to page one.
+The existing profile dialogs and client-selected leadership group remain.
+
+Edit `assets/data/experts.json`, then run `python scripts/build_experts.py` to
+regenerate only this section. Counts and specialty options derive from data.
+`assets/css/experts.css` and `assets/js/experts.js` handle layout and interaction.
+`scripts/qa_experts.cjs` checks desktop/mobile, profiles, filters and pagination
+with 25 test-only profiles. Review screenshots and the QA report are under
+`docs/design-reference/experts/concept-03-two-rows/`.
+
 ## About GHME
 
 `about.html` presents the company, its three service areas, training approach, leaders/advisor and partners using the supplied GHME company introduction. `assets/css/about.css` contains the scoped page styles; `assets/js/about.js` handles mobile navigation. Homepage and course navigation link to this page; the footer's teaching-expert link opens `about.html#team`.

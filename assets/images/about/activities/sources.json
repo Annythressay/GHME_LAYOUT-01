@@ -1,0 +1,86 @@
+[
+  {
+    "file": "bpec-mega-we-care.webp",
+    "sourcePage": 17,
+    "sourcePixels": [
+      1143,
+      857
+    ],
+    "outputPixels": [
+      1143,
+      857
+    ],
+    "caption": "BPEC tại Mega We Care",
+    "bytes": 260562
+  },
+  {
+    "file": "doctor-talk-schneider-electric.webp",
+    "sourcePage": 17,
+    "sourcePixels": [
+      896,
+      672
+    ],
+    "outputPixels": [
+      896,
+      672
+    ],
+    "caption": "Doctor Talk tại Schneider Electric",
+    "bytes": 164286
+  },
+  {
+    "file": "bpec-stada.webp",
+    "sourcePage": 17,
+    "sourcePixels": [
+      1108,
+      676
+    ],
+    "outputPixels": [
+      1108,
+      676
+    ],
+    "caption": "BPEC tại STADA",
+    "bytes": 139234
+  },
+  {
+    "file": "bpec-elite-dental.webp",
+    "sourcePage": 17,
+    "sourcePixels": [
+      1210,
+      908
+    ],
+    "outputPixels": [
+      1200,
+      900
+    ],
+    "caption": "BPEC tại Elite Dental",
+    "bytes": 226690
+  },
+  {
+    "file": "cpr-expert-guidance.webp",
+    "sourcePage": 9,
+    "sourcePixels": [
+      1512,
+      2016
+    ],
+    "outputPixels": [
+      1050,
+      1400
+    ],
+    "caption": "Hướng dẫn thực hành CPR",
+    "bytes": 201652
+  },
+  {
+    "file": "personal-first-aid-kit.webp",
+    "sourcePage": 8,
+    "sourcePixels": [
+      768,
+      1024
+    ],
+    "outputPixels": [
+      768,
+      1024
+    ],
+    "caption": "Bộ sơ cấp cứu cá nhân",
+    "bytes": 175156
+  }
+]
