@@ -134,7 +134,9 @@ def render():
           <div class="experts__empty" hidden><p>Không tìm thấy chuyên gia phù hợp.</p><button class="experts__reset" type="button">Xóa tìm kiếm và bộ lọc</button></div>
           <div class="experts__footer" hidden>
             <p id="experts-count" role="status" aria-live="polite" aria-atomic="true"></p>
-            <nav class="experts__pagination" aria-label="Phân trang đội ngũ chuyên gia" hidden></nav>
+            <button class="experts__toggle" type="button" aria-expanded="false" aria-controls="experts-instructors" hidden>
+              <span>Xem thêm chuyên gia</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -154,9 +156,10 @@ if __name__ == '__main__':
     replacement = '\n'.join(line.rstrip() for line in render().splitlines()).replace('\n', newline)
     updated, count = re.subn(r'    <section class="(?:certificates|experts) decorated" id="certificates".*?</section>', lambda _: replacement, original, count=1, flags=re.S)
     assert count == 1, 'Expert section not found'
-    css = '    <link rel="stylesheet" href="assets/css/experts.css?v=20261009">'
-    js = '  <script src="assets/js/experts.js?v=20261009-pagination8" defer></script>'
-    updated = re.sub(r'assets/js/experts\.js(?:\?[^"\s]*)?', 'assets/js/experts.js?v=20261009-pagination8', updated)
+    css = '    <link rel="stylesheet" href="assets/css/experts.css?v=20261010-responsive-limit">'
+    js = '  <script src="assets/js/experts.js?v=20261010-responsive-limit" defer></script>'
+    updated = re.sub(r'assets/css/experts\.css(?:\?[^"\s]*)?', 'assets/css/experts.css?v=20261010-responsive-limit', updated)
+    updated = re.sub(r'assets/js/experts\.js(?:\?[^"\s]*)?', 'assets/js/experts.js?v=20261010-responsive-limit', updated)
     if css not in updated:
         updated = updated.replace('    <link rel="stylesheet" href="assets/css/styles.css">', '    <link rel="stylesheet" href="assets/css/styles.css">' + newline + css)
     if js not in updated:

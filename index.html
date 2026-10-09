@@ -11,11 +11,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css">
   <link rel="icon" href="assets/images/branding/logo-ghme.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/experts.css?v=20261009">
+  <link rel="stylesheet" href="assets/css/experts.css?v=20261010-responsive-limit">
   <link rel="stylesheet" href="assets/css/header.css?v=20261009-search-light">
   <script src="assets/js/header.js?v=20261009-main" defer></script>
   <script src="assets/js/main.js?v=20261007-programs" defer></script>
-  <script src="assets/js/experts.js?v=20261009-pagination8" defer></script>
+  <script src="assets/js/experts.js?v=20261010-responsive-limit" defer></script>
 </head>
 
 <body>
@@ -953,7 +953,9 @@
           </div>
           <div class="experts__footer" hidden>
             <p id="experts-count" role="status" aria-live="polite" aria-atomic="true"></p>
-            <nav class="experts__pagination" aria-label="Phân trang đội ngũ chuyên gia" hidden></nav>
+            <button class="experts__toggle" type="button" aria-expanded="false" aria-controls="experts-instructors" hidden>
+              <span>Xem thêm chuyên gia</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
           </div>
         </div>
       </div>

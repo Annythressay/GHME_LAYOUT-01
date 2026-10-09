@@ -1,0 +1,362 @@
+{
+  "date": "2026-10-10",
+  "browser": "Chrome via computer-use",
+  "results": [
+    {
+      "ariaExpanded": "false",
+      "cardHeight": 458,
+      "columns": 4,
+      "cta": true,
+      "featured": true,
+      "gridHeight": 934,
+      "hiddenFocusable": false,
+      "overflow": false,
+      "total": 12,
+      "visible": 8,
+      "width": 1440,
+      "all": {
+        "expanded": "true",
+        "visible": 12
+      },
+      "collapsed": {
+        "ctaTop": 486,
+        "expanded": "false",
+        "focused": "experts__toggle",
+        "visible": 8
+      }
+    },
+    {
+      "ariaExpanded": "false",
+      "cardHeight": 458,
+      "columns": 4,
+      "cta": true,
+      "featured": true,
+      "gridHeight": 934,
+      "hiddenFocusable": false,
+      "overflow": false,
+      "total": 12,
+      "visible": 8,
+      "width": 1200,
+      "all": {
+        "expanded": "true",
+        "visible": 12
+      },
+      "collapsed": {
+        "ctaTop": 486,
+        "expanded": "false",
+        "focused": "experts__toggle",
+        "visible": 8
+      }
+    },
+    {
+      "ariaExpanded": "false",
+      "cardHeight": 458,
+      "columns": 3,
+      "cta": true,
+      "featured": true,
+      "gridHeight": 934,
+      "hiddenFocusable": false,
+      "overflow": false,
+      "total": 12,
+      "visible": 6,
+      "width": 1024,
+      "all": {
+        "expanded": "true",
+        "visible": 12
+      },
+      "collapsed": {
+        "ctaTop": 486,
+        "expanded": "false",
+        "focused": "experts__toggle",
+        "visible": 6
+      }
+    },
+    {
+      "ariaExpanded": "false",
+      "cardHeight": 458,
+      "columns": 2,
+      "cta": true,
+      "featured": true,
+      "gridHeight": 934,
+      "hiddenFocusable": false,
+      "overflow": false,
+      "total": 12,
+      "visible": 4,
+      "width": 768,
+      "all": {
+        "expanded": "true",
+        "visible": 12
+      },
+      "collapsed": {
+        "ctaTop": 486,
+        "expanded": "false",
+        "focused": "experts__toggle",
+        "visible": 4
+      }
+    },
+    {
+      "ariaExpanded": "false",
+      "cardHeight": 478,
+      "columns": 1,
+      "cta": true,
+      "featured": true,
+      "gridHeight": 972,
+      "hiddenFocusable": false,
+      "overflow": false,
+      "total": 12,
+      "visible": 2,
+      "width": 430,
+      "all": {
+        "expanded": "true",
+        "visible": 12
+      },
+      "collapsed": {
+        "ctaTop": 408,
+        "expanded": "false",
+        "focused": "experts__toggle",
+        "visible": 2
+      }
+    },
+    {
+      "ariaExpanded": "false",
+      "cardHeight": 478,
+      "columns": 1,
+      "cta": true,
+      "featured": true,
+      "gridHeight": 972,
+      "hiddenFocusable": false,
+      "overflow": false,
+      "total": 12,
+      "visible": 2,
+      "width": 375,
+      "all": {
+        "expanded": "true",
+        "visible": 12
+      },
+      "collapsed": {
+        "ctaTop": 408,
+        "expanded": "false",
+        "focused": "experts__toggle",
+        "visible": 2
+      }
+    }
+  ],
+  "checks": [
+    {
+      "check": "expanded resize",
+      "expanded": "true",
+      "visible": 12,
+      "width": 1440
+    },
+    {
+      "check": "expanded resize",
+      "expanded": "true",
+      "visible": 12,
+      "width": 1024
+    },
+    {
+      "check": "expanded resize",
+      "expanded": "true",
+      "visible": 12,
+      "width": 768
+    },
+    {
+      "check": "expanded resize",
+      "expanded": "true",
+      "visible": 12,
+      "width": 430
+    },
+    {
+      "check": "expanded resize",
+      "expanded": "true",
+      "visible": 12,
+      "width": 375
+    },
+    {
+      "check": "keyboard collapse",
+      "expanded": "false",
+      "focusStyle": "solid",
+      "focusWidth": "3px",
+      "visible": 2
+    },
+    {
+      "check": "accent search",
+      "visible": 1,
+      "cta": false
+    },
+    {
+      "check": "specialty filter",
+      "visible": 2,
+      "cta": false
+    },
+    {
+      "check": "empty result",
+      "visible": 0,
+      "empty": true,
+      "cta": false
+    },
+    {
+      "check": "reset",
+      "visible": 2,
+      "cta": true
+    },
+    {
+      "check": "leadership mobile",
+      "controls": "experts-leadership",
+      "featuredHidden": false,
+      "visible": 2
+    },
+    {
+      "check": "leadership expand",
+      "visible": 3
+    },
+    {
+      "check": "hidden cards skipped by Tab",
+      "focused": "experts__toggle"
+    },
+    {
+      "check": "profile dialog",
+      "open": true,
+      "title": "Nguyen Hong Truong"
+    },
+    {
+      "check": "profile dialog",
+      "open": true,
+      "title": "Nguyen Hong Truong"
+    },
+    {
+      "check": "last expert reachable",
+      "open": true,
+      "title": "Nguyen Quang Vinh"
+    }
+  ],
+  "visual": [
+    {
+      "images": [
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        }
+      ],
+      "overflows": 0,
+      "width": 1440
+    },
+    {
+      "images": [
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        }
+      ],
+      "overflows": 0,
+      "width": 1200
+    },
+    {
+      "images": [
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        }
+      ],
+      "overflows": 0,
+      "width": 1024
+    },
+    {
+      "images": [
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        }
+      ],
+      "overflows": 0,
+      "width": 768
+    },
+    {
+      "images": [
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        }
+      ],
+      "overflows": 0,
+      "width": 430
+    },
+    {
+      "images": [
+        {
+          "loaded": true
+        },
+        {
+          "loaded": true
+        }
+      ],
+      "overflows": 0,
+      "width": 375
+    }
+  ],
+  "errors": []
+}

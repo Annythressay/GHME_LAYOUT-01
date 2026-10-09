@@ -30,19 +30,24 @@ Login, English, products, news, policies, terms and homepage FAQ show explicit p
 
 ## Homepage expert directory (9 October 2026)
 
-The `#certificates` section follows the selected expert-directory concept:
-horizontal cards with circular source portraits, search by name and a specialty
-filter. Desktop uses three columns and up to two rows (6 people per page);
-tablet uses two columns and phone uses one. Pagination appears only when the
-filtered list has more than 6 people. Search/filter changes return to page one.
-The existing profile dialogs and client-selected leadership group remain.
+The `#certificates` section uses portrait cards, search by name and a specialty
+filter. Its initial presentation follows the grid: 4 columns / 8 cards at
+1200px and above, 3 / 6 at 1024–1199px, 2 / 4 at 768–1023px, and 1 / 2 below
+768px. The tall phone cards make two an appropriate compact introduction.
+An outline “Xem thêm chuyên gia” button reveals every matching profile without
+pagination; “Thu gọn” restores the limit for the current viewport and keeps
+the button at the same screen position. Each tab retains its expanded state
+across resizing and tab changes; changing search or specialty resets it.
+Featured profiles that match the current filters remain in the initial set.
+All cards and biographies stay in the HTML; without JavaScript they are all
+visible. The shared behavior also applies to `about.html#team`.
 
 Edit `assets/data/experts.json`, then run `python scripts/build_experts.py` to
 regenerate only this section. Counts and specialty options derive from data.
 `assets/css/experts.css` and `assets/js/experts.js` handle layout and interaction.
-`scripts/qa_experts.cjs` checks desktop/mobile, profiles, filters and pagination
-with 25 test-only profiles. Review screenshots and the QA report are under
-`docs/design-reference/experts/concept-03-two-rows/`.
+Responsive view-more browser QA and screenshots are under
+`docs/design-reference/experts/responsive-view-more/`. The older concept and
+portrait-card QA artifacts are retained under their original directories.
 
 ## About GHME
 
