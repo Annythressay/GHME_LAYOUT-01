@@ -1,0 +1,197 @@
+{
+  "retrieved": "2026-10-09",
+  "logos": [
+    {
+      "partner": 1,
+      "name": "bidv",
+      "file": "partner-01-bidv.svg",
+      "source_page": "https://bidv.com.vn/vn/ca-nhan",
+      "source_asset": "https://bidv.com.vn/wps/wcm/connect/de85cd64-3701-4265-ac0a-ac1e4d4a0dc8/BIDV%2B%28I%29%2BLogo%2B%26%2Bhe%2Bqui%2Bchuan%2B%281%29.pdf?CACHEID=ROOTWORKSPACE-de85cd64-3701-4265-ac0a-ac1e4d4a0dc8-p6k3keb&MOD=AJPERES",
+      "notes": "Vector extracted from the official brand guide, page 5 (current teal/gold identity)."
+    },
+    {
+      "partner": 2,
+      "name": "amon-kindercare",
+      "file": "partner-02-amon-kindercare.png",
+      "source_page": "https://amon.edu.vn/",
+      "source_asset": "https://amon.edu.vn/wp-content/uploads/2016/05/icon-logo.png",
+      "notes": "Original lossless PNG; official public source is 151 x 86px, not a retina-size source."
+    },
+    {
+      "partner": 4,
+      "name": "olympia",
+      "file": "partner-04-olympia.svg",
+      "source_page": "https://theolympiaschools.edu.vn/",
+      "source_asset": "https://theolympiaschools.edu.vn/storage/pc-header-logo.svg",
+      "notes": "Current official website wordmark."
+    },
+    {
+      "partner": 5,
+      "name": "interfood",
+      "file": "partner-05-interfood.png",
+      "source_page": "https://www.wonderfarmonline.com/",
+      "source_asset": "https://www.wonderfarmonline.com/storage/file-download/dai-hoi-dong-co-dong/ifs-annual-report-2023-vn-final-26032024-final.pdf",
+      "notes": "Original embedded logo PNG from the annual report cover (215 x 203px); user confirmed Interfood / Wonderfarm / Kirin Vietnam."
+    },
+    {
+      "partner": 6,
+      "name": "yody",
+      "file": "partner-06-yody.svg",
+      "source_page": "https://yody.vn/",
+      "source_asset": "https://yody.vn/",
+      "notes": "Exact data-URI SVG from the current official header."
+    },
+    {
+      "partner": 7,
+      "name": "toyota-tsusho",
+      "file": "partner-07-toyota-tsusho.svg",
+      "source_page": "https://www.toyota-tsusho.com/english/index.html",
+      "source_asset": "https://www.toyota-tsusho.com/english/app-files/img/cmn_logo01.svg",
+      "notes": "Global corporate SVG; regional subsidiary names were excluded."
+    },
+    {
+      "partner": 8,
+      "name": "frasers-property",
+      "file": "partner-08-frasers-property.png",
+      "source_page": "https://brandhub.frasersproperty.com/brandmark",
+      "source_asset": "https://p3.aprimocdn.net/frasersproperty/ea1111cf-22b9-4f6b-af1d-b02a002dea84/FPL_Brandmark_Fullcolor_Brand%20Hub%20Header_Original%20file.png",
+      "notes": "Official brand hub full-color PNG, 1460 x 550px."
+    },
+    {
+      "partner": 9,
+      "name": "opella",
+      "file": "partner-09-opella.svg",
+      "source_page": "https://www.opella.com/en/making-headlines/media-gallery",
+      "source_asset": "https://www.opella.com/dam/jcr:38f5191a-ddf2-4b74-9286-5447c91c7179/Opella_Logo_Suite.zip",
+      "notes": "Exact RGB Bold Green wordmark SVG from the official logo suite."
+    },
+    {
+      "partner": 10,
+      "name": "sedbergh-vietnam",
+      "file": "partner-10-sedbergh-vietnam.png",
+      "source_page": "https://sedbergh.edu.vn/",
+      "source_asset": "https://sedbergh.edu.vn/wp-content/uploads/2025/07/SSV-logo-ngang-mau.png",
+      "notes": "Official color logo for light backgrounds, 1714 x 713px."
+    },
+    {
+      "partner": 11,
+      "name": "nam-long",
+      "file": "partner-11-nam-long.svg",
+      "source_page": "https://www.namlongvn.com/en/homepage/",
+      "source_asset": "https://www.namlongvn.com/wp-content/themes/namlong/images/logo.svg",
+      "notes": "Exact official SVG."
+    },
+    {
+      "partner": 12,
+      "name": "ree",
+      "file": "partner-12-ree.png",
+      "source_page": "https://www.reecorp.com/en/",
+      "source_asset": "https://www.reecorp.com/wp-content/uploads/2022/09/Logo-REE-Corp.png",
+      "notes": "Official corporate PNG, 300 x 210px."
+    },
+    {
+      "partner": 13,
+      "name": "heineken",
+      "file": "partner-13-heineken.svg",
+      "source_page": "https://www.theheinekencompany.com/",
+      "source_asset": "https://www.theheinekencompany.com/sites/heineken-corp/files/heineken-corp/HeinekenLogo.svg",
+      "notes": "Exact official corporate SVG."
+    },
+    {
+      "partner": 14,
+      "name": "zema",
+      "file": "partner-14-zema.png",
+      "source_page": "https://zema.com.vn/",
+      "source_asset": "https://zema.com.vn/wp-content/uploads/2025/04/3-ZEMA-Lettermark-Primary-Pink.png",
+      "notes": "Current official pink lettermark, 945 x 945px."
+    },
+    {
+      "partner": 15,
+      "name": "codupha",
+      "file": "partner-15-codupha.jpg",
+      "source_page": "https://codupha.com.vn/",
+      "source_asset": "https://codupha.com.vn/wp-content/uploads/2022/10/Logo-Codupha-400x84-1.jpg",
+      "notes": "Official company header logo, 400 x 84px; original artwork unchanged."
+    },
+    {
+      "partner": 16,
+      "name": "schneider-electric",
+      "file": "partner-16-schneider-electric.svg",
+      "source_page": "https://www.se.com/ww/en/about-us/newsroom/medias/folders/",
+      "source_asset": "https://www.se.com/ww/en/about-us/newsroom/medias/folders/",
+      "notes": "Exact src-selogo-web data-URI SVG from the official header (with its copyright notice)."
+    },
+    {
+      "partner": 17,
+      "name": "stada",
+      "file": "partner-17-stada.jpg",
+      "source_page": "https://www.stada.com/",
+      "source_asset": "https://07.cdn.stada.com/media/xzvjuke5/stada-logo-high-res-01.jpg",
+      "notes": "Official website/CDN image, 500 x 468px."
+    },
+    {
+      "partner": 18,
+      "name": "diab",
+      "file": "partner-18-diab.svg",
+      "source_page": "https://diab.com.vn/",
+      "source_asset": "https://diab.com.vn/wp-content/uploads/2025/01/logooffcial.svg",
+      "notes": "Exact official SVG."
+    },
+    {
+      "partner": 19,
+      "name": "warburg-pincus",
+      "file": "partner-19-warburg-pincus.svg",
+      "source_page": "https://warburgpincus.com/",
+      "source_asset": "https://warburgpincus.com/wp-content/themes/warburg-pincus/dist/images/logo.svg",
+      "notes": "Exact official colored SVG referenced by the header stylesheet."
+    },
+    {
+      "partner": 20,
+      "name": "liena",
+      "file": "partner-20-liena.png",
+      "source_page": "https://www.liena.com.vn/",
+      "source_asset": "https://www.liena.com.vn/images/block/logo/170x52-logo-2026.png",
+      "notes": "Current 2026 official PNG, 170 x 52px; not a retina-size source."
+    },
+    {
+      "partner": 21,
+      "name": "insmart",
+      "file": "partner-21-insmart.png",
+      "source_page": "https://insmart.com.vn/",
+      "source_asset": "https://insmart.com.vn/assets/images/logo.png",
+      "notes": "Official original PNG, 1523 x 634px."
+    },
+    {
+      "partner": 22,
+      "name": "sun-pharma",
+      "file": "partner-22-sun-pharma.svg",
+      "source_page": "https://sunpharma.com/media/",
+      "source_asset": "https://sunpharma.com/wp-content/uploads/2021/01/Sun-Pharma-Logos-1.pdf",
+      "notes": "Official PDF vector logo extracted without redrawing or recoloring."
+    },
+    {
+      "partner": 23,
+      "name": "dr-wondersmile",
+      "file": "partner-23-dr-wondersmile.png",
+      "source_page": "https://drwondersmile.com.vn/",
+      "source_asset": "https://drwondersmile.com.vn/wp-content/uploads/2024/01/Dr_Wondersmile_Logo.png",
+      "notes": "Official original PNG, 1741 x 293px."
+    },
+    {
+      "partner": 24,
+      "name": "servier",
+      "file": "partner-24-servier.png",
+      "source_page": "https://servier.com/en/newsroom/servier-reveals-a-new-visual-identity/",
+      "source_asset": "https://servier.com/wp-content/uploads/2022/10/servier-ambition-2030_PR.pdf",
+      "notes": "Original full-color PNG embedded in the official identity launch press release, 352 x 117px. Correct light-background variant; no artwork recoloring."
+    }
+  ],
+  "unverified": [
+    {
+      "partner": 3,
+      "name": "Tri Thien Preschool",
+      "file": "../partner-3.webp",
+      "reason": "Exact school/official source could not be identified. User has no official URL. Original asset preserved; not claimed to be an authenticated official logo."
+    }
+  ]
+}
