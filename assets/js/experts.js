@@ -25,7 +25,13 @@
   const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase().trim();
   const names = new Map(groups.flat().map(card => [card, normalize(card.dataset.name)]));
 
+  function isInstructorGroup() {
+    return tabs[activeGroup].dataset.expertsTab === 'instructors';
+  }
+
   function responsiveCount() {
+    // Show the complete leadership team; keep responsive pagination for instructors.
+    if (!isInstructorGroup()) return groups[activeGroup].length || 1;
     // CSS keeps the column count and page size at the same breakpoints.
     const grid = panels[activeGroup].querySelector('.experts__grid');
     return Number.parseInt(getComputedStyle(grid).getPropertyValue('--experts-initial-count'), 10) || 8;
@@ -46,7 +52,7 @@
   function renderDirectory() {
     const query = normalize(search.value);
     const matching = groups[activeGroup].filter(card => names.get(card).includes(query) &&
-      (activeGroup !== 0 || !specialty.value || card.dataset.specialty === specialty.value));
+      (!isInstructorGroup() || !specialty.value || card.dataset.specialty === specialty.value));
     initialCount = responsiveCount();
     const totalPages = Math.ceil(matching.length / initialCount);
     const current = pages[activeGroup] = Math.max(1, Math.min(pages[activeGroup], totalPages));
@@ -55,10 +61,10 @@
     const focused = document.activeElement;
     const hidesFocus = groups[activeGroup].some(card => !visible.has(card) && card.contains(focused));
     groups[activeGroup].forEach(card => { card.hidden = !visible.has(card); });
-    const groupLabel = i18n.t(activeGroup === 0 ? 'experts.instructors' : 'experts.members');
+    const groupLabel = i18n.t(isInstructorGroup() ? 'experts.instructors' : 'experts.members');
     count.textContent = matching.length ? i18n.t('experts.count', {start: start + 1, end: Math.min(start + initialCount, matching.length), total: matching.length, group: groupLabel}) : i18n.t('experts.empty');
     empty.hidden = matching.length > 0;
-    specialty.closest('label').hidden = activeGroup !== 0;
+    specialty.closest('label').hidden = !isInstructorGroup();
     const hadPaginationFocus = pagination.contains(focused);
     pagination.replaceChildren();
     pagination.hidden = totalPages <= 1;

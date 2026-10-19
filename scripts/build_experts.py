@@ -111,8 +111,8 @@ def render():
         <div class="experts__directory">
           <div class="experts__directory-header">
             <div class="experts__tabs" aria-label="Nhóm nhân sự GHME">
-              <button type="button" id="experts-tab-instructors" data-experts-tab="instructors" aria-controls="experts-instructors">Đội ngũ giảng viên <span>{len(instructors)}</span></button>
-              <button type="button" id="experts-tab-leadership" data-experts-tab="leadership" aria-controls="experts-leadership">Ban lãnh đạo <span>{len(leaders):02d}</span></button>
+              <button type="button" id="experts-tab-leadership" data-experts-tab="leadership" aria-controls="experts-leadership" aria-selected="true">Ban lãnh đạo <span>{len(leaders):02d}</span></button>
+              <button type="button" id="experts-tab-instructors" data-experts-tab="instructors" aria-controls="experts-instructors" aria-selected="false">Đội ngũ giảng viên <span>{len(instructors)}</span></button>
             </div>
             <div class="experts__filters" hidden>
               <label class="experts__search"><span class="sr-only">Tìm theo tên chuyên gia</span><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><input id="experts-search" type="search" placeholder="Tìm theo tên chuyên gia" autocomplete="off" aria-controls="experts-instructors experts-leadership"></label>

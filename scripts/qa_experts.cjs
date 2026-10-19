@@ -33,6 +33,14 @@ const shots = { animations: 'disabled', style: '.skip-link, #ghme-first-aid { vi
     const dialog = section.locator('#expert-dialog');
     const visibleCount = () => grid.locator('.experts__card:visible').count();
     assert.equal(await tabs.count(), 2);
+    assert.deepEqual(await tabs.evaluateAll(ts => ts.map(t => t.dataset.expertsTab)), ['leadership', 'instructors']);
+    assert.equal(await tabs.nth(0).getAttribute('aria-selected'), 'true');
+    assert.equal(await tabs.nth(1).getAttribute('aria-selected'), 'false');
+    assert.equal(await section.locator('#experts-leadership .experts__card:visible').count(), 3);
+    assert.equal(await visibleCount(), 0);
+    assert.equal(await filter.isVisible(), false);
+    assert.equal(await pagination.isVisible(), false);
+    await section.locator('[data-experts-tab="instructors"]').click();
     for (const card of await section.locator('.experts__card').all()) {
       const id = await card.getAttribute('data-profile');
       const featured = sourceData.profiles.find(p => p.id === id).category.includes('medical-advisor');
@@ -57,7 +65,7 @@ const shots = { animations: 'disabled', style: '.skip-link, #ghme-first-aid { vi
     for (const width of [1440, 1200, 1024, 768, 430, 375]) {
       const pageSize = width >= 1200 ? 8 : width >= 1024 ? 6 : width >= 768 ? 4 : 2;
       await page.setViewportSize({ width, height: width < 576 ? 844 : 1000 });
-      await tabs.nth(0).click();
+      await section.locator('[data-experts-tab="instructors"]').click();
       await pagination.getByRole('button', { name: 'Trang 1', exact: true }).click();
       await section.locator('img:visible').evaluateAll(imgs => Promise.all(imgs.map(i => i.decode())));
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, 'page overflow at ' + width);
@@ -144,12 +152,13 @@ const shots = { animations: 'disabled', style: '.skip-link, #ghme-first-aid { vi
       results.push({ width, pageSize, ...layout, responsive: 'PASS' });
     }
     await page.setViewportSize({ width: 1440, height: 1000 });
-    await tabs.nth(0).click();
+    await section.locator('[data-experts-tab="instructors"]').click();
     await pagination.getByRole('button', { name: 'Trang 1', exact: true }).click();
     // A fresh viewport keeps pointer checks independent of responsive scrolling.
     const hoverPage = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
     hoverPage.on('pageerror', e => errors.push(e.message));
     await hoverPage.goto(url);
+    await hoverPage.locator('[data-experts-tab="instructors"]').click();
     await hoverPage.evaluate(() => document.fonts.ready);
     const hoverCard = hoverPage.locator('#experts-instructor-grid .experts__card--featured');
     const textAction = hoverCard.locator('.experts__profile-button');
@@ -195,7 +204,7 @@ const shots = { animations: 'disabled', style: '.skip-link, #ghme-first-aid { vi
     assert.equal(await visibleCount(), 8);
     assert.equal(await search.evaluate(i => document.activeElement === i), true);
     await filter.selectOption('Hồi sức tích cực');
-    await tabs.nth(1).click();
+    await section.locator('[data-experts-tab="leadership"]').click();
     assert.equal(await filter.isVisible(), false);
     assert.equal(await section.locator('#experts-leadership .experts__card:visible').count(), 3);
     assert.deepEqual(await section.locator('#experts-leadership .experts__card').evaluateAll(cs => cs.map(c => c.dataset.profile)), sourceData.leadershipDisplayIds);
@@ -203,6 +212,7 @@ const shots = { animations: 'disabled', style: '.skip-link, #ghme-first-aid { vi
       await page.setViewportSize({ width, height: 1000 });
       await page.mouse.move(0, 0);
       await page.waitForTimeout(250);
+      assert.equal(await section.locator('#experts-leadership .experts__card:visible').count(), 3);
       const heights = await section.locator('#experts-leadership .experts__card:visible').evaluateAll(cards => cards.map(c => c.getBoundingClientRect().height));
       assert.ok(Math.max(...heights) - Math.min(...heights) < 1);
       await section.locator('img:visible').evaluateAll(imgs => Promise.all(imgs.map(i => i.decode())));
@@ -218,7 +228,7 @@ const shots = { animations: 'disabled', style: '.skip-link, #ghme-first-aid { vi
       await section.locator('.experts__close').click();
       await dialog.waitFor({ state: 'hidden' });
     }
-    await tabs.nth(0).click();
+    await section.locator('[data-experts-tab="instructors"]').click();
     assert.equal(await visibleCount(), 2, 'specialty choice retained when returning');
     await filter.selectOption('');
     await tabs.nth(0).focus();
@@ -230,6 +240,8 @@ const shots = { animations: 'disabled', style: '.skip-link, #ghme-first-aid { vi
     assert.equal(await tabs.nth(1).getAttribute('aria-selected'), 'true');
     await page.keyboard.press('ArrowLeft');
     assert.equal(await tabs.nth(0).getAttribute('aria-selected'), 'true');
+    await page.keyboard.press('ArrowLeft');
+    assert.equal(await tabs.nth(1).getAttribute('aria-selected'), 'true');
     await grid.locator('button').first().click();
     await page.mouse.click(2, 2);
     await dialog.waitFor({ state: 'hidden' });
@@ -257,6 +269,7 @@ const shots = { animations: 'disabled', style: '.skip-link, #ghme-first-aid { vi
     assert.ok(start > 0 && end > start);
     await synthetic.route(url, route => route.fulfill({ contentType: 'text/html', body: html.slice(0, end) + extraCards + html.slice(end) }));
     await synthetic.goto(url);
+    await synthetic.locator('[data-experts-tab="instructors"]').click();
     const sg = synthetic.locator('#experts-instructor-grid');
     const sn = synthetic.locator('.experts__pagination');
     const sc = synthetic.locator('#experts-count');
@@ -277,9 +290,9 @@ const shots = { animations: 'disabled', style: '.skip-link, #ghme-first-aid { vi
     assert.equal(await sn.getByRole('button', { name: 'Sau ›', exact: true }).isDisabled(), true);
     await sn.getByRole('button', { name: '‹ Trước', exact: true }).click();
     assert.equal(await sv(), 8);
-    await synthetic.getByRole('tab').nth(1).click();
+    await synthetic.locator('[data-experts-tab="leadership"]').click();
     assert.equal(await sn.isVisible(), false);
-    await synthetic.getByRole('tab').nth(0).click();
+    await synthetic.locator('[data-experts-tab="instructors"]').click();
     assert.equal(await sn.locator('[aria-current="page"]').innerText(), '3');
     await synthetic.locator('#experts-search').fill('QA Person');
     assert.equal(await sv(), 8);
