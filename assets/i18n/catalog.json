@@ -2390,5 +2390,77 @@
   "info.faqBody": {
     "vi": "Bạn có thể xem lịch thực hành, chọn chương trình và điền form tư vấn trên trang. Nội dung hỏi đáp chính thức đang chờ GHME cung cấp.",
     "en": "You can view training schedules, choose a program and complete the consultation form. Official FAQ content is pending from GHME."
+  },
+  "feedback.eyebrow": {
+    "vi": "PHẢN HỒI TỪ ĐỐI TÁC",
+    "en": "CLIENT FEEDBACK"
+  },
+  "feedback.title": {
+    "vi": "Được các đối tác y tế tin tưởng",
+    "en": "Trusted by Healthcare Partners"
+  },
+  "feedback.description": {
+    "vi": "Chúng tôi tự hào đồng hành cùng các tổ chức y tế và khoa học đời sống hàng đầu trong việc xây dựng đội ngũ chất lượng cao.",
+    "en": "We’re proud to support leading healthcare and life sciences organizations in building high-performing teams."
+  },
+  "feedback.carousel": {
+    "vi": "Phản hồi từ đối tác",
+    "en": "Partner testimonials"
+  },
+  "feedback.previous": {
+    "vi": "Phản hồi trước",
+    "en": "Previous testimonial"
+  },
+  "feedback.next": {
+    "vi": "Phản hồi tiếp theo",
+    "en": "Next testimonial"
+  },
+  "feedback.featured": {
+    "vi": "PHẢN HỒI NỔI BẬT",
+    "en": "FEATURED TESTIMONIAL"
+  },
+  "feedback.verified": {
+    "vi": "Đối tác đã xác thực",
+    "en": "Verified partner"
+  },
+  "feedback.roleBinh": {
+    "vi": "Giám đốc quốc gia",
+    "en": "Country Manager"
+  },
+  "feedback.roleLinh": {
+    "vi": "Trưởng bộ phận tuyển dụng",
+    "en": "Talent Acquisition Lead"
+  },
+  "feedback.quoteBinh": {
+    "vi": "“Healthcare Talent luôn cung cấp các ứng viên chất lượng cao một cách kịp thời. Sự tận tâm trong việc thấu hiểu nhu cầu của chúng tôi khiến họ trở thành lựa chọn hàng đầu về tuyển dụng.”",
+    "en": "“Healthcare Talent consistently delivers high-quality candidates in a timely manner. Their dedication to understanding our needs makes them a top choice for recruitment.”"
+  },
+  "feedback.quoteHuy": {
+    "vi": "“Healthcare Talent mang đến trải nghiệm tuyển dụng chuyên nghiệp và hiệu quả. Với chuyên môn sâu trong ngành dược phẩm và y tế, họ thấu hiểu nhu cầu của chúng tôi và luôn giới thiệu những ứng viên xuất sắc.”",
+    "en": "“Healthcare Talent delivers a highly professional and result-driven recruitment experience. With deep expertise in the pharmaceutical and healthcare industry, they have a keen ability to understand our needs and consistently provide outstanding candidates.”"
+  },
+  "feedback.quoteLinh": {
+    "vi": "“Một đối tác đáng tin cậy, thực sự am hiểu ngành y tế. Họ luôn phản hồi nhanh chóng, chuyên nghiệp và tập trung tìm kiếm những nhân tài phù hợp cho sự phát triển của doanh nghiệp.”",
+    "en": "“A trusted partner who truly understands the healthcare industry. They are responsive, professional, and always focused on delivering the right talent for our business growth.”"
+  },
+  "feedback.pagination": {
+    "vi": "Chọn phản hồi",
+    "en": "Choose a testimonial"
+  },
+  "feedback.showHuy": {
+    "vi": "Xem phản hồi của Huy Nguyen",
+    "en": "Show testimonial from Huy Nguyen"
+  },
+  "feedback.showLinh": {
+    "vi": "Xem phản hồi của Nguyen Thao Linh",
+    "en": "Show testimonial from Nguyen Thao Linh"
+  },
+  "feedback.showBinh": {
+    "vi": "Xem phản hồi của Do Thanh Binh",
+    "en": "Show testimonial from Do Thanh Binh"
+  },
+  "feedback.status": {
+    "vi": "Phản hồi từ {name}",
+    "en": "Testimonial from {name}"
   }
 }

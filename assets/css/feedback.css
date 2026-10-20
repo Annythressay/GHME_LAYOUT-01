@@ -1,0 +1,125 @@
+/* Client Feedback */
+.feedback {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 68px 0 42px;
+  background: radial-gradient(ellipse at 50% 50%, #e9eff8 0, #f5f8fc 72%);
+  color: #151e40;
+}
+.feedback::before, .feedback::after { content: ''; position: absolute; z-index: -1; border-radius: 50%; pointer-events: none; }
+.feedback::before { width: 570px; height: 570px; left: -240px; top: -355px; border: 72px solid #eaf0f87a; }
+.feedback::after { width: 440px; height: 440px; right: -240px; top: 110px; background: #eaf0f860; }
+.feedback .inner-wrap { max-width: 1510px; width: calc(100% - 160px); }
+.feedback .inner-header { max-width: 1060px; margin: 0 auto 38px; background: transparent; text-align: center; }
+.feedback .inner-eyebrow { display: flex; align-items: center; justify-content: center; gap: 20px; margin-bottom: 16px; color: #647eb3; font-size: 13px; font-weight: 600; letter-spacing: 2px; }
+.feedback .inner-eyebrow::before, .feedback .inner-eyebrow::after { content: ''; width: 42px; height: 1px; background: #b6c5df; }
+.feedback h2 { font-size: clamp(32px, 2.9vw, 46px); letter-spacing: -1.2px; line-height: 1.3; }
+.feedback .inner-desc { max-width: 780px; margin: 14px auto 0; font-size: 17px; line-height: 1.6; color: #697286; text-wrap: pretty; }
+.feedback .inner-carousel { position: relative; }
+.feedback .inner-list { display: flex; align-items: center; gap: 18px; }
+.feedback .inner-card { display: flex; flex: 1 1 0; flex-direction: column; min-width: 0; min-height: 352px; padding: 24px; background: #ffffffeb; border: 1px solid #e2e8f1; border-radius: 21px; box-shadow: 0 18px 40px #233f6b0b; }
+.feedback .inner-card.is-featured { flex-grow: 1.2; min-height: 402px; padding: 24px 28px; border: 1.5px solid #b8caf0; box-shadow: 0 20px 44px #233f6b12; }
+.feedback .inner-card-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 15px; }
+.feedback .inner-quote-icon { display: grid; place-items: center; width: 46px; height: 46px; flex-shrink: 0; border-radius: 50%; background: #e6edf9; color: #3b568c; font-family: Georgia, serif; font-size: 57px; font-weight: 700; line-height: 1; padding-top: 11px; }
+.feedback .is-featured .inner-quote-icon { color: white; background: linear-gradient(135deg, #44649d, #2d4272); transform: rotate(180deg); padding-top: 12px; }
+.feedback .inner-featured { visibility: hidden; border-radius: 30px; padding: 7px 12px; background: #eaf0fb; color: #5877ac; font-size: 9px; font-weight: 600; letter-spacing: .5px; white-space: nowrap; }
+.feedback .is-featured .inner-featured { visibility: visible; }
+.feedback .inner-quote { flex: 1; margin: 0 0 24px; color: #3c4052; font-size: 17px; line-height: 1.55; font-weight: 400; }
+.feedback .is-featured .inner-quote { font-size: 18px; }
+.feedback .inner-person { display: flex; align-items: center; gap: 12px; padding-top: 20px; border-top: 1px solid #eff1f6; }
+.feedback .inner-avatar { width: 64px; height: 64px; flex-shrink: 0; object-fit: cover; border-radius: 50%; background: #f0f2f6; }
+.feedback .inner-person-info { min-width: 0; }
+.feedback .inner-name { font-size: 12px; font-weight: 700; line-height: 1.5; }
+.feedback .inner-role { margin-top: 2px; font-size: 11px; line-height: 1.5; color: #656b7e; }
+.feedback .inner-verified { display: inline-flex; align-items: center; gap: 5px; margin-top: 5px; padding: 3px 7px; border-radius: 20px; background: #eaf0fb; color: #3b5486; font-size: 9px; line-height: 1.3; white-space: nowrap; }
+.feedback .inner-verified svg { width: 11px; height: 11px; color: #496db4; flex-shrink: 0; }
+.feedback .inner-logo { width: 100px; height: auto; max-height: 35px; margin-left: auto; object-fit: contain; flex-shrink: 0; mix-blend-mode: multiply; }
+.feedback .inner-logo--organon { width: 120px; }
+.feedback .inner-logo--sanofi { width: 78px; }
+.feedback .inner-arrow { position: absolute; z-index: 1; top: 50%; display: grid; place-items: center; width: 46px; height: 46px; padding: 11px; border: 0; border-radius: 50%; background: #ffffffec; color: #18274d; transform: translateY(-50%); transition: background 180ms ease, box-shadow 180ms ease; }
+.feedback .inner-arrow--prev { left: -64px; }
+.feedback .inner-arrow--next { right: -64px; }
+.feedback .inner-arrow svg { width: 24px; height: 24px; }
+.feedback .inner-arrow:hover { background: white; box-shadow: 0 4px 18px #233f6b18; }
+.feedback .inner-pagination { display: flex; justify-content: center; margin-top: 18px; }
+.feedback .inner-dot { display: grid; place-items: center; width: 24px; height: 30px; padding: 0; border: 0; border-radius: 8px; background: transparent; }
+.feedback .inner-dot::before { content: ''; width: 10px; height: 7px; border-radius: 8px; background: #d1d8e3; transition: width 180ms ease, background 180ms ease; }
+.feedback .inner-dot[aria-current="true"]::before { width: 19px; background: #344c80; }
+.feedback [hidden] { display: none !important; }
+@media (min-width: 1600px) {
+  .feedback { padding-top: 72px; }
+  .feedback .inner-header { margin-bottom: 40px; }
+  .feedback .inner-desc { font-size: 20px; }
+  .feedback .inner-list { gap: 20px; }
+  .feedback .inner-card { min-height: 412px; padding: 24px 30px; }
+  .feedback .inner-card.is-featured { min-height: 472px; padding: 24px 34px; }
+  .feedback .inner-quote { font-size: 20px; }
+  .feedback .is-featured .inner-quote { font-size: 22px; }
+  .feedback .inner-quote-icon { width: 54px; height: 54px; font-size: 65px; }
+  .feedback .inner-avatar { width: 76px; height: 76px; }
+  .feedback .inner-name { font-size: 15px; }
+  .feedback .inner-role { font-size: 14px; }
+  .feedback .inner-verified { font-size: 11px; }
+  .feedback .inner-logo { width: 140px; }
+  .feedback .inner-logo--organon { width: 156px; }
+  .feedback .inner-logo--sanofi { width: 98px; }
+  .feedback .inner-featured { font-size: 11px; }
+}
+@media (max-width: 1199.98px) {
+  .feedback .inner-wrap { width: calc(100% - 112px); }
+  .feedback .inner-list { gap: 12px; }
+  .feedback .inner-card, .feedback .inner-card.is-featured { padding: 20px; }
+  .feedback .inner-card { min-height: 400px; }
+  .feedback .inner-card.is-featured { min-height: 446px; }
+  .feedback .inner-quote, .feedback .is-featured .inner-quote { font-size: 15px; }
+  .feedback .inner-person { flex-wrap: wrap; gap: 10px; }
+  .feedback .inner-avatar { width: 48px; height: 48px; }
+  .feedback .inner-logo, .feedback .inner-logo--organon, .feedback .inner-logo--sanofi { width: auto; max-width: 105px; height: 25px; margin: 4px 0 0 auto; }
+  .feedback .inner-featured { font-size: 8px; padding: 6px 8px; }
+  .feedback .inner-quote-icon { width: 38px; height: 38px; font-size: 48px; }
+  .feedback .inner-arrow { width: 40px; height: 40px; padding: 8px; }
+  .feedback .inner-arrow--prev { left: -48px; }
+  .feedback .inner-arrow--next { right: -48px; }
+}
+@media (max-width: 991.98px) {
+  .feedback { padding: 54px 0 32px; }
+  .feedback .inner-wrap { width: calc(100% - 128px); max-width: 660px; }
+  .feedback .inner-header { margin-bottom: 28px; }
+  .feedback .inner-desc { font-size: 15px; }
+  .feedback .inner-list { flex-direction: column; }
+  .feedback.is-ready .inner-list { display: block; }
+  .feedback .inner-card, .feedback .inner-card.is-featured { width: 100%; min-height: 360px; padding: 28px; }
+  .feedback .inner-quote, .feedback .is-featured .inner-quote { font-size: 18px; }
+  .feedback .inner-person { flex-wrap: nowrap; }
+  .feedback .inner-avatar { width: 60px; height: 60px; }
+  .feedback .inner-name { font-size: 14px; }
+  .feedback .inner-role { font-size: 12px; }
+  .feedback .inner-verified { font-size: 10px; }
+  .feedback .inner-featured { font-size: 10px; }
+}
+@media (max-width: 575.98px) {
+  .feedback { padding: 42px 0 26px; }
+  .feedback .inner-wrap { width: calc(100% - 40px); }
+  .feedback .inner-eyebrow { gap: 10px; font-size: 10px; letter-spacing: 1.3px; }
+  .feedback .inner-eyebrow::before, .feedback .inner-eyebrow::after { width: 25px; }
+  .feedback h2 { font-size: 28px; letter-spacing: -.7px; }
+  .feedback .inner-desc { font-size: 13px; line-height: 1.7; }
+  .feedback .inner-card, .feedback .inner-card.is-featured { min-height: 390px; padding: 22px; border-radius: 18px; }
+  .feedback .inner-quote, .feedback .is-featured .inner-quote { font-size: 16px; line-height: 1.65; }
+  .feedback .inner-person { flex-wrap: wrap; }
+  .feedback .inner-avatar { width: 52px; height: 52px; }
+  .feedback .inner-name { font-size: 12px; }
+  .feedback .inner-role { font-size: 11px; }
+  .feedback .inner-verified { font-size: 9px; }
+  .feedback .inner-featured { font-size: 8px; }
+  .feedback .inner-arrow { top: auto; bottom: -52px; width: 44px; height: 44px; transform: none; }
+  .feedback .inner-arrow--prev { left: 0; }
+  .feedback .inner-arrow--next { right: 0; }
+  .feedback .inner-pagination { margin-top: 18px; min-height: 44px; align-items: center; }
+  .feedback .inner-dot { width: 30px; height: 44px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .feedback .inner-arrow, .feedback .inner-dot::before { transition: none; }
+}
+/* End Client Feedback */
