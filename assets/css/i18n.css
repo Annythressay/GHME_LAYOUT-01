@@ -1,8 +1,8 @@
 /* Small shared language control; page compositions retain their original styles. */
 html[data-i18n-loading] body { visibility: hidden; }
 .language-switch { display: inline-flex; align-items: center; gap: 5px; flex: 0 0 auto; margin-left: auto; white-space: nowrap; color: #e8eff7; font-size: 11px; }
-.language-switch > i, .language-switch > svg { width: 15px; height: 15px; margin-right: 4px; }
-.language-switch button { display: inline-block; min-width: 28px; min-height: 36px; padding: 4px; border: 0; background: transparent; color: inherit; font: inherit; opacity: .65; cursor: pointer; }
+.language-switch > svg { display: block; flex-shrink: 0; width: 15px; height: 15px; margin-right: 4px; }
+.language-switch button { display: inline-flex; align-items: center; justify-content: center; min-width: 28px; min-height: 36px; padding: 4px; border: 0; background: transparent; color: inherit; font: inherit; line-height: 1; opacity: .65; cursor: pointer; }
 .language-switch button[aria-pressed="true"] { font-weight: 600; opacity: 1; text-decoration: underline; text-underline-offset: 4px; }
 .language-switch button:hover { opacity: 1; }
 .language-switch button:focus-visible { outline: 2px solid #fff; outline-offset: 1px; border-radius: 2px; }

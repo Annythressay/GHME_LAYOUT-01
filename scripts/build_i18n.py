@@ -75,12 +75,12 @@ def main():
   <script src="{prefix}assets/js/i18n.js" defer></script>'''
             source = source.replace('<meta charset="utf-8">', '<meta charset="utf-8">' + head)
         switch = '''<div class="language-switch" role="group" aria-label="Ngôn ngữ: Tiếng Việt / English">ICON<button type="button" data-language="vi" aria-pressed="true" lang="vi" aria-label="Tiếng Việt">VI</button><span aria-hidden="true">|</span><button type="button" data-language="en" aria-pressed="false" lang="en" aria-label="English">EN</button></div>'''
+        globe = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 6h14M5 18h14"/></svg>'
         if 'data-language="vi"' not in source and file.name == 'index.html':
-            source = re.sub(r'<button class="language".*?</button>', switch.replace('ICON', '<i class="fa-solid fa-globe" aria-hidden="true"></i>'), source, count=1, flags=re.S)
+            source = re.sub(r'<button class="language".*?</button>', switch.replace('ICON', globe), source, count=1, flags=re.S)
         elif 'data-language="vi"' not in source and file.name == 'about.html':
-            source = source.replace('</div>\n      </div>\n    </div>\n    <div class="nav-wrap">', '</div>\n        ' + switch.replace('ICON', '<i class="fa-solid fa-globe" aria-hidden="true"></i>') + '\n      </div>\n    </div>\n    <div class="nav-wrap">', 1)
+            source = source.replace('</div>\n      </div>\n    </div>\n    <div class="nav-wrap">', '</div>\n        ' + switch.replace('ICON', globe) + '\n      </div>\n    </div>\n    <div class="nav-wrap">', 1)
         elif 'data-language="vi"' not in source and 'class="course-header"' in source:
-            globe = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 6h14M5 18h14"/></svg>'
             source = source.replace('<header class="course-header">', '<header class="course-header">\n    <div class="course-language-bar"><div class="course-container">' + switch.replace('ICON', globe) + '</div></div>', 1)
         source = re.sub(r' data-i18n(?:-attrs)?="[^"]*"', '', source)
         parser = Markup(source, keys)
