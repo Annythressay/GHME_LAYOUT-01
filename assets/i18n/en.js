@@ -615,5 +615,13 @@ window.GHME_TRANSLATIONS.en = {
   "feedback.showHuy": "Show testimonial from Huy Nguyen",
   "feedback.showLinh": "Show testimonial from Nguyen Thao Linh",
   "feedback.showBinh": "Show testimonial from Do Thanh Binh",
-  "feedback.status": "Testimonial from {name}"
+  "feedback.status": "Testimonial from {name}",
+  "footer.member": "A member of",
+  "footer.affiliation": "PART OF THE HEALTHCARE ALLIANCE ECOSYSTEM",
+  "footer.forA": "for a",
+  "footer.healthierCommunity": "healthier community.",
+  "footer.description": "GHME is a medical training and education organization within the Healthcare Alliance ecosystem. We provide hands-on training, first aid education and applied healthcare skills development, helping improve the quality of healthcare for the community.",
+  "footer.practicalTraining": "Practical training",
+  "footer.communityHealth": "Community health",
+  "footer.hcaEcosystem": "Part of the HCA ecosystem"
 };

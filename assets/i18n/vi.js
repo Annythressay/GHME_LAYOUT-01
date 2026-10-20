@@ -615,5 +615,13 @@ window.GHME_TRANSLATIONS.vi = {
   "feedback.showHuy": "Xem phản hồi của Huy Nguyen",
   "feedback.showLinh": "Xem phản hồi của Nguyen Thao Linh",
   "feedback.showBinh": "Xem phản hồi của Do Thanh Binh",
-  "feedback.status": "Phản hồi từ {name}"
+  "feedback.status": "Phản hồi từ {name}",
+  "footer.member": "Thành viên của",
+  "footer.affiliation": "THUỘC HỆ SINH THÁI HEALTHCARE ALLIANCE",
+  "footer.forA": "vì một",
+  "footer.healthierCommunity": "cộng đồng khỏe mạnh hơn.",
+  "footer.description": "GHME là đơn vị đào tạo và giáo dục y khoa trực thuộc hệ sinh thái Healthcare Alliance, chuyên cung cấp các chương trình đào tạo thực hành, giáo dục sơ cấp cứu và phát triển năng lực y tế ứng dụng, góp phần nâng cao chất lượng chăm sóc sức khỏe cho cộng đồng.",
+  "footer.practicalTraining": "Đào tạo thực hành",
+  "footer.communityHealth": "Sức khỏe cộng đồng",
+  "footer.hcaEcosystem": "Thuộc hệ sinh thái HCA"
 };

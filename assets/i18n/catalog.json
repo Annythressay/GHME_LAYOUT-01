@@ -2462,5 +2462,37 @@
   "feedback.status": {
     "vi": "Phản hồi từ {name}",
     "en": "Testimonial from {name}"
+  },
+  "footer.member": {
+    "vi": "Thành viên của",
+    "en": "A member of"
+  },
+  "footer.affiliation": {
+    "vi": "THUỘC HỆ SINH THÁI HEALTHCARE ALLIANCE",
+    "en": "PART OF THE HEALTHCARE ALLIANCE ECOSYSTEM"
+  },
+  "footer.forA": {
+    "vi": "vì một",
+    "en": "for a"
+  },
+  "footer.healthierCommunity": {
+    "vi": "cộng đồng khỏe mạnh hơn.",
+    "en": "healthier community."
+  },
+  "footer.description": {
+    "vi": "GHME là đơn vị đào tạo và giáo dục y khoa trực thuộc hệ sinh thái Healthcare Alliance, chuyên cung cấp các chương trình đào tạo thực hành, giáo dục sơ cấp cứu và phát triển năng lực y tế ứng dụng, góp phần nâng cao chất lượng chăm sóc sức khỏe cho cộng đồng.",
+    "en": "GHME is a medical training and education organization within the Healthcare Alliance ecosystem. We provide hands-on training, first aid education and applied healthcare skills development, helping improve the quality of healthcare for the community."
+  },
+  "footer.practicalTraining": {
+    "vi": "Đào tạo thực hành",
+    "en": "Practical training"
+  },
+  "footer.communityHealth": {
+    "vi": "Sức khỏe cộng đồng",
+    "en": "Community health"
+  },
+  "footer.hcaEcosystem": {
+    "vi": "Thuộc hệ sinh thái HCA",
+    "en": "Part of the HCA ecosystem"
   }
 }
